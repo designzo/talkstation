@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>온라인 테스트 및 체험수업 결과 - 아이딕 잉글리시</title>
+    <!-- Bootstrap 5.3.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="../css/reset.base.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/_variables.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <div class="d-flex container mypage">
+      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
+        <div class="profile-section p-4 text-center">
+          <div class="profile-img mx-auto mb-2">
+            <img src="avatar_main.png" alt="Profile" class="w-100" />
+          </div>
+          <h5 class="heading3 text-black">홍길동</h5>
+          <p class="body1 line-height-140 text-light-gray mb-4">
+            Hong gildong
+          </p>
+          <button
+            class="button button-sm button-fill button-secondary rounded-pill"
+          >
+            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+          </button>
+
+          <div
+            class="gallery-grid mt-6 d-grid"
+            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
+          >
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+          </div>
+        </div>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navLesson"
+            >
+              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span>나의 수업 관리</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse show" id="navLesson">
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >아이딕 홈스쿨 강의실 입장</a
+                  >
+                </li>
+                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">VOCA 과제방</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="nav-menu-item">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item">특강권 사용&amp;관리</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >원서&amp;영상수업 요청목록</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">월평가서 &amp; 출결정보</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item active"
+                    >온라인 테스트 및 체험수업 결과</a
+                  >
+                </li>
+                <li><a href="#" class="nav-menu-item">신규선생님 평가</a></li>
+                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="lnb-actions d-flex flex-column gap-0-5">
+          <a class="button button-lg button-border button-primary button-block"
+            >수업불편 및 요청상담</a
+          >
+          <a class="button button-lg button-border button-primary button-block"
+            >선생님, 부탁 드려요</a
+          >
+          <a class="button button-lg button-border button-primary button-block"
+            >찐친 초대현황</a
+          >
+        </div>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navInfo"
+            >
+              <span class="nav-icon nav-icon-violet">👤</span>
+              <span>나의 정보</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse show" id="navInfo">
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">교재결제내역 / 장바구니</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                </li>
+                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
+                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navIdic"
+            >
+              <span class="nav-icon nav-icon-blue">📖</span>
+              <span>아이딕 잉글리시</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse show" id="navIdic">
+              <ul class="nav-menu">
+                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navSupport"
+            >
+              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span>학습지원서비스</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse show" id="navSupport">
+              <ul class="nav-menu">
+                <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
+                <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >수업연기 및 보강정책(환불)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+        <div class="content-container">
+          <h2 class="page-title">온라인 테스트 및 체험수업 결과</h2>
+
+          <!-- ============================
+             배너 이미지
+             ============================ -->
+          <div class="test-result-banner radius-xl overflow-hidden">
+            <img
+              src="../images/bnn-pc-result.png"
+              alt="테스트 결과 배너"
+              class="w-100"
+            />
+          </div>
+
+          <!-- ============================
+             무료 체험 수업
+             ============================ -->
+          <section class="d-flex flex-column gap-4">
+            <h3 class="heading4 text-black">무료 체험 수업</h3>
+
+            <!-- Card 1 (펼침 상태) -->
+            <div
+              class="test-result-card radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+            >
+              <!-- 카드 헤더: 날짜 + 버튼 -->
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <span class="body2 fw-bold text-black">25.00.00 00:00</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="button button-sm button-fill button-neutral">
+                    삭제
+                  </button>
+                  <button
+                    class="test-result-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#trialDetail1"
+                    aria-expanded="true"
+                    aria-controls="trialDetail1"
+                  >
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- 정보 그리드 -->
+              <div class="test-result-grid">
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">테스트 레벨</span>
+                  <span class="body2 fw-bold text-neutral"
+                    >Low-inter / 14세 이상</span
+                  >
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">테스트 구분</span>
+                  <span class="body2 fw-bold text-neutral"
+                    >1차 원어민 스피킹</span
+                  >
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">추천교재</span>
+                  <span class="body2 fw-bold text-neutral"
+                    >Everybody up - 3 (개정판)</span
+                  >
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">담당강사</span>
+                  <span class="body2 fw-bold text-neutral">Monique</span>
+                </div>
+              </div>
+
+              <!-- 펼침 영역 -->
+              <div class="collapse show" id="trialDetail1">
+                <div class="test-result-detail">
+                  <!-- 상세보기 타이틀 -->
+                  <div class="d-flex align-items-center gap-2 mb-6">
+                    <span class="heading4 text-black"
+                      >무료 체험 수업 상세보기</span
+                    >
+                    <span class="body3 text-gray">25.08.29 14:00</span>
+                  </div>
+
+                  <!-- 상세 정보 -->
+                  <div
+                    class="d-flex flex-column flex-lg-row gap-3 mb-6"
+                  >
+                    <div class="test-result-detail-box">
+                      <span class="body3 fw-medium text-dark-gray"
+                        >테스트 구분</span
+                      >
+                      <span class="body2 fw-bold text-neutral"
+                        >1차 원어민 스피킹</span
+                      >
+                    </div>
+                    <div class="test-result-detail-box">
+                      <span class="body3 fw-medium text-dark-gray"
+                        >담당강사</span
+                      >
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="test-result-avatar"></div>
+                        <span class="body2 fw-bold text-neutral"
+                          >Teachername</span
+                        >
+                      </div>
+                    </div>
+                    <div class="test-result-detail-box">
+                      <span class="body3 fw-medium text-dark-gray"
+                        >출결사항</span
+                      >
+                      <span
+                        class="badge badge-sm badge-fill badge-primary rounded-pill"
+                        >출석</span
+                      >
+                    </div>
+                  </div>
+
+                  <!-- 학생 성장 진행도 -->
+                  <div
+                    class="test-result-progress radius-2xl p-4 p-lg-5 mb-6"
+                  >
+                    <div
+                      class="d-flex align-items-center flex-wrap gap-2 gap-lg-4 mb-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="body1 fw-medium text-neutral"
+                          >이서연님</span
+                        >
+                        <span
+                          class="heading5"
+                          style="color: var(--color-colorchip-orange)"
+                          >GL1(Violet) - STEP2</span
+                        >
+                      </div>
+                    </div>
+                    <!-- 성장 스테이지 -->
+                    <div class="test-result-stage-list">
+                      <div
+                        class="test-result-stage-item test-result-stage-active"
+                      >
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="1단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium" style="color: #ff7d26"
+                          >1단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                      <div class="test-result-stage-item">
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="2단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium text-light-gray"
+                          >2단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                      <div class="test-result-stage-item">
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="3단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium text-light-gray"
+                          >3단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                      <div class="test-result-stage-item">
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="4단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium text-light-gray"
+                          >4단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                      <div class="test-result-stage-item">
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="5단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium text-light-gray"
+                          >5단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                      <div class="test-result-stage-item">
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="6단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium text-light-gray"
+                          >6단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                      <div class="test-result-stage-item">
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="7단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium text-light-gray"
+                          >7단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                      <div class="test-result-stage-item">
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="8단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium text-light-gray"
+                          >8단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                      <div class="test-result-stage-item">
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="9단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium text-light-gray"
+                          >9단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                      <div class="test-result-stage-item">
+                        <div class="test-result-stage-thumb">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="10단계"
+                          />
+                        </div>
+                        <span class="body2 fw-medium text-light-gray"
+                          >10단계</span
+                        >
+                        <span class="body4 text-light-gray">Apple tree</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 설명 박스들 -->
+                  <div
+                    class="d-flex flex-column flex-lg-row gap-3 mb-6"
+                  >
+                    <div class="test-result-desc-box flex-1">
+                      <span class="heading5" style="color: var(--color-cyan-500)"
+                        >GL-4 레벨 설명</span
+                      >
+                      <p class="body2 text-gray line-height-160">
+                        GL-4 학습 코스(Rose)<br />
+                        The student actively participated in class and received
+                        positive feedback from the teacher. They understand the
+                        lesson well and can express basic thoughts using simple
+                        sentences.
+                      </p>
+                    </div>
+                    <div class="test-result-desc-box flex-1">
+                      <span class="heading5" style="color: var(--color-cyan-500)"
+                        >1차 원어민 스피킹 피드백</span
+                      >
+                      <p class="body2 text-gray line-height-160">
+                        짧지 않은 수업시간동안 열심히 참여해주어 선생님께서도
+                        대단히 칭찬해주셨습니다. 수업 내용과 교재를 잘 이해하고
+                        있으며, 간단한 문장으로 자신의 생각을 표현하는 것도 어느
+                        정도 가능합니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- 평가 테이블 -->
+                  <div class="test-eval mb-6">
+                    <span class="heading5 text-black d-block mb-3"
+                      >평가 결과</span
+                    >
+                    <div class="table-list-scroll">
+                      <!-- 테이블 헤더 (PC) -->
+                      <div
+                        class="table-list-header d-none d-lg-flex row g-0 align-items-center px-4"
+                      >
+                        <div class="col-lg-3 text-center">Task Area</div>
+                        <div class="col-lg-2 text-center">Grade</div>
+                        <div class="col text-center">Description</div>
+                      </div>
+                      <!-- 테이블 바디 -->
+                      <div class="table-list-body d-flex flex-column gap-1-5">
+                        <!-- Row 1 -->
+                        <div class="list-summary row g-0 align-items-center">
+                          <div
+                            class="col-6 col-lg-3 d-flex flex-column gap-1"
+                          >
+                            <span class="body2 text-gray"
+                              >Fluency &amp; Speaking</span
+                            >
+                            <span class="body3 fw-medium text-neutral"
+                              >유창성</span
+                            >
+                          </div>
+                          <div
+                            class="col-6 col-lg-2 d-flex align-items-center"
+                          >
+                            <span class="test-eval-grade test-eval-grade-a ms-auto m-lg-auto"
+                              >A</span
+                            >
+                          </div>
+                          <div class="col-12 col-lg mt-3 mt-lg-0">
+                            <p class="body2 text-neutral">
+                              The student actively participated in class and
+                              received positive feedback from the teacher.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="list-summary list-cell-highlight row g-0 align-items-center">
+                          <div
+                            class="col-6 col-lg-3 d-flex flex-column gap-1"
+                          >
+                            <span class="body2 text-gray"
+                              >Fluency &amp; Speaking</span
+                            >
+                            <span class="body3 fw-medium text-neutral"
+                              >유창성</span
+                            >
+                          </div>
+                          <div
+                            class="col-6 col-lg-2 d-flex align-items-center"
+                          >
+                            <span class="test-eval-grade test-eval-grade-b  ms-auto m-lg-auto"
+                              >B</span
+                            >
+                          </div>
+                          <div class="col-12 col-lg mt-3 mt-lg-0">
+                            <p class="body2 text-neutral">
+                              The student actively participated in class and
+                              received positive feedback from the teacher.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- Row 3 -->
+                        <div class="list-summary row g-0 align-items-center">
+                          <div
+                            class="col-6 col-lg-3 d-flex flex-column gap-1"
+                          >
+                            <span class="body2 text-gray"
+                              >Fluency &amp; Speaking</span
+                            >
+                            <span class="body3 fw-medium text-neutral"
+                              >유창성</span
+                            >
+                          </div>
+                          <div
+                            class="col-6 col-lg-2 d-flex align-items-center"
+                          >
+                            <span class="test-eval-grade test-eval-grade-c ms-auto m-lg-auto"
+                              >C</span
+                            >
+                          </div>
+                          <div class="col-12 col-lg mt-3 mt-lg-0">
+                            <p class="body2 text-neutral">
+                              The student actively participated in class and
+                              received positive feedback from the teacher.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 안내 불릿 -->
+                  <ul class="test-result-notes">
+                    <li class="body2 text-light-gray">
+                      레벨테스트 결과는 학생의 컨디션, 면접관의 질문에 따라 변동
+                      될 수 있습니다.
+                    </li>
+                    <li class="body2 text-light-gray">
+                      레벨결과의 자세한 문의는 고객센터
+                      <a
+                        href="tel:1666-2976"
+                        class="fw-bold"
+                        style="color: var(--color-cyan-500)"
+                        >1666-2976</a
+                      >으로 연락주세요.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 (접힘 상태) -->
+            <div
+              class="test-result-card radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+            >
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <span class="body2 fw-bold text-black">25.00.00 00:00</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="button button-sm button-fill button-neutral">
+                    삭제
+                  </button>
+                  <button
+                    class="test-result-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#trialDetail2"
+                    aria-expanded="false"
+                    aria-controls="trialDetail2"
+                  >
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="test-result-grid">
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">테스트 레벨</span>
+                  <span class="body2 fw-bold text-neutral"
+                    >Low-inter / 14세 이상</span
+                  >
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">테스트 구분</span>
+                  <span class="body2 fw-bold text-neutral"
+                    >1차 원어민 스피킹</span
+                  >
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">추천교재</span>
+                  <span class="body2 fw-bold text-neutral"
+                    >Everybody up - 3 (개정판)</span
+                  >
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">담당강사</span>
+                  <span class="body2 fw-bold text-neutral">Monique</span>
+                </div>
+              </div>
+
+              <div class="collapse" id="trialDetail2">
+                <div class="test-result-detail">
+                  <div class="d-flex align-items-center gap-2 mb-6">
+                    <span class="heading4 text-black"
+                      >무료 체험 수업 상세보기</span
+                    >
+                    <span class="body2 text-gray">25.08.29 14:00</span>
+                  </div>
+                  <p class="body2 text-neutral">상세 내용이 여기에 표시됩니다.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============================
+             온라인 레벨 테스트
+             ============================ -->
+          <section class="d-flex flex-column gap-4">
+            <h3 class="heading4 text-black">온라인 레벨 테스트</h3>
+
+            <!-- Test Card 1 -->
+            <div
+              class="test-result-card radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+            >
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <span class="body2 fw-bold text-black">25.00.00 00:00</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="button button-sm button-fill button-neutral">
+                    삭제
+                  </button>
+                  <button
+                    class="test-result-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#testDetail1"
+                    aria-expanded="false"
+                    aria-controls="testDetail1"
+                  >
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="test-result-grid">
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">테스트 레벨</span>
+                  <span class="body2 fw-bold text-neutral"
+                    >Low-inter / 14세 이상</span
+                  >
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">VOCA</span>
+                  <span class="body2 fw-bold text-neutral">0/3</span>
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">Reading</span>
+                  <span class="body2 fw-bold text-neutral">0/3</span>
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">Grammer</span>
+                  <span class="body2 fw-bold text-neutral">0/3</span>
+                </div>
+              </div>
+
+              <div class="collapse" id="testDetail1">
+                <div class="test-result-detail">
+                  <!-- 상세보기 타이틀 -->
+                  <div class="d-flex align-items-center gap-2 mb-6">
+                    <span class="heading4 text-black"
+                      >온라인 레벨 테스트 상세보기</span
+                    >
+                    <span class="body3 text-gray">25.08.29 14:00</span>
+                  </div>
+
+                  <!-- 결과 요약 + 레벨 추천 -->
+                  <div class="row g-3 mb-6">
+                    <!-- 결과 요약 -->
+                    <div class="col-12 col-lg-6">
+                      <div class="test-overview-box">
+                        <span class="heading5 text-black"
+                          >전체문항 50 문항</span
+                        >
+                        <div class="d-flex align-items-center justify-content-center gap-5">
+                          <div class="test-score-box test-score-correct">
+                            <span class="score-label">정답</span>
+                            <span class="score-value">49</span>
+                          </div>
+                          <div class="test-score-box test-score-wrong">
+                            <span class="score-label">오답</span>
+                            <span class="score-value">1</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="body2 text-gray">정답율:</span>
+                          <span class="body2 fw-bold text-cyan-dark"
+                            >98%</span
+                          >
+                          <i
+                            class="bi bi-triangle-fill"
+                            style="
+                              font-size: 8px;
+                              color: var(--color-gray-300);
+                            "
+                          ></i>
+                          <span class="body2 text-gray">추천레벨:</span>
+                          <span class="body2 fw-bold text-purple"
+                            >40%</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 레벨 추천 가이드 -->
+                    <div class="col-12 col-lg-6">
+                      <div class="test-overview-box">
+                        <span class="heading5 text-black"
+                          >전체문항 50 문항</span
+                        >
+                        <div class="d-flex flex-column w-100">
+                          <div class="test-level-bar test-level-upper">
+                            정답율 85% 이상 상위레벨
+                          </div>
+                          <div class="test-level-chevron">
+                            <i class="bi bi-chevron-down" style="font-size: 12px; color: var(--color-gray-400)"></i>
+                          </div>
+                          <div class="test-level-bar test-level-current">
+                            정답율 70% ~ 84% 이상 현재레벨
+                          </div>
+                          <div class="test-level-chevron">
+                            <i class="bi bi-chevron-down" style="font-size: 12px; color: var(--color-gray-400)"></i>
+                          </div>
+                          <div class="test-level-bar test-level-lower">
+                            정답율 70% 미만 하위레벨
+                          </div>
+                        </div>
+                        <ul class="test-result-notes">
+                          <li class="body3 text-light-gray">
+                            상위, 혹은 하위레벨을 받았다면 해당 추천 레벨의
+                            온라인 테스트를 다시 진행하세요.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 내 레벨 -->
+                  <div class="test-my-level mb-6">
+                    <span class="heading5 text-black d-block mb-3"
+                      >내 레벨</span
+                    >
+                    <!-- 테이블 헤더 (PC) -->
+                    <div
+                      class="table-list-header d-none d-lg-flex row g-0 align-items-center px-4"
+                    >
+                      <div class="col-lg-2 text-center">CEFR</div>
+                      <div class="col-lg-2 text-center">AR (Lexile)</div>
+                      <div class="col-lg-2 text-center">GL (톡스레벨)</div>
+                      <div class="col-lg-3 text-center">스피킹</div>
+                      <div class="col-lg-3 text-center">리딩</div>
+                    </div>
+                    <!-- 테이블 바디 -->
+                    <div
+                      class="table-list-body d-flex flex-column gap-1-5"
+                    >
+                      <div
+                        class="list-summary row g-0 align-items-center"
+                      >
+                        <div
+                          class="col-12 col-lg-2 d-flex align-items-center gap-1-5 justify-content-lg-center"
+                        >
+                          <span
+                            class="d-lg-none body3 fw-bold"
+                            style="color: var(--color-cyan-700)"
+                            >CEFR</span
+                          >
+                          <span class="body2 fw-bold text-neutral"
+                            >High A2</span
+                          >
+                        </div>
+                        <div
+                          class="col-12 col-lg-2 d-flex align-items-center gap-1-5 justify-content-lg-center mt-2 mt-lg-0"
+                        >
+                          <span
+                            class="d-lg-none body3 fw-bold"
+                            style="color: var(--color-cyan-700)"
+                            >AR (Lexile)</span
+                          >
+                          <span class="body2 fw-bold text-neutral"
+                            >AR 2-3</span
+                          >
+                        </div>
+                        <div
+                          class="col-12 col-lg-2 d-flex align-items-center gap-1-5 justify-content-lg-center mt-2 mt-lg-0"
+                        >
+                          <span
+                            class="d-lg-none body3 fw-bold"
+                            style="color: var(--color-cyan-700)"
+                            >GL (톡스레벨)</span
+                          >
+                          <span class="body2 fw-bold text-neutral"
+                            >GL 5-6</span
+                          >
+                        </div>
+                        <div
+                          class="col-12 col-lg-3 d-flex flex-column align-items-start gap-1 mt-2 mt-lg-0"
+                        >
+                          <span
+                            class="d-lg-none body3 fw-bold"
+                            style="color: var(--color-cyan-700)"
+                            >스피킹</span
+                          >
+                          <p class="body3 text-gray line-height-160">
+                            - 다양한 구조의 문장을 이해하고 말아 들으며,
+                            이를 활용해 말할 수 있는 단계<br />- 자신이 잘
+                            알고 있는 분야에 대해 정확하게 표현할 수 있음
+                          </p>
+                        </div>
+                        <div
+                          class="col-12 col-lg-3 d-flex flex-column align-items-start gap-1 mt-2 mt-lg-0"
+                        >
+                          <span
+                            class="d-lg-none body3 fw-bold"
+                            style="color: var(--color-cyan-700)"
+                            >리딩</span
+                          >
+                          <p class="body3 text-gray line-height-160">
+                            - 다양한 구조의 문장을 이해하고 말아 들으며,
+                            이를 활용해 말할 수 있는 단계<br />- 자신이 잘
+                            알고 있는 분야에 대해 정확하게 표현할 수 있음
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 결과 상세보기 -->
+                  <div class="mb-6">
+                    <div class="row g-3">
+                      <!-- 문항 번호 + 범례 -->
+                      <div class="col-12 col-lg-6">
+                        <span class="heading5 text-black d-block mb-3"
+                          >결과 상세보기</span
+                        >
+                        <div class="test-question-nav mb-3">
+                          <button class="test-question-btn active">1</button>
+                          <button class="test-question-btn">2</button>
+                          <button class="test-question-btn">3</button>
+                          <button class="test-question-btn">4</button>
+                          <button class="test-question-btn">5</button>
+                          <button class="test-question-btn">6</button>
+                          <button class="test-question-btn">7</button>
+                          <button class="test-question-btn">8</button>
+                          <button class="test-question-btn">9</button>
+                          <button class="test-question-btn">10</button>
+                          <button class="test-question-btn">11</button>
+                          <button class="test-question-btn">12</button>
+                          <button class="test-question-btn">13</button>
+                          <button class="test-question-btn">14</button>
+                          <button class="test-question-btn">15</button>
+                          <button class="test-question-btn">16</button>
+                          <button class="test-question-btn">17</button>
+                          <button class="test-question-btn">18</button>
+                          <button class="test-question-btn">19</button>
+                          <button class="test-question-btn">20</button>
+                          <button class="test-question-btn">21</button>
+                          <button class="test-question-btn">22</button>
+                          <button class="test-question-btn">23</button>
+                          <button class="test-question-btn">24</button>
+                          <button class="test-question-btn">25</button>
+                          <button class="test-question-btn">26</button>
+                          <button class="test-question-btn">27</button>
+                          <button class="test-question-btn">28</button>
+                          <button class="test-question-btn">29</button>
+                          <button class="test-question-btn">30</button>
+                          <button class="test-question-btn">31</button>
+                          <button class="test-question-btn wrong">32</button>
+                          <button class="test-question-btn">33</button>
+                          <button class="test-question-btn">34</button>
+                          <button class="test-question-btn">35</button>
+                          <button class="test-question-btn">36</button>
+                          <button class="test-question-btn">37</button>
+                          <button class="test-question-btn">38</button>
+                          <button class="test-question-btn">39</button>
+                          <button class="test-question-btn">40</button>
+                          <button class="test-question-btn">41</button>
+                          <button class="test-question-btn">42</button>
+                          <button class="test-question-btn">43</button>
+                          <button class="test-question-btn">44</button>
+                          <button class="test-question-btn">45</button>
+                          <button class="test-question-btn">46</button>
+                          <button class="test-question-btn">47</button>
+                          <button class="test-question-btn">48</button>
+                          <button class="test-question-btn">49</button>
+                          <button class="test-question-btn">50</button>
+                        </div>
+                        <!-- 범례 -->
+                        <div class="d-flex gap-4">
+                          <div class="d-flex align-items-center gap-1-5">
+                            <span class="test-legend-dot test-legend-correct"></span>
+                            <span class="body3 text-dark-gray">정답</span>
+                          </div>
+                          <div class="d-flex align-items-center gap-1-5">
+                            <span class="test-legend-dot test-legend-wrong"></span>
+                            <span class="body3 text-dark-gray">오답</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 문제 표시 영역 -->
+                      <div class="col-12 col-lg-6">
+                        <div class="test-question-card">
+                          <span class="heading5 text-black d-block mb-3"
+                            >Reading</span
+                          >
+                          <div class="test-question-image mb-3">
+                            <img
+                              src="../images/dummy1.png"
+                              alt="Reading 문제 이미지"
+                              class="w-100"
+                            />
+                          </div>
+                          <div class="d-flex flex-column gap-2">
+                            <div class="test-answer test-answer-correct">
+                              <i class="bi bi-check-circle-fill"></i>
+                              <span class="body3 fw-medium"
+                                >a. She is teaching her students.</span
+                              >
+                            </div>
+                            <div class="test-answer test-answer-wrong">
+                              <span class="body3 fw-medium"
+                                >b. She is baking bread in the oven.</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Test Card 2 -->
+            <div
+              class="test-result-card radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+            >
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <span class="body2 fw-bold text-black">25.00.00 00:00</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="button button-sm button-fill button-neutral">
+                    삭제
+                  </button>
+                  <button
+                    class="test-result-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#testDetail2"
+                    aria-expanded="false"
+                    aria-controls="testDetail2"
+                  >
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="test-result-grid">
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">테스트 레벨</span>
+                  <span class="body2 fw-bold text-neutral"
+                    >Low-inter / 14세 이상</span
+                  >
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">VOCA</span>
+                  <span class="body2 fw-bold text-neutral">0/3</span>
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">Reading</span>
+                  <span class="body2 fw-bold text-neutral">0/3</span>
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">Grammer</span>
+                  <span class="body2 fw-bold text-neutral">0/3</span>
+                </div>
+              </div>
+
+              <div class="collapse" id="testDetail2">
+                <div class="test-result-detail">
+                  <p class="body2 text-neutral">상세 내용이 여기에 표시됩니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Test Card 3 -->
+            <div
+              class="test-result-card radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+            >
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <span class="body2 fw-bold text-black">25.00.00 00:00</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="button button-sm button-fill button-neutral">
+                    삭제
+                  </button>
+                  <button
+                    class="test-result-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#testDetail3"
+                    aria-expanded="false"
+                    aria-controls="testDetail3"
+                  >
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="test-result-grid">
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">테스트 레벨</span>
+                  <span class="body2 fw-bold text-neutral"
+                    >Low-inter / 14세 이상</span
+                  >
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">VOCA</span>
+                  <span class="body2 fw-bold text-neutral">0/3</span>
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">Reading</span>
+                  <span class="body2 fw-bold text-neutral">0/3</span>
+                </div>
+                <div class="test-result-info-box">
+                  <span class="body3 fw-medium text-black">Grammer</span>
+                  <span class="body2 fw-bold text-neutral">0/3</span>
+                </div>
+              </div>
+
+              <div class="collapse" id="testDetail3">
+                <div class="test-result-detail">
+                  <p class="body2 text-neutral">상세 내용이 여기에 표시됩니다.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

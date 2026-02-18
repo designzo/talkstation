@@ -1,0 +1,1401 @@
+/* ==============================================
+   Button Component - Design System
+   마이페이지 버튼 공통 컴포넌트
+   ============================================== */
+
+/* Base Button */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1);
+  font-family: var(--font-family);
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.button:focus {
+  outline: none;
+}
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ==============================================
+   Size: Small - 33px
+   ============================================== */
+.button-sm {
+  height: 31px;
+  padding: var(--spacing-2) var(--spacing-4);
+  font-size: var(--body-body4-fontSize);
+  border-radius: var(--radius-md);
+  line-height: var(--lineheight-sm);
+  letter-spacing: var(--letterSpacing-sm);
+}
+.button-sm.button-icon-only {
+  width: 33px;
+  padding: var(--spacing-2);
+}
+
+/* ==============================================
+   Size: Default - 41px
+   ============================================== */
+.button-md {
+  height: 41px;
+  padding: var(--spacing-3) var(--spacing-5);
+  font-size: var(--font-size-base);
+  border-radius: var(--radius-md);
+}
+.button-md.button-icon-only {
+  width: 41px;
+  padding: var(--spacing-3);
+}
+
+/* ==============================================
+   Size: Large - 52px
+   ============================================== */
+.button-lg {
+  height: 52px;
+  padding: var(--spacing-4) var(--spacing-6);
+  font-size: var(--font-size-md);
+  border-radius: var(--radius-md);
+}
+.button-lg.button-icon-only {
+  width: 52px;
+  padding: var(--spacing-4);
+}
+
+/* ==============================================
+   PRIMARY (Cyan)
+   ============================================== */
+.button-fill.button-primary {
+  background-color: var(--color-colorchip-primary);
+  color: var(--color-text-white);
+}
+
+.button-border.button-primary {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-colorchip-primary);
+  color: var(--color-colorchip-primary);
+}
+
+.button-soft.button-primary {
+  background-color: var(--color-cyan-50);
+  color: var(--color-colorchip-primary);
+}
+
+.button-transparent.button-primary {
+  background-color: transparent;
+  color: var(--color-colorchip-primary);
+}
+
+/* ==============================================
+   SECONDARY (Orange)
+   ============================================== */
+.button-fill.button-secondary {
+  background-color: var(--color-colorchip-orange);
+  color: var(--color-text-white);
+}
+
+.button-border.button-secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-colorchip-orange);
+  color: var(--color-colorchip-orange);
+}
+
+.button-soft.button-secondary {
+  background-color: var(--color-orange-50);
+  color: var(--color-colorchip-orange);
+}
+
+.button-transparent.button-secondary {
+  background-color: transparent;
+  color: var(--color-colorchip-orange);
+}
+
+/* ==============================================
+   NEGATIVE (Red)
+   ============================================== */
+.button-fill.button-negative {
+  background-color: var(--color-colorchip-red);
+  color: var(--color-text-white);
+}
+
+.button-border.button-negative {
+  background-color: transparent;
+  border: 1px solid var(--color-colorchip-red);
+  color: var(--color-colorchip-red);
+}
+
+.button-soft.button-negative {
+  background-color: var(--color-red-50);
+  color: var(--color-colorchip-red);
+}
+
+.button-transparent.button-negative {
+  background-color: transparent;
+  color: var(--color-colorchip-red);
+}
+
+/* ==============================================
+   TERTIARY (Peacock)
+   ============================================== */
+.button-fill.button-tertiary {
+  background-color: var(--color-colorchip-peacock);
+  color: var(--color-text-white);
+}
+
+.button-border.button-tertiary {
+  background-color: transparent;
+  border: 1px solid var(--color-colorchip-peacock);
+  color: var(--color-colorchip-peacock);
+}
+
+.button-soft.button-tertiary {
+  background-color: var(--color-peacock-50);
+  color: var(--color-colorchip-peacock);
+}
+
+.button-transparent.button-tertiary {
+  background-color: transparent;
+  color: var(--color-colorchip-peacock);
+}
+
+/* ==============================================
+   LIGHT NEUTRAL
+   ============================================== */
+.button-fill.button-neutral {
+  background-color: var(--color-gray-500);
+  color: var(--color-text-white);
+}
+
+.button-border.button-neutral {
+  background-color: transparent;
+  border: 1px solid var(--color-gray-500);
+  color: var(--color-text-light-gray);
+}
+
+.button-soft.button-neutral {
+  background-color: var(--color-gray-50);
+  color: var(--color-text-light-gray);
+}
+
+.button-transparent.button-neutral {
+  background-color: transparent;
+  color: var(--color-text-light-gray);
+}
+
+/* ==============================================
+   Dark
+   ============================================== */
+.button-fill.button-dark {
+  background-color: var(--color-gray-600);
+  color: var(--color-text-white);
+}
+
+.button-border.button-dark {
+  background-color: transparent;
+  border: 1px solid var(--color-gray-600);
+  color: var(--color-text-gray);
+}
+
+.button-soft.button-dark {
+  background-color: var(--color-gray-100);
+  color: var(--color-text-gray);
+}
+
+.button-transparent.button-dark {
+  background-color: transparent;
+  color: var(--color-text-gray);
+}
+
+/* ==============================================
+   DEFAULT
+   ============================================== */
+.button-fill.button-default {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-neutral);
+}
+
+.button-border.button-default {
+  background-color: transparent;
+  border: 1px solid var(--color-border-light);
+  color: var(--color-text-neutral);
+}
+
+.button-soft.button-default {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-gray);
+}
+
+.button-transparent.button-default {
+  background-color: transparent;
+  color: var(--color-text-neutral);
+}
+
+/* ==============================================
+   Utilities
+   ============================================== */
+.button-icon-only {
+  padding: 0 !important;
+}
+.button-icon-only .button__icon {
+  font-size: 1.2em;
+}
+.button-block {
+  width: 100%;
+}
+.button-group {
+  display: inline-flex;
+  gap: var(--spacing-2);
+}
+.button-group--vertical {
+  flex-direction: column;
+}
+
+/* ==============================================
+   Badge Component - Figma Design System
+   마이페이지 뱃지 공통 컴포넌트
+   ============================================== */
+
+/* Base Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1);
+  font-family: var(--font-family);
+  font-weight: var(--fontweight-medium);
+  line-height: var(--lineheight-sm);
+  letter-spacing: var(--letterSpacing-sm);
+  border-radius: var(--radius-full);
+  box-sizing: border-box;
+  white-space: normal;
+  text-align: left;
+  width: fit-content;
+}
+
+/* ==============================================
+   Size: Default - H 29px
+   ============================================== */
+.badge-md {
+  min-height: 29px;
+  padding: var(--spacing-1-5) var(--spacing-3-5);
+  font-size: var(--font-size-sm);
+}
+
+/* ==============================================
+   Size: Small - H 22px
+   ============================================== */
+.badge-sm {
+  min-height: 22px;
+  padding: var(--spacing-0-5) var(--spacing-2-5);
+  font-size: var(--font-size-xs);
+}
+
+/* ==============================================
+   Dot Indicator
+   ============================================== */
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+/* ==============================================
+   PRIMARY (Cyan)
+   ============================================== */
+.badge-fill.badge-primary {
+  background-color: var(--color-cyan-500);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-primary .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-primary {
+  background-color: var(--color-cyan-50);
+  color: var(--color-cyan-700);
+}
+.badge-soft.badge-primary .badge-dot {
+  background-color: var(--color-cyan-500);
+}
+
+/* ==============================================
+   GREEN
+   ============================================== */
+.badge-fill.badge-green {
+  background-color: var(--color-green-500);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-green .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-green {
+  background-color: var(--color-green-50);
+  color: var(--color-green-700);
+}
+.badge-soft.badge-green .badge-dot {
+  background-color: var(--color-green-500);
+}
+
+/* ==============================================
+   BLUE
+   ============================================== */
+.badge-fill.badge-blue {
+  background-color: var(--color-blue-500);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-blue .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-blue {
+  background-color: var(--color-blue-50);
+  color: var(--color-blue-700);
+}
+.badge-soft.badge-blue .badge-dot {
+  background-color: var(--color-blue-500);
+}
+
+/* ==============================================
+   RED
+   ============================================== */
+.badge-fill.badge-red {
+  background-color: var(--color-red-400);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-red .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-red {
+  background-color: var(--color-red-50);
+  color: var(--color-red-700);
+}
+.badge-soft.badge-red .badge-dot {
+  background-color: var(--color-red-400);
+}
+
+/* ==============================================
+   ORANGE
+   ============================================== */
+.badge-fill.badge-orange {
+  background-color: var(--color-orange-400);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-orange .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-orange {
+  background-color: var(--color-orange-50);
+  color: var(--color-orange-700);
+}
+.badge-soft.badge-orange .badge-dot {
+  background-color: var(--color-orange-400);
+}
+
+/* ==============================================
+   YELLOW
+   ============================================== */
+.badge-fill.badge-yellow {
+  background-color: var(--color-yellow-500);
+  color: var(--color-text-black);
+}
+.badge-fill.badge-yellow .badge-dot {
+  background-color: var(--color-text-black);
+}
+
+.badge-soft.badge-yellow {
+  background-color: var(--color-yellow-50);
+  color: var(--color-yellow-700);
+}
+.badge-soft.badge-yellow .badge-dot {
+  background-color: var(--color-yellow-500);
+}
+
+/* ==============================================
+   VIOLET
+   ============================================== */
+.badge-fill.badge-violet {
+  background-color: var(--color-violet-400);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-violet .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-violet {
+  background-color: var(--color-violet-50);
+  color: var(--color-violet-700);
+}
+.badge-soft.badge-violet .badge-dot {
+  background-color: var(--color-violet-400);
+}
+
+/* ==============================================
+   PURPLE
+   ============================================== */
+.badge-fill.badge-purple {
+  background-color: var(--color-purple-500);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-purple .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-purple {
+  background-color: var(--color-purple-50);
+  color: var(--color-purple-700);
+}
+.badge-soft.badge-purple .badge-dot {
+  background-color: var(--color-purple-500);
+}
+
+/* ==============================================
+   PEACOCK
+   ============================================== */
+.badge-fill.badge-peacock {
+  background-color: var(--color-peacock-500);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-peacock .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-peacock {
+  background-color: var(--color-peacock-50);
+  color: var(--color-peacock-700);
+}
+.badge-soft.badge-peacock .badge-dot {
+  background-color: var(--color-peacock-500);
+}
+
+/* ==============================================
+   GRAY
+   ============================================== */
+.badge-fill.badge-gray {
+  background-color: var(--color-gray-500);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-gray .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-gray {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+.badge-soft.badge-gray .badge-dot {
+  background-color: var(--color-gray-500);
+}
+
+/* ==============================================
+   DARK
+   ============================================== */
+.badge-fill.badge-dark {
+  background-color: var(--color-gray-800);
+  color: var(--color-text-white);
+}
+.badge-fill.badge-dark .badge-dot {
+  background-color: var(--color-text-white);
+}
+
+.badge-soft.badge-dark {
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-800);
+}
+.badge-soft.badge-dark .badge-dot {
+  background-color: var(--color-gray-800);
+}
+
+/* ==============================================
+   LIGHT
+   ============================================== */
+.badge-fill.badge-light {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+.badge-fill.badge-light .badge-dot {
+  background-color: var(--color-gray-400);
+}
+
+.badge-soft.badge-light {
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-600);
+}
+.badge-soft.badge-light .badge-dot {
+  background-color: var(--color-gray-400);
+}
+/* ==============================================
+   Utilities
+   ============================================== */
+.badge-group {
+  display: inline-flex;
+  gap: var(--spacing-2);
+}
+/* ==============================================
+   Input Component - Design System
+   마이페이지 인풋 공통 컴포넌트
+   ============================================== */
+
+/* Base Wrapper */
+.field-wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Custom Input & Textarea */
+.input,
+.textarea {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4);
+  font-size: var(--font-size-base);
+  color: var(--color-text-neutral);
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-text-disabled);
+}
+
+/* Disabled State */
+.input:disabled,
+.textarea:disabled {
+  background-color: var(--color-bg-gray-light);
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+  border: none;
+}
+
+/* Icon Support (Input + Icon, Search, Dropdown) */
+.field-wrap i,
+.field-wrap svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-neutral);
+  pointer-events: none;
+}
+.field-wrap i.disabled {
+  color: var(--color-text-disabled);
+}
+
+.has-icon-left .input {
+  padding-left: 45px;
+}
+.has-icon-left i {
+  left: 16px;
+}
+
+.has-icon-right .input {
+  padding-right: 45px;
+}
+.has-icon-right i {
+  right: 16px;
+}
+
+/* Textarea Custom */
+.textarea-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.char-count {
+  align-self: flex-end;
+  font-size: 11px;
+  color: var(--color-text-disabled);
+  margin-top: 5px;
+  padding-right: 5px;
+}
+
+.label-inline {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Dropdown Container */
+.dropdown {
+  cursor: pointer;
+  outline: none;
+}
+
+/* 리스트 기본 상태: 숨김 및 부드러운 애니메이션 준비 */
+.dropdown-list {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+}
+
+/* 포커스 시 리스트 표시 (Pure CSS 동작) */
+.dropdown:focus-within .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* 리스트 아이템 스타일 */
+.dropdown-list li {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: var(--color-text-neutral);
+}
+
+.dropdown-list li:hover {
+  background-color: #f0faff;
+  color: var(--color-border-light-focus);
+}
+
+/* 아이콘 애니메이션 */
+.dropdown:focus-within i.bi-chevron-down {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* 비활성 상태 시 클릭 방지 */
+.dropdown.disabled {
+  pointer-events: none;
+}
+/* ==============================================
+   Tab Component - Design System
+   마이페이지 탭 공통 컴포넌트
+   ============================================== */
+.nav {
+  width: fit-content;
+  background: var(--color-bg-secondary);
+  padding: var(--spacing-2);
+  border-radius: var(--radius-xl);
+}
+.nav-link {
+  border: 0;
+  padding: var(--spacing-3) var(--spacing-6);
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-bold);
+  line-height: var(--lineheight-sm);
+  letter-spacing: var(--letterSpacing-xs);
+  color: var(--color-text-light-gray);
+  border-radius: var(--radius-xl);
+}
+.nav-link.active {
+  background-color: var(--color-colorchip-primary);
+  color: var(--color-text-white);
+}
+.nav-link.disabled {
+  color: var(--color-text-disabled);
+}
+
+/* ==============================================
+   Table Component - Design System
+   마이페이지 테이블 공통 컴포넌트
+   ============================================== */
+/* 1. Table Header */
+.table-list-header {
+  background-color: var(--color-cyan-50);
+  padding: 16px 0;
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--spacing-4);
+  font-size: var(--font-size-sm);
+  color: var(--color-cyan-700);
+}
+
+/* 2. List Item Container */
+.table-list-item {
+  background-color: #fff;
+  border: 1px solid var(--color-border-light); /* tokens.css variable needed */
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  /* Desktop: Row style spacing */
+}
+
+/* 3. Summary Row (The Toggle Trigger) */
+.list-summary {
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .list-summary > [class*="col"] {
+    min-height: 46px;
+  }
+}
+
+/* 3-1. Scrollable Table Wrapper */
+.table-list-scroll {
+  overflow-x: auto;
+}
+
+.list-cell-highlight {
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 8px 16px;
+}
+
+/* Opened State Styling (Optional: Highlight header when open) */
+.list-summary[aria-expanded="true"] {
+  background-color: #fff;
+  border-bottom: 1px solid transparent; /* Remove border to blend with black box if needed */
+}
+
+/* 4. Expanded Content Area */
+.details-inner {
+  color: #fff;
+  border-top: none;
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(135deg, #a256da 0%, #682996 100%);
+}
+
+/* Inner White Box */
+.detail-box {
+  background-color: #fff;
+  color: var(--color-gray-800);
+}
+
+/* Custom Checkbox Icon Style */
+.bi-check-square-fill {
+  color: var(--color-cyan-500); /* Primary Color */
+  margin-top: 2px; /* Visual alignment */
+}
+
+/* 5. Pagination Custom */
+.pagination-custom .page-item .page-link {
+  border: none;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-600);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg) !important; /* Rounded square */
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.pagination-custom .page-item:not(:first-child) .page-link {
+  margin-left: 0; /* Bootstrap override */
+}
+
+/* Active State */
+.pagination-custom .page-item.active .page-link {
+  background-color: var(--color-cyan-500); /* Primary Blue */
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Hover State */
+.pagination-custom .page-item:not(.active):not(.disabled) .page-link:hover {
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-800);
+}
+
+/* Disabled State */
+.pagination-custom .page-item.disabled .page-link {
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-300);
+  opacity: 1;
+}
+
+/* Tablet & Mobile: list-summary border */
+@media (max-width: 991px) {
+  .list-summary {
+    border: 1px solid var(--color-border-super-light);
+    border-radius: var(--radius-lg);
+    padding: 12px;
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+  .table-list-item {
+    font-size: var(--font-size-sm);
+  }
+
+  .details-inner {
+    padding: 16px !important;
+  }
+}
+
+/* ==============================================
+   Teacher Profile Component
+   6가지 아바타 변형 (Horizontal / Vertical)
+   ============================================== */
+
+.teacher-profile {
+  display: flex;
+  font-family: var(--font-family);
+  box-sizing: border-box;
+}
+
+/* Common Elements */
+.teacher-profile-avatar {
+  background: linear-gradient(
+    135deg,
+    #a29bfe 0%,
+    #6c5ce7 100%
+  ); /* Placeholder Gradient */
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  /* 이미지 태그 사용 시 */
+  overflow: hidden;
+}
+
+.teacher-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacher-profile-name {
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+}
+
+.teacher-profile-meta {
+  font-size: var(--body-body2-fontSize);
+  color: var(--color-text-light-gray);
+  line-height: 1.4;
+}
+
+.teacher-profile-meta .divider {
+  margin: 0 4px;
+  color: var(--color-gray-300);
+}
+
+.teacher-profile-book {
+  font-size: var(--body-body2-fontSize);
+  color: var(--color-text-gray);
+  line-height: 1.4;
+}
+
+.teacher-profile-time {
+  font-size: var(--body-body3-fontSize);
+  color: var(--color-text-light-gray);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ==============================================
+   Layout Variants
+   ============================================== */
+
+/* Horizontal Layout */
+.teacher-profile-horizontal {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Vertical Layout */
+.teacher-profile-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ==============================================
+   Size Variants
+   ============================================== */
+
+/* 1. Large (Avatar ~75px) */
+.teacher-profile-lg .teacher-profile-avatar {
+  width: 75px;
+  height: 75px;
+}
+.teacher-profile-horizontal.teacher-profile-lg {
+  gap: var(--spacing-4);
+}
+.teacher-profile-lg .teacher-profile-name {
+  font-size: var(--head-dk_h4-fontSize);
+  line-height: var(--lineheight-xs);
+}
+
+/* 2. Medium (Avatar ~50px) */
+.teacher-profile-md .teacher-profile-avatar {
+  width: 50px;
+  height: 50px;
+}
+.teacher-profile-horizontal.teacher-profile-md {
+  gap: var(--spacing-3);
+}
+.teacher-profile-md .teacher-profile-name {
+  font-size: var(--body-body1-fontSize);
+  line-height: var(--lineheight-sm);
+}
+
+/* 3. Small (Avatar ~32px) */
+.teacher-profile-sm .teacher-profile-avatar {
+  width: 32px;
+  height: 32px;
+}
+.teacher-profile-horizontal.teacher-profile-sm {
+  gap: var(--spacing-2);
+}
+.teacher-profile-sm .teacher-profile-name {
+  font-size: var(--body-body2-fontSize);
+  line-height: var(--lineheight-sm);
+}
+
+/* ==============================================
+   Vertical Specific Adjustments
+   ============================================== */
+.teacher-profile-vertical.teacher-profile-lg .teacher-profile-avatar {
+  width: 80px;
+  height: 80px;
+}
+
+/* Text Truncation for Vertical Cards */
+.teacher-profile-vertical .teacher-profile-book {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+}
+/* LNB 스타일링 보정 */
+.lnb {
+  max-width: 280px;
+  background-color: var(--color-color-gray-50);
+}
+
+.lnb .profile-section {
+  border: 1px solid var(--color-border-normal);
+  padding: var(--spacing-6) var(--spacing-5) var(--spacing-5);
+  border-radius: var(--radius-xl);
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  background-color: var(--color-bg-gray-light);
+}
+
+.profile-section .button {
+  background-color: var(--color-yellow-500);
+  color: var(--color-text-black);
+}
+
+.lnb .gallery-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-1);
+}
+
+.gallery-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.gallery-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-0-5) var(--spacing-2);
+  background-color: rgba(0, 0, 0, 0.34);
+  color: var(--color-text-white);
+  font-size: var(--font-size-xs);
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-nav {
+  border: 1px solid var(--color-border-normal);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.menu-nav .collapse {
+  border-top: 1px solid var(--color-border-normal);
+}
+
+.nav-section-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--spacing-4) var(--spacing-5);
+  border: none;
+  background: var(--color-bg-white);
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-neutral);
+  cursor: pointer;
+  gap: var(--spacing-3);
+}
+
+.nav-section-header .nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0 var(--spacing-4);
+  border-radius: var(--radius-lg);
+  font-size: var(--body-body1-fontSize);
+  flex-shrink: 0;
+  flex: 0;
+}
+
+.nav-section-header .nav-icon-cyan {
+  background-color: var(--color-cyan-50);
+}
+.nav-section-header .nav-icon-violet {
+  background-color: #faf2ff;
+}
+.nav-section-header .nav-icon-blue {
+  background-color: var(--color-blue-50);
+}
+.nav-section-header .nav-icon-orange {
+  background-color: var(--color-orange-50);
+}
+
+.nav-section-header span {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-section-header i {
+  transition: transform 0.2s;
+  color: var(--color-gray-400);
+}
+
+.nav-section-header:not(.collapsed) i {
+  transform: rotate(180deg);
+}
+
+.nav-menu {
+  list-style: none;
+  padding: var(--spacing-2) var(--spacing-3) var(--spacing-3);
+  margin: 0;
+}
+
+.nav-menu-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-2-5) var(--spacing-3) var(--spacing-2-5)
+    var(--spacing-4);
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-text-neutral);
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+}
+
+.nav-menu-item::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-gray-200);
+  flex-shrink: 0;
+}
+
+.nav-menu-item:hover {
+  background-color: var(--color-gray-50);
+}
+
+.nav-menu-item.active {
+  background-color: var(--color-cyan-50);
+  border-left-color: var(--color-cyan-500);
+  color: var(--color-cyan-500);
+  font-weight: var(--fontweight-bold);
+}
+
+.nav-menu-item.active::before {
+  background-color: var(--color-cyan-500);
+}
+
+.lnb-actions .button {
+  border-radius: var(--radius-lg);
+}
+
+/* ==============================================
+   Calendar Extensions
+   ============================================== */
+.monthly-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-4);
+}
+
+.monthly-header-nav .heading5 {
+  text-align: center;
+}
+
+.monthly-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--color-gray-100);
+  border: none;
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  color: var(--color-text-neutral);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.cal-day-header {
+  padding: var(--spacing-2) var(--spacing-1);
+  font-size: var(--body-body3-fontSize);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-text-light-gray);
+}
+
+.cal-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-3) 0 var(--spacing-5);
+  font-size: var(--body-body3-fontSize);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-text-black);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.cal-date--other {
+  color: var(--color-gray-200);
+}
+
+.cal-date--today {
+  background: var(--color-cyan-100);
+  font-weight: var(--fontweight-bold);
+}
+
+.cal-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: var(--radius-full);
+  position: absolute;
+  bottom: 8px;
+}
+
+.cal-dot-green { background-color: var(--color-colorchip-green); }
+.cal-dot-blue { background-color: var(--color-colorchip-blue); }
+.cal-dot-orange { background-color: var(--color-colorchip-orange); }
+.cal-dot-violet { background-color: var(--color-colorchip-violet); }
+
+/* Calendar Legend */
+.calendar-legend {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-3) 0 0;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.calendar-legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--body-body3-fontSize);
+  color: var(--color-text-neutral);
+}
+
+.calendar-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+}
+
+.calendar-legend-dot-lesson { background-color: var(--color-colorchip-green); }
+.calendar-legend-dot-attend { background-color: var(--color-colorchip-blue); }
+.calendar-legend-dot-absent { background-color: var(--color-colorchip-orange); }
+.calendar-legend-dot-makeup { background-color: var(--color-colorchip-violet); }
+
+@media (max-width: 1199px) {
+  .lnb {
+    width: 220px;
+  }
+}
+
+@media (min-width: 991px) {
+  .d-custom-desktop {
+    display: flex !important;
+  }
+  .d-custom-mobile {
+    display: none !important;
+  }
+
+  /* Desktop Grid Column Widths (Matches Header) */
+  .col-custom-1 {
+    width: 8.33%;
+    flex: 0 0 auto;
+  } /* col-1 */
+  .col-custom-2 {
+    width: 16.66%;
+    flex: 0 0 auto;
+  } /* col-2 */
+  .col-custom-3 {
+    width: 25%;
+    flex: 0 0 auto;
+  } /* col-3 */
+
+  .text-center-desktop {
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .d-custom-desktop {
+    display: none !important;
+  }
+  .d-custom-mobile {
+    display: block !important;
+  }
+
+  .button-sm {
+    padding-left: var(--spacing-3);
+    padding-right: var(--spacing-3);
+  }
+
+  /* Mobile Label (Key) */
+  .mobile-label {
+    display: inline-block;
+    width: 100px; /* Fixed width for alignment */
+    color: var(--color-cyan-700); /* Blue Label Color */
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 8px;
+  }
+
+  /* Mobile Value Text */
+  .list-summary .col-12 {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--color-gray-800);
+  }
+
+  /* Card Style adjustments for Mobile */
+  .table-list-item {
+    border-color: var(--color-border-light);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+/* ==============================================
+   Progress Bar Component
+   범용 프로그레스바 컴포넌트
+   ============================================== */
+.progress-bar-track {
+  height: 12px;
+  background: var(--color-gray-100);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+/* Track Color Variants */
+.progress-bar-track-primary {
+  background: var(--color-cyan-50);
+}
+
+/* Fill Color Variants */
+.progress-bar-fill-primary {
+  background: var(--color-cyan-500);
+}
+
+.progress-bar-fill-green {
+  background: var(--color-green-500);
+}
+
+.progress-bar-fill-orange {
+  background: var(--color-orange-400);
+}
+
+.progress-bar-fill-violet {
+  background: var(--color-violet-400);
+}
+
+/* Size Variants */
+.progress-bar-track-sm {
+  height: 8px;
+}
+
+.progress-bar-track-lg {
+  height: 16px;
+}
+
+/* ==============================================
+   Info Banner
+   ============================================== */
+.info-banner {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 250, 253, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.info-banner-img {
+  width: 130px;
+  height: auto;
+  flex-shrink: 0;
+}

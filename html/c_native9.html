@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>원서&영상수업 요청목록 - 아이딕 잉글리시</title>
+    <!-- Bootstrap 5.3.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="../css/reset.base.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/_variables.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <div class="d-flex container mypage">
+      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
+        <div class="profile-section p-4 text-center">
+          <div class="profile-img mx-auto mb-2">
+            <img src="avatar_main.png" alt="Profile" class="w-100" />
+          </div>
+          <h5 class="heading3 text-black">홍길동</h5>
+          <p class="body1 line-height-140 text-light-gray mb-4">
+            Hong gil dong
+          </p>
+          <button
+            class="button button-sm button-fill button-secondary rounded-pill"
+          >
+            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+          </button>
+
+          <div
+            class="gallery-grid mt-6 d-grid"
+            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
+          >
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+          </div>
+        </div>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navLesson"
+            >
+              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span>나의 수업 관리</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse show" id="navLesson">
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >아이딕 홈스쿨 강의실 입장</a
+                  >
+                </li>
+                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">VOCA 과제방</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="nav-menu-item">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item">특강권 사용&amp;관리</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item active"
+                    >원서&amp;영상수업 요청목록</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">월평가서 &amp; 출결정보</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >온라인 테스트 및 체험수업 결과</a
+                  >
+                </li>
+                <li><a href="#" class="nav-menu-item">신규선생님 평가</a></li>
+                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="lnb-actions d-flex flex-column gap-0-5">
+          <a class="button button-lg button-border button-primary button-block"
+            >수업불편 및 요청상담</a
+          >
+          <a class="button button-lg button-border button-primary button-block"
+            >선생님, 부탁 드려요</a
+          >
+          <a class="button button-lg button-border button-primary button-block"
+            >찐친 초대현황</a
+          >
+        </div>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navInfo"
+            >
+              <span class="nav-icon nav-icon-violet">👤</span>
+              <span>나의 정보</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse show" id="navInfo">
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">교재결제내역 / 장바구니</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                </li>
+                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
+                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navIdic"
+            >
+              <span class="nav-icon nav-icon-blue">📖</span>
+              <span>아이딕 잉글리시</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse show" id="navIdic">
+              <ul class="nav-menu">
+                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navSupport"
+            >
+              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span>학습지원서비스</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse show" id="navSupport">
+              <ul class="nav-menu">
+                <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
+                <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >수업연기 및 보강정책(환불)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+        <div class="content-container">
+          <h2 class="page-title">원서&amp;영상수업 요청목록</h2>
+
+          <!-- ============================
+             안내 배너
+             ============================ -->
+          <div class="info-banner radius-2xl elevator-large d-flex flex-column flex-lg-row align-items-center gap-5 p-5">
+            <img
+              class="info-banner-img"
+              src="../images/bg-book.svg"
+              alt="Book Spraking 일러스트"
+            />
+            <div class="d-flex flex-column gap-2">
+              <p class="heading3 text-black text-center text-lg-start">
+                3단계 시스템으로 구성된<br />영어 원서 읽기 수업 (Book Spraking)
+                입니다.
+              </p>
+              <p class="body3 text-gray text-center text-lg-start">
+                영어 원서를 읽고, 북퀴즈 풀고, 읽은 원서를 주제로 원어민
+                선생님과 1:1로 말하는 연습을 통해 독서와 말하기의 즐거움을
+                경험해 보세요
+              </p>
+            </div>
+          </div>
+
+          <!-- ============================
+             테이블 카드
+             ============================ -->
+          <div class="table-list-container book-req-table radius-xl elevator-large p-4 p-lg-5">
+            <!-- 테이블 헤더 (데스크탑만) -->
+            <div class="table-list-header d-none d-lg-flex row g-0 align-items-center px-4">
+              <div class="col text-center">원서 정보</div>
+              <div class="col-lg-2 text-center">강사</div>
+              <div class="col-lg-2 text-center">수업요청일자</div>
+              <div class="col-lg-2 text-center">신청일</div>
+              <div class="col-lg-1 text-center">관리</div>
+            </div>
+
+            <!-- 테이블 바디 -->
+            <div class="table-list-body d-flex flex-column gap-1-5">
+              <!-- Row 1 -->
+              <div class="list-summary row g-0 align-items-center">
+                <div class="col-12 col-lg d-flex align-items-center gap-2">
+                  <img
+                    class="book-req-cover"
+                    src="../images/dummy1.png"
+                    alt="A Great Expedition"
+                  />
+                  <div class="d-flex flex-column gap-1">
+                    <span class="badge badge-sm badge-fill badge-yellow"
+                      >원서수업</span
+                    >
+                    <span class="body2 fw-medium text-neutral"
+                      >A Great Expedition</span
+                    >
+                  </div>
+                  <span class="badge badge-sm badge-soft badge-gray"
+                    >선생님 요청 확인 전 입니다.</span
+                  >
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1 mt-2 mt-lg-0"
+                >
+                  <span
+                    class="d-lg-none body3 fw-bold"
+                    style="color: var(--color-cyan-700)"
+                    >강사</span
+                  >
+                  <div class="book-req-teacher-avatar"></div>
+                  <span class="body2 fw-bold text-black">Teachername</span>
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 mt-2 mt-lg-0"
+                >
+                  <span
+                    class="d-lg-none body3 fw-bold"
+                    style="color: var(--color-cyan-700)"
+                    >수업요청일자</span
+                  >
+                  <span class="body2 text-neutral">25.10.10 (월) 14:40</span>
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 mt-2 mt-lg-0"
+                >
+                  <span
+                    class="d-lg-none body3 fw-bold"
+                    style="color: var(--color-cyan-700)"
+                    >신청일</span
+                  >
+                  <span class="body2 text-neutral">25.12.03 (월) 14:40</span>
+                </div>
+                <div
+                  class="col-12 col-lg-1 d-flex justify-content-lg-center mt-2 mt-lg-0"
+                >
+                  <button
+                    class="button button-sm button-fill button-neutral"
+                  >
+                    삭제
+                  </button>
+                </div>
+              </div>
+
+              <!-- Row 2 -->
+              <div class="list-summary list-cell-highlight row g-0 align-items-center">
+                <div class="col-12 col-lg d-flex align-items-center gap-2">
+                  <img
+                    class="book-req-cover"
+                    src="../images/dummy1.png"
+                    alt="A Great Expedition"
+                  />
+                  <div class="d-flex flex-column gap-1">
+                    <span class="badge badge-sm badge-fill badge-orange"
+                      >E-Book</span
+                    >
+                    <span class="body2 fw-medium text-neutral"
+                      >A Great Expedition</span
+                    >
+                  </div>
+                  <span class="badge badge-sm badge-soft badge-gray"
+                    >선생님 요청 확인 전 입니다.</span
+                  >
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1 mt-2 mt-lg-0"
+                >
+                  <span
+                    class="d-lg-none body3 fw-bold"
+                    style="color: var(--color-cyan-700)"
+                    >강사</span
+                  >
+                  <div class="book-req-teacher-avatar"></div>
+                  <span class="body2 fw-bold text-black">Teachername</span>
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 mt-2 mt-lg-0"
+                >
+                  <span
+                    class="d-lg-none body3 fw-bold"
+                    style="color: var(--color-cyan-700)"
+                    >수업요청일자</span
+                  >
+                  <span class="body2 text-neutral">25.10.10 (월) 14:40</span>
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 mt-2 mt-lg-0"
+                >
+                  <span
+                    class="d-lg-none body3 fw-bold"
+                    style="color: var(--color-cyan-700)"
+                    >신청일</span
+                  >
+                  <span class="body2 text-neutral">25.12.03 (월) 14:40</span>
+                </div>
+                <div
+                  class="col-12 col-lg-1 d-flex justify-content-lg-center mt-2 mt-lg-0"
+                >
+                  <button
+                    class="button button-sm button-fill button-neutral"
+                  >
+                    삭제
+                  </button>
+                </div>
+              </div>
+
+              <!-- Row 3 -->
+              <div class="list-summary row g-0 align-items-center">
+                <div class="col-12 col-lg d-flex align-items-center gap-2">
+                  <img
+                    class="book-req-cover"
+                    src="../images/dummy1.png"
+                    alt="A Great Expedition"
+                  />
+                  <div class="d-flex flex-column gap-1">
+                    <span class="badge badge-sm badge-fill badge-blue"
+                      >토픽 영상 디베이트</span
+                    >
+                    <span class="body2 fw-medium text-neutral"
+                      >A Great Expedition</span
+                    >
+                  </div>
+                  <span class="badge badge-sm badge-soft badge-primary"
+                    >선생님 요청 확인 되었습니다.</span
+                  >
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1 mt-2 mt-lg-0"
+                >
+                  <span
+                    class="d-lg-none body3 fw-bold"
+                    style="color: var(--color-cyan-700)"
+                    >강사</span
+                  >
+                  <div class="book-req-teacher-avatar"></div>
+                  <span class="body2 fw-bold text-black">Teachername</span>
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 mt-2 mt-lg-0"
+                >
+                  <span
+                    class="d-lg-none body3 fw-bold"
+                    style="color: var(--color-cyan-700)"
+                    >수업요청일자</span
+                  >
+                  <span class="body2 text-neutral">25.10.10 (월) 14:40</span>
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 mt-2 mt-lg-0"
+                >
+                  <span
+                    class="d-lg-none body3 fw-bold"
+                    style="color: var(--color-cyan-700)"
+                    >신청일</span
+                  >
+                  <span class="body2 text-neutral">25.12.03 (월) 14:40</span>
+                </div>
+                <div
+                  class="col-12 col-lg-1 d-flex justify-content-lg-center mt-2 mt-lg-0"
+                >
+                  <button
+                    class="button button-sm button-fill button-neutral"
+                  >
+                    삭제
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============================
+               페이지네이션
+               ============================ -->
+            <div class="d-flex justify-content-end mt-5">
+              <div
+                class="d-none d-lg-flex align-items-center gap-3 text-light-gray small me-auto"
+              >
+                Showing <strong class="text-black">1</strong> Page of
+                <strong class="text-black">2</strong> entries
+              </div>
+              <nav aria-label="Page navigation">
+                <ul class="pagination pagination-custom gap-2 m-0">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#"
+                      ><i class="bi bi-chevron-double-left"></i
+                    ></a>
+                  </li>
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#"
+                      ><i class="bi bi-chevron-left"></i
+                    ></a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"
+                      ><i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"
+                      ><i class="bi bi-chevron-double-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/lnb.js"></script>
+  </body>
+</html>

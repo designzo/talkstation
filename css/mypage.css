@@ -1,0 +1,791 @@
+/* ==============================================
+   Mypage - fig.html 전용 추가 스타일
+   기존 tokens.css, styles.css, components.css 기반
+   ============================================== */
+
+/* ==============================================
+   LNB Profile Section
+   ============================================== */
+.lnb-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-6) var(--spacing-5);
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-0-5);
+}
+
+.profile-name {
+  font-size: var(--head-dk_h3-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+}
+
+.profile-email {
+  font-size: var(--body-body1-fontSize);
+  color: var(--color-text-light-gray);
+  letter-spacing: var(--letterSpacing-xs);
+}
+
+.profile-edit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1);
+  width: 100%;
+  padding: var(--spacing-1-5) var(--spacing-4);
+  background-color: var(--color-yellow-500);
+  border: none;
+  border-radius: 9999px;
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+  cursor: pointer;
+}
+
+/* ==============================================
+   LNB Student Grid (Diary)
+   ============================================== */
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-1);
+  padding: 0;
+}
+
+.student-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.student-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-0-5) var(--spacing-2);
+  background-color: rgba(0, 0, 0, 0.34);
+  color: var(--color-text-white);
+  font-size: var(--font-size-xs);
+  text-align: left;
+}
+
+/* ==============================================
+   LNB Navigation
+   ============================================== */
+.lnb-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-section {
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.nav-section__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--spacing-4) var(--spacing-5);
+  border: none;
+  background: var(--color-bg-white);
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-neutral);
+  cursor: pointer;
+  gap: var(--spacing-3);
+}
+
+.nav-section__header .nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-lg);
+  font-size: var(--body-body1-fontSize);
+  flex-shrink: 0;
+}
+
+.nav-section__header .nav-icon--cyan { background-color: var(--color-cyan-50); }
+.nav-section__header .nav-icon--violet { background-color: #faf2ff; }
+.nav-section__header .nav-icon--blue { background-color: var(--color-blue-50); }
+.nav-section__header .nav-icon--orange { background-color: var(--color-orange-50); }
+
+.nav-section__header span {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-section__header i {
+  transition: transform 0.2s;
+  color: var(--color-gray-400);
+}
+
+.nav-section__header:not(.collapsed) i {
+  transform: rotate(180deg);
+}
+
+.nav-menu {
+  list-style: none;
+  padding: var(--spacing-2) var(--spacing-3) var(--spacing-3);
+  margin: 0;
+}
+
+.nav-menu__item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-2-5) var(--spacing-3) var(--spacing-2-5) var(--spacing-4);
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-text-neutral);
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+}
+
+.nav-menu__item::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-gray-200);
+  flex-shrink: 0;
+}
+
+.nav-menu__item:hover {
+  background-color: var(--color-gray-50);
+}
+
+.nav-menu__item.active {
+  background-color: var(--color-cyan-50);
+  border-left-color: var(--color-cyan-500);
+  color: var(--color-cyan-500);
+  font-weight: var(--fontweight-bold);
+}
+
+.nav-menu__item.active::before {
+  background-color: var(--color-cyan-500);
+}
+
+/* ==============================================
+   LNB Footer Actions
+   ============================================== */
+.lnb-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-0-5);
+  padding: var(--spacing-0);
+}
+
+/* ==============================================
+   Main Content Area
+   ============================================== */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+/* ==============================================
+   Lesson Card Extensions
+   ============================================== */
+.lesson-card {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: var(--color-bg-white);
+  height: 100%;
+}
+
+.lesson-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-4) var(--spacing-5);
+  color: var(--color-text-white);
+}
+
+.lesson-card__title {
+  font-size: var(--head-dk_h4-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+}
+
+.lesson-card__body {
+  padding: var(--spacing-4) var(--spacing-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.lesson-card__teacher {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-xl);
+}
+
+.lesson-card__teacher-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--spacing-6);
+  background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+  flex-shrink: 0;
+}
+
+.lesson-card__teacher-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.lesson-card__teacher-name {
+  font-size: var(--body-body1-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+}
+
+.lesson-card__teacher-time {
+  font-size: var(--body-body3-fontSize);
+  color: var(--color-text-light-gray);
+}
+
+.lesson-card__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1-5);
+}
+
+.lesson-card__action-row {
+  display: flex;
+  gap: var(--spacing-1-5);
+}
+
+.lesson-card__action-row .button {
+  flex: 1;
+}
+
+/* ==============================================
+   Level Display (아이딕 홈스쿨)
+   ============================================== */
+.level-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-6);
+  padding: var(--spacing-4) var(--spacing-4);
+}
+
+.level-label {
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-gray-500);
+}
+
+.level-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-cyan-50);
+}
+
+.level-value {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--color-cyan-600);
+  line-height: 1.1;
+}
+
+.level-unit {
+  font-size: var(--body-body3-fontSize);
+  color: var(--color-gray-500);
+}
+
+/* ==============================================
+   Feedback Section
+   ============================================== */
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.feedback-item {
+  padding: var(--spacing-3);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  color: var(--color-text-neutral);
+  line-height: 1.43;
+}
+
+.feedback-item::after {
+  content: none;
+}
+
+/* ==============================================
+   VOCA Card
+   ============================================== */
+.voca-card__cover {
+  width: 80px;
+  border: 1px solid var(--color-gray-100);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.voca-card__cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.voca-card__tags {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+}
+
+.voca-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-3);
+}
+
+.voca-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-3-5) var(--spacing-2-5);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-lg);
+}
+
+.voca-stat__label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-light-gray);
+}
+
+.voca-stat__value {
+  font-size: var(--head-dk_h3-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-neutral);
+}
+
+.voca-stat__total {
+  font-size: var(--body-body3-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-neutral);
+}
+
+/* ==============================================
+   Heart Card
+   ============================================== */
+.heart-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-6);
+  background: var(--color-red-50);
+  border-radius: var(--radius-xl);
+}
+
+.heart-count {
+  font-size: var(--head-dk_h2-fontSize);
+  font-weight: 800;
+  color: var(--color-red-400);
+  font-family: "Outfit", sans-serif;
+}
+
+.heart-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+.heart-teacher {
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+}
+
+/* ==============================================
+   Course Info Card
+   ============================================== */
+.course-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.course-info-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.course-info-label {
+  min-width: 60px;
+  font-size: var(--font-size-base);
+  color: var(--color-text-light-gray);
+  letter-spacing: var(--letterSpacing-xs);
+}
+
+.course-info-value {
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-text-neutral);
+  letter-spacing: var(--letterSpacing-xs);
+}
+
+/* ==============================================
+   Calendar Extensions
+   ============================================== */
+.calendar-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-4);
+}
+
+.calendar-header-nav .heading5 {
+  min-width: 120px;
+  text-align: center;
+}
+
+.calendar-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--color-gray-100);
+  border: none;
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  color: var(--color-text-neutral);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.cal-day-header {
+  padding: var(--spacing-2) var(--spacing-1);
+  font-size: var(--body-body3-fontSize);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-text-light-gray);
+}
+
+.cal-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-3) 0 var(--spacing-5);
+  font-size: var(--body-body3-fontSize);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-text-black);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.cal-date--other {
+  color: var(--color-gray-200);
+}
+
+.cal-date--today {
+  background: var(--color-cyan-100);
+  font-weight: var(--fontweight-bold);
+}
+
+.cal-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: var(--radius-full);
+  position: absolute;
+  bottom: 8px;
+}
+
+.cal-dot--green { background-color: var(--color-green-600); }
+.cal-dot--blue { background-color: var(--color-blue-500); }
+.cal-dot--orange { background-color: var(--color-orange-400); }
+
+/* Calendar Legend */
+.calendar-legend {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-3) var(--spacing-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.calendar-legend__item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--body-body3-fontSize);
+  color: var(--color-text-neutral);
+}
+
+.calendar-legend__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+}
+
+.calendar-legend__dot--lesson { background-color: var(--color-green-600); }
+.calendar-legend__dot--attend { background-color: var(--color-blue-500); }
+.calendar-legend__dot--absent { background-color: var(--color-orange-400); }
+.calendar-legend__dot--makeup { background-color: var(--color-green-600); }
+
+/* ==============================================
+   Textbook List
+   ============================================== */
+.textbook-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.textbook-item {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-4) var(--spacing-5);
+  gap: var(--spacing-4);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.textbook-item:last-child {
+  border-bottom: none;
+}
+
+.textbook-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  background: var(--color-cyan-50);
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+  flex-shrink: 0;
+}
+
+.textbook-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-0-5);
+}
+
+.textbook-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-gray-800);
+}
+
+.textbook-meta {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+/* ==============================================
+   Event Banner Section
+   ============================================== */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.event-banner {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.event-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==============================================
+   Info Card Extensions
+   ============================================== */
+.info-card {
+  background: var(--color-bg-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  height: 100%;
+}
+
+.info-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-4) var(--spacing-5);
+  background: var(--color-cyan-100);
+}
+
+.info-card__title {
+  font-size: var(--head-dk_h4-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+  margin: 0;
+}
+
+.info-card__body {
+  padding: var(--spacing-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+/* ==============================================
+   LNB Container Card
+   ============================================== */
+.lnb-card {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+/* ==============================================
+   Main Layout
+   ============================================== */
+.main-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-8) var(--spacing-5);
+  gap: var(--spacing-5);
+}
+
+.lnb {
+  flex-shrink: 0;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ==============================================
+   Student Grid Wrapper
+   ============================================== */
+.student-grid-wrap {
+  padding: 0 var(--spacing-5) var(--spacing-5);
+}
+
+/* ==============================================
+   VOCA Icon Box
+   ============================================== */
+.voca-icon-box {
+  width: 48px;
+  height: 48px;
+  background: var(--color-cyan-50);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ==============================================
+   Heart Button Pill
+   ============================================== */
+.button-pill {
+  border-radius: 100px;
+  border-width: 2px;
+}
+
+/* ==============================================
+   Course Action Row
+   ============================================== */
+.course-actions .button {
+  flex: 1;
+}
+
+/* ==============================================
+   Info Card Variants
+   ============================================== */
+.info-card__body--bordered {
+  border-top: 1px solid var(--color-gray-100);
+}
+
+.info-card__header--vertical {
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--spacing-4);
+}
+
+.course-teacher-wrap {
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+/* ==============================================
+   Responsive
+   ============================================== */
+@media (max-width: 1199px) {
+  .lnb {
+    width: 220px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-layout {
+    flex-direction: column;
+    padding: var(--spacing-4) var(--spacing-4);
+  }
+
+  .lnb {
+    width: 100%;
+    max-width: 100%;
+  }
+}

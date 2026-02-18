@@ -1,0 +1,271 @@
+/* Design Tokens - CSS Custom Properties */
+
+:root {
+
+  /* Colors */
+ /* colors */
+  --color-bg-white: var(--color-gray-0);
+  --color-bg-priamry-light: var(--color-cyan-50);
+  --color-bg-blue-light: var(--color-blue-50);
+  --color-bg-gray-light: var(--color-gray-100);
+  --color-bg-red-light: var(--color-red-50);
+  --color-bg-secondary: #f5fafd;
+  --color-text-black: var(--color-gray-800);
+  --color-text-white: var(--color-gray-0);
+  --color-text-gray: var(--color-gray-600);
+  --color-text-light-gray: var(--color-gray-500);
+  --color-text-disabled: var(--color-gray-300);
+  --color-text-success: var(--color-green-600);
+  --color-text-validation: var(--color-yellow-700);
+  --color-text-error: var(--color-red-400);
+  --color-text-neutral: var(--color-gray-700);
+  --color-border-normal: var(--color-gray-300);
+  --color-border-light: var(--color-gray-200);
+  --color-border-super-light: var(--color-gray-100);
+  --color-colorchip-red: var(--color-red-400);
+  --color-colorchip-primary: var(--color-cyan-500);
+  --color-colorchip-green: var(--color-green-600);
+  --color-colorchip-blue: var(--color-blue-500);
+  --color-colorchip-yellow: var(--color-yellow-700);
+  --color-colorchip-orange: var(--color-orange-400);
+  --color-colorchip-violet: var(--color-violet-400);
+  --color-colorchip-peacock: var(--color-peacock-500);
+  --color-colorchip-purple: var(--color-purple-500);
+
+  /* typography */
+  --font-family: "pretendard", -apple-system, blink-mac-system-font, "segoe ui", sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 32px;
+
+  /* spacing */
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-1-5: 6px;
+  --spacing-0-5: 2px;
+  --spacing-2-5: 10px;
+  --spacing-3-5: 14px;
+
+  /* border radius */
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 999px;
+
+  /* shadows (figma elevator/large) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  /* figma color tokens */
+  --color-red-50: #fff5f5;
+  --color-red-100: #ffe8e8;
+  --color-red-200: #ffcaca;
+  --color-red-300: #ff9b9b;
+  --color-red-400: #ff6b6b;
+  --color-red-500: #e54343;
+  --color-red-600: #c93636;
+  --color-red-700: #b02e2e;
+  --color-red-800: #8c2424;
+  --color-red-900: #661a1a;
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #24a13e;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-800: #166534;
+  --color-green-900: #14532d;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #4a90d9;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
+  --color-yellow-50: #fffbeb;
+  --color-yellow-100: #fef3c7;
+  --color-yellow-500: #ffd93d;
+  --color-yellow-600: #f59e0b;
+  --color-orange-500: #ff8c42;
+  --color-gray-0: #ffffff;
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e5e5e5;
+  --color-gray-300: #d1d1d1;
+  --color-gray-400: #a3a3a3;
+  --color-gray-500: #8a8a8a;
+  --color-gray-600: #525252;
+  --color-gray-700: #4a4a4a;
+  --color-gray-800: #262626;
+  --color-gray-900: #1a1a1a;
+  --color-red-50: #fff5f5;
+  --color-red-100: #ffe8e8;
+  --color-red-200: #ffcaca;
+  --color-red-300: #ff9b9b;
+  --color-red-400: #ff5c5c;
+  --color-red-500: #de3f3f;
+  --color-red-600: #c93636;
+  --color-red-700: #b02e2e;
+  --color-red-800: #8c2424;
+  --color-red-900: #661a1a;
+  --color-green-50: #e5f9db;
+  --color-green-100: #d0f5bd;
+  --color-green-200: #b6f099;
+  --color-green-300: #9ae672;
+  --color-green-400: #7be85c;
+  --color-green-500: #58cc02;
+  --color-green-600: #4fc213;
+  --color-green-700: #349900;
+  --color-green-800: #267000;
+  --color-green-900: #184700;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #4a7ed9;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
+  --color-yellow-50: #fffbeb;
+  --color-yellow-100: #fef3c7;
+  --color-yellow-200: #ffea94;
+  --color-yellow-300: #ffe169;
+  --color-yellow-400: #ffd960;
+  --color-yellow-500: #ffd93d;
+  --color-yellow-600: #f5be0b;
+  --color-yellow-700: #f59e0b;
+  --color-yellow-800: #cc8000;
+  --color-yellow-900: #7b4d00;
+  --color-gray-0: #ffffff;
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e5e5e5;
+  --color-gray-300: #dddddd;
+  --color-gray-400: #b2b2b2;
+  --color-gray-500: #999999;
+  --color-gray-600: #666666;
+  --color-gray-700: #444444;
+  --color-gray-800: #262626;
+  --color-gray-900: #1a1a1a;
+  --color-violet-50: #faf2ff;
+  --color-violet-100: #ecd2ff;
+  --color-violet-200: #dfb3ff;
+  --color-violet-300: #d193ff;
+  --color-violet-400: #c273fc;
+  --color-violet-500: #a256da;
+  --color-violet-600: #843eb8;
+  --color-violet-700: #682996;
+  --color-violet-800: #4d1974;
+  --color-violet-900: #350c52;
+  --color-cyan-50: #e2f2fa;
+  --color-cyan-100: #b9eaff;
+  --color-cyan-200: #8cddff;
+  --color-cyan-300: #93c5fd;
+  --color-cyan-400: #60a5fa;
+  --color-cyan-500: #05aaf0;
+  --color-cyan-600: #008cc7;
+  --color-cyan-700: #006f9e;
+  --color-cyan-800: #005376;
+  --color-cyan-900: #00364d;
+  --color-orange-50: #fef2eb;
+  --color-orange-100: #ffd5b8;
+  --color-orange-200: #ffb788;
+  --color-orange-300: #ff9a57;
+  --color-orange-400: #ff7d26;
+  --color-orange-500: #db5f17;
+  --color-orange-600: #bb4907;
+  --color-orange-700: #993d00;
+  --color-orange-800: #773000;
+  --color-orange-900: #552200;
+  --color-peacock-50: #e3f7f6;
+  --color-peacock-100: #d7f4f2;
+  --color-peacock-200: #c3eeeb;
+  --color-peacock-300: #9ce3de;
+  --color-peacock-400: #74d8d1;
+  --color-peacock-500: #4ecdc4;
+  --color-peacock-600: #37c3b9;
+  --color-peacock-700: #2ea39b;
+  --color-peacock-800: #247f79;
+  --color-peacock-900: #1c635e;
+  --color-purple-50: #ebe6fa;
+  --color-purple-100: #dad1f5;
+  --color-purple-200: #b8a7ec;
+  --color-purple-300: #a792e7;
+  --color-purple-400: #8d71e0;
+  --color-purple-500: #7756da;
+  --color-purple-600: #643fd5;
+  --color-purple-700: #4b27b4;
+  --color-purple-800: #3e2197;
+  --color-purple-900: #2d186d;
+
+  /* Typography */
+  /* FontSize */
+  --head-dk_h1-fontSize: 36px;
+  --head-mo_h1-fontSize: 28px;
+  --head-dk_h2-fontSize: 24px;
+  --head-mo_h2-fontSize: 20px;
+  --head-dk_h3-fontSize: 20px;
+  --head-mo_h3-fontSize: 18px;
+  --head-dk_h4-fontSize: 18px;
+  --head-mo_h4-fontSize: 18px;
+  --head-dk_h5-fontSize: 16px;
+  --head-mo_h5-fontSize: 16px;
+  --body-body1-fontSize: 16px;
+  --body-body2-fontSize: 14px;
+  --body-body3-fontSize: 12px;
+  --body-body4-fontSize: 11px;
+  --fields-placeholder-fontSize: 14px;
+  --fields-title-fontSize: 14px;
+  --fields-description-fontSize: 12px;
+
+  /* FontWeight */
+  --fontweight-regular: 400;
+  --fontweight-medium: 500;
+  --fontweight-semibold: 600;
+  --fontweight-bold: 700;
+
+  /* LineHeight */
+  --lineheight-xs: 1.3;
+  --lineheight-sm: 1.4;
+  --lineheight-base: 1.5;
+  --lineheight-md: 1.6;
+
+  /* LetterSpacing */
+  --letterSpacing-xs: -0.28px;
+  --letterSpacing-sm: -0.24px;
+  --letterSpacing-base: 0em;
+
+  /* Shadows */
+  --effect-mobile-item: 0px 2px 10px 0px #0000000f;
+  --effect-elevator-short: 0px 4px 12px 0px #0000001a;
+  --effect-elevator-large: 0px 4px 20px 0px #0000000a;
+}
+

@@ -1,0 +1,1676 @@
+/* ==============================================
+   custom css for 마이페이지 - 원어민 강사 강의실 입장
+   bootstrap 5.3.3 기반
+   
+   breakpoints:
+   - mobile: ≤ 767px
+   - tablet: 768px ~ 1199px  
+   - pc: ≥ 1200px
+   ============================================== */
+
+/* ==============================================
+   css variables (design tokens from figma)
+   ============================================== */
+
+/* ==============================================
+   base styles
+   ============================================== */
+html,
+body {
+  max-width: 100%;
+}
+
+body {
+  position: relative;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--font-family);
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  min-width: 0;
+}
+
+.mypage > main {
+  min-width: 0;
+}
+.page-title {
+  line-height: var(--lineheight-base);
+  color: var(--color-text-neutral);
+  font-weight: var(--fontweight-bold);
+}
+.heading1 {
+  font-size: var(--head-dk_h1-fontSize);
+  line-height: var(--lineheight-sm);
+  font-weight: var(--fontweight-bold);
+}
+.heading2 {
+  font-size: var(--head-dk_h2-fontSize);
+  line-height: var(--lineheight-sm);
+  font-weight: var(--fontweight-bold);
+}
+.heading3 {
+  font-size: var(--head-dk_h3-fontSize);
+  line-height: var(--lineheight-xs);
+  font-weight: var(--fontweight-bold);
+}
+.heading4 {
+  font-size: var(--head-dk_h4-fontSize);
+  line-height: var(--lineheight-xs);
+  font-weight: var(--fontweight-bold);
+}
+.heading5 {
+  font-size: var(--head-dk_h5-fontSize);
+  line-height: var(--lineheight-xs);
+  font-weight: var(--fontweight-bold);
+}
+.body1 {
+  font-size: var(--body-body1-fontSize);
+  line-height: var(--lineheight-md);
+}
+.body1.line-height-140 {
+  line-height: var(--lineheight-base);
+}
+.body2 {
+  font-size: var(--body-body2-fontSize);
+  line-height: var(--lineheight-md);
+}
+.body2.line-height-140 {
+  line-height: var(--lineheight-base);
+}
+.body3 {
+  font-size: var(--body-body3-fontSize);
+  line-height: var(--lineheight-md);
+}
+.body3.line-height-140 {
+  line-height: var(--lineheight-base);
+}
+.body4 {
+  font-size: var(--body-body4-fontSize);
+  line-height: var(--lineheight-md);
+}
+.body4.line-height-140 {
+  line-height: var(--lineheight-base);
+}
+
+@media (min-width: 992px) {
+  .lesson-card-body-scroll {
+    max-height: 286px;
+    overflow-y: auto;
+  }
+}
+
+.lesson-card-body .button-sm {
+  padding: var(--spacing-2) var(--spacing-2-5);
+}
+
+/* heart card */
+.heart-card {
+  min-height: 215px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-red-50);
+  border: 1px solid #ffdde1;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.heart-count {
+  color: var(--color-colorchip-red);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.heart-card .button {
+  height: auto;
+  padding: var(--spacing-3) var(--spacing-5) var(--spacing-3-5);
+  flex-direction: column;
+  border-radius: 100px;
+  background-color: var(--color-bg-white);
+}
+
+/* curriculum list */
+.curr-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+}
+
+.btn-review {
+  background: #4db6ac;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
+/* 캘린더 및 부가 요소 */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.level-value {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--color-colors-purple-500);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-4) var(--spacing-5);
+  background: var(--color-cyan-100);
+}
+
+.lesson-week-circle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: var(--radius-full);
+}
+
+/* ==============================================
+   Feedback Section
+   ============================================== */
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  max-height: 360px;
+  overflow: auto;
+}
+
+.feedback-item {
+  padding: var(--spacing-3);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  color: var(--color-text-neutral);
+  line-height: 1.43;
+}
+
+.feedback-item::after {
+  content: none;
+}
+/* ==============================================
+   VOCA Card
+   ============================================== */
+.info-card {
+  height: 100%;
+}
+
+/* 독립 섹션 카드는 콘텐츠에 맞춤 */
+.content-container > .info-card {
+  height: auto;
+}
+
+.course-info-card {
+  max-height: 540px;
+}
+
+.course-info-scroll {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.course-info-scroll > * {
+  flex-shrink: 0;
+}
+
+.voca-icon-box {
+  width: 48px;
+  height: 48px;
+  background: var(--color-cyan-50);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.voca-icon-box img {
+  width: 36px;
+  height: 36px;
+}
+
+.voca-card-cover {
+  width: 54px;
+  border: 1px solid var(--color-gray-100);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.voca-card-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.voca-card-tags {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+}
+
+.voca-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-3);
+}
+
+.voca-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-3-5) var(--spacing-2-5);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-xl);
+}
+
+.voca-stat-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-light-gray);
+}
+
+.voca-stat-value {
+  font-size: var(--head-dk_h3-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-neutral);
+}
+
+.voca-stat-total {
+  font-size: var(--body-body3-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-neutral);
+}
+
+.course-actions .button {
+  flex: 1 1 auto;
+}
+/* ==============================================
+   Textbook List
+   ============================================== */
+.textbook-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.textbook-item {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-3) var(--spacing-4);
+  gap: var(--spacing-4);
+  background-color: var(--color-bg-gray-light);
+  border-radius: var(--radius-lg);
+}
+.textbook-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-white);
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+  flex-shrink: 0;
+}
+
+.textbook-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-0-5);
+}
+
+.textbook-title {
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+}
+
+.textbook-meta {
+  font-size: var(--body-body4-fontSize);
+  color: var(--color-text-light-gray);
+}
+
+/* ==============================================
+   Info Card
+   ============================================== */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.info-label {
+  min-width: 60px;
+  font-size: var(--body-body2-fontSize);
+  color: var(--color-text-light-gray);
+  letter-spacing: var(--letterSpacing-xs);
+}
+
+.info-value {
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-text-neutral);
+  letter-spacing: var(--letterSpacing-xs);
+}
+
+/* ==============================================
+   Event Banner Section
+   ============================================== */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.event-banner {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.event-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Event Carousel - 2.5개 노출 횡스크롤 */
+.event-carousel-wrap {
+  position: relative;
+}
+
+.event-carousel {
+  display: flex;
+  gap: var(--spacing-3);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.event-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.event-carousel-item {
+  flex: 0 0 calc((100% - var(--spacing-3) * 2) / 2.5);
+  scroll-snap-align: start;
+}
+
+/* Event Carousel Navigation */
+.event-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-gray-200);
+  background: var(--color-bg-white);
+  color: var(--color-text-neutral);
+  cursor: pointer;
+  transition: background 0.2s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: var(--shadow-md);
+}
+
+.event-nav-btn--prev {
+  left: -18px;
+}
+
+.event-nav-btn--next {
+  right: -18px;
+}
+
+.event-nav-btn:hover {
+  background: var(--color-gray-100);
+}
+
+/* Course Info No Data */
+.course-info-nodata-img {
+  width: 80px;
+  height: auto;
+}
+
+/* TS커리큘럼 배너 */
+.ts-curriculum-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==============================================
+   Promo Card (미가입 프로모션 배너)
+   ============================================== */
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--color-bg-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--effect-elevator-large);
+  height: 100%;
+}
+
+.promo-card-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--spacing-5);
+  padding: var(--spacing-4) var(--spacing-5);
+  background: var(--color-cyan-50);
+  flex: 1;
+  min-height: 0;
+}
+
+.promo-card-visual img {
+  max-height: 160px;
+  width: auto;
+  max-width: 100%;
+  min-height: 0;
+  flex-shrink: 1;
+  object-fit: contain;
+}
+
+.promo-card-tags {
+  display: flex;
+  gap: var(--spacing-1-5);
+  flex-shrink: 0;
+}
+
+.promo-tag {
+  padding: var(--spacing-1) var(--spacing-2-5);
+  background: var(--color-bg-white);
+  border-radius: var(--radius-full);
+  font-size: var(--body-body3-fontSize);
+  font-weight: var(--fontweight-bold);
+  line-height: var(--lineheight-base);
+}
+
+.promo-tag--peacock {
+  color: var(--color-peacock-500);
+}
+
+.promo-tag--purple {
+  color: var(--color-purple-500);
+}
+
+.promo-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding: var(--spacing-5);
+  flex-shrink: 0;
+}
+
+.promo-card-desc {
+  font-size: var(--body-body3-fontSize);
+  color: var(--color-text-gray);
+  line-height: var(--lineheight-md);
+}
+
+/* ==============================================
+   Level Test Result Card
+   ============================================== */
+.level-test-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-3);
+}
+
+.level-test-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-3-5) var(--spacing-2-5);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.level-test-stat-label {
+  font-size: var(--body-body4-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-light-gray);
+}
+
+.level-test-stat-value {
+  font-size: var(--head-dk_h5-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-black);
+}
+
+.level-test-stat-desc {
+  font-size: var(--body-body4-fontSize);
+  color: var(--color-text-gray);
+}
+
+.level-test-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-5);
+  background: var(--color-cyan-50);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.level-test-total-label {
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-neutral);
+}
+
+.level-test-total-value {
+  font-size: var(--head-dk_h2-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-cyan-600);
+}
+
+.level-test-total-desc {
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-text-neutral);
+}
+
+/* Promo card: 스피킹 카드 높이에 맞춤 (데스크탑) */
+@media (min-width: 992px) {
+  .promo-card-wrap {
+    position: relative;
+  }
+  .promo-card-wrap > .promo-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+    right: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+    height: auto;
+  }
+}
+
+/* Promo card: 태블릿 해상도 비주얼 영역 안정화 */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .promo-card-visual {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .promo-card-visual {
+    min-height: 200px;
+  }
+}
+
+/* Mobile 패딩 최적화 */
+@media (max-width: 767px) {
+  .page-title {
+    font-size: var(--head-mo_h1-fontSize);
+  }
+  .heading1 {
+  font-size: var(--head-mo_h1-fontSize);
+}
+  .heading2 {
+    font-size: var(--head-mo_h2-fontSize);
+    line-height: var(--lineheight-sm);
+    font-weight: var(--fontweight-bold);
+  }
+  .heading3 {
+    font-size: var(--head-mo_h3-fontSize);
+    line-height: var(--lineheight-xs);
+    font-weight: var(--fontweight-bold);
+  }
+  .heading4 {
+    font-size: var(--head-mo_h4-fontSize);
+    line-height: var(--lineheight-xs);
+    font-weight: var(--fontweight-bold);
+  }
+  .heading5 {
+    font-size: var(--head-mo_h5-fontSize);
+    line-height: var(--lineheight-xs);
+    font-weight: var(--fontweight-bold);
+  }
+}
+@media(max-width: 992px) {
+  .course-actions .button-primary {
+    width: 100%;
+  }
+  .voca-assign-card {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: var(--spacing-8) var(--spacing-5) var(--spacing-12);
+  }
+}
+
+@media (min-width: 1200px) {
+  .level-test-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .page-title {
+    font-size: var(--head-dk_h1-fontSize);
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-8) var(--spacing-6) var(--spacing-12);
+  }
+}
+
+/* ==============================================
+   VOCA 과제방 리스트 (v_flist)
+   ============================================== */
+
+/* Icon box - large (52x52) */
+.voca-icon-box-lg {
+  width: 52px;
+  height: 52px;
+}
+
+.voca-icon-box-lg img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Point card - light cyan bg */
+.voca-point-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-4);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-xl);
+}
+
+.voca-point-value {
+  color: var(--color-cyan-500);
+  line-height: 1.1;
+}
+
+.voca-point-label {
+  font-size: var(--body-body1-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-neutral);
+}
+
+/* Word stat boxes - light cyan bg */
+.voca-word-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-4);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-xl);
+}
+
+.voca-word-stat-label {
+  font-size: var(--body-body3-fontSize);
+  color: var(--color-text-black);
+  font-weight: var(--fontweight-medium);
+}
+
+.voca-word-stat-value {
+  font-size: var(--head-dk_h2-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-cyan-500);
+}
+
+/* Assignment card */
+.voca-assign-card {
+  padding: var(--spacing-5);
+  background: var(--color-bg-white);
+  overflow: hidden;
+}
+
+/* Cover image - stretch to card height, square */
+.voca-assign-cover {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  flex-shrink: 0;
+}
+
+/* Stats container in card - stretch to card height */
+.voca-assign-stats {
+  align-self: stretch;
+}
+
+/* Compact stat variant for card rows */
+.voca-stat-compact {
+  display: inline-flex;
+  min-width: 88px;
+  justify-content: center;
+  align-self: stretch;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .voca-point-card > div {
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .voca-assign-card > .flex-fill {
+    align-items: center;
+  }
+  .voca-assign-stats {
+    flex-direction: row;
+  }
+  .voca-assign-stats > .voca-stat-compact {
+    flex: 1 1 0;
+  }
+}
+@media (max-width: 767px) {
+  .voca-assign-cover {
+    max-height: 100px;
+  }
+}
+
+/* ==============================================
+   VOCA List 모달
+   ============================================== */
+.voca-modal .modal-content {
+  border: none;
+}
+
+.voca-modal .modal-header {
+  border-color: var(--color-gray-200);
+}
+
+.voca-modal .modal-body {
+  overflow-y: auto;
+}
+
+/* 단어 카드 */
+.voca-word-card {
+  background: var(--color-bg-white);
+  flex-shrink: 0;
+}
+
+/* 단어 이미지 썸네일 + 뱃지 */
+.voca-word-thumb {
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.voca-word-thumb img {
+  width: 80px;
+  height: 80px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.voca-word-thumb-badge {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/* 미니 썸네일 (우측 3개) */
+.voca-word-mini {
+  width: 80px;
+  height: 80px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.voca-word-mini.active-blue {
+  border-color: var(--color-blue-500);
+}
+
+.voca-word-mini.active-peacock {
+  border-color: var(--color-peacock-500);
+}
+
+/* 발음 버튼 */
+.voca-sound-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: none;
+  background: none;
+  color: var(--color-text-light-gray);
+  cursor: pointer;
+  border-radius: var(--radius-lg);
+  font-size: 13px;
+}
+
+.voca-sound-btn:hover {
+  color: var(--color-cyan-500);
+}
+
+/* 이미지 호버 딤 */
+.voca-word-thumb:hover .voca-word-hover-dim {
+  opacity: 1;
+}
+
+.voca-word-hover-dim {
+  position: absolute;
+  inset: 0;
+  width: 80px;
+  height: 80px;
+  background: rgba(26, 26, 26, 0.6);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: #fff;
+  font-size: 24px;
+}
+
+@media (max-width: 992px) {
+  .voca-word-card {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+
+/* ==============================================
+   원서&영상수업 요청목록 (c_native9)
+   ============================================== */
+
+/* 테이블 오버라이드 (table-list-container 기반) */
+.book-req-table .table-list-header {
+  margin-bottom: var(--spacing-1-5);
+  padding: 14px 16px;
+  font-weight: var(--fontweight-bold);
+}
+
+.book-req-table .list-summary {
+  border-radius: var(--radius-lg);
+  padding: 8px 16px;
+}
+
+/* 책 표지 이미지 */
+.book-req-cover {
+  width: 30px;
+  height: 45px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* 강사 아바타 */
+.book-req-teacher-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #7a9cfa;
+  flex-shrink: 0;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 991px) {
+  .book-req-table .list-summary {
+    border: 1px solid var(--color-gray-100);
+  }
+
+  .book-req-table .list-summary .button {
+    flex: 1;
+  }
+
+  /* 원서 정보 컬럼: 상태 뱃지 아래줄로 */
+  .book-req-table .list-summary > .col-12.col-lg {
+    flex-wrap: wrap;
+  }
+}
+
+/* ==============================================
+   월평가서&과거수업정보 (c_native2)
+   ============================================== */
+
+/* 공통 카드 */
+.eval-card {
+  background: var(--color-bg-white);
+}
+
+/* 강사 프로필 카드 */
+.eval-teacher-card {
+  background-color: #05aaf0;
+  padding: 24px 80px;
+  position: relative;
+}
+
+.eval-teacher-gradient {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #fff5f5;
+  flex-shrink: 0;
+}
+
+.eval-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #dddddd;
+  flex-shrink: 0;
+}
+
+/* 네비 화살표 컨테이너 (absolute) */
+.eval-teacher-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.eval-nav-btn {
+  all: unset;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: var(--color-text-neutral);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* 카드 헤더 (일일학습 피드백) */
+.eval-card-header {
+  padding: 20px 24px;
+  background: var(--color-cyan-500);
+}
+
+/* 아바타 소형 */
+.eval-avatar-sm {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #7a9cfa;
+  flex-shrink: 0;
+}
+
+/* 피드백 메시지 */
+.eval-feedback-msg {
+  background: var(--color-gray-50);
+  border-radius: 12px;
+  padding: var(--spacing-4);
+}
+
+/* 월 네비게이션 버튼 */
+.eval-month-btn {
+  all: unset;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-neutral);
+}
+
+/* 캘린더 */
+.eval-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px 0;
+  text-align: center;
+}
+
+.eval-cal-head {
+  padding: 8px 0;
+  font-size: var(--body-body4-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-text-gray);
+}
+
+.eval-cal-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 0;
+  font-size: var(--body-body3-fontSize);
+  color: var(--color-text-neutral);
+  min-height: 40px;
+}
+
+.eval-cal-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.eval-cal-dot-green {
+  background: var(--color-green-500);
+}
+
+.eval-cal-dot-blue {
+  background: var(--color-blue-500);
+}
+
+.eval-cal-dot-orange {
+  background: var(--color-orange-400);
+}
+
+.eval-cal-dot-violet {
+  background: var(--color-violet-400);
+}
+
+.eval-legend-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* 통계 박스 */
+.eval-stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-3-5);
+  border-radius: var(--radius-xl);
+}
+
+/* 출결 현황 2x2 그리드 */
+.eval-attendance-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* 과제 박스 (Study / Word Quiz / Sentence) */
+.eval-task-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-3-5) var(--spacing-2-5);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-xl);
+}
+
+/* 성장 과정 리스트 */
+.eval-growth-list {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-2);
+}
+
+.eval-growth-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-1);
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.eval-growth-item.eval-growth-active {
+  opacity: 1;
+}
+
+.eval-growth-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.eval-growth-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Talk's Report 테이블 오버라이드 */
+.eval-report .table-list-header {
+  border-radius: var(--radius-lg);
+}
+
+.eval-report .list-summary > [class*="col"] {
+  padding: 8px 16px;
+}
+
+/* 번역 버튼 */
+.eval-translate-btn {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  padding: 12px 20px;
+  background: #4ecdc4;
+  color: #fff;
+  font-size: var(--font-size-xs);
+  font-weight: var(--fontweight-bold);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 991px) {
+  .eval-teacher-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 24px;
+  }
+
+  .eval-teacher-card > .d-flex:first-child {
+    flex-direction: column;
+  }
+
+  .eval-teacher-gradient {
+    width: 56px;
+    height: 56px;
+  }
+
+  .eval-teacher-nav {
+    position: static;
+    width: auto;
+    padding: 0;
+    transform: none;
+    justify-content: center;
+    gap: 8px;
+    pointer-events: auto;
+  }
+
+  /* Talk's Report 모바일: 테이블 영역만 가로 스크롤 */
+  .eval-report .table-list-header,
+  .eval-report .table-list-body {
+    min-width: 600px;
+  }
+}
+
+/* ==============================================
+   c_native10 - 온라인 테스트 및 체험수업 결과
+   ============================================== */
+
+/* 카드 */
+.test-result-card {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-gray-200);
+}
+
+/* 토글 버튼 */
+.test-result-toggle {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+}
+.test-result-toggle i {
+  transition: transform 0.25s;
+}
+.test-result-toggle[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+
+/* 정보 그리드: 모바일 2x2, PC 가로 */
+.test-result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+@media (min-width: 992px) {
+  .test-result-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 정보 박스 */
+.test-result-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: var(--spacing-4);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-xl);
+  border: 1px solid #e2f2fa;
+}
+
+/* 펼침 영역 */
+.test-result-detail {
+  padding-top: 20px;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+/* 상세 정보 박스 */
+.test-result-detail-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: var(--spacing-4);
+  background: var(--color-gray-50);
+  border-radius: 14px;
+  flex: 1;
+}
+
+/* 강사 아바타 (소형) */
+.test-result-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #7a9cfa;
+  flex-shrink: 0;
+}
+
+/* 학생 성장 진행도 래퍼 */
+.test-result-progress {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-gray-50);
+}
+
+/* 성장 스테이지 리스트 */
+.test-result-stage-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: var(--spacing-2);
+}
+@media (min-width: 992px) {
+  .test-result-stage-list {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* 스테이지 아이템 */
+.test-result-stage-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+.test-result-stage-active {
+  opacity: 1;
+}
+@media (min-width: 992px) {
+  .test-result-stage-item {
+    flex: 1;
+  }
+}
+
+/* 스테이지 썸네일 */
+.test-result-stage-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  aspect-ratio: 1;
+  overflow: hidden;
+  width: 72px;
+}
+.test-result-stage-active .test-result-stage-thumb {
+  border: 2px solid #ff7d26;
+}
+.test-result-stage-thumb img {
+  width: 56px;
+  height: 44px;
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .test-result-stage-thumb {
+    width: 100%;
+  }
+}
+
+/* 설명 박스 */
+.test-result-desc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--spacing-4);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid #e2f2fa;
+}
+
+/* 평가 테이블 오버라이드 */
+.test-eval .table-list-header {
+  margin-bottom: var(--spacing-1-5);
+  padding: 14px 16px;
+  border-radius: var(--radius-lg);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-cyan-700);
+}
+
+.test-eval .list-summary {
+  border-radius: var(--radius-lg);
+  padding: 8px 16px;
+}
+
+.test-eval .table-list-header,
+.test-eval .table-list-body {
+  min-width: 600px;
+}
+
+/* 등급 뱃지 */
+.test-eval-grade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  color: #fff;
+  font-size: var(--head-mo_h2-fontSize, 20px);
+  font-weight: var(--fontweight-bold);
+}
+.test-eval-grade-a {
+  background: #f59e0b;
+}
+.test-eval-grade-b {
+  background: #f5be0b;
+}
+.test-eval-grade-c {
+  background: #ffd93d;
+}
+
+/* 안내 불릿 */
+.test-result-notes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.test-result-notes li {
+  padding-left: 11px;
+  position: relative;
+}
+.test-result-notes li + li {
+  margin-top: 8px;
+}
+.test-result-notes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  background: var(--color-gray-300);
+  border-radius: 50%;
+}
+
+/* 결과 요약 래퍼 */
+.test-overview-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-xl);
+  border: 1px solid #dddddd;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  .test-overview-box {
+    justify-content: center;
+  }
+}
+
+/* 점수 원형 (정답/오답) */
+.test-score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 108px;
+  border-radius: 54px;
+  border: 4px solid;
+  padding: 4px;
+}
+.test-score-box .score-label {
+  font-family: "Nunito", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+.test-score-box .score-value {
+  font-family: "Nunito", Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1;
+}
+.test-score-correct {
+  background: #e2f2fa;
+  border-color: #05aaf0;
+  color: #05aaf0;
+}
+.test-score-wrong {
+  background: #fff5f5;
+  border-color: #ff5c5c;
+  color: #ff5c5c;
+}
+
+/* 정답율/추천레벨 수치 */
+.text-cyan-dark {
+  color: #006f9e;
+}
+.text-purple {
+  color: #682996;
+}
+
+/* 레벨 추천 바 */
+.test-level-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 14px 20px;
+  border-radius: var(--radius-lg);
+  color: #fff;
+  font-weight: var(--fontweight-bold);
+  font-size: var(--font-size-sm);
+}
+.test-level-upper {
+  background: #006f9e;
+}
+.test-level-current {
+  background: #008cc7;
+}
+.test-level-lower {
+  background: #05aaf0;
+}
+
+/* 레벨 바 사이 셰브론 */
+.test-level-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 9999px;
+  margin: -8px auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* 내 레벨 테이블 */
+
+/* 문항 번호 탭 */
+.test-question-nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+@media (min-width: 992px) {
+  .test-question-nav {
+    grid-template-columns: repeat(9, 1fr);
+    gap: 12px;
+  }
+}
+.test-question-btn {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border: 2px solid #4a7ed9;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-medium);
+  color: #4a7ed9;
+  cursor: pointer;
+}
+.test-question-btn.active {
+  background: #4a7ed9;
+  color: #fff;
+}
+.test-question-btn.wrong {
+  background: #fff;
+  border-color: #ff5c5c;
+  color: #ff5c5c;
+}
+
+/* 범례 */
+.test-legend-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: #fff;
+  border: 2px solid;
+}
+.test-legend-correct {
+  border-color: #4a7ed9;
+}
+.test-legend-wrong {
+  border-color: #ff5c5c;
+}
+
+/* 문제 표시 카드 */
+.test-question-card {
+  padding: var(--spacing-4);
+  background: #f5f5f8;
+  border-radius: var(--radius-xl);
+}
+@media (min-width: 992px) {
+  .test-question-card {
+    padding: 20px;
+  }
+}
+.test-question-image {
+  padding: var(--spacing-4);
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* 답안 옵션 */
+.test-answer {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 12px 16px;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-white);
+}
+.test-answer-correct {
+  background: #dbeafe;
+  color: #4a7ed9;
+}
+.test-answer-wrong {
+  color: var(--color-text-neutral);
+}
+
+/* 모바일: 평가 테이블 */
+@media (max-width: 991px) {
+  .test-eval .table-list-header,
+  .test-eval .table-list-body {
+    min-width: 0;
+  }
+  .test-eval .list-summary {
+    padding: var(--spacing-4);
+    border: 1px solid var(--color-gray-50);
+  }
+  .test-eval .list-summary > .col-12:first-child {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
