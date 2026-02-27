@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>아이딕 잉글리시 대시보드</title>
-    <!-- Bootstrap 5.3.3 -->
+    <!-- Bootstrap 3.3.7 -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
@@ -530,9 +530,9 @@
           <div class="table-list-body d-flex flex-column gap-3">
             <div class="table-list-item">
               <div
-                class="list-summary row align-items-center g-0 p-3"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseRow1"
+                class="list-summary row align-items-center g-2 p-3"
+                data-toggle="collapse"
+                data-target="#collapseRow1"
                 aria-expanded="true"
               >
                 <div class="col-12 col-md-1 text-center fw-bold text-dark">
@@ -562,7 +562,7 @@
                 </div>
               </div>
 
-              <div id="collapseRow1" class="collapse show list-details">
+              <div id="collapseRow1" class="collapse in list-details">
                 <div class="details-inner text-white p-4 rounded-bottom-4">
                   <div class="d-flex align-items-center gap-3 mb-4">
                     <div
@@ -617,9 +617,9 @@
 
             <div class="table-list-item">
               <div
-                class="list-summary row align-items-center g-0 p-3 collapsed"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseRow2"
+                class="list-summary row align-items-center g-2 p-3 collapsed"
+                data-toggle="collapse"
+                data-target="#collapseRow2"
                 aria-expanded="false"
               >
                 <div class="col-12 col-md-1 text-center fw-bold text-dark">
@@ -660,9 +660,9 @@
 
             <div class="table-list-item">
               <div
-                class="list-summary row align-items-center g-0 p-3 collapsed"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseRow3"
+                class="list-summary row align-items-center g-2 p-3 collapsed"
+                data-toggle="collapse"
+                data-target="#collapseRow3"
               >
                 <div class="col-12 col-md-1 text-center fw-bold text-dark">
                   3
@@ -748,8 +748,8 @@
             <div class="table-list-item">
               <div
                 class="list-summary p-4 p-lg-3 cursor-pointer"
-                data-bs-toggle="collapse"
-                data-bs-target="#row1"
+                data-toggle="collapse"
+                data-target="#row1"
                 aria-expanded="false"
               >
                 <div class="d-custom-mobile mb-3">
@@ -822,8 +822,8 @@
             <div class="table-list-item">
               <div
                 class="list-summary p-4 p-lg-3 cursor-pointer"
-                data-bs-toggle="collapse"
-                data-bs-target="#row2"
+                data-toggle="collapse"
+                data-target="#row2"
               >
                 <div class="d-custom-mobile mb-3">
                   <span
@@ -887,8 +887,8 @@
             <div class="table-list-item">
               <div
                 class="list-summary p-4 p-lg-3 cursor-pointer"
-                data-bs-toggle="collapse"
-                data-bs-target="#row3"
+                data-toggle="collapse"
+                data-target="#row3"
               >
                 <div class="d-custom-mobile mb-3">
                   <span
@@ -1098,6 +1098,216 @@
           </div>
         </div>
       </section>
+
+      <!-- ==============================================
+           Table List Container - 반응형 테이블 컴포넌트
+           ==============================================
+           사용 파일: c_native2, c_native3, c_native9, c_native10, c_native11, c_native12, complaints, story_writing
+
+           [구조 규칙]
+           - 컨테이너: table-list-container [커스텀클래스] radius-xl elevator-large p-4 p-lg-5
+           - 헤더: table-list-header d-none d-lg-flex row g-2 align-items-center (PC만 표시)
+           - 헤더 컬럼: col-lg-X text-center (합계 = 12)
+           - 바디: table-list-body d-flex flex-column gap-1-5 (또는 gap-3 gap-lg-0-5)
+           - 행: list-summary row g-2 align-items-center
+           - 교차 행: list-summary list-cell-highlight row g-2 align-items-center
+           - 데이터 셀: col-12 col-lg-X d-flex align-items-center justify-content-lg-center gap-1-5
+           - 모바일 라벨: <span class="d-lg-none mark">라벨</span>
+           ============================================== -->
+      <section class="section mt-40">
+        <div class="container py-5">
+          <h4 class="mb-4">Table List Container</h4>
+
+          <!-- 1. 기본형 (3컬럼) -->
+          <div class="mb-5">
+            <p class="text-muted small mb-2">1. Basic (3 columns) — c_native11 특강권 목록 참고</p>
+            <div class="table-list-container radius-xl elevator-large p-4 p-lg-5">
+              <!-- 헤더 (PC만) -->
+              <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
+                <div class="col-lg-2 text-center">날짜</div>
+                <div class="col-lg-7 text-center">정보</div>
+                <div class="col-lg-3 text-center">관리</div>
+              </div>
+              <!-- 바디 -->
+              <div class="table-list-body d-flex flex-column gap-1-5">
+                <!-- Row 1 (기본) -->
+                <div class="list-summary row g-2 align-items-center">
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">날짜</span>
+                    <span class="body2 text-neutral">25.00.00</span>
+                  </div>
+                  <div class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">정보</span>
+                    <span class="body2 text-neutral">샘플 데이터 텍스트</span>
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-2">
+                    <button class="button button-sm button-fill button-primary">확인</button>
+                  </div>
+                </div>
+                <!-- Row 2 (하이라이트) -->
+                <div class="list-summary list-cell-highlight row g-2 align-items-center">
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">날짜</span>
+                    <span class="body2 text-neutral">25.00.00</span>
+                  </div>
+                  <div class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">정보</span>
+                    <span class="body2 text-neutral">하이라이트 행 (list-cell-highlight)</span>
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-2">
+                    <button class="button button-sm button-border button-default">보기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. 4컬럼 + 뱃지/상태 -->
+          <div class="mb-5">
+            <p class="text-muted small mb-2">2. 4 columns + badges — c_native11 사용내역 참고</p>
+            <div class="table-list-container radius-xl elevator-large p-4 p-lg-5">
+              <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
+                <div class="col-lg-2 text-center">사용일</div>
+                <div class="col-lg-5 text-center">수업정보</div>
+                <div class="col-lg-2 text-center">상태</div>
+                <div class="col-lg-3 text-center">관리</div>
+              </div>
+              <div class="table-list-body d-flex flex-column gap-1-5">
+                <div class="list-summary row g-2 align-items-center">
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">사용일</span>
+                    <span class="body2 text-neutral">25.00.00</span>
+                  </div>
+                  <div class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수업정보</span>
+                    <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                      <span>필리핀/1개월 과정</span>
+                      <span class="eval-dot"></span>
+                      <span>주 2회</span>
+                      <span class="eval-dot"></span>
+                      <span>월/수</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">상태</span>
+                    <span class="badge badge-sm badge-fill badge-primary">예약</span>
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center">
+                    <button class="button button-sm button-fill button-neutral">취소</button>
+                  </div>
+                </div>
+                <div class="list-summary list-cell-highlight row g-2 align-items-center">
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">사용일</span>
+                    <span class="body2 text-neutral">25.00.00</span>
+                  </div>
+                  <div class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수업정보</span>
+                    <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                      <span>필리핀/1개월 과정</span>
+                      <span class="eval-dot"></span>
+                      <span>주 2회</span>
+                      <span class="eval-dot"></span>
+                      <span>월/수</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">상태</span>
+                    <span class="badge badge-sm badge-soft badge-gray">완료</span>
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center">
+                    <span class="badge badge-sm badge-soft badge-dark">취소불가</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. 이미지 + teacher-profile 포함 (5컬럼 이상) -->
+          <div class="mb-5">
+            <p class="text-muted small mb-2">3. With image + teacher-profile — c_native9 원서요청목록 참고</p>
+            <div class="table-list-container radius-xl elevator-large p-4 p-lg-5">
+              <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
+                <div class="col-lg-5 text-center">원서 정보</div>
+                <div class="col-lg-2 text-center">강사</div>
+                <div class="col-lg-2 text-center">수업요청일자</div>
+                <div class="col-lg-2 text-center">신청일</div>
+                <div class="col-lg-1 text-center">관리</div>
+              </div>
+              <div class="table-list-body d-flex flex-column gap-1-5">
+                <div class="list-summary row g-2 align-items-center">
+                  <div class="col-12 col-lg-5 d-flex flex-column flex-lg-row align-items-lg-center align-items-start gap-2">
+                    <img class="book-req-cover" src="../images/dummy1.png" alt="Book Cover" />
+                    <div class="d-flex flex-column gap-1">
+                      <span class="badge badge-sm badge-fill badge-yellow">원서수업</span>
+                      <span class="body2 fw-medium text-neutral">A Great Expedition</span>
+                    </div>
+                    <span class="badge badge-sm badge-soft ms-0 ms-lg-auto badge-gray">선생님 요청 확인 전 입니다.</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1">
+                    <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
+                      <div class="teacher-profile-avatar"></div>
+                      <div class="teacher-profile-content d-flex align-items-center gap-2">
+                        <span class="teacher-profile-name">Teachername</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수업요청일자</span>
+                    <span class="body2 text-neutral">25.10.10 (월) 14:40</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">신청일</span>
+                    <span class="body2 text-neutral">25.12.03 (월) 14:40</span>
+                  </div>
+                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center mt-2 mt-lg-0">
+                    <button class="button button-sm button-fill button-neutral">삭제</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. 페이지네이션 -->
+          <div class="mb-5">
+            <p class="text-muted small mb-2">4. Pagination (테이블 하단에 배치)</p>
+            <div class="d-flex justify-content-end mt-5">
+              <div class="d-none d-lg-flex align-items-center gap-3 text-light-gray small me-auto">
+                Showing <strong class="text-black">1</strong> Page of
+                <strong class="text-black">2</strong> entries
+              </div>
+              <nav aria-label="Page navigation">
+                <ul class="pagination pagination-custom gap-2 m-0">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#"><i class="bi bi-chevron-double-left"></i></a>
+                  </li>
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"><i class="bi bi-chevron-double-right"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

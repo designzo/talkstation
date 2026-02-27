@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>월평가서&과거수업정보 - 아이딕 잉글리시</title>
-    <!-- Bootstrap 5.3.3 -->
+    <!-- Bootstrap 3.3.7 -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
@@ -87,14 +87,14 @@
             <button
               class="nav-section-header"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navLesson"
+              data-toggle="collapse"
+              data-target="#navLesson"
             >
               <span class="nav-icon nav-icon-cyan">📚</span>
               <span>나의 수업 관리</span>
               <i class="bi bi-chevron-down"></i>
             </button>
-            <div class="collapse show" id="navLesson">
+            <div class="collapse in" id="navLesson">
               <ul class="nav-menu">
                 <li>
                   <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
@@ -158,14 +158,14 @@
             <button
               class="nav-section-header"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navInfo"
+              data-toggle="collapse"
+              data-target="#navInfo"
             >
               <span class="nav-icon nav-icon-violet">👤</span>
               <span>나의 정보</span>
               <i class="bi bi-chevron-down"></i>
             </button>
-            <div class="collapse show" id="navInfo">
+            <div class="collapse in" id="navInfo">
               <ul class="nav-menu">
                 <li>
                   <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
@@ -188,14 +188,14 @@
             <button
               class="nav-section-header"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navIdic"
+              data-toggle="collapse"
+              data-target="#navIdic"
             >
               <span class="nav-icon nav-icon-blue">📖</span>
               <span>아이딕 잉글리시</span>
               <i class="bi bi-chevron-down"></i>
             </button>
-            <div class="collapse show" id="navIdic">
+            <div class="collapse in" id="navIdic">
               <ul class="nav-menu">
                 <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
                 <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
@@ -211,14 +211,14 @@
             <button
               class="nav-section-header"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navSupport"
+              data-toggle="collapse"
+              data-target="#navSupport"
             >
               <span class="nav-icon nav-icon-orange">🎓</span>
               <span>학습지원서비스</span>
               <i class="bi bi-chevron-down"></i>
             </button>
-            <div class="collapse show" id="navSupport">
+            <div class="collapse in" id="navSupport">
               <ul class="nav-menu">
                 <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
                 <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
@@ -242,29 +242,29 @@
              ============================ -->
           <div class="d-flex flex-column gap-2">
             <div
-              class="eval-teacher-card radius-xl d-flex align-items-center justify-content-between"
+              class="eval-teacher-card gap-3 radius-xl d-flex align-items-center justify-content-between"
             >
               <!-- 왼쪽: 강사 프로필 -->
-              <div class="d-flex align-items-center gap-3 gap-lg-4">
-                <div class="eval-teacher-gradient"></div>
-                <div class="d-flex flex-column gap-1">
-                  <span class="heading4 text-white">Teachername</span>
-                  <div
-                    class="d-flex flex-wrap align-items-center gap-2 body2 text-white"
-                  >
+              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg">
+                <div class="teacher-profile-avatar"></div>
+                <div class="teacher-profile-content">
+                  <div class="d-flex align-items-center mb-1">
+                    <span class="teacher-profile-name">Teachername</span>
+                  </div>
+                  <div class="teacher-profile-meta">
                     <span>필리핀/1개월 과정</span>
-                    <span class="eval-dot"></span>
+                    <span class="divider">•</span>
                     <span>주 2회</span>
-                    <span class="eval-dot"></span>
+                    <span class="divider">•</span>
                     <span>월/수</span>
-                    <span class="eval-dot"></span>
+                    <span class="divider">•</span>
                     <span>25분</span>
                   </div>
                 </div>
               </div>
               <!-- 오른쪽: 수업 정보 -->
               <div
-                class="d-none d-lg-flex flex-column align-items-end gap-1"
+                class="d-flex flex-column align-items-end gap-1"
               >
                 <p class="body2 text-white">
                   25.04.15~25.09.30 화,목 15:00
@@ -315,6 +315,8 @@
             </div>
             <button
               class="button button-sm button-transparent button-primary align-self-end ms-2"
+              data-toggle="modal"
+              data-target="#classInfoModal"
             >
               한번에 모아보기 20
               <i class="bi bi-arrows-fullscreen ms-1"></i>
@@ -645,7 +647,7 @@
                 class="d-flex align-items-center justify-content-between"
               >
                 <span class="heading4 text-black">출결 현황</span>
-                <button class="button button-sm button-border button-default">
+                <button class="button button-sm button-border button-default" data-toggle="modal" data-target="#attendanceModal">
                   자세히 보기 <i class="bi bi-chevron-right ms-1"></i>
                 </button>
               </div>
@@ -839,13 +841,13 @@
             <span class="heading4 text-black mb-4 d-block">Talk's Report</span>
             <div class="table-list-scroll">
               <!-- 테이블 헤더 -->
-              <div class="table-list-header d-flex row g-0 align-items-center px-4">
+              <div class="table-list-header d-flex row g-2 align-items-center">
                 <div class="col-3 text-center">Task Area</div>
                 <div class="col text-center">Description</div>
               </div>
               <!-- 테이블 바디 -->
               <div class="table-list-body d-flex flex-column gap-1-5">
-              <div class="list-summary row g-0 align-items-center">
+              <div class="list-summary row g-2 align-items-center">
                 <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
                   <span class="body2 text-neutral">Pronunciation</span>
                 </div>
@@ -853,7 +855,7 @@
                   <span class="body2 text-neutral">Only minor errors</span>
                 </div>
               </div>
-              <div class="list-summary row g-0 align-items-center">
+              <div class="list-summary row g-2 align-items-center">
                 <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
                   <span class="body2 text-neutral">Pronunciation</span>
                 </div>
@@ -861,7 +863,7 @@
                   <span class="body2 text-neutral">Only minor errors</span>
                 </div>
               </div>
-              <div class="list-summary row g-0 align-items-center">
+              <div class="list-summary row g-2 align-items-center">
                 <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
                   <span class="body2 text-neutral">Pronunciation</span>
                 </div>
@@ -869,7 +871,7 @@
                   <span class="body2 text-neutral">Only minor errors</span>
                 </div>
               </div>
-              <div class="list-summary row g-0 align-items-center">
+              <div class="list-summary row g-2 align-items-center">
                 <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
                   <span class="body2 text-neutral">Pronunciation</span>
                 </div>
@@ -877,7 +879,7 @@
                   <span class="body2 text-neutral">Only minor errors</span>
                 </div>
               </div>
-              <div class="list-summary row g-0 align-items-center">
+              <div class="list-summary row g-2 align-items-center">
                 <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
                   <span class="body2 text-neutral">Pronunciation</span>
                 </div>
@@ -913,9 +915,485 @@
       </main>
     </div>
 
+    <!-- ============================
+         출석현황 자세히 보기 모달
+         ============================ -->
+    <div
+      class="mypage modal fade"
+      id="attendanceModal"
+      tabindex="-1"
+      aria-labelledby="attendanceModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg attendance-modal">
+        <div class="modal-content radius-2xl elevator-large p-4 p-lg-5">
+          <!-- 모달 헤더 -->
+          <div class="modal-header border-bottom p-0 pb-4">
+            <h5 class="modal-title heading2 text-black" id="attendanceModalLabel">
+              출석현황 자세히 보기
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- 모달 바디 -->
+          <div class="modal-body p-0 pt-4 d-flex flex-column gap-5">
+            <!-- 출석확인증 타이틀 + 프린트 버튼 -->
+            <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-2">
+              <div class="d-flex flex-column gap-1">
+                <span class="heading3 text-black">TALKSTATION 출석확인증</span>
+                <span class="body2 text-light-gray">2025년 11월 03일 ~ 2025년 12월 03일</span>
+              </div>
+              <button class="button button-sm button-fill button-primary">
+                출결정보 프린트 <i class="bi bi-printer-fill ms-1"></i>
+              </button>
+            </div>
+
+            <!-- 수강 정보 테이블 -->
+            <div class="d-flex flex-column gap-1-5">
+              <!-- PC: 2열 / Mobile: 1열 -->
+              <div class="row gap-1-5 gap-lg-0">
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex gap-1-5">
+                    <div class="att-info-label">수강신청번호</div>
+                    <div class="att-info-value flex-fill">1760000000000</div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex gap-1-5">
+                    <div class="att-info-label">출석기간</div>
+                    <div class="att-info-value flex-fill">2025.00.00 ~ 2025.00.00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row gap-1-5 gap-lg-0">
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex gap-1-5">
+                    <div class="att-info-label">수강자 이름</div>
+                    <div class="att-info-value flex-fill">이서연 (user@email.com)</div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex gap-1-5">
+                    <div class="att-info-label">담당강사</div>
+                    <div class="att-info-value flex-fill">
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="att-teacher-avatar"></div>
+                        <span class="fw-bold text-black">Teachername</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row gap-1-5 gap-lg-0">
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex gap-1-5">
+                    <div class="att-info-label">수강프로그램</div>
+                    <div class="att-info-value flex-fill">
+                      <span class="badge badge-sm badge-fill badge-orange">필리핀 화상</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex gap-1-5">
+                    <div class="att-info-label">수강개월수</div>
+                    <div class="att-info-value flex-fill">총 1개월 과정</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row gap-1-5 gap-lg-0">
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex gap-1-5">
+                    <div class="att-info-label">주당수강횟수</div>
+                    <div class="att-info-value flex-fill">주 3회(월,수,금)</div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex gap-1-5">
+                    <div class="att-info-label">수업시간</div>
+                    <div class="att-info-value flex-fill">21:00 ~ 21:24 (25분간)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 출결 요약 -->
+            <div class="radius-xl elevator-large p-4 d-flex flex-column gap-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="heading4 text-black">출결 요약</span>
+                <div class="d-flex align-items-end gap-2">
+                  <span class="body2 fw-medium text-light-gray">출석률</span>
+                  <span class="heading3 fw-bold" style="color: var(--color-cyan-700)">56.3%</span>
+                </div>
+              </div>
+              <!-- 프로그레스바 -->
+              <div class="att-progress-bar">
+                <div class="att-progress-seg" style="width: 17.5%; background-color: #4ecdc4">
+                  <span>17.5%</span>
+                </div>
+                <div class="att-progress-seg" style="width: 56%; background-color: #4a7ed9">
+                  <span>56%</span>
+                </div>
+                <div class="att-progress-seg" style="width: 12%; background-color: #ff7d26">
+                  <span>12%</span>
+                </div>
+                <div class="att-progress-seg" style="width: 12%; background-color: #c273fc">
+                  <span>12%</span>
+                </div>
+              </div>
+              <!-- 범례 -->
+              <div class="d-flex flex-wrap align-items-center gap-4 pt-3 border-top">
+                <div class="d-flex align-items-center gap-1-5">
+                  <span class="att-legend-dot" style="background-color: #4ecdc4"></span>
+                  <span class="body4 text-neutral">수강대기</span>
+                </div>
+                <div class="d-flex align-items-center gap-1-5">
+                  <span class="att-legend-dot" style="background-color: #4a7ed9"></span>
+                  <span class="body4 text-neutral">출석</span>
+                </div>
+                <div class="d-flex align-items-center gap-1-5">
+                  <span class="att-legend-dot" style="background-color: #ff7d26"></span>
+                  <span class="body4 text-neutral">결석</span>
+                </div>
+                <div class="d-flex align-items-center gap-1-5">
+                  <span class="att-legend-dot" style="background-color: #c273fc"></span>
+                  <span class="body4 text-neutral">보강연기</span>
+                </div>
+              </div>
+              <!-- 통계 카드 (4x2 그리드) -->
+              <div class="d-grid att-stat-grid gap-2">
+                <div class="att-stat-box">
+                  <span class="heading3 fw-bold text-black">16</span>
+                  <span class="body4 text-gray">전체수업</span>
+                </div>
+                <div class="att-stat-box">
+                  <span class="heading3 fw-bold" style="color: #4ecdc4">3</span>
+                  <span class="body4 text-gray">수업대기</span>
+                </div>
+                <div class="att-stat-box">
+                  <span class="heading3 fw-bold" style="color: #4a7ed9">9</span>
+                  <span class="body4 text-gray">출석</span>
+                </div>
+                <div class="att-stat-box">
+                  <span class="heading3 fw-bold" style="color: #ff7d26">0</span>
+                  <span class="body4 text-gray">결석</span>
+                </div>
+                <div class="att-stat-box">
+                  <span class="heading3 fw-bold" style="color: #b2b2b2">2</span>
+                  <span class="body4 text-gray">연기</span>
+                </div>
+                <div class="att-stat-box">
+                  <span class="heading3 fw-bold" style="color: #b2b2b2">0</span>
+                  <span class="body4 text-gray">장기연기</span>
+                </div>
+                <div class="att-stat-box">
+                  <span class="heading3 fw-bold" style="color: #c273fc">2</span>
+                  <span class="body4 text-gray">보강연기</span>
+                </div>
+                <div class="att-stat-box">
+                  <span class="heading3 fw-bold" style="color: #ff5c5c">0</span>
+                  <span class="body4 text-gray">휴강</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 일일출결정보 -->
+            <div class="d-flex flex-column gap-4">
+              <span class="heading4 text-black">일일출결정보</span>
+
+              <div class="table-list-container">
+                <!-- 테이블 헤더 (PC만 표시) -->
+                <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
+                  <div class="col-lg-1 text-center">순위</div>
+                  <div class="col-lg-2 text-center">날짜</div>
+                  <div class="col-lg-1 text-center">요일</div>
+                  <div class="col-lg-3 text-center">수업시간(분)</div>
+                  <div class="col-lg-2 text-center">담당강사</div>
+                  <div class="col-lg-1 text-center">수강방식</div>
+                  <div class="col-lg-2 text-center">출석여부</div>
+                </div>
+
+                <!-- 테이블 바디 -->
+                <div class="table-list-body d-flex flex-column gap-1-5">
+                <div class="list-summary row g-2 align-items-center">
+                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
+                    <span class="body2 text-neutral">16</span>
+                  </div>
+                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">날짜</span>
+                    <span class="body2 text-neutral">2025-12-03</span>
+                  </div>
+                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">요일</span>
+                    <span class="body2 text-neutral">수</span>
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수업시간(분)</span>
+                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">담당강사</span>
+                    <span class="body2 text-neutral">Katril</span>
+                  </div>
+                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수강방식</span>
+                    <span class="body3 text-light-gray">필리핀 화상</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
+                    <span class="badge badge-sm badge-soft badge-green">수업대기</span>
+                  </div>
+                </div>
+                <div class="list-summary row g-2 align-items-center">
+                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
+                    <span class="body2 text-neutral">15</span>
+                  </div>
+                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">날짜</span>
+                    <span class="body2 text-neutral">2025-12-01</span>
+                  </div>
+                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">요일</span>
+                    <span class="body2 text-neutral">월</span>
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수업시간(분)</span>
+                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">담당강사</span>
+                    <span class="body2 text-neutral">Katril</span>
+                  </div>
+                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수강방식</span>
+                    <span class="body3 text-light-gray">필리핀 화상</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
+                    <span class="badge badge-sm badge-soft badge-green">수업대기</span>
+                  </div>
+                </div>
+                <div class="list-summary row g-2 align-items-center">
+                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
+                    <span class="body2 text-neutral">13</span>
+                  </div>
+                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">날짜</span>
+                    <span class="body2 text-neutral">2025-11-26</span>
+                  </div>
+                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">요일</span>
+                    <span class="body2 text-neutral">수</span>
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수업시간(분)</span>
+                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">담당강사</span>
+                    <span class="body2 text-neutral">Katril</span>
+                  </div>
+                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수강방식</span>
+                    <span class="body3 text-light-gray">필리핀 화상</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
+                    <span class="badge badge-sm badge-soft badge-blue">출석</span>
+                  </div>
+                </div>
+                <div class="list-summary row g-2 align-items-center">
+                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
+                    <span class="body2 text-neutral">7</span>
+                  </div>
+                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">날짜</span>
+                    <span class="body2 text-neutral">2025-11-12</span>
+                  </div>
+                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">요일</span>
+                    <span class="body2 text-neutral">수</span>
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수업시간(분)</span>
+                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">담당강사</span>
+                    <span class="body2 text-neutral">Katril</span>
+                  </div>
+                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수강방식</span>
+                    <span class="body3 text-light-gray">필리핀 화상</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
+                    <span class="badge badge-sm badge-soft badge-violet">보강신청확정</span>
+                  </div>
+                </div>
+                <div class="list-summary row g-2 align-items-center">
+                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
+                    <span class="body2 text-neutral">2</span>
+                  </div>
+                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">날짜</span>
+                    <span class="body2 text-neutral">2025-11-05</span>
+                  </div>
+                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">요일</span>
+                    <span class="body2 text-neutral">수</span>
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수업시간(분)</span>
+                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">담당강사</span>
+                    <span class="body2 text-neutral">Katril</span>
+                  </div>
+                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
+                    <span class="d-lg-none mark">수강방식</span>
+                    <span class="body3 text-light-gray">필리핀 화상</span>
+                  </div>
+                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
+                    <span class="badge badge-sm badge-soft badge-orange">연기신청</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================
+         나의 수업정보 모달
+         ============================ -->
+    <div
+      class="mypage modal fade"
+      id="classInfoModal"
+      tabindex="-1"
+      aria-labelledby="classInfoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm-md class-info-modal">
+        <div class="modal-content radius-2xl elevator-large p-4 p-lg-5">
+          <!-- 모달 헤더 -->
+          <div class="modal-header border-bottom p-0 pb-4">
+            <h5 class="modal-title heading2 text-black" id="classInfoModalLabel">
+              나의 수업정보
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="닫기"
+            ></button>
+          </div>
+
+          <!-- 모달 바디 -->
+          <div class="modal-body p-0 pt-4 d-flex flex-column gap-3">
+
+            <!-- 수업 카드 1 (현재 수업 - 하이라이트) -->
+            <div class="class-info-card class-info-card-active radius-xl p-4 p-lg-5">
+              <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="d-flex align-items-center gap-3">
+                <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
+                  <div class="teacher-profile-avatar"></div>
+                  <div class="teacher-profile-content d-flex flex-column gap-1">
+                    <span class="teacher-profile-name heading4">Teachername</span>
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <span class="body2 text-light-gray">필리핀/1개월 과정</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">주 2회</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">월/수</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">25분</span>
+                    </div>
+                    <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 수업 카드 2 -->
+            <div class="class-info-card radius-xl elevator-large p-4 p-lg-5">
+              <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="d-flex align-items-center gap-3">
+                <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
+                  <div class="teacher-profile-avatar"></div>
+                  <div class="teacher-profile-content d-flex flex-column gap-1">
+                    <span class="teacher-profile-name heading4">Teachername</span>
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <span class="body2 text-light-gray">필리핀/1개월 과정</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">주 2회</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">월/수</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">25분</span>
+                    </div>
+                    <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 수업 카드 3 -->
+            <div class="class-info-card radius-xl elevator-large p-4 p-lg-5">
+              <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="d-flex align-items-center gap-3">
+                <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
+                  <div class="teacher-profile-avatar"></div>
+                  <div class="teacher-profile-content d-flex flex-column gap-1">
+                    <span class="teacher-profile-name heading4">Teachername</span>
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <span class="body2 text-light-gray">필리핀/1개월 과정</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">주 2회</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">월/수</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">25분</span>
+                    </div>
+                    <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 수업 카드 4 -->
+            <div class="class-info-card radius-xl elevator-large p-4 p-lg-5">
+              <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="d-flex align-items-center gap-3">
+                <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
+                  <div class="teacher-profile-avatar"></div>
+                  <div class="teacher-profile-content d-flex flex-column gap-1">
+                    <span class="teacher-profile-name heading4">Teachername</span>
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <span class="body2 text-light-gray">필리핀/1개월 과정</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">주 2회</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">월/수</span>
+                      <span class="eval-dot"></span>
+                      <span class="body2 text-light-gray">25분</span>
+                    </div>
+                    <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="../js/lnb.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -24,6 +24,7 @@ body {
   position: relative;
   font-family: var(--font-family);
   font-size: var(--font-size-base);
+  letter-spacing: var(--letterSpacing-sm);
 }
 
 h1,
@@ -83,6 +84,7 @@ h6,
 .body1 {
   font-size: var(--body-body1-fontSize);
   line-height: var(--lineheight-md);
+  letter-spacing: var(--letterSpacing-xs);
 }
 .body1.line-height-140 {
   line-height: var(--lineheight-base);
@@ -90,6 +92,7 @@ h6,
 .body2 {
   font-size: var(--body-body2-fontSize);
   line-height: var(--lineheight-md);
+  letter-spacing: var(--letterSpacing-xs);
 }
 .body2.line-height-140 {
   line-height: var(--lineheight-base);
@@ -97,6 +100,7 @@ h6,
 .body3 {
   font-size: var(--body-body3-fontSize);
   line-height: var(--lineheight-md);
+  letter-spacing: var(--letterSpacing-sm);
 }
 .body3.line-height-140 {
   line-height: var(--lineheight-base);
@@ -119,6 +123,19 @@ h6,
 .lesson-card-body .button-sm {
   padding: var(--spacing-2) var(--spacing-2-5);
 }
+
+/* lesson button group - PC 버튼 4개 정렬 */
+.lesson-btn-group {
+  flex-wrap: nowrap;
+}
+.lesson-btn-group > .button {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.lesson-btn-group > .button:last-child {
+  flex: 0 0 auto;
+}
+
 
 /* heart card */
 .heart-card {
@@ -686,6 +703,7 @@ h6,
 @media (max-width: 1199px) {
   .container {
     max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     padding: var(--spacing-8) var(--spacing-5) var(--spacing-12);
   }
@@ -701,7 +719,7 @@ h6,
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-8) var(--spacing-6) var(--spacing-12);
+    padding: var(--spacing-8) var(--spacing-0) var(--spacing-12);
   }
 }
 
@@ -932,18 +950,6 @@ h6,
    원서&영상수업 요청목록 (c_native9)
    ============================================== */
 
-/* 테이블 오버라이드 (table-list-container 기반) */
-.book-req-table .table-list-header {
-  margin-bottom: var(--spacing-1-5);
-  padding: 14px 16px;
-  font-weight: var(--fontweight-bold);
-}
-
-.book-req-table .list-summary {
-  border-radius: var(--radius-lg);
-  padding: 8px 16px;
-}
-
 /* 책 표지 이미지 */
 .book-req-cover {
   width: 30px;
@@ -963,10 +969,6 @@ h6,
 
 /* 모바일 반응형 */
 @media (max-width: 991px) {
-  .book-req-table .list-summary {
-    border: 1px solid var(--color-gray-100);
-  }
-
   .book-req-table .list-summary .button {
     flex: 1;
   }
@@ -974,6 +976,17 @@ h6,
   /* 원서 정보 컬럼: 상태 뱃지 아래줄로 */
   .book-req-table .list-summary > .col-12.col-lg {
     flex-wrap: wrap;
+  }
+}
+
+/* ==============================================
+   Story Writing 과제방 (c_story_writing)
+   ============================================== */
+
+/* 모바일 반응형 */
+@media (max-width: 991px) {
+  .story-writing-table .list-summary .button {
+    flex: 1;
   }
 }
 
@@ -993,6 +1006,23 @@ h6,
   position: relative;
 }
 
+/* teacher-profile 카드 내부 화이트 텍스트 오버라이드 */
+.eval-teacher-card .teacher-profile-avatar {
+  background: #fff5f5;
+}
+
+.eval-teacher-card .teacher-profile-name {
+  color: #ffffff;
+}
+
+.eval-teacher-card .teacher-profile-meta {
+  color: #ffffff;
+}
+
+.eval-teacher-card .teacher-profile-meta .divider {
+  color: #dddddd;
+}
+
 .eval-teacher-gradient {
   width: 64px;
   height: 64px;
@@ -1007,6 +1037,10 @@ h6,
   border-radius: 50%;
   background-color: #dddddd;
   flex-shrink: 0;
+}
+
+.eval-report .list-summary {
+  padding: 0;
 }
 
 /* 네비 화살표 컨테이너 (absolute) */
@@ -1179,6 +1213,11 @@ h6,
 
 .eval-growth-item.eval-growth-active {
   opacity: 1;
+
+}
+
+.eval-growth-item.eval-growth-active .eval-growth-thumb {
+  border: 2px solid var(--color-colorchip-orange);
 }
 
 .eval-growth-thumb {
@@ -1192,15 +1231,6 @@ h6,
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-/* Talk's Report 테이블 오버라이드 */
-.eval-report .table-list-header {
-  border-radius: var(--radius-lg);
-}
-
-.eval-report .list-summary > [class*="col"] {
-  padding: 8px 16px;
 }
 
 /* 번역 버튼 */
@@ -1229,8 +1259,12 @@ h6,
     padding: 20px 24px;
   }
 
-  .eval-teacher-card > .d-flex:first-child {
+  .eval-teacher-card .teacher-profile-horizontal {
     flex-direction: column;
+  }
+
+  .eval-teacher-card .teacher-profile-content > .d-flex {
+    justify-content: center;
   }
 
   .eval-teacher-gradient {
@@ -1247,23 +1281,11 @@ h6,
     gap: 8px;
     pointer-events: auto;
   }
-
-  /* Talk's Report 모바일: 테이블 영역만 가로 스크롤 */
-  .eval-report .table-list-header,
-  .eval-report .table-list-body {
-    min-width: 600px;
-  }
 }
 
 /* ==============================================
    c_native10 - 온라인 테스트 및 체험수업 결과
    ============================================== */
-
-/* 카드 */
-.test-result-card {
-  background: var(--color-bg-white);
-  border: 1px solid var(--color-gray-200);
-}
 
 /* 토글 버튼 */
 .test-result-toggle {
@@ -1359,7 +1381,7 @@ h6,
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: var(--spacing-2);
   flex-shrink: 0;
   opacity: 0.6;
 }
@@ -1673,4 +1695,316 @@ h6,
     align-items: center;
     justify-content: space-between;
   }
+}
+
+/* ==============================================
+   수업 불편 및 요청 상담 (c_ntutor1)
+   ============================================== */
+
+/* 불편사항 / 기타 요청 사항 박스 */
+.complaint-section {
+  padding: 16px;
+  background-color: var(--color-gray-50);
+  border-radius: var(--radius-lg);
+}
+
+/* 토크스테이션 답변 박스 */
+.complaint-reply {
+  padding: 16px;
+  background-color: #f5fafd;
+  border: 1px solid #e2f2fa;
+  border-radius: var(--radius-lg);
+}
+
+/* 모바일: 상담 등록 버튼 full-width */
+.button-block-lg-auto {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .button-block-lg-auto {
+    width: auto;
+  }
+}
+
+/* 강사 시간 변경 (c_native12) */
+.change-arrow {
+  font-size: 10px;
+  line-height: 1;
+}
+
+/* 신규선생님 평가 (ntutor_1) */
+.ntutor-card {
+  background: var(--color-white);
+}
+.ntutor-session-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 992px) {
+  .ntutor-session-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.ntutor-session-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+/* ntutor 평가서 보기 토글 */
+.ntutor-card [data-toggle="collapse"] .bi-chevron-down {
+  transition: transform 0.2s;
+}
+.ntutor-card [data-toggle="collapse"]:not(.collapsed) .bi-chevron-down {
+  transform: rotate(180deg);
+}
+.ntutor-card .collapse.in {
+  margin-top: var(--spacing-4);
+  padding-top: var(--spacing-4);
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* ==============================================
+   출석현황 자세히 보기 모달 (c_native2)
+   ============================================== */
+.attendance-modal .modal-content {
+  border: none;
+}
+
+.attendance-modal .modal-header {
+  border-color: var(--color-gray-200);
+}
+
+
+
+/* 수강정보 라벨/값 공통 */
+.att-info-label,
+.att-info-value {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 46px;
+  padding: 8px 16px;
+  border-radius: var(--radius-lg);
+  font-size: var(--body-body2-fontSize);
+}
+
+.att-info-label {
+  width: 110px;
+  flex-shrink: 0;
+  background-color: var(--color-cyan-50);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-cyan-700);
+}
+
+.att-info-value {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-neutral);
+}
+
+/* 강사 아바타 */
+.att-teacher-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #7a9cfa;
+  flex-shrink: 0;
+}
+
+/* 출결 프로그레스바 (멀티 세그먼트) */
+.att-progress-bar {
+  display: flex;
+  height: 16px;
+  background: var(--color-gray-100);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.att-progress-seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.att-progress-seg span {
+  font-size: 10px;
+  font-weight: var(--fontweight-medium);
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* 범례 도트 */
+.att-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+/* 통계 그리드 (4x2) */
+.att-stat-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.att-stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 8px;
+  background: var(--color-gray-50);
+  border-radius: var(--radius-xl);
+}
+
+
+@media (max-width: 991px) {
+  .att-info-label,
+  .att-info-value {
+    padding: 6px 12px;
+    font-size: var(--body-body3-fontSize);
+  }
+  .att-info-label {
+    width: 100px;
+  }
+  .att-stat-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .attendance-modal .list-summary .col-6 {
+    flex: 0 0 calc(50% - 4px);
+    width: calc(50% - 4px);
+  }
+}
+
+/* ==============================================
+   나의 수업정보 모달 (c_native2)
+   ============================================== */
+.class-info-modal .modal-content {
+  border: none;
+}
+
+.class-info-modal .modal-header {
+  border-color: var(--color-gray-200);
+}
+
+.class-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--color-bg-white);
+}
+
+.class-info-card-active {
+  border: 2px solid var(--color-colorchip-primary);
+  box-shadow: var(--effect-elevator-large);
+}
+
+/* ==============================================
+   c_native11 - 특강권 사용&관리
+   ============================================== */
+
+/* 나의 수강 정보 카드 — eval-teacher-card 패딩 오버라이드 */
+.eval-teacher-card.special-class-card {
+  padding: 16px;
+}
+
+@media (min-width: 992px) {
+  .eval-teacher-card.special-class-card {
+    padding: 24px 20px;
+  }
+}
+
+/* 기간/시간 */
+.special-class-period {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-medium);
+  color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  .special-class-period {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* 버튼 그룹 */
+.special-class-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .special-class-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
+}
+
+.special-class-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  color: #444444;
+  font-size: var(--body-body3-fontSize);
+  font-weight: var(--fontweight-bold);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* 특강권 목록 카드 */
+.special-class-list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: var(--effect-elevator-large);
+  padding: 16px;
+}
+
+@media (min-width: 992px) {
+  .special-class-list-card {
+    padding: 20px;
+  }
+}
+
+.special-class-list-card .mb-4 {
+  margin-bottom: 0 !important;
+}
+
+/* PC: 테이블 행 교차 배경색 */
+@media (min-width: 992px) {
+  .special-class-list-card .list-summary {
+    border-radius: var(--radius-lg);
+  }
+
+}
+
+/* 모바일: 테이블 행 버튼 stretch */
+@media (max-width: 991px) {
+  .special-class-list-card .list-summary .button {
+    flex: 1;
+  }
+}
+
+.form-select-custom {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--color-white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3E%3Cpath fill='%23666' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat right 12px center;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: 8px 32px 8px 12px;
+  cursor: pointer;
 }

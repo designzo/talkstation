@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>특강권 사용&관리 - 아이딕 잉글리시</title>
+    <!-- Bootstrap 3.3.7 -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="../css/reset.base.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/_variables.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <div class="d-flex container mypage">
+      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
+        <div class="profile-section p-4 text-center">
+          <div class="profile-img mx-auto mb-2">
+            <img src="avatar_main.png" alt="Profile" class="w-100" />
+          </div>
+          <h5 class="heading3 text-black">홍길동</h5>
+          <p class="body1 line-height-140 text-light-gray mb-4">
+            Hong gil dong
+          </p>
+          <button
+            class="button button-sm button-fill button-secondary rounded-pill"
+          >
+            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+          </button>
+
+          <div
+            class="gallery-grid mt-6 d-grid"
+            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
+          >
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+          </div>
+        </div>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navLesson"
+            >
+              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span>나의 수업 관리</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse in" id="navLesson">
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >아이딕 홈스쿨 강의실 입장</a
+                  >
+                </li>
+                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">VOCA 과제방</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="nav-menu-item">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item active">특강권 사용&amp;관리</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >원서&amp;영상수업 요청목록</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >월평가서 &amp; 출결정보</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >온라인 테스트 및 체험수업 결과</a
+                  >
+                </li>
+                <li><a href="#" class="nav-menu-item">신규선생님 평가</a></li>
+                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="lnb-actions d-flex flex-column gap-0-5">
+          <a class="button button-lg button-border button-primary button-block"
+            >수업불편 및 요청상담</a
+          >
+          <a class="button button-lg button-border button-primary button-block"
+            >선생님, 부탁 드려요</a
+          >
+          <a class="button button-lg button-border button-primary button-block"
+            >찐친 초대현황</a
+          >
+        </div>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navInfo"
+            >
+              <span class="nav-icon nav-icon-violet">👤</span>
+              <span>나의 정보</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse in" id="navInfo">
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">교재결제내역 / 장바구니</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                </li>
+                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
+                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navIdic"
+            >
+              <span class="nav-icon nav-icon-blue">📖</span>
+              <span>아이딕 잉글리시</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse in" id="navIdic">
+              <ul class="nav-menu">
+                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navSupport"
+            >
+              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span>학습지원서비스</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse in" id="navSupport">
+              <ul class="nav-menu">
+                <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
+                <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >수업연기 및 보강정책(환불)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+        <div class="content-container">
+          <h2 class="page-title">특강권 사용&amp;관리</h2>
+
+          <!-- ============================
+             탭
+             ============================ -->
+          <div class="d-flex justify-content-center">
+            <ul class="nav nav-pill">
+              <li class="nav-item active">
+                <a class="nav-link" data-toggle="tab" href="#tabUse">특강권 사용</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tabHistory">특강권 사용 내역</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <!-- ============================
+               탭1: 특강권 사용
+               ============================ -->
+            <div class="tab-pane active" id="tabUse">
+              <div class="d-flex flex-column gap-5 gap-lg-6">
+                <!-- 나의 수강 정보 -->
+                <div class="d-flex flex-column gap-3">
+                  <span class="heading4 text-black">나의 수강 정보</span>
+                  <div class="eval-teacher-card gap-3 special-class-card radius-xl d-flex align-items-center justify-content-between">
+                    <!-- 왼쪽: 강사 프로필 -->
+                    <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg">
+                      <div class="teacher-profile-avatar"></div>
+                      <div class="teacher-profile-content">
+                        <div class="d-flex align-items-center mb-1">
+                          <span class="teacher-profile-name">Teachername</span>
+                        </div>
+                        <div class="teacher-profile-meta">
+                          <span>필리핀/1개월 과정</span>
+                          <span class="divider">•</span>
+                          <span>주 2회</span>
+                          <span class="divider">•</span>
+                          <span>월/수</span>
+                          <span class="divider">•</span>
+                          <span>25분</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 기간/시간 -->
+                    <div class="special-class-period">
+                      <span>기간: 25.04.15~25.09.30</span>
+                      <span>시간 : 화,목 15:00</span>
+                    </div>
+                    <!-- 버튼 그룹 -->
+                    <div class="special-class-buttons">
+                      <button class="special-class-btn">특강 재수강</button>
+                      <button class="special-class-btn">강사 시간표</button>
+                      <button class="special-class-btn">소개영상</button>
+                      <button class="special-class-btn">선생님 부탁드려요</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 사용 가능한 특강권 목록 -->
+                <div class="special-class-list-card">
+                  <!-- 헤더 -->
+                  <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-start align-items-lg-center gap-2 mb-4">
+                    <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-end gap-2">
+                      <span class="heading4 text-black">사용 가능한 특강권 목록</span>
+                      <span class="body3 text-gray">특강권은 수강 기간 내에만 사용하실 수 있어요.</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 align-self-end">
+                      <span class="body3 text-neutral">사용 가능:</span>
+                      <span class="badge badge-sm badge-fill badge-blue">1건</span>
+                    </div>
+                  </div>
+
+                  <!-- 테이블 -->
+                  <div class="table-list-container">
+                    <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
+                      <div class="col-lg-2 text-center">지급일</div>
+                      <div class="col-lg-7 text-center">특강권 정보</div>
+                      <div class="col-lg-3 text-center">관리</div>
+                    </div>
+                    <div class="table-list-body d-flex flex-column gap-3 gap-lg-1-5">
+                      <!-- Row 1 -->
+                      <div class="list-summary row g-2 align-items-center">
+                        <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                          <span class="d-lg-none mark">지급일</span>
+                          <span class="body2 text-neutral">25.00.00</span>
+                        </div>
+                        <div class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5">
+                          <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                            <span>필리핀/1개월 과정</span>
+                            <span class="eval-dot"></span>
+                            <span>주 2회</span>
+                            <span class="eval-dot"></span>
+                            <span>월/수</span>
+                            <span class="eval-dot"></span>
+                            <span>25분</span>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center button-group">
+                          <button class="button button-sm button-fill button-primary">사용</button>
+                          <button class="button button-sm button-border button-primary">오전특강</button>
+                        </div>
+                      </div>
+                      <!-- Row 2 -->
+                      <div class="list-summary list-cell-highlight row g-2 align-items-center">
+                        <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                          <span class="d-lg-none mark">지급일</span>
+                          <span class="body2 text-neutral">25.00.00</span>
+                        </div>
+                        <div class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5">
+                          <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                            <span>필리핀/1개월 과정</span>
+                            <span class="eval-dot"></span>
+                            <span>주 2회</span>
+                            <span class="eval-dot"></span>
+                            <span>월/수</span>
+                            <span class="eval-dot"></span>
+                            <span>25분</span>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center button-group">
+                          <button class="button button-sm button-fill button-primary">사용</button>
+                          <button class="button button-sm button-border button-primary">오전특강</button>
+                        </div>
+                      </div>
+                      <!-- Row 3 -->
+                      <div class="list-summary row g-2 align-items-center">
+                        <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                          <span class="d-lg-none mark">지급일</span>
+                          <span class="body2 text-neutral">25.00.00</span>
+                        </div>
+                        <div class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5">
+                          <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                            <span>필리핀/1개월 과정</span>
+                            <span class="eval-dot"></span>
+                            <span>주 2회</span>
+                            <span class="eval-dot"></span>
+                            <span>월/수</span>
+                            <span class="eval-dot"></span>
+                            <span>25분</span>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center button-group">
+                          <button class="button button-sm button-fill button-primary">사용</button>
+                          <button class="button button-sm button-border button-primary">오전특강</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 페이지네이션 -->
+                  <div class="d-flex justify-content-end mt-4">
+                    <div
+                      class="d-none d-lg-flex align-items-center gap-3 text-light-gray small me-auto"
+                    >
+                      Showing <strong class="text-black">1</strong> Page of
+                      <strong class="text-black">2</strong> entries
+                    </div>
+                    <nav aria-label="Page navigation">
+                      <ul class="pagination pagination-custom gap-2 m-0">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#"
+                            ><i class="bi bi-chevron-double-left"></i
+                          ></a>
+                        </li>
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#"
+                            ><i class="bi bi-chevron-left"></i
+                          ></a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#"
+                            ><i class="bi bi-chevron-right"></i
+                          ></a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#"
+                            ><i class="bi bi-chevron-double-right"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============================
+               탭2: 특강권 사용 내역
+               ============================ -->
+            <div class="tab-pane" id="tabHistory">
+              <div class="special-class-list-card">
+                <!-- 헤더 -->
+                <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-start align-items-lg-center gap-2 mb-4">
+                  <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-end gap-2">
+                    <span class="heading4 text-black">특강권 사용 내역</span>
+                    <span class="body3 text-gray">아직 시작되지 않은 수업은 취소할 수 있어요.</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 align-self-end">
+                    <span class="body3 text-neutral">사용 내역:</span>
+                    <span class="badge badge-sm badge-fill badge-blue">1건</span>
+                  </div>
+                </div>
+
+                <!-- 테이블 -->
+                <div class="table-list-container">
+                  <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
+                    <div class="col-lg-2 text-center">사용일</div>
+                    <div class="col-lg-5 text-center">수업정보</div>
+                    <div class="col-lg-2 text-center">상태</div>
+                    <div class="col-lg-3 text-center">관리</div>
+                  </div>
+                  <div class="table-list-body d-flex flex-column gap-3 gap-lg-0-5">
+                    <!-- Row 1: 예약 / 취소 가능 -->
+                    <div class="list-summary row g-2 align-items-center">
+                      <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center">
+                        <span class="badge badge-sm badge-fill badge-primary">예약</span>
+                      </div>
+                      <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-lg-first">
+                        <span class="d-lg-none mark">사용일</span>
+                        <span class="body2 text-neutral">25.00.00</span>
+                      </div>
+                      <div class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5 order-lg-first">
+                        <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                          <span>필리핀/1개월 과정</span>
+                          <span class="eval-dot"></span>
+                          <span>주 2회</span>
+                          <span class="eval-dot"></span>
+                          <span>월/수</span>
+                          <span class="eval-dot"></span>
+                          <span>25분</span>
+                          <span class="eval-dot"></span>
+                          <span>Ariana</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center">
+                        <button class="button button-sm button-fill button-neutral">취소</button>
+                      </div>
+                    </div>
+                    <!-- Row 2: 진행중 / 취소불가 -->
+                    <div class="list-summary list-cell-highlight row g-2 align-items-center">
+                      <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center">
+                        <span class="badge badge-sm badge-fill badge-peacock">진행중</span>
+                      </div>
+                      <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-lg-first">
+                        <span class="d-lg-none mark">사용일</span>
+                        <span class="body2 text-neutral">25.00.00</span>
+                      </div>
+                      <div class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5 order-lg-first">
+                        <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                          <span>필리핀/1개월 과정</span>
+                          <span class="eval-dot"></span>
+                          <span>주 2회</span>
+                          <span class="eval-dot"></span>
+                          <span>월/수</span>
+                          <span class="eval-dot"></span>
+                          <span>25분</span>
+                          <span class="eval-dot"></span>
+                          <span>Ariana</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center">
+                        <span class="badge badge-sm badge-soft badge-dark">취소불가</span>
+                      </div>
+                    </div>
+                    <!-- Row 3: 완료 / 취소불가 -->
+                    <div class="list-summary row g-2 align-items-center">
+                      <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center">
+                        <span class="badge badge-sm badge-soft badge-gray">완료</span>
+                      </div>
+                      <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-lg-first">
+                        <span class="d-lg-none mark">사용일</span>
+                        <span class="body2 text-neutral">25.00.00</span>
+                      </div>
+                      <div class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5 order-lg-first">
+                        <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                          <span>필리핀/1개월 과정</span>
+                          <span class="eval-dot"></span>
+                          <span>주 2회</span>
+                          <span class="eval-dot"></span>
+                          <span>월/수</span>
+                          <span class="eval-dot"></span>
+                          <span>25분</span>
+                          <span class="eval-dot"></span>
+                          <span>Ariana</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center">
+                        <span class="badge badge-sm badge-soft badge-dark">취소불가</span>
+                      </div>
+                    </div>
+                    <!-- Row 4: 완료 / 취소불가 -->
+                    <div class="list-summary list-cell-highlight row g-2 align-items-center">
+                      <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center">
+                        <span class="badge badge-sm badge-soft badge-gray">완료</span>
+                      </div>
+                      <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-lg-first">
+                        <span class="d-lg-none mark">사용일</span>
+                        <span class="body2 text-neutral">25.00.00</span>
+                      </div>
+                      <div class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5 order-lg-first">
+                        <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                          <span>필리핀/1개월 과정</span>
+                          <span class="eval-dot"></span>
+                          <span>주 2회</span>
+                          <span class="eval-dot"></span>
+                          <span>월/수</span>
+                          <span class="eval-dot"></span>
+                          <span>25분</span>
+                          <span class="eval-dot"></span>
+                          <span>Ariana</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center">
+                        <span class="badge badge-sm badge-soft badge-dark">취소불가</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 페이지네이션 -->
+                <div class="d-flex justify-content-end mt-4">
+                  <div
+                    class="d-none d-lg-flex align-items-center gap-3 text-light-gray small me-auto"
+                  >
+                    Showing <strong class="text-black">1</strong> Page of
+                    <strong class="text-black">2</strong> entries
+                  </div>
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-custom gap-2 m-0">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#"
+                          ><i class="bi bi-chevron-double-left"></i
+                        ></a>
+                      </li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#"
+                          ><i class="bi bi-chevron-left"></i
+                        ></a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#"
+                          ><i class="bi bi-chevron-right"></i
+                        ></a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#"
+                          ><i class="bi bi-chevron-double-right"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
