@@ -989,6 +989,12 @@
 .text-neutral {
   color: var(--color-text-neutral);
 }
+.text-primary {
+  color: var(--color-colorchip-primary);
+}
+.text-red {
+  color: var(--color-colorchip-red);
+}
 .bg-white {
   background-color: var(--color-bg-white);
 }
@@ -3314,6 +3320,11 @@
 .mypage .w-auto {
   width: auto !important;
 }
+@media (min-width: 992px) {
+  .mypage .w-lg-auto {
+    width: auto !important;
+  }
+}
 .mypage .h-100 {
   height: 100% !important;
 }
@@ -3432,6 +3443,9 @@
   }
   .mypage .flex-lg-none {
     flex: none !important;
+  }
+  .mypage .flex-lg-wrap {
+    flex-wrap: wrap !important;
   }
 
   /* Align Items */

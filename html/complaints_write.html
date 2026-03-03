@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>수업 불편 및 요청 상담 - 아이딕 잉글리시</title>
+    <!-- Bootstrap 3.3.7 -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="../css/reset.base.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/_variables.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+
+    <div class="d-flex container mypage">
+      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
+        <div class="profile-section p-4 text-center">
+          <div class="profile-img mx-auto mb-2">
+            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
+          </div>
+          <h5 class="heading3 text-black">홍길동</h5>
+          <p class="body1 line-height-140 text-light-gray mb-4">
+            Hong gil dong
+          </p>
+          <button
+            class="button button-sm button-fill button-secondary rounded-pill"
+          >
+            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
+          </button>
+
+          <div
+            class="gallery-grid mt-6 d-grid"
+            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
+          >
+            <div class="gallery-item">
+              <img src="../images/avatar_main.png" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="../images/avatar_main.png" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="../images/avatar_main.png" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="../images/avatar_main.png" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="../images/avatar_main.png" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+            <div class="gallery-item">
+              <img src="../images/avatar_main.png" alt="" />
+              <span class="gallery-badge">Stella</span>
+            </div>
+          </div>
+        </div>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navLesson"
+            >
+              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span>나의 수업 관리</span>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+            </button>
+            <div class="collapse in" id="navLesson">
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >아이딕 홈스쿨 강의실 입장</a
+                  >
+                </li>
+                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">VOCA 과제방</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="nav-menu-item">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item">특강권 사용&amp;관리</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >원서&amp;영상수업 요청목록</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">월평가서 &amp; 출결정보</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >온라인 테스트 및 체험수업 결과</a
+                  >
+                </li>
+                <li><a href="#" class="nav-menu-item">신규선생님 평가</a></li>
+                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="lnb-actions d-flex flex-column gap-0-5">
+          <a
+            class="button button-lg button-border button-primary button-block active"
+            >수업불편 및 요청상담</a
+          >
+          <a class="button button-lg button-border button-primary button-block"
+            >선생님, 부탁 드려요</a
+          >
+          <a class="button button-lg button-border button-primary button-block"
+            >찐친 초대현황</a
+          >
+        </div>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navInfo"
+            >
+              <span class="nav-icon nav-icon-violet">👤</span>
+              <span>나의 정보</span>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+            </button>
+            <div class="collapse in" id="navInfo">
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">교재결제내역 / 장바구니</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                </li>
+                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
+                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navIdic"
+            >
+              <span class="nav-icon nav-icon-blue">📖</span>
+              <span>아이딕 잉글리시</span>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+            </button>
+            <div class="collapse in" id="navIdic">
+              <ul class="nav-menu">
+                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
+                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="menu-nav flex-column">
+          <div class="nav-section">
+            <button
+              class="nav-section-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navSupport"
+            >
+              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span>학습지원서비스</span>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+            </button>
+            <div class="collapse in" id="navSupport">
+              <ul class="nav-menu">
+                <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
+                <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
+                <li>
+                  <a href="#" class="nav-menu-item"
+                    >수업연기 및 보강정책(환불)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+        <div class="content-container">
+          <h2 class="page-title">수업 불편 및 요청 상담</h2>
+
+          <!-- ============================
+               수업 불편 수강 선택
+               ============================ -->
+            <div class="d-flex flex-column gap-4">
+              <span class="heading4 text-black">수업 불편 수강 선택</span>
+              <div
+                class="complaint-write-banner radius-xl d-flex align-items-center gap-4 p-4 p-lg-5"
+              >
+                <!-- 체크박스 -->
+                <label class="custom-input-wrap flex-shrink-0 align-self-start">
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox"
+                    name="selectCourse"
+                    checked
+                  />
+                </label>
+                <!-- 강사 프로필 -->
+                <div
+                  class="teacher-profile teacher-profile-horizontal teacher-profile-lg"
+                >
+                  <div class="teacher-profile-avatar"></div>
+                  <div class="teacher-profile-content">
+                    <div class="d-flex align-items-center mb-1-5">
+                      <span class="teacher-profile-name">Teachername</span>
+                    </div>
+                    <span class="body2 text-gray"
+                      >원어민(필리핀) A Time</span
+                    >
+                  </div>
+                </div>
+                <!-- 수강 상세 (PC: 오른쪽 / 모바일: 체크박스 인덴트 아래) -->
+                <div class="complaint-write-course-detail">
+                  <span class="body2 weight-medium text-gray"
+                    >25.04.15~25.09.30 화,목 15:00</span
+                  >
+                  <span class="body2 weight-medium text-gray"
+                    >교재 : Unspoken Rules of Traveling in Italy</span
+                  >
+                  <span
+                    class="badge badge-md badge-soft badge-primary rounded-pill"
+                    >레벨 : GL5(Sunflower) - STEP3</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- ============================
+               불편사항
+               ============================ -->
+            <div class="d-flex flex-column gap-4">
+              <span class="heading4 text-black">불편사항</span>
+
+              <!-- 시스템 불편 -->
+              <div class="complaint-write-card elevator-large radius-xl p-4">
+                <button
+                  class="complaint-write-toggle"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseSystem"
+                  aria-expanded="true"
+                  aria-controls="collapseSystem"
+                >
+                  <span class="heading5 text-black">시스템 불편</span>
+                  <svg class="icon"><use href="#chevron-up"></use></svg>
+                </button>
+                <div class="collapse in" id="collapseSystem">
+                  <div class="complaint-write-checklist">
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="sound"
+                      />
+                      <span class="label-text"
+                        >수업 진행중 선생님 소리가 잘 안들려요.</span
+                      >
+                    </label>
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="lag"
+                      />
+                      <span class="label-text"
+                        >수업 진행중 끊김이 심해요.</span
+                      >
+                    </label>
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="textbook"
+                      />
+                      <span class="label-text"
+                        >수업 진행중 교재가 보이지 않아요.</span
+                      >
+                    </label>
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="entrance"
+                      />
+                      <span class="label-text"
+                        >강의실 입장시 오류가 많이 생겨요.</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 선생님 불편 -->
+              <div class="complaint-write-card elevator-large radius-xl p-4">
+                <button
+                  class="complaint-write-toggle"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTeacher"
+                  aria-expanded="true"
+                  aria-controls="collapseTeacher"
+                >
+                  <span class="heading5 text-black">선생님 불편</span>
+                  <svg class="icon"><use href="#chevron-up"></use></svg>
+                </button>
+                <div class="collapse in" id="collapseTeacher">
+                  <div class="complaint-write-checklist">
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="late"
+                      />
+                      <span class="label-text"
+                        >선생님이 지각을 해요.(선생님이 수업시간을 지키지
+                        않아요.)</span
+                      >
+                    </label>
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="change-teacher"
+                      />
+                      <span class="label-text"
+                        >강사 불만으로 다른 강사 변경 요청</span
+                      >
+                    </label>
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="boring"
+                      />
+                      <span class="label-text"
+                        >담당 선생님 수업 흥미도가 떨어져요</span
+                      >
+                    </label>
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="material"
+                      />
+                      <span class="label-text">교재관련 불편사항</span>
+                    </label>
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="pronunciation"
+                      />
+                      <span class="label-text"
+                        >선생님 발음이 안 좋아요.</span
+                      >
+                    </label>
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="etc"
+                      />
+                      <span class="label-text">기타 불편사항</span>
+                    </label>
+                    <label class="custom-input-wrap left-align">
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        name="complaint"
+                        value="time-change"
+                      />
+                      <span class="label-text"
+                        >시간변경으로 다른 강사 변경 요청</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============================
+               기타요청사항
+               ============================ -->
+            <div class="d-flex flex-column gap-4">
+              <span class="heading4 text-black">기타요청사항</span>
+              <ul class="test-result-notes">
+                <li class="body2 text-light-gray">
+                  불편 사항 목록에 없거나 기타 요청 및 불편 사항이 있으면 아래에
+                  자세하게 써 넣어주세요.
+                </li>
+              </ul>
+              <textarea
+                class="textarea"
+                name="etcRequest"
+                placeholder="기타 내용 작성해주세요."
+                rows="5"
+              ></textarea>
+            </div>
+
+            <!-- ============================
+               하단 버튼
+               ============================ -->
+            <div class="d-flex justify-content-center">
+              <div class="button-group">
+                <a
+                  href="complaints.html"
+                  class="button button-md button-fill button-dark"
+                  >목록</a
+                >
+                <button
+                  type="button"
+                  class="button button-md button-fill button-primary"
+                >
+                  상담 등록
+                </button>
+              </div>
+            </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/icons.js"></script>
+  </body>
+</html>

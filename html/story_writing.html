@@ -9,13 +9,6 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -35,11 +28,12 @@
   </head>
 
   <body>
+
     <div class="d-flex container mypage">
       <aside class="lnb d-none gap-5 d-lg-flex flex-column">
         <div class="profile-section p-4 text-center">
           <div class="profile-img mx-auto mb-2">
-            <img src="avatar_main.png" alt="Profile" class="w-100" />
+            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
           </div>
           <h5 class="heading3 text-black">홍길동</h5>
           <p class="body1 line-height-140 text-light-gray mb-4">
@@ -48,7 +42,7 @@
           <button
             class="button button-sm button-fill button-secondary rounded-pill"
           >
-            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
           </button>
 
           <div
@@ -56,27 +50,27 @@
             style="grid-template-columns: repeat(3, 1fr); gap: 8px"
           >
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
           </div>
@@ -92,7 +86,7 @@
             >
               <span class="nav-icon nav-icon-cyan">📚</span>
               <span>나의 수업 관리</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
               <ul class="nav-menu">
@@ -163,7 +157,7 @@
             >
               <span class="nav-icon nav-icon-violet">👤</span>
               <span>나의 정보</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
               <ul class="nav-menu">
@@ -193,7 +187,7 @@
             >
               <span class="nav-icon nav-icon-blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
               <ul class="nav-menu">
@@ -216,7 +210,7 @@
             >
               <span class="nav-icon nav-icon-orange">🎓</span>
               <span>학습지원서비스</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
               <ul class="nav-menu">
@@ -243,6 +237,11 @@
           <div
             class="info-banner radius-2xl elevator-large d-flex flex-column flex-lg-row align-items-center gap-5 p-5"
           >
+            <img
+              class="info-banner-img"
+              src="../images/bg-note.svg"
+              alt="알파벳 배경 일러스트"
+            />
             <div class="d-flex flex-column gap-2">
               <p class="heading3 text-black text-center text-lg-start">
                 영어학습의 종착점은 Writing!<br />이제 화상영어로 Writing 까지
@@ -256,11 +255,6 @@
                 도와주는 입문 과정입니다.
               </p>
             </div>
-            <img
-              class="info-banner-img"
-              src="../images/bg-alphabet.svg"
-              alt="알파벳 배경 일러스트"
-            />
           </div>
 
           <!-- ============================
@@ -704,13 +698,11 @@
                 <ul class="pagination pagination-custom gap-2 m-0">
                   <li class="page-item disabled">
                     <a class="page-link" href="#"
-                      ><i class="bi bi-chevron-double-left"></i
-                    ></a>
+                      ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                   </li>
                   <li class="page-item disabled">
                     <a class="page-link" href="#"
-                      ><i class="bi bi-chevron-left"></i
-                    ></a>
+                      ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                   </li>
                   <li class="page-item active">
                     <a class="page-link" href="#">1</a>
@@ -723,13 +715,11 @@
                   </li>
                   <li class="page-item">
                     <a class="page-link" href="#"
-                      ><i class="bi bi-chevron-right"></i
-                    ></a>
+                      ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                   </li>
                   <li class="page-item">
                     <a class="page-link" href="#"
-                      ><i class="bi bi-chevron-double-right"></i
-                    ></a>
+                      ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                   </li>
                 </ul>
               </nav>
@@ -742,5 +732,6 @@
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/icons.js"></script>
   </body>
 </html>

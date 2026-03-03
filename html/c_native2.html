@@ -9,13 +9,6 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -35,11 +28,12 @@
   </head>
 
   <body>
+
     <div class="d-flex container mypage">
       <aside class="lnb d-none gap-5 d-lg-flex flex-column">
         <div class="profile-section p-4 text-center">
           <div class="profile-img mx-auto mb-2">
-            <img src="avatar_main.png" alt="Profile" class="w-100" />
+            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
           </div>
           <h5 class="heading3 text-black">홍길동</h5>
           <p class="body1 line-height-140 text-light-gray mb-4">
@@ -48,7 +42,7 @@
           <button
             class="button button-sm button-fill button-secondary rounded-pill"
           >
-            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
           </button>
 
           <div
@@ -56,27 +50,27 @@
             style="grid-template-columns: repeat(3, 1fr); gap: 8px"
           >
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
           </div>
@@ -92,7 +86,7 @@
             >
               <span class="nav-icon nav-icon-cyan">📚</span>
               <span>나의 수업 관리</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
               <ul class="nav-menu">
@@ -163,7 +157,7 @@
             >
               <span class="nav-icon nav-icon-violet">👤</span>
               <span>나의 정보</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
               <ul class="nav-menu">
@@ -193,7 +187,7 @@
             >
               <span class="nav-icon nav-icon-blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
               <ul class="nav-menu">
@@ -216,7 +210,7 @@
             >
               <span class="nav-icon nav-icon-orange">🎓</span>
               <span>학습지원서비스</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
               <ul class="nav-menu">
@@ -248,23 +242,23 @@
               <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg">
                 <div class="teacher-profile-avatar"></div>
                 <div class="teacher-profile-content">
-                  <div class="d-flex align-items-center mb-1">
+                  <div class="d-flex align-items-center mb-1-5">
                     <span class="teacher-profile-name">Teachername</span>
                   </div>
                   <div class="teacher-profile-meta">
                     <span>필리핀/1개월 과정</span>
-                    <span class="divider">•</span>
+                    <span class="dot"></span>
                     <span>주 2회</span>
-                    <span class="divider">•</span>
+                    <span class="dot"></span>
                     <span>월/수</span>
-                    <span class="divider">•</span>
+                    <span class="dot"></span>
                     <span>25분</span>
                   </div>
                 </div>
               </div>
               <!-- 오른쪽: 수업 정보 -->
               <div
-                class="d-flex flex-column align-items-end gap-1"
+                class="d-flex flex-column align-items-center align-items-lg-end gap-1"
               >
                 <p class="body2 text-white">
                   25.04.15~25.09.30 화,목 15:00
@@ -288,30 +282,16 @@
                   type="button"
                   aria-label="이전 강사"
                 >
-                  <i class="bi bi-chevron-left"></i>
+                  <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
                 <button
                   class="eval-nav-btn"
                   type="button"
                   aria-label="다음 강사"
                 >
-                  <i class="bi bi-chevron-right"></i>
+                  <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </nav>
-            </div>
-            <!-- 모바일: 수업 정보 (카드 아래) -->
-            <div
-              class="d-flex d-lg-none flex-column gap-2 px-2"
-            >
-              <p class="body3 text-neutral">
-                25.04.15~25.09.30 화,목 15:00
-              </p>
-              <p class="body3 text-gray">
-                교재 : Unspoken Rules of Traveling in Italy
-              </p>
-              <span class="badge badge-sm badge-fill badge-primary"
-                >레벨 : GL5(Sunflower) - STEP3</span
-              >
             </div>
             <button
               class="button button-sm button-transparent button-primary align-self-end ms-2"
@@ -319,196 +299,153 @@
               data-target="#classInfoModal"
             >
               한번에 모아보기 20
-              <i class="bi bi-arrows-fullscreen ms-1"></i>
+              <svg class="icon ms-1"><use href="#arrows-fullscreen"></use></svg>
             </button>
           </div>
 
           <!-- ============================
              일일학습 피드백 + 수업 캘린더
              ============================ -->
-          <div class="row g-4">
+          <div class="row row-gap-5 gx-10">
             <!-- 일일학습 피드백 -->
-            <div class="col-12 col-lg-7">
-            <div
-              class="eval-card radius-xl elevator-large d-flex flex-column overflow-hidden h-100"
-            >
-              <div class="eval-card-header">
-                <span class="heading4 text-white">일일학습 피드백</span>
-              </div>
-              <div class="d-flex flex-column gap-4 p-4 p-lg-5">
-                <!-- 강사 정보 -->
-                <div class="d-flex flex-column gap-2">
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="eval-avatar-sm"></div>
-                    <div class="d-flex flex-column">
-                      <span class="body2 fw-bold text-black"
-                        >Teachername</span
-                      >
-                      <span class="body4 text-light-gray">⏰ 10:00</span>
+            <div class="col-12 col-lg-6">
+              <div class="info-card radius-xl elevator-large">
+                <div class="info-card-header main-header">
+                  <h3 class="heading4 text-black">일일학습 피드백</h3>
+                </div>
+                <div class="info-card-body p-4 d-flex flex-column gap-4 p-lg-5">
+                  <!-- 강사 정보 -->
+                  <div
+                    class="teacher-profile teacher-profile-horizontal teacher-profile-md"
+                  >
+                    <div class="teacher-profile-avatar"></div>
+                    <div class="teacher-profile-content">
+                      <div class="teacher-profile-name mb-1">Teachername</div>
+                      <div class="teacher-profile-time">⏰ 10:00</div>
                     </div>
                   </div>
-                  <span class="badge badge-sm badge-soft badge-primary"
-                    >📖 GL6 - Why Are Potato Chip Bags Half Empty</span
+                  <span
+                    class="badge badge-md w-100 align-items-center badge-soft badge-primary"
                   >
-                </div>
-                <!-- 피드백 메시지 -->
-                <div class="d-flex flex-column gap-2">
-                  <div class="eval-feedback-msg">
-                    <p class="body3 text-neutral">
+                    📖 GL6 - Why Are Potato Chip Bags Half Empty
+                  </span>
+
+                  <!-- 피드백 메시지 -->
+                  <div class="feedback-list">
+                    <div class="feedback-item">
                       Keep growing like a plant — stay rooted in learning,
                       reach high with your goals! I'm proud of how you're
                       improving every day. 🌱
-                    </p>
-                  </div>
-                  <div class="eval-feedback-msg">
-                    <p class="body3 text-neutral">
+                    </div>
+                    <div class="feedback-item">
                       Keep growing like a plant — stay rooted in learning,
                       reach high with your goals! I'm proud of how you're
                       improving every day. 🌱
-                    </p>
-                  </div>
-                  <div class="eval-feedback-msg">
-                    <p class="body3 text-neutral">
+                    </div>
+                    <div class="feedback-item">
                       Keep growing like a plant — stay rooted in learning,
                       reach high with your goals! I'm proud of how you're
                       improving every day. 🌱
-                    </p>
-                  </div>
-                  <div class="eval-feedback-msg">
-                    <p class="body3 text-neutral">
+                    </div>
+                    <div class="feedback-item">
                       Keep growing like a plant — stay rooted in learning,
                       reach high with your goals! I'm proud of how you're
                       improving every day. 🌱
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             </div>
 
             <!-- 수업 캘린더 -->
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-6">
             <div
               class="eval-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5 gap-4 h-100"
             >
               <span class="heading4 text-black">수업 캘린더</span>
               <!-- 월 네비게이션 -->
-              <div class="d-flex align-items-center justify-content-center gap-3">
-                <button class="eval-month-btn" type="button" aria-label="이전 달">
-                  <i class="bi bi-chevron-left"></i>
+              <div class="monthly-header-nav">
+                <button class="monthly-nav-btn" type="button" aria-label="이전 달">
+                  <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
-                <span class="body1 fw-bold text-black">2025년 01월</span>
-                <button class="eval-month-btn" type="button" aria-label="다음 달">
-                  <i class="bi bi-chevron-right"></i>
+                <span class="heading5">2025년 01월</span>
+                <button class="monthly-nav-btn" type="button" aria-label="다음 달">
+                  <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
               <!-- 캘린더 그리드 -->
-              <div class="eval-calendar">
-                <!-- 요일 헤더 -->
-                <div class="eval-cal-head text-red">일</div>
-                <div class="eval-cal-head">월</div>
-                <div class="eval-cal-head">화</div>
-                <div class="eval-cal-head">수</div>
-                <div class="eval-cal-head">목</div>
-                <div class="eval-cal-head">금</div>
-                <div class="eval-cal-head text-blue">토</div>
-                <!-- 날짜 -->
-                <div class="eval-cal-cell text-light-gray">29</div>
-                <div class="eval-cal-cell text-light-gray">30</div>
-                <div class="eval-cal-cell text-light-gray">31</div>
-                <div class="eval-cal-cell">1</div>
-                <div class="eval-cal-cell">2</div>
-                <div class="eval-cal-cell">3</div>
-                <div class="eval-cal-cell">
-                  4
-                  <span class="eval-cal-dot eval-cal-dot-green"></span>
-                </div>
-                <div class="eval-cal-cell">5</div>
-                <div class="eval-cal-cell">6</div>
-                <div class="eval-cal-cell">
-                  7
-                  <span class="eval-cal-dot eval-cal-dot-blue"></span>
-                </div>
-                <div class="eval-cal-cell">
-                  8
-                  <span class="eval-cal-dot eval-cal-dot-orange"></span>
-                </div>
-                <div class="eval-cal-cell">
-                  9
-                  <span class="eval-cal-dot eval-cal-dot-green"></span>
-                </div>
-                <div class="eval-cal-cell">10</div>
-                <div class="eval-cal-cell">11</div>
-                <div class="eval-cal-cell">12</div>
-                <div class="eval-cal-cell">13</div>
-                <div class="eval-cal-cell">
-                  14
-                  <span class="eval-cal-dot eval-cal-dot-blue"></span>
-                </div>
-                <div class="eval-cal-cell">
-                  15
-                  <span class="eval-cal-dot eval-cal-dot-green"></span>
-                </div>
-                <div class="eval-cal-cell">
-                  16
-                  <span class="eval-cal-dot eval-cal-dot-green"></span>
-                </div>
-                <div class="eval-cal-cell">17</div>
-                <div class="eval-cal-cell">18</div>
-                <div class="eval-cal-cell">19</div>
-                <div class="eval-cal-cell">20</div>
-                <div class="eval-cal-cell">
-                  21
-                  <span class="eval-cal-dot eval-cal-dot-blue"></span>
-                </div>
-                <div class="eval-cal-cell">
-                  22
-                  <span class="eval-cal-dot eval-cal-dot-green"></span>
-                </div>
-                <div class="eval-cal-cell">
-                  23
-                  <span class="eval-cal-dot eval-cal-dot-green"></span>
-                </div>
-                <div class="eval-cal-cell">24</div>
-                <div class="eval-cal-cell">25</div>
-                <div class="eval-cal-cell">26</div>
-                <div class="eval-cal-cell">27</div>
-                <div class="eval-cal-cell">
-                  28
-                  <span class="eval-cal-dot eval-cal-dot-violet"></span>
-                </div>
-                <div class="eval-cal-cell">
-                  29
-                  <span class="eval-cal-dot eval-cal-dot-violet"></span>
-                </div>
-                <div class="eval-cal-cell">
-                  30
-                  <span class="eval-cal-dot eval-cal-dot-violet"></span>
-                </div>
-                <div class="eval-cal-cell">31</div>
-                <div class="eval-cal-cell text-light-gray">1</div>
+              <div class="calendar-grid">
+                <!-- Day Headers -->
+                <span class="cal-day-header">일</span>
+                <span class="cal-day-header">월</span>
+                <span class="cal-day-header">화</span>
+                <span class="cal-day-header">수</span>
+                <span class="cal-day-header">목</span>
+                <span class="cal-day-header">금</span>
+                <span class="cal-day-header">토</span>
+
+                <!-- Week 1 -->
+                <span class="cal-date cal-date--other">29</span>
+                <span class="cal-date cal-date--other">30</span>
+                <span class="cal-date cal-date--other">31</span>
+                <span class="cal-date">1</span>
+                <span class="cal-date">2</span>
+                <span class="cal-date">3</span>
+                <span class="cal-date cal-date--today">4<span class="cal-dot cal-dot-green"></span></span>
+
+                <!-- Week 2 -->
+                <span class="cal-date">5</span>
+                <span class="cal-date">6</span>
+                <span class="cal-date">7<span class="cal-dot cal-dot-blue"></span></span>
+                <span class="cal-date">8<span class="cal-dot cal-dot-orange"></span></span>
+                <span class="cal-date">9<span class="cal-dot cal-dot-green"></span></span>
+                <span class="cal-date">10</span>
+                <span class="cal-date">11</span>
+
+                <!-- Week 3 -->
+                <span class="cal-date">12</span>
+                <span class="cal-date">13</span>
+                <span class="cal-date">14<span class="cal-dot cal-dot-blue"></span></span>
+                <span class="cal-date">15<span class="cal-dot cal-dot-green"></span></span>
+                <span class="cal-date">16<span class="cal-dot cal-dot-green"></span></span>
+                <span class="cal-date">17</span>
+                <span class="cal-date">18</span>
+
+                <!-- Week 4 -->
+                <span class="cal-date">19</span>
+                <span class="cal-date">20</span>
+                <span class="cal-date">21<span class="cal-dot cal-dot-blue"></span></span>
+                <span class="cal-date">22<span class="cal-dot cal-dot-green"></span></span>
+                <span class="cal-date">23<span class="cal-dot cal-dot-green"></span></span>
+                <span class="cal-date">24</span>
+                <span class="cal-date">25</span>
+
+                <!-- Week 5 -->
+                <span class="cal-date">26</span>
+                <span class="cal-date">27</span>
+                <span class="cal-date">28<span class="cal-dot cal-dot-violet"></span></span>
+                <span class="cal-date">29<span class="cal-dot cal-dot-violet"></span></span>
+                <span class="cal-date">30<span class="cal-dot cal-dot-violet"></span></span>
+                <span class="cal-date">31</span>
+                <span class="cal-date cal-date--other">1</span>
               </div>
-              <!-- 범례 -->
-              <div class="d-flex flex-wrap align-items-center gap-3 pt-3 border-top">
-                <div class="d-flex align-items-center gap-1">
-                  <span class="eval-legend-dot eval-cal-dot-blue"></span>
-                  <span class="body4 text-gray">수업:</span>
-                  <span class="body4 fw-bold text-black">1회</span>
+              <!-- Calendar Legend -->
+              <div class="calendar-legend mt-auto">
+                <div class="calendar-legend-item">
+                  <span class="calendar-legend-dot calendar-legend-dot-lesson"></span>
+                  <span>수업: <b>1회</b></span>
                 </div>
-                <div class="d-flex align-items-center gap-1">
-                  <span class="eval-legend-dot eval-cal-dot-green"></span>
-                  <span class="body4 text-gray">출석:</span>
-                  <span class="body4 fw-bold text-black">1회</span>
+                <div class="calendar-legend-item">
+                  <span class="calendar-legend-dot calendar-legend-dot-attend"></span>
+                  <span>출석: <b>1회</b></span>
                 </div>
-                <div class="d-flex align-items-center gap-1">
-                  <span class="eval-legend-dot eval-cal-dot-orange"></span>
-                  <span class="body4 text-gray">결석:</span>
-                  <span class="body4 fw-bold text-black">1회</span>
+                <div class="calendar-legend-item">
+                  <span class="calendar-legend-dot calendar-legend-dot-absent"></span>
+                  <span>결석: <b>1회</b></span>
                 </div>
-                <div class="d-flex align-items-center gap-1">
-                  <span class="eval-legend-dot eval-cal-dot-violet"></span>
-                  <span class="body4 text-gray">보강:</span>
-                  <span class="body4 fw-bold text-black">1회</span>
+                <div class="calendar-legend-item">
+                  <span class="calendar-legend-dot calendar-legend-dot-makeup"></span>
+                  <span>보강: <b>1회</b></span>
                 </div>
               </div>
             </div>
@@ -528,27 +465,17 @@
               >
                 <span class="heading4 text-black">DFB VOCA 학습 현황</span>
                 <button class="button button-sm button-border button-primary">
-                  과제방 입장 <i class="bi bi-arrow-right ms-1"></i>
+                  과제방 입장 <svg class="icon ms-1"><use href="#arrow-right"></use></svg>
                 </button>
               </div>
               <!-- 월 네비게이션 -->
-              <div
-                class="d-flex align-items-center justify-content-center gap-3"
-              >
-                <button
-                  class="eval-month-btn"
-                  type="button"
-                  aria-label="이전 달"
-                >
-                  <i class="bi bi-chevron-left"></i>
+              <div class="monthly-header-nav">
+                <button class="monthly-nav-btn" type="button" aria-label="이전 달">
+                  <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
-                <span class="body1 fw-bold text-black">2025년 01월</span>
-                <button
-                  class="eval-month-btn"
-                  type="button"
-                  aria-label="다음 달"
-                >
-                  <i class="bi bi-chevron-right"></i>
+                <span class="heading5">2025년 01월</span>
+                <button class="monthly-nav-btn" type="button" aria-label="다음 달">
+                  <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
               <!-- 포인트 + 완료율 -->
@@ -648,27 +575,17 @@
               >
                 <span class="heading4 text-black">출결 현황</span>
                 <button class="button button-sm button-border button-default" data-toggle="modal" data-target="#attendanceModal">
-                  자세히 보기 <i class="bi bi-chevron-right ms-1"></i>
+                  자세히 보기 <svg class="icon ms-1"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
               <!-- 월 네비게이션 -->
-              <div
-                class="d-flex align-items-center justify-content-center gap-3"
-              >
-                <button
-                  class="eval-month-btn"
-                  type="button"
-                  aria-label="이전 달"
-                >
-                  <i class="bi bi-chevron-left"></i>
+              <div class="monthly-header-nav">
+                <button class="monthly-nav-btn" type="button" aria-label="이전 달">
+                  <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
-                <span class="body1 fw-bold text-black">2025년 01월</span>
-                <button
-                  class="eval-month-btn"
-                  type="button"
-                  aria-label="다음 달"
-                >
-                  <i class="bi bi-chevron-right"></i>
+                <span class="heading5">2025년 01월</span>
+                <button class="monthly-nav-btn" type="button" aria-label="다음 달">
+                  <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
               <!-- 출석률 프로그레스 -->
@@ -719,23 +636,13 @@
             class="eval-card radius-2xl elevator-large d-flex flex-column p-4 p-lg-5 gap-4"
           >
             <!-- 월 네비게이션 -->
-            <div
-              class="d-flex align-items-center justify-content-center gap-3"
-            >
-              <button
-                class="eval-month-btn"
-                type="button"
-                aria-label="이전 달"
-              >
-                <i class="bi bi-chevron-left"></i>
+            <div class="monthly-header-nav">
+              <button class="monthly-nav-btn" type="button" aria-label="이전 달">
+                <svg class="icon"><use href="#chevron-left"></use></svg>
               </button>
-              <span class="body1 fw-bold text-black">2025년 01월</span>
-              <button
-                class="eval-month-btn"
-                type="button"
-                aria-label="다음 달"
-              >
-                <i class="bi bi-chevron-right"></i>
+              <span class="heading5">2025년 01월</span>
+              <button class="monthly-nav-btn" type="button" aria-label="다음 달">
+                <svg class="icon"><use href="#chevron-right"></use></svg>
               </button>
             </div>
             <!-- 강사 + 학생 정보 -->
@@ -908,7 +815,7 @@
             </div>
             <button class="eval-translate-btn">
               한글 번역 보러가기
-              <i class="bi bi-translate"></i>
+              <svg class="icon"><use href="#translate"></use></svg>
             </button>
           </div>
         </div>
@@ -948,8 +855,8 @@
                 <span class="heading3 text-black">TALKSTATION 출석확인증</span>
                 <span class="body2 text-light-gray">2025년 11월 03일 ~ 2025년 12월 03일</span>
               </div>
-              <button class="button button-sm button-fill button-primary">
-                출결정보 프린트 <i class="bi bi-printer-fill ms-1"></i>
+              <button class="button button-md button-fill button-primary">
+                출결정보 프린트 <svg class="icon ms-1"><use href="#printer-fill"></use></svg>
               </button>
             </div>
 
@@ -1298,22 +1205,20 @@
             <!-- 수업 카드 1 (현재 수업 - 하이라이트) -->
             <div class="class-info-card class-info-card-active radius-xl p-4 p-lg-5">
               <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="d-flex align-items-center gap-3">
-                <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
-                  <div class="teacher-profile-avatar"></div>
-                  <div class="teacher-profile-content d-flex flex-column gap-1">
-                    <span class="teacher-profile-name heading4">Teachername</span>
-                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                      <span class="body2 text-light-gray">필리핀/1개월 과정</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">주 2회</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">월/수</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">25분</span>
-                    </div>
-                    <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg w-100">
+                <div class="teacher-profile-avatar"></div>
+                <div class="teacher-profile-content d-flex flex-column gap-1">
+                  <span class="teacher-profile-name">Teachername</span>
+                  <div class="d-flex align-items-center gap-2 flex-wrap">
+                    <span class="body2 text-light-gray">필리핀/1개월 과정</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">주 2회</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">월/수</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">25분</span>
                   </div>
+                  <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
                 </div>
               </div>
             </div>
@@ -1321,22 +1226,20 @@
             <!-- 수업 카드 2 -->
             <div class="class-info-card radius-xl elevator-large p-4 p-lg-5">
               <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="d-flex align-items-center gap-3">
-                <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
-                  <div class="teacher-profile-avatar"></div>
-                  <div class="teacher-profile-content d-flex flex-column gap-1">
-                    <span class="teacher-profile-name heading4">Teachername</span>
-                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                      <span class="body2 text-light-gray">필리핀/1개월 과정</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">주 2회</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">월/수</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">25분</span>
-                    </div>
-                    <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg w-100">
+                <div class="teacher-profile-avatar"></div>
+                <div class="teacher-profile-content d-flex flex-column gap-1">
+                  <span class="teacher-profile-name">Teachername</span>
+                  <div class="d-flex align-items-center gap-2 flex-wrap">
+                    <span class="body2 text-light-gray">필리핀/1개월 과정</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">주 2회</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">월/수</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">25분</span>
                   </div>
+                  <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
                 </div>
               </div>
             </div>
@@ -1344,22 +1247,20 @@
             <!-- 수업 카드 3 -->
             <div class="class-info-card radius-xl elevator-large p-4 p-lg-5">
               <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="d-flex align-items-center gap-3">
-                <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
-                  <div class="teacher-profile-avatar"></div>
-                  <div class="teacher-profile-content d-flex flex-column gap-1">
-                    <span class="teacher-profile-name heading4">Teachername</span>
-                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                      <span class="body2 text-light-gray">필리핀/1개월 과정</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">주 2회</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">월/수</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">25분</span>
-                    </div>
-                    <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg w-100">
+                <div class="teacher-profile-avatar"></div>
+                <div class="teacher-profile-content d-flex flex-column gap-1">
+                  <span class="teacher-profile-name">Teachername</span>
+                  <div class="d-flex align-items-center gap-2 flex-wrap">
+                    <span class="body2 text-light-gray">필리핀/1개월 과정</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">주 2회</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">월/수</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">25분</span>
                   </div>
+                  <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
                 </div>
               </div>
             </div>
@@ -1367,22 +1268,20 @@
             <!-- 수업 카드 4 -->
             <div class="class-info-card radius-xl elevator-large p-4 p-lg-5">
               <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="d-flex align-items-center gap-3">
-                <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
-                  <div class="teacher-profile-avatar"></div>
-                  <div class="teacher-profile-content d-flex flex-column gap-1">
-                    <span class="teacher-profile-name heading4">Teachername</span>
-                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                      <span class="body2 text-light-gray">필리핀/1개월 과정</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">주 2회</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">월/수</span>
-                      <span class="eval-dot"></span>
-                      <span class="body2 text-light-gray">25분</span>
-                    </div>
-                    <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg w-100">
+                <div class="teacher-profile-avatar"></div>
+                <div class="teacher-profile-content d-flex flex-column gap-1">
+                  <span class="teacher-profile-name">Teachername</span>
+                  <div class="d-flex align-items-center gap-2 flex-wrap">
+                    <span class="body2 text-light-gray">필리핀/1개월 과정</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">주 2회</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">월/수</span>
+                    <span class="eval-dot"></span>
+                    <span class="body2 text-light-gray">25분</span>
                   </div>
+                  <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
                 </div>
               </div>
             </div>
@@ -1395,5 +1294,6 @@
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/icons.js"></script>
   </body>
 </html>

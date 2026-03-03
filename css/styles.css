@@ -113,6 +113,26 @@ h6,
   line-height: var(--lineheight-base);
 }
 
+.weight-medium {
+  font-weight: var(--fontweight-medium); 
+}
+
+.weight-semibold {
+  font-weight: var(--fontweight-semibold); 
+}
+
+.weight-bold {
+  font-weight: var(--fontweight-bold); 
+}
+
+.dot {
+  display: inline-flex;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-border-normal);
+  border-radius: 50%;
+}
+
 @media (min-width: 992px) {
   .lesson-card-body-scroll {
     max-height: 286px;
@@ -211,6 +231,10 @@ h6,
   height: 100px;
   margin: 0 auto;
   border-radius: var(--radius-full);
+}
+
+.lesson-week-circle h2 {
+  color: var(--color-cyan-800);
 }
 
 /* ==============================================
@@ -1257,6 +1281,7 @@ h6,
     flex-direction: column;
     text-align: center;
     padding: 20px 24px;
+    overflow: visible;
   }
 
   .eval-teacher-card .teacher-profile-horizontal {
@@ -1273,13 +1298,9 @@ h6,
   }
 
   .eval-teacher-nav {
-    position: static;
-    width: auto;
+    left: -12px;
+    width: calc(100% + 24px);
     padding: 0;
-    transform: none;
-    justify-content: center;
-    gap: 8px;
-    pointer-events: auto;
   }
 }
 
@@ -1494,6 +1515,12 @@ h6,
   background: var(--color-gray-300);
   border-radius: 50%;
 }
+.test-result-notes.bg-primary {
+  background-color: transparent !important;
+}
+.test-result-notes.bg-primary li::before {
+  background: var(--color-colorchip-primary);
+}
 
 /* 결과 요약 래퍼 */
 .test-overview-box {
@@ -1701,15 +1728,15 @@ h6,
    수업 불편 및 요청 상담 (c_ntutor1)
    ============================================== */
 
-/* 불편사항 / 기타 요청 사항 박스 */
-.complaint-section {
+/* 상세 내용 박스 (gray) */
+.section-box {
   padding: 16px;
   background-color: var(--color-gray-50);
   border-radius: var(--radius-lg);
 }
 
-/* 토크스테이션 답변 박스 */
-.complaint-reply {
+/* 답변 박스 (cyan) */
+.reply-box {
   padding: 16px;
   background-color: #f5fafd;
   border: 1px solid #e2f2fa;
@@ -1843,9 +1870,9 @@ h6,
   flex-shrink: 0;
 }
 
-/* 통계 그리드 (4x2) */
+/* 통계 그리드 (PC: 1x8 / Mobile: 4x2) */
 .att-stat-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .att-stat-box {
@@ -1898,6 +1925,15 @@ h6,
 .class-info-card-active {
   border: 2px solid var(--color-colorchip-primary);
   box-shadow: var(--effect-elevator-large);
+}
+
+@media (max-width: 991px) {
+  .class-info-card {
+    align-items: center;
+  }
+  .class-info-card .badge {
+    align-self: flex-start;
+  }
 }
 
 /* ==============================================
@@ -2008,3 +2044,517 @@ h6,
   padding: 8px 32px 8px 12px;
   cursor: pointer;
 }
+
+/* ==============================================
+   강사평가 모달 (ntutor_1 - eval modal)
+   ============================================== */
+.ntutor-eval-modal .modal-content {
+  border: none;
+}
+
+.ntutor-eval-modal .modal-header {
+  border-color: var(--color-gray-200);
+}
+
+/* 안내 배너 */
+.eval-modal-banner {
+  padding: var(--spacing-4);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-cyan-50);
+}
+
+/* 라디오 그룹 */
+.eval-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+/* 푸터 */
+.eval-modal-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--spacing-4);
+  border-top: 1px solid var(--color-border-normal);
+}
+
+/* fieldset 초기화 (BS3 legend 리셋) */
+.ntutor-eval-modal fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.ntutor-eval-modal legend {
+  padding: 0;
+  margin-bottom: var(--spacing-3);
+  border: 0;
+  width: auto;
+  float: none;
+}
+
+/* PC: 라디오 가로 배치 */
+@media (min-width: 992px) {
+  .eval-radio-group {
+    flex-direction: row;
+    gap: var(--spacing-5);
+  }
+}
+
+/* textarea focus */
+.ntutor-eval-modal .textarea:focus {
+  border-color: var(--color-colorchip-primary);
+}
+
+/* 평가확인 모달 - 기타 의견 readonly 영역 */
+.eval-view-textarea-wrap {
+  padding: var(--spacing-4);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-cyan-50);
+}
+
+/* disabled fieldset 내 label 커서 */
+.ntutor-eval-modal fieldset[disabled] .custom-input-wrap {
+  cursor: not-allowed;
+}
+
+/* ==============================================
+   수업 불편 및 요청 상담 - 상담 등록 (complaints_write)
+   ============================================== */
+
+/* 수강 선택 배너 */
+.complaint-write-banner {
+  background-color: var(--color-bg-blue-light);
+  border: 1px solid var(--color-cyan-50);
+  flex-wrap: wrap;
+}
+
+/* 수강 상세 (기간/교재/레벨) */
+.complaint-write-course-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-1);
+  width: 100%;
+  padding-left: 30px;
+}
+
+@media (min-width: 992px) {
+  .complaint-write-banner {
+    flex-wrap: nowrap;
+  }
+  .complaint-write-course-detail {
+    align-items: flex-end;
+    text-align: right;
+    margin-left: auto;
+    width: auto;
+    padding-left: 0;
+  }
+}
+
+/* 불편사항 카드 */
+.complaint-write-card {
+  background-color: var(--color-bg-white);
+}
+
+/* collapse 토글 버튼 */
+.complaint-write-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.complaint-write-toggle i {
+  font-size: 20px;
+  color: var(--color-gray-500);
+  transition: transform 0.2s ease;
+}
+
+.complaint-write-toggle.collapsed i {
+  transform: rotate(180deg);
+}
+
+/* 체크리스트 영역 */
+.complaint-write-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding-top: var(--spacing-5);
+  margin-top: var(--spacing-4);
+  border-top: 1px solid var(--color-border-light);
+}
+
+@media (min-width: 992px) {
+  .complaint-write-checklist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-3);
+  }
+}
+
+/* ==========================================
+   교재 결제 내역 & 장바구니 (bbuy1)
+   ========================================== */
+
+/* 장바구니 카드 아이템 */
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3);
+  background-color: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--effect-elevator-large);
+}
+
+@media (min-width: 992px) {
+  .cart-item {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+  }
+}
+
+/* 교재 이미지 */
+.cart-book-img {
+  width: 52px;
+  height: 77px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-super-light)
+}
+
+/* 수량 컨트롤 */
+.qty-control {
+  display: inline-flex;
+  align-items: center;
+}
+
+.qty-input {
+  width: 50px;
+  min-height: 41px;
+  text-align: center;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: var(--color-gray-700);
+  padding: 10px;
+}
+
+/* 가격/수량 영역: 모바일=세로, PC=가로 */
+.cart-price-qty {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding-top: var(--spacing-2);
+  border-top: 1px solid var(--color-gray-300);
+}
+
+@media (min-width: 992px) {
+  .cart-price-qty {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* 액션 버튼: 모바일=가로, PC=세로 */
+.cart-actions {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.cart-actions .button {
+  flex: 1;
+}
+
+@media (min-width: 992px) {
+  .cart-actions {
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  .cart-actions .button {
+    flex: 0 0 auto;
+  }
+}
+
+/* 결제 예상 금액 바 */
+.cart-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-4);
+  padding-top: var(--spacing-2);
+}
+
+/* 결제내역 카드 아이템 */
+.history-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding: var(--spacing-4);
+  background-color: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--effect-elevator-large);
+}
+
+@media (min-width: 992px) {
+  .history-item {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* 결제내역 썸네일 (뱃지+이미지) */
+.history-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-2);
+  flex-shrink: 0;
+}
+
+/* 결제내역 상세 (가격+주소정보) */
+.history-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  padding-top: var(--spacing-2);
+  border-top: 1px solid var(--color-gray-300);
+}
+
+/* 결제내역 액션 버튼 */
+.history-actions {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.history-actions .button {
+  flex: 1;
+}
+
+@media (min-width: 992px) {
+  .history-actions .button {
+    flex: 0 0 auto;
+  }
+}
+
+/* 교재 구매 주문 폼 라벨 */
+.order-form-label {
+  flex-shrink: 0;
+  width: auto;
+}
+
+@media (min-width: 992px) {
+  .order-form-label {
+    width: 120px;
+    text-align: center;
+  }
+}
+
+/* 모바일 결제예정금액 행 구분선 */
+.order-summary-row {
+  padding-top: var(--spacing-2);
+  border-top: 1px solid var(--color-border-light);
+}
+
+@media (min-width: 992px) {
+  .order-summary-row {
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
+/* ==============================================
+   수강료 결제 및 취소 내역 (cancel_list)
+   ============================================== */
+
+/* 카드 구조 */
+.cancel-card {
+  background-color: #fff;
+}
+
+.cancel-card-header {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.cancel-card-footer {
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* 결제/환불 금액 박스 */
+.cancel-price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1-5);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+}
+
+@media (min-width: 992px) {
+  .cancel-price-box {
+    width: 180px;
+  }
+}
+
+.cancel-price-box-blue {
+  background-color: var(--color-bg-secondary);
+}
+
+.cancel-price-box-red {
+  background-color: #fff5f5;
+}
+
+/* 환불 빨간 텍스트/버튼 */
+.cancel-text-red {
+  color: #ff5c5c;
+}
+
+/* 결합상품 과정 구분 (점선) */
+.cancel-course-divider {
+  padding-top: var(--spacing-3);
+  border-top: 1px dashed var(--color-border-light);
+}
+
+/* 필터 select 래퍼 */
+.cancel-select-wrap {
+  width: auto;
+  display: inline-flex;
+}
+
+.cancel-select-wrap .input {
+  min-width: 80px;
+}
+
+/* 필터 버튼 가로 스크롤 (모바일) */
+@media (max-width: 991px) {
+  .cancel-filter-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .cancel-filter-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ==============================================================
+   화상영어 가이드 (guide2)
+   ============================================================== */
+.guide-card {
+  background-color: var(--color-bg-white);
+}
+
+.guide-table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.guide-table-header {
+  display: flex;
+  gap: 8px;
+  padding: var(--spacing-3-5) var(--spacing-4);
+  background-color: var(--color-cyan-50);
+  border-radius: var(--radius-md);
+}
+
+.guide-table-header .guide-table-cell {
+  flex: 1;
+  text-align: center;
+  font-size: var(--body-body3-fontSize);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-cyan-800);
+}
+
+.guide-table-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+}
+
+.guide-table-row-alt {
+  background-color: var(--color-bg-secondary);
+}
+
+.guide-table-row .guide-table-cell {
+  flex: 1;
+  text-align: center;
+  font-size: var(--body-body2-fontSize);
+  line-height: 1.4;
+  color: var(--color-text-dark);
+}
+
+.guide-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guide-info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 992px) {
+  .guide-info-list {
+    gap: var(--spacing-4)
+  }
+  .guide-info-row {
+    flex-direction: column;
+    gap: var(--spacing-1-5);
+  }
+}
+
+.guide-info-label {
+  min-width: 60px;
+  flex-shrink: 0;
+  font-size: var(--body-body2-fontSize);
+  line-height: 1.4;
+  color: var(--color-text-gray);
+}
+
+.guide-info-value {
+  font-size: var(--body-body2-fontSize);
+  font-weight: var(--fontweight-bold);
+  line-height: 1.4;
+  color: var(--color-text-dark);
+}
+
+.guide-room-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+@media (max-width: 991px) {
+  .guide-room-grid .button {
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .guide-room-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.guide-screenshot {
+  max-width: 100%;
+  height: auto;
+}
+

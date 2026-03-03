@@ -9,13 +9,6 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -35,11 +28,12 @@
   </head>
 
   <body>
+
     <div class="d-flex container mypage">
       <aside class="lnb d-none gap-5 d-lg-flex flex-column">
         <div class="profile-section p-4 text-center">
           <div class="profile-img mx-auto mb-2">
-            <img src="avatar_main.png" alt="Profile" class="w-100" />
+            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
           </div>
           <h5 class="heading3 text-black">홍길동</h5>
           <p class="body1 line-height-140 text-light-gray mb-4">
@@ -48,7 +42,7 @@
           <button
             class="button button-sm button-fill button-secondary rounded-pill"
           >
-            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
           </button>
 
           <div
@@ -56,27 +50,27 @@
             style="grid-template-columns: repeat(3, 1fr); gap: 8px"
           >
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
           </div>
@@ -92,7 +86,7 @@
             >
               <span class="nav-icon nav-icon-cyan">📚</span>
               <span>나의 수업 관리</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
               <ul class="nav-menu">
@@ -161,7 +155,7 @@
             >
               <span class="nav-icon nav-icon-violet">👤</span>
               <span>나의 정보</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
               <ul class="nav-menu">
@@ -191,7 +185,7 @@
             >
               <span class="nav-icon nav-icon-blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
               <ul class="nav-menu">
@@ -214,7 +208,7 @@
             >
               <span class="nav-icon nav-icon-orange">🎓</span>
               <span>학습지원서비스</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
               <ul class="nav-menu">
@@ -259,7 +253,7 @@
               <!-- 카드 헤더: 날짜 + 버튼 -->
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-1">
-                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <svg class="icon" style="color: var(--color-cyan-500)"><use href="#calendar2-event"></use></svg>
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
@@ -274,7 +268,7 @@
                     aria-expanded="true"
                     aria-controls="trialDetail1"
                   >
-                    <i class="bi bi-chevron-down"></i>
+                    <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                   </button>
                 </div>
               </div>
@@ -632,8 +626,7 @@
                       레벨결과의 자세한 문의는 고객센터
                       <a
                         href="tel:1666-2976"
-                        class="fw-bold"
-                        style="color: var(--color-cyan-500)"
+                        class="fw-bold text-primary"
                         >1666-2976</a
                       >으로 연락주세요.
                     </li>
@@ -648,7 +641,7 @@
             >
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-1">
-                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <svg class="icon" style="color: var(--color-cyan-500)"><use href="#calendar2-event"></use></svg>
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
@@ -663,7 +656,7 @@
                     aria-expanded="false"
                     aria-controls="trialDetail2"
                   >
-                    <i class="bi bi-chevron-down"></i>
+                    <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                   </button>
                 </div>
               </div>
@@ -719,7 +712,7 @@
             >
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-1">
-                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <svg class="icon" style="color: var(--color-cyan-500)"><use href="#calendar2-event"></use></svg>
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
@@ -734,7 +727,7 @@
                     aria-expanded="false"
                     aria-controls="testDetail1"
                   >
-                    <i class="bi bi-chevron-down"></i>
+                    <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                   </button>
                 </div>
               </div>
@@ -793,12 +786,9 @@
                           <span class="body2 fw-bold text-cyan-dark"
                             >98%</span
                           >
-                          <i
-                            class="bi bi-triangle-fill"
-                            style="transform: rotate(90deg);
+                          <svg class="icon" style="transform: rotate(90deg);
                             font-size: 8px;
-                              color: var(--color-text-gray);"
-                          ></i>
+                              color: var(--color-text-gray);"><use href="#triangle-fill"></use></svg>
                           <span class="body2 text-gray">추천레벨:</span>
                           <span class="body2 fw-bold text-purple"
                             >40%</span
@@ -817,13 +807,13 @@
                             정답율 85% 이상 상위레벨
                           </div>
                           <div class="test-level-chevron">
-                            <i class="bi bi-chevron-down" style="font-size: 12px; color: var(--color-gray-400)"></i>
+                            <svg class="icon icon-chevron-down" style="font-size: 12px; color: var(--color-gray-400)"><use href="#chevron-down"></use></svg>
                           </div>
                           <div class="test-level-bar test-level-current">
                             정답율 70% ~ 84% 이상 현재레벨
                           </div>
                           <div class="test-level-chevron">
-                            <i class="bi bi-chevron-down" style="font-size: 12px; color: var(--color-gray-400)"></i>
+                            <svg class="icon icon-chevron-down" style="font-size: 12px; color: var(--color-gray-400)"><use href="#chevron-down"></use></svg>
                           </div>
                           <div class="test-level-bar test-level-lower">
                             정답율 70% 미만 하위레벨
@@ -1016,7 +1006,7 @@
                           </div>
                           <div class="d-flex flex-column gap-2">
                             <div class="test-answer test-answer-correct">
-                              <i class="bi bi-check-circle-fill"></i>
+                              <svg class="icon"><use href="#check-circle-fill"></use></svg>
                               <span class="body3 fw-medium"
                                 >a. She is teaching her students.</span
                               >
@@ -1041,7 +1031,7 @@
             >
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-1">
-                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <svg class="icon" style="color: var(--color-cyan-500)"><use href="#calendar2-event"></use></svg>
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
@@ -1056,7 +1046,7 @@
                     aria-expanded="false"
                     aria-controls="testDetail2"
                   >
-                    <i class="bi bi-chevron-down"></i>
+                    <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                   </button>
                 </div>
               </div>
@@ -1095,7 +1085,7 @@
             >
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-1">
-                  <i class="bi bi-calendar2-event" style="color: var(--color-cyan-500)"></i>
+                  <svg class="icon" style="color: var(--color-cyan-500)"><use href="#calendar2-event"></use></svg>
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
@@ -1110,7 +1100,7 @@
                     aria-expanded="false"
                     aria-controls="testDetail3"
                   >
-                    <i class="bi bi-chevron-down"></i>
+                    <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                   </button>
                 </div>
               </div>
@@ -1150,5 +1140,6 @@
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/icons.js"></script>
   </body>
 </html>

@@ -9,13 +9,6 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -35,11 +28,12 @@
   </head>
 
   <body>
+
     <div class="d-flex container mypage">
       <aside class="lnb d-none gap-5 d-lg-flex flex-column">
         <div class="profile-section p-4 text-center">
           <div class="profile-img mx-auto mb-2">
-            <img src="avatar_main.png" alt="Profile" class="w-100" />
+            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
           </div>
           <h5 class="heading3 text-black">홍길동</h5>
           <p class="body1 line-height-140 text-light-gray mb-4">
@@ -48,7 +42,7 @@
           <button
             class="button button-sm button-fill button-secondary rounded-pill"
           >
-            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
           </button>
 
           <div
@@ -56,27 +50,27 @@
             style="grid-template-columns: repeat(3, 1fr); gap: 8px"
           >
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
           </div>
@@ -92,7 +86,7 @@
             >
               <span class="nav-icon nav-icon-cyan">📚</span>
               <span>나의 수업 관리</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
               <ul class="nav-menu">
@@ -163,7 +157,7 @@
             >
               <span class="nav-icon nav-icon-violet">👤</span>
               <span>나의 정보</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
               <ul class="nav-menu">
@@ -193,7 +187,7 @@
             >
               <span class="nav-icon nav-icon-blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
               <ul class="nav-menu">
@@ -216,7 +210,7 @@
             >
               <span class="nav-icon nav-icon-orange">🎓</span>
               <span>학습지원서비스</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
               <ul class="nav-menu">
@@ -366,16 +360,16 @@
                         <!-- Calendar Nav -->
                         <div class="monthly-header-nav">
                           <button class="monthly-nav-btn" type="button">
-                            <i class="bi bi-chevron-left"></i>
+                            <svg class="icon"><use href="#chevron-left"></use></svg>
                           </button>
                           <span class="heading5">2025년 01월</span>
                           <button class="monthly-nav-btn" type="button">
-                            <i class="bi bi-chevron-right"></i>
+                            <svg class="icon"><use href="#chevron-right"></use></svg>
                           </button>
                         </div>
 
                         <!-- Calendar Grid -->
-                        <div class="calendar-grid">
+                        <div class="calendar-grid extra-lesson-calendar">
                           <span class="cal-day-header">일</span>
                           <span class="cal-day-header">월</span>
                           <span class="cal-day-header">화</span>
@@ -414,7 +408,22 @@
                             >14<span class="cal-dot cal-dot-blue"></span
                           ></span>
                           <span class="cal-date"
-                            >15<span class="cal-dot cal-dot-orange"></span
+                            >15
+                            <div class="d-flex flex-column gap-1">
+                              <button
+                                class="button button-xs button-border button-default flex-1 flex-lg-none min-width-0"
+                  type="button"
+                >
+                  연기
+                </button>
+                <button
+                                class="button button-xs button-border button-default flex-1 flex-lg-none min-width-0"
+                  type="button"
+                >
+                  보강
+                </button>
+                            </div>
+                            </span
                           ></span>
                           <span class="cal-date"
                             >16<span class="cal-dot cal-dot-green"></span
@@ -455,27 +464,21 @@
                         <div class="calendar-legend mt-auto">
                           <div class="calendar-legend-item">
                             <span
-                              class="calendar-legend-dot calendar-legend-dot-lesson"
-                            ></span>
-                            <span>수업: <b>1회</b></span>
-                          </div>
-                          <div class="calendar-legend-item">
-                            <span
                               class="calendar-legend-dot calendar-legend-dot-attend"
                             ></span>
-                            <span>출석: <b>1회</b></span>
+                            <span>연기신청: <b>1회</b></span>
                           </div>
                           <div class="calendar-legend-item">
                             <span
                               class="calendar-legend-dot calendar-legend-dot-absent"
                             ></span>
-                            <span>결석: <b>1회</b></span>
+                            <span>보강대기: <b>1회</b></span>
                           </div>
                           <div class="calendar-legend-item">
                             <span
                               class="calendar-legend-dot calendar-legend-dot-makeup"
                             ></span>
-                            <span>보강: <b>1회</b></span>
+                            <span>보강수업: <b>1회</b></span>
                           </div>
                         </div>
                       </div>
@@ -563,11 +566,11 @@
                       <div class="info-card-body flex-fill d-flex flex-column gap-5">
                         <div class="monthly-header-nav">
                           <button class="monthly-nav-btn" type="button">
-                            <i class="bi bi-chevron-left"></i>
+                            <svg class="icon"><use href="#chevron-left"></use></svg>
                           </button>
                           <span class="heading5">2025년 01월</span>
                           <button class="monthly-nav-btn" type="button">
-                            <i class="bi bi-chevron-right"></i>
+                            <svg class="icon"><use href="#chevron-right"></use></svg>
                           </button>
                         </div>
 
@@ -742,7 +745,7 @@
                           <span class="d-lg-none mark">메모</span>
                           <span class="body3 text-neutral">2025.09.08 17:00</span>
                           <button class="button button-sm button-border button-default d-inline-flex align-items-center gap-0-5">
-                            자세히 보기 <i class="bi bi-plus"></i>
+                            자세히 보기 <svg class="icon"><use href="#plus"></use></svg>
                           </button>
                         </div>
                         <!-- 관리 -->
@@ -769,7 +772,7 @@
                           <span class="d-lg-none mark">메모</span>
                           <span class="body3 text-neutral">2025.09.08 17:00</span>
                           <button class="button button-sm button-border button-default d-inline-flex align-items-center gap-0-5">
-                            자세히 보기 <i class="bi bi-plus"></i>
+                            자세히 보기 <svg class="icon"><use href="#plus"></use></svg>
                           </button>
                         </div>
                         <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center">
@@ -796,7 +799,7 @@
                           <span class="d-lg-none mark">메모</span>
                           <span class="body3 text-neutral">2025.09.08 17:00</span>
                           <button class="button button-sm button-border button-default d-inline-flex align-items-center gap-0-5">
-                            자세히 보기 <i class="bi bi-plus"></i>
+                            자세히 보기 <svg class="icon"><use href="#plus"></use></svg>
                           </button>
                         </div>
                         <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center">
@@ -817,13 +820,11 @@
                         <ul class="pagination pagination-custom gap-2 m-0">
                           <li class="page-item disabled">
                             <a class="page-link" href="#"
-                              ><i class="bi bi-chevron-double-left"></i
-                            ></a>
+                              ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                           </li>
                           <li class="page-item disabled">
                             <a class="page-link" href="#"
-                              ><i class="bi bi-chevron-left"></i
-                            ></a>
+                              ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                           </li>
                           <li class="page-item active">
                             <a class="page-link" href="#">1</a>
@@ -836,13 +837,11 @@
                           </li>
                           <li class="page-item">
                             <a class="page-link" href="#"
-                              ><i class="bi bi-chevron-right"></i
-                            ></a>
+                              ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                           </li>
                           <li class="page-item">
                             <a class="page-link" href="#"
-                              ><i class="bi bi-chevron-double-right"></i
-                            ></a>
+                              ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                           </li>
                         </ul>
                       </nav>
@@ -1135,13 +1134,11 @@
                       <ul class="pagination pagination-custom gap-2 m-0">
                         <li class="page-item disabled">
                           <a class="page-link" href="#"
-                            ><i class="bi bi-chevron-double-left"></i
-                          ></a>
+                            ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                         </li>
                         <li class="page-item disabled">
                           <a class="page-link" href="#"
-                            ><i class="bi bi-chevron-left"></i
-                          ></a>
+                            ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                         </li>
                         <li class="page-item active">
                           <a class="page-link" href="#">1</a>
@@ -1154,13 +1151,11 @@
                         </li>
                         <li class="page-item">
                           <a class="page-link" href="#"
-                            ><i class="bi bi-chevron-right"></i
-                          ></a>
+                            ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                         </li>
                         <li class="page-item">
                           <a class="page-link" href="#"
-                            ><i class="bi bi-chevron-double-right"></i
-                          ></a>
+                            ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                         </li>
                       </ul>
                     </nav>
@@ -1175,5 +1170,6 @@
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/icons.js"></script>
   </body>
 </html>

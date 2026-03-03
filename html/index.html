@@ -9,13 +9,6 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -35,11 +28,12 @@
   </head>
 
   <body>
+
     <div class="d-flex container mypage">
       <aside class="lnb d-none gap-5 d-lg-flex flex-column">
         <div class="profile-section p-4 text-center">
           <div class="profile-img mx-auto mb-2">
-            <img src="avatar_main.png" alt="Profile" class="w-100" />
+            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
           </div>
           <h5 class="heading3 text-black">홍길동</h5>
           <p class="body1 line-height-140 text-light-gray mb-4">
@@ -48,7 +42,7 @@
           <button
             class="button button-sm button-fill button-secondary rounded-pill"
           >
-            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
           </button>
 
           <div
@@ -56,27 +50,27 @@
             style="grid-template-columns: repeat(3, 1fr); gap: 8px"
           >
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
           </div>
@@ -92,7 +86,7 @@
             >
               <span class="nav-icon nav-icon-cyan">📚</span>
               <span>나의 수업 관리</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
               <ul class="nav-menu">
@@ -161,7 +155,7 @@
             >
               <span class="nav-icon nav-icon-violet">👤</span>
               <span>나의 정보</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
               <ul class="nav-menu">
@@ -191,7 +185,7 @@
             >
               <span class="nav-icon nav-icon-blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
               <ul class="nav-menu">
@@ -214,7 +208,7 @@
             >
               <span class="nav-icon nav-icon-orange">🎓</span>
               <span>학습지원서비스</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
               <ul class="nav-menu">
@@ -277,7 +271,7 @@
                     <button
                       class="button button-lg button-fill button-primary button-block"
                     >
-                      강의실 입장 <i class="bi bi-arrow-right"></i>
+                      강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                     </button>
                     <div class="lesson-card-actions d-flex flex-column gap-1-5">
                       <div class="gap-1-5">
@@ -337,7 +331,7 @@
                     <button
                       class="button button-lg button-fill button-primary button-block"
                     >
-                      강의실 입장 <i class="bi bi-arrow-right"></i>
+                      강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                     </button>
                     <div class="lesson-card-actions d-flex flex-column gap-1-5">
                       <div class="d-flex gap-1-5">
@@ -385,8 +379,7 @@
                   >
                   <div class="bg-primary lesson-week-circle">
                     <h2
-                      class="display-5 fw-bold mb-0"
-                      style="color: var(--color-cyan-500)"
+                      class="heading1 fw-bold mb-0"
                     >
                       10
                     </h2>
@@ -397,7 +390,7 @@
                   <button
                     class="button button-lg button-fill button-primary w-100"
                   >
-                    나의 학습방 <i class="bi bi-arrow-right-short fs-5"></i>
+                    나의 학습방 <svg class="icon"><use href="#arrow-right"></use></svg>
                   </button>
                 </div>
               </div>
@@ -468,14 +461,14 @@
                       <button
                         class="button button-sm button-fill button-primary"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                     </div>
                     <div class="d-flex flex-column gap-4 d-lg-none">
                       <button
                         class="button button-lg button-fill button-primary button-block"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                       <div
                         class="lesson-card-actions d-flex flex-column gap-1-5"
@@ -545,14 +538,14 @@
                       <button
                         class="button button-sm button-fill button-primary"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                     </div>
                     <div class="d-flex flex-column gap-4 d-lg-none">
                       <button
                         class="button button-lg button-fill button-primary button-block"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                       <div
                         class="lesson-card-actions d-flex flex-column gap-1-5"
@@ -711,14 +704,14 @@
                       <button
                         class="button button-sm button-fill button-primary"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                     </div>
                     <div class="d-flex flex-column gap-4 d-lg-none">
                       <button
                         class="button button-lg button-fill button-primary button-block"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                       <div
                         class="lesson-card-actions d-flex flex-column gap-1-5"
@@ -788,14 +781,14 @@
                       <button
                         class="button button-sm button-fill button-primary"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                     </div>
                     <div class="d-flex flex-column gap-4 d-lg-none">
                       <button
                         class="button button-lg button-fill button-primary button-block"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                       <div
                         class="lesson-card-actions d-flex flex-column gap-1-5"
@@ -865,14 +858,14 @@
                       <button
                         class="button button-sm button-fill button-primary"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                     </div>
                     <div class="d-flex flex-column gap-4 d-lg-none">
                       <button
                         class="button button-lg button-fill button-primary button-block"
                       >
-                        강의실 입장 <i class="bi bi-arrow-right"></i>
+                        강의실 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                       </button>
                       <div
                         class="lesson-card-actions d-flex flex-column gap-1-5"
@@ -1045,11 +1038,11 @@
                   <!-- Calendar Nav -->
                   <div class="monthly-header-nav">
                     <button class="monthly-nav-btn" type="button">
-                      <i class="bi bi-chevron-left"></i>
+                      <svg class="icon"><use href="#chevron-left"></use></svg>
                     </button>
                     <span class="heading5">2025년 01월</span>
                     <button class="monthly-nav-btn" type="button">
-                      <i class="bi bi-chevron-right"></i>
+                      <svg class="icon"><use href="#chevron-right"></use></svg>
                     </button>
                   </div>
 
@@ -1239,7 +1232,7 @@
                     <button
                       class="button button-sm button-border button-primary"
                     >
-                      과제방 입장 <i class="bi bi-arrow-right"></i>
+                      과제방 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                     </button>
                   </div>
                   <div
@@ -1320,7 +1313,7 @@
                     <button
                       class="button button-md button-border button-negative button-pill"
                     >
-                      <i class="bi bi-heart-fill"></i> 하트 보내기
+                      <svg class="icon"><use href="#heart-fill"></use></svg> 하트 보내기
                     </button>
                   </div>
                 </div>
@@ -1488,11 +1481,11 @@
                   <!-- Calendar Nav -->
                   <div class="monthly-header-nav">
                     <button class="monthly-nav-btn" type="button">
-                      <i class="bi bi-chevron-left"></i>
+                      <svg class="icon"><use href="#chevron-left"></use></svg>
                     </button>
                     <span class="heading5">2025년 01월</span>
                     <button class="monthly-nav-btn" type="button">
-                      <i class="bi bi-chevron-right"></i>
+                      <svg class="icon"><use href="#chevron-right"></use></svg>
                     </button>
                   </div>
 
@@ -1746,11 +1739,11 @@
                   <!-- Calendar Nav -->
                   <div class="monthly-header-nav">
                     <button class="monthly-nav-btn" type="button">
-                      <i class="bi bi-chevron-left"></i>
+                      <svg class="icon"><use href="#chevron-left"></use></svg>
                     </button>
                     <span class="heading5">2025년 01월</span>
                     <button class="monthly-nav-btn" type="button">
-                      <i class="bi bi-chevron-right"></i>
+                      <svg class="icon"><use href="#chevron-right"></use></svg>
                     </button>
                   </div>
 
@@ -1907,21 +1900,21 @@
                 class="col-lg-6 justify-content-start monthly-header-nav me-lg-auto"
               >
                 <button class="monthly-nav-btn" type="button">
-                  <i class="bi bi-chevron-left"></i>
+                  <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
                 <span class="heading5">2025년 01월</span>
                 <button class="monthly-nav-btn" type="button">
-                  <i class="bi bi-chevron-right"></i>
+                  <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
               <div class="col-lg-6 d-flex justify-content-end gap-2">
                 <button
-                  class="button button-sm flex-grow-1 flex-lg-grow-0 button-border button-default"
+                  class="button button-sm w-100 w-lg-auto button-border button-default"
                 >
                   TS 커리큘럼 보러가기
                 </button>
                 <button
-                  class="button button-sm flex-grow-1 flex-lg-grow-0 align-items-stretch align-items-lg-start button-border button-default"
+                  class="button button-sm w-100 w-lg-auto button-border button-default"
                 >
                   Story Speaking 구성보러 가기
                 </button>
@@ -2024,7 +2017,7 @@
                   data-carousel-target="#eventCarousel"
                   data-carousel-dir="prev"
                 >
-                  <i class="bi bi-chevron-left"></i>
+                  <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
                 <button
                   class="event-nav-btn event-nav-btn--next"
@@ -2032,7 +2025,7 @@
                   data-carousel-target="#eventCarousel"
                   data-carousel-dir="next"
                 >
-                  <i class="bi bi-chevron-right"></i>
+                  <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
             </div>
@@ -2090,5 +2083,6 @@
         });
       });
     </script>
+      <script src="../js/icons.js"></script>
   </body>
 </html>

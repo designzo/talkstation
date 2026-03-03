@@ -10,7 +10,7 @@
   justify-content: center;
   gap: var(--spacing-1);
   font-family: var(--font-family);
-  font-weight: 700;
+  font-weight: var(--fontweight-bold);
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -33,12 +33,27 @@
   justify-content: center;
   flex-shrink: 0;
 }
+/* ==============================================
+   Size: Xsmall
+   ============================================== */
+.button-xs {
+  /* min-height: 31px; */
+  padding: var(--spacing-0-5) var(--spacing-2-5);
+  font-size: var(--body-body4-fontSize);
+  border-radius: var(--radius-md);
+  line-height: var(--lineheight-sm);
+  letter-spacing: var(--letterSpacing-sm);
+}
+.button-xs.button-icon-only {
+  width: 25px;
+  padding: var(--spacing-2);
+}
 
 /* ==============================================
    Size: Small - 33px
    ============================================== */
 .button-sm {
-  height: 31px;
+  min-height: 31px;
   padding: var(--spacing-2) var(--spacing-4);
   font-size: var(--body-body4-fontSize);
   border-radius: var(--radius-md);
@@ -54,9 +69,9 @@
    Size: Default - 41px
    ============================================== */
 .button-md {
-  height: 41px;
+  min-height: 41px;
   padding: var(--spacing-3) var(--spacing-5);
-  font-size: var(--font-size-base);
+  font-size: var(--body-body3-fontSize);
   border-radius: var(--radius-md);
 }
 .button-md.button-icon-only {
@@ -68,9 +83,9 @@
    Size: Large - 52px
    ============================================== */
 .button-lg {
-  height: 52px;
+  min-height: 52px;
   padding: var(--spacing-4) var(--spacing-6);
-  font-size: var(--font-size-md);
+  font-size: var(--body-body2-fontSize);
   border-radius: var(--radius-md);
 }
 .button-lg.button-icon-only {
@@ -135,7 +150,7 @@
 }
 
 .button-border.button-negative {
-  background-color: transparent;
+  background-color: var(--color-bg-white);
   border: 1px solid var(--color-colorchip-red);
   color: var(--color-colorchip-red);
 }
@@ -264,6 +279,39 @@
 }
 .button-group--vertical {
   flex-direction: column;
+}
+
+/* Modal Close Button
+   button-lg + button-icon-only + button-transparent + button-default */
+.btn-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  min-height: 32px;
+  padding: var(--spacing-1);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 16 16'%3E%3Cpath fill='%23555' d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+.btn-close:focus {
+  outline: none;
+}
+
+/* Modal Header (BS3 override) */
+.mypage .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mypage .modal-header::before,
+.mypage .modal-header::after {
+  display: none;
 }
 
 /* ==============================================
@@ -559,7 +607,6 @@
 .field-wrap {
   position: relative;
   width: 100%;
-  margin-bottom: 1.5rem;
 }
 
 /* Custom Input & Textarea */
@@ -599,21 +646,24 @@
   color: var(--color-text-neutral);
   pointer-events: none;
 }
-.field-wrap i.disabled {
+.field-wrap i.disabled,
+.field-wrap svg.disabled {
   color: var(--color-text-disabled);
 }
 
 .has-icon-left .input {
   padding-left: 45px;
 }
-.has-icon-left i {
+.has-icon-left i,
+.has-icon-left svg {
   left: 16px;
 }
 
 .has-icon-right .input {
   padding-right: 45px;
 }
-.has-icon-right i {
+.has-icon-right i,
+.has-icon-right svg {
   right: 16px;
 }
 
@@ -690,7 +740,8 @@
 }
 
 /* 아이콘 애니메이션 */
-.dropdown:focus-within i.bi-chevron-down {
+.dropdown:focus-within i.bi-chevron-down,
+.dropdown:focus-within svg.icon-chevron-down {
   transform: translateY(-50%) rotate(180deg);
 }
 
@@ -698,6 +749,117 @@
 .dropdown.disabled {
   pointer-events: none;
 }
+
+/* 부트스트랩 충돌 방지용 커스텀 래퍼 */
+.custom-input-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+  cursor: pointer;
+  font-family: var(--body-body2-fontSize);
+  font-size: 14px;
+  margin-bottom: var(--spacing-0);
+  font-weight: var(--fontweight-regular);
+  color: var(--color-text-neutral);
+}
+
+/* 정렬 방식에 따른 간격 */
+.custom-input-wrap.left-align {
+  justify-content: flex-start;
+  gap: 6px; 
+}
+.custom-input-wrap.right-align {
+  justify-content: space-between;
+}
+
+/* 기본 인풋 스타일 초기화 */
+.custom-checkbox, 
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--color-bg-white);
+}
+
+/* ================================
+   1. 체크박스 (Checkbox)
+   ================================ */
+.custom-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin-top: 0 !important;
+  border: 1px solid var(--color-border-normal);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* 체크 상태 */
+.custom-checkbox:checked {
+  background-color: var(--color-colorchip-primary);
+  border-color: var(--color-colorchip-primary);
+}
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--color-bg-white);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* ================================
+   2. 라디오 버튼 (Radio)
+   ================================ */
+.custom-radio {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+/* 체크 상태 */
+.custom-radio:checked {
+  border-color: var(--color-colorchip-primary);
+}
+.custom-radio:checked::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-colorchip-primary);
+}
+
+/* ================================
+   공통 상태 처리 (에러 & 비활성화)
+   ================================ */
+/* 에러 상태 */
+.custom-checkbox.error, 
+.custom-radio.error {
+  border-color: var(--color-text-error);
+}
+
+/* 비활성화 상태 (Disabled) */
+.custom-checkbox:disabled,
+.custom-radio:disabled {
+  background-color: var(--color-bg-gray-light);
+  border-color: var(--color-border-normal);
+  cursor: not-allowed;
+}
+.custom-radio:disabled:checked::after {
+  background-color: var(--color-border-normal);
+}
+
 /* ==============================================
    Tab Component - Design System
    마이페이지 탭 공통 컴포넌트
@@ -847,7 +1009,8 @@
 }
 
 /* Custom Checkbox Icon Style */
-.bi-check-square-fill {
+.bi-check-square-fill,
+.icon-check-square-fill {
   color: var(--color-cyan-500); /* Primary Color */
   margin-top: 2px; /* Visual alignment */
 }
@@ -977,9 +1140,8 @@
   line-height: 1.4;
 }
 
-.teacher-profile-meta .divider {
+.teacher-profile-meta .dot {
   margin: 0 4px;
-  color: var(--color-gray-300);
 }
 
 .teacher-profile-book {
@@ -1071,6 +1233,36 @@
   width: 100%;
   display: block;
 }
+
+/* ==============================================
+   Horizontal LG → Vertical LG (≤992px)
+   ============================================== */
+@media (max-width: 991px) {
+  .teacher-profile-horizontal.teacher-profile-lg {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .teacher-profile-horizontal.teacher-profile-lg .teacher-profile-avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: var(--spacing-3);
+  }
+  .teacher-profile-horizontal.teacher-profile-lg .teacher-profile-content {
+    align-items: center;
+  }
+  .teacher-profile-horizontal.teacher-profile-lg .teacher-profile-content > .d-flex {
+    justify-content: center;
+  }
+  .teacher-profile-horizontal.teacher-profile-lg .teacher-profile-book {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+  }
+}
+
 /* LNB 스타일링 보정 */
 .lnb {
   width: 257px;
@@ -1179,12 +1371,14 @@
   text-align: left;
 }
 
-.nav-section-header i {
+.nav-section-header i,
+.nav-section-header svg.icon {
   transition: transform 0.2s;
   color: var(--color-gray-400);
 }
 
-.nav-section-header:not(.collapsed) i {
+.nav-section-header:not(.collapsed) i,
+.nav-section-header:not(.collapsed) svg.icon {
   transform: rotate(180deg);
 }
 
@@ -1289,6 +1483,13 @@
   position: relative;
 }
 
+.extra-lesson-calendar .cal-date {
+  min-height: 68px;
+  padding: 0;
+  padding-top: var(--spacing-0-5)
+}
+
+
 .cal-date--other {
   color: var(--color-gray-200);
 }
@@ -1304,6 +1505,11 @@
   border-radius: var(--radius-full);
   position: absolute;
   bottom: 8px;
+}
+
+.extra-lesson-calendar .cal-dot {
+  bottom: auto;
+  top: 28px;
 }
 
 .cal-dot-green {
@@ -1488,5 +1694,18 @@
 .info-banner-img {
   width: 130px;
   height: auto;
+  flex-shrink: 0;
+}
+
+/* ==============================================
+   SVG Icon Component
+   Bootstrap Icons → SVG sprite 대체용
+   ============================================== */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
   flex-shrink: 0;
 }

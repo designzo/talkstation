@@ -9,13 +9,6 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -35,11 +28,12 @@
   </head>
 
   <body>
+
     <div class="d-flex container mypage">
       <aside class="lnb d-none gap-5 d-lg-flex flex-column">
         <div class="profile-section p-4 text-center">
           <div class="profile-img mx-auto mb-2">
-            <img src="avatar_main.png" alt="Profile" class="w-100" />
+            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
           </div>
           <h5 class="heading3 text-black">홍길동</h5>
           <p class="body1 line-height-140 text-light-gray mb-4">
@@ -48,7 +42,7 @@
           <button
             class="button button-sm button-fill button-secondary rounded-pill"
           >
-            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
           </button>
 
           <div
@@ -56,27 +50,27 @@
             style="grid-template-columns: repeat(3, 1fr); gap: 8px"
           >
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
           </div>
@@ -92,7 +86,7 @@
             >
               <span class="nav-icon nav-icon-cyan">📚</span>
               <span>나의 수업 관리</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
               <ul class="nav-menu">
@@ -165,7 +159,7 @@
             >
               <span class="nav-icon nav-icon-violet">👤</span>
               <span>나의 정보</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
               <ul class="nav-menu">
@@ -195,7 +189,7 @@
             >
               <span class="nav-icon nav-icon-blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
               <ul class="nav-menu">
@@ -218,7 +212,7 @@
             >
               <span class="nav-icon nav-icon-orange">🎓</span>
               <span>학습지원서비스</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
               <ul class="nav-menu">
@@ -247,7 +241,7 @@
           >
             <img
               class="info-banner-img"
-              src="../images/69648939-clipboard-1.png"
+              src="../images/bg-clipboard.png"
               alt="평가 안내 아이콘"
             />
             <div
@@ -257,7 +251,7 @@
                 톡스 신규 선생님들은 티칭경력 2년이상의 선생님들을 채용하여 교육
                 및 자체 평가 후 회원님들의 실제 평가로 정규 강사로 채용됩니다.
               </p>
-              <p class="body3 text-muted text-center text-lg-start">
+              <p class="body2 text-gray text-center text-lg-start">
                 신규 선생님 평가단에 신청되신 회원님께서는 아래의 평가를 꼭
                 진행해주시기를 부탁드립니다.<br />(평가가 진행되지 않은 경우
                 수업이 자동으로 종료 될 수 있습니다)
@@ -358,7 +352,7 @@
                           placeholder="All"
                           readonly
                         />
-                        <i class="bi bi-chevron-down ms-auto"></i>
+                        <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
                         <ul class="dropdown-list">
                           <li data-value="all">All</li>
                           <li data-value="waiting">수업대기</li>
@@ -375,7 +369,7 @@
                             >수업대기</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.09.25 17:00</span
                             >
@@ -396,7 +390,7 @@
                             >수업대기</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.09.25 17:00</span
                             >
@@ -417,7 +411,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.09.25 17:00</span
                             >
@@ -428,6 +422,8 @@
                             <button
                               class="button button-sm button-border button-default w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalViewModal"
                             >
                               평가완료
                             </button>
@@ -440,7 +436,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.09.25 17:00</span
                             >
@@ -451,6 +447,8 @@
                             <button
                               class="button button-sm button-border button-primary w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalModal"
                             >
                               평가하기
                             </button>
@@ -463,7 +461,7 @@
                             >결석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.09.25 17:00</span
                             >
@@ -484,7 +482,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.09.25 17:00</span
                             >
@@ -495,6 +493,8 @@
                             <button
                               class="button button-sm button-border button-primary w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalModal"
                             >
                               평가하기
                             </button>
@@ -559,7 +559,7 @@
                         data-target="#ntutorSessions3"
                       >
                         평가서 보기
-                        <i class="bi bi-chevron-down ms-1"></i>
+                        <svg class="icon icon-chevron-down ms-1"><use href="#chevron-down"></use></svg>
                       </button>
                     </div>
                   </div>
@@ -579,7 +579,7 @@
                           placeholder="All"
                           readonly
                         />
-                        <i class="bi bi-chevron-down ms-auto"></i>
+                        <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
                         <ul class="dropdown-list">
                           <li data-value="all">All</li>
                           <li data-value="waiting">수업대기</li>
@@ -596,7 +596,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.07.25 17:00</span
                             >
@@ -607,6 +607,8 @@
                             <button
                               class="button button-sm button-border button-default w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalViewModal"
                             >
                               평가완료
                             </button>
@@ -619,7 +621,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.07.23 17:00</span
                             >
@@ -630,6 +632,8 @@
                             <button
                               class="button button-sm button-border button-default w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalViewModal"
                             >
                               평가완료
                             </button>
@@ -642,7 +646,7 @@
                             >결석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.07.21 17:00</span
                             >
@@ -663,7 +667,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.07.18 17:00</span
                             >
@@ -674,6 +678,8 @@
                             <button
                               class="button button-sm button-border button-default w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalViewModal"
                             >
                               평가완료
                             </button>
@@ -686,7 +692,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.07.16 17:00</span
                             >
@@ -697,6 +703,8 @@
                             <button
                               class="button button-sm button-border button-default w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalViewModal"
                             >
                               평가완료
                             </button>
@@ -709,7 +717,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.07.14 17:00</span
                             >
@@ -720,6 +728,8 @@
                             <button
                               class="button button-sm button-border button-default w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalViewModal"
                             >
                               평가완료
                             </button>
@@ -777,7 +787,7 @@
                         data-target="#ntutorSessions4"
                       >
                         평가서 보기
-                        <i class="bi bi-chevron-down ms-1"></i>
+                        <svg class="icon icon-chevron-down ms-1"><use href="#chevron-down"></use></svg>
                       </button>
                     </div>
                   </div>
@@ -796,7 +806,7 @@
                           placeholder="All"
                           readonly
                         />
-                        <i class="bi bi-chevron-down ms-auto"></i>
+                        <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
                         <ul class="dropdown-list">
                           <li data-value="all">All</li>
                           <li data-value="waiting">수업대기</li>
@@ -810,7 +820,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.06.25 17:00</span
                             >
@@ -821,6 +831,8 @@
                             <button
                               class="button button-sm button-border button-default w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalViewModal"
                             >
                               평가완료
                             </button>
@@ -831,7 +843,7 @@
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-calendar2-event text-muted"></i>
+                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
                             <span class="body2 fw-bold text-black"
                               >25.06.23 17:00</span
                             >
@@ -842,6 +854,8 @@
                             <button
                               class="button button-sm button-border button-default w-100"
                               type="button"
+                              data-toggle="modal"
+                              data-target="#evalViewModal"
                             >
                               평가완료
                             </button>
@@ -857,7 +871,275 @@
         </div>
       </main>
     </div>
+    <!-- ============================
+       강사평가 모달
+       ============================ -->
+    <div
+      class="mypage modal fade"
+      id="evalModal"
+      tabindex="-1"
+      aria-labelledby="evalModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ntutor-eval-modal">
+        <div class="modal-content radius-2xl elevator-large p-4 p-lg-5">
+          <!-- 모달 헤더 -->
+          <div class="modal-header border-bottom p-0 pb-4">
+            <h5 class="modal-title heading2 text-black" id="evalModalLabel">
+              강사평가
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="닫기"
+            ></button>
+          </div>
+
+          <!-- 모달 바디 -->
+          <div class="modal-body p-0 pt-4 d-flex flex-column gap-5">
+            <!-- 안내 배너 -->
+            <div class="eval-modal-banner">
+              <p class="body1 weight-medium line-height-140 text-gray">
+                체험 수업 강사 평가를 해주세요!<br />
+                회원님들의 평가를 통해 좋은 성적을 받으신 강사만 정규 수업에
+                투입됩니다.<br />
+                꼭 솔직한 평가 부탁드립니다.
+              </p>
+            </div>
+
+            <!-- 수업 정보 -->
+            <div class="d-flex align-items-center gap-2">
+              <span class="body2 text-gray" id="evalSessionDate"
+                >25.09.02 17:00</span
+              >
+              <span
+                class="dot"
+              ></span>
+              <span class="badge badge-sm badge-soft badge-blue">평가하기</span>
+            </div>
+
+            <!-- Q1: 만족도 -->
+            <fieldset>
+              <legend class="heading5 text-neutral">
+                체험 수업 강사와의 수업이 만족스러운가요?
+              </legend>
+              <div class="eval-radio-group">
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="satisfaction"
+                    value="5"
+                    class="custom-radio"
+                  />
+                  <span class="label-text">매우 좋음</span>
+                </label>
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="satisfaction"
+                    value="4"
+                    class="custom-radio"
+                  />
+                  <span class="label-text">좋음</span>
+                </label>
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="satisfaction"
+                    value="3"
+                    class="custom-radio"
+                  />
+                  <span class="label-text">보통</span>
+                </label>
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="satisfaction"
+                    value="2"
+                    class="custom-radio"
+                  />
+                  <span class="label-text">안 좋음</span>
+                </label>
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="satisfaction"
+                    value="1"
+                    class="custom-radio"
+                  />
+                  <span class="label-text">매우 안 좋음</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Q2: 기타 의견 -->
+            <div class="d-flex flex-column gap-3">
+              <label class="heading5 text-neutral" for="evalFeedback"
+                >기타 의견이 있으시면 알려주세요.</label
+              >
+              <textarea
+                id="evalFeedback"
+                name="feedback"
+                class="textarea"
+                placeholder="기타 내용 작성해주세요."
+                rows="5"
+              ></textarea>
+            </div>
+
+            <!-- 푸터 버튼 -->
+            <div class="eval-modal-footer">
+              <div class="button-group">
+                <button
+                  type="button"
+                  class="button button-md button-fill button-neutral"
+                  data-dismiss="modal"
+                >
+                  취소
+                </button>
+                <button
+                  type="button"
+                  class="button button-md button-fill button-primary"
+                >
+                  작성완료
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================
+       강사평가 확인 모달 (읽기 전용)
+       ============================ -->
+    <div
+      class="mypage modal fade"
+      id="evalViewModal"
+      tabindex="-1"
+      aria-labelledby="evalViewModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable ntutor-eval-modal"
+      >
+        <div class="modal-content radius-2xl elevator-large p-4 p-lg-5">
+          <!-- 모달 헤더 -->
+          <div class="modal-header border-bottom p-0 pb-4">
+            <h5
+              class="modal-title heading2 text-black"
+              id="evalViewModalLabel"
+            >
+              강사평가 확인
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="닫기"
+            ></button>
+          </div>
+
+          <!-- 모달 바디 -->
+          <div class="modal-body p-0 pt-4 d-flex flex-column gap-5">
+            <!-- 수업 정보 -->
+            <div class="d-flex align-items-center gap-2">
+              <span class="body2 text-gray" id="evalViewSessionDate"
+                >25.09.02 17:00</span
+              >
+              <span class="dot"></span>
+              <span class="badge badge-sm badge-soft badge-green"
+                >평가완료</span
+              >
+            </div>
+
+            <!-- Q1: 만족도 (disabled) -->
+            <fieldset disabled>
+              <legend class="heading5 text-neutral">
+                체험 수업 강사와의 수업이 만족스러운가요?
+              </legend>
+              <div class="eval-radio-group">
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="view_satisfaction"
+                    value="5"
+                    class="custom-radio"
+                  />
+                  <span class="label-text">매우 좋음</span>
+                </label>
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="view_satisfaction"
+                    value="4"
+                    class="custom-radio"
+                    checked
+                  />
+                  <span class="label-text">좋음</span>
+                </label>
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="view_satisfaction"
+                    value="3"
+                    class="custom-radio"
+                  />
+                  <span class="label-text">보통</span>
+                </label>
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="view_satisfaction"
+                    value="2"
+                    class="custom-radio"
+                  />
+                  <span class="label-text">안 좋음</span>
+                </label>
+                <label class="custom-input-wrap left-align">
+                  <input
+                    type="radio"
+                    name="view_satisfaction"
+                    value="1"
+                    class="custom-radio"
+                  />
+                  <span class="label-text">매우 안 좋음</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Q2: 기타 의견 (readonly) -->
+            <div class="d-flex flex-column gap-3">
+              <label class="heading5 text-neutral"
+                >기타 의견이 있으시면 알려주세요.</label
+              >
+              <div class="eval-view-textarea-wrap">
+                <p class="body2 text-gray">
+                  기타 의견 영역 입니다.기타 의견 영역 입니다.기타 의견 영역
+                  입니다.기타 의견 영역 입니다.기타 의견 영역 입니다.기타 의견
+                  영역 입니다.기타 의견 영역 입니다. 기타 의견 영역 입니다.기타
+                  의견 영역 입니다.기타 의견 영역 입니다.
+                </p>
+              </div>
+            </div>
+
+            <!-- 푸터 버튼 -->
+            <div class="eval-modal-footer">
+              <button
+                type="button"
+                class="button button-md button-fill button-dark"
+                data-dismiss="modal"
+              >
+                닫기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/icons.js"></script>
   </body>
 </html>

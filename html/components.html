@@ -9,13 +9,6 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -34,6 +27,7 @@
   </head>
 
   <body>
+
     <div class="container py-5" style="max-width: 1200px">
       <div class="row align-items-center mb-4">
         <div class="col-2 fw-bold">Input</div>
@@ -54,13 +48,13 @@
         <div class="col-5">
           <div class="field-wrap has-icon-right">
             <input type="text" class="input" placeholder="Text" />
-            <i class="bi bi-calendar"></i>
+            <svg class="icon"><use href="#calendar"></use></svg>
           </div>
         </div>
         <div class="col-5">
           <div class="field-wrap has-icon-right">
             <input type="text" class="input" placeholder="Text" disabled />
-            <i class="bi bi-calendar disabled"></i>
+            <svg class="icon disabled"><use href="#calendar"></use></svg>
           </div>
         </div>
       </div>
@@ -69,13 +63,13 @@
         <div class="col-2 fw-bold">Search</div>
         <div class="col-5">
           <div class="field-wrap has-icon-left">
-            <i class="bi bi-search"></i>
+            <svg class="icon"><use href="#search"></use></svg>
             <input type="text" class="input" placeholder="Text" />
           </div>
         </div>
         <div class="col-5">
           <div class="field-wrap has-icon-left">
-            <i class="bi bi-search disabled"></i>
+            <svg class="icon disabled"><use href="#search"></use></svg>
             <input type="text" class="input" placeholder="Text" disabled />
           </div>
         </div>
@@ -91,7 +85,7 @@
               placeholder="옵션을 선택하세요"
               readonly
             />
-            <i class="bi bi-chevron-down ms-auto"></i>
+            <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
 
             <ul class="dropdown-list">
               <li data-value="option1">Option 1</li>
@@ -104,7 +98,7 @@
         <div class="col-5">
           <div class="field-wrap has-icon-right dropdown disabled">
             <input type="text" class="input" placeholder="선택 불가" disabled />
-            <i class="bi bi-chevron-down ms-auto disabled"></i>
+            <svg class="icon icon-chevron-down ms-auto disabled"><use href="#chevron-down"></use></svg>
           </div>
         </div>
       </div>
@@ -309,19 +303,19 @@
         <div class="demo-row">
           <span class="demo-label">Icon + Text</span>
           <button class="button button-md button-fill button-primary">
-            <span class="button__icon"><i class="bi bi-plus-lg"></i></span>
+            <span class="button__icon"><svg class="icon"><use href="#plus-lg"></use></svg></span>
             보강신청
           </button>
           <button class="button button-md button-border button-cyan">
-            <span class="button__icon"><i class="bi bi-calendar3"></i></span>
+            <span class="button__icon"><svg class="icon"><use href="#calendar3"></use></svg></span>
             일정확인
           </button>
           <button class="button button-md button-soft button-secondary">
-            <span class="button__icon"><i class="bi bi-download"></i></span>
+            <span class="button__icon"><svg class="icon"><use href="#download"></use></svg></span>
             다운로드
           </button>
           <button class="button button-md button-fill button-tertiary">
-            <span class="button__icon"><i class="bi bi-check-lg"></i></span>
+            <span class="button__icon"><svg class="icon"><use href="#check-lg"></use></svg></span>
             완료
           </button>
         </div>
@@ -331,27 +325,27 @@
           <button
             class="button button-sm button-fill button-primary button-icon-only"
           >
-            <span class="button__icon"><i class="bi bi-plus-lg"></i></span>
+            <span class="button__icon"><svg class="icon"><use href="#plus-lg"></use></svg></span>
           </button>
           <button
             class="button button-md button-border button-cyan button-icon-only"
           >
-            <span class="button__icon"><i class="bi bi-calendar3"></i></span>
+            <span class="button__icon"><svg class="icon"><use href="#calendar3"></use></svg></span>
           </button>
           <button
             class="button button-lg button-soft button-secondary button-icon-only"
           >
-            <span class="button__icon"><i class="bi bi-download"></i></span>
+            <span class="button__icon"><svg class="icon"><use href="#download"></use></svg></span>
           </button>
           <button
             class="button button-md button-fill button-tertiary button-icon-only"
           >
-            <span class="button__icon"><i class="bi bi-check-lg"></i></span>
+            <span class="button__icon"><svg class="icon"><use href="#check-lg"></use></svg></span>
           </button>
           <button
             class="button button-md button-transparent button-neutral button-icon-only"
           >
-            <span class="button__icon"><i class="bi bi-three-dots"></i></span>
+            <span class="button__icon"><svg class="icon"><use href="#three-dots"></use></svg></span>
           </button>
         </div>
       </section>
@@ -408,7 +402,7 @@
           <div class="demo-card">
             <div class="demo-card__label">보강 신청</div>
             <button class="button button-md button-fill button-secondary">
-              <span class="button__icon"><i class="bi bi-plus-lg"></i></span>
+              <span class="button__icon"><svg class="icon"><use href="#plus-lg"></use></svg></span>
               보강신청
             </button>
           </div>
@@ -430,10 +424,32 @@
           <div class="demo-card">
             <div class="demo-card__label">더보기</div>
             <button class="button button-sm button-transparent button-neutral">
-              <span class="button__icon"><i class="bi bi-three-dots"></i></span>
+              <span class="button__icon"><svg class="icon"><use href="#three-dots"></use></svg></span>
             </button>
           </div>
         </div>
+      </section>
+
+      <section>
+        <label class="custom-input-wrap left-align">
+          <input type="checkbox" class="custom-checkbox" />
+          <span class="label-text">체크박스 라벨</span>
+        </label>
+
+        <label class="custom-input-wrap right-align">
+          <span class="label-text">체크박스 라벨</span>
+          <input type="checkbox" class="custom-checkbox" />
+        </label>
+
+        <label class="custom-input-wrap left-align">
+          <input type="radio" name="radio-group" class="custom-radio" />
+          <span class="label-text">라디오 라벨</span>
+        </label>
+
+        <label class="custom-input-wrap right-align">
+          <span class="label-text">라디오 라벨</span>
+          <input type="radio" name="radio-group" class="custom-radio" />
+        </label>
       </section>
 
       <!-- Code Examples -->
@@ -585,15 +601,11 @@
                     <h6 class="fw-bold mb-3">불편사항</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
                       <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-square-fill text-primary fs-5"
-                        ></i>
+                        <svg class="icon icon-check-square-fill text-primary body1"><use href="#check-square-fill"></use></svg>
                         <span>수업 진행중 선생님 소리가 잘 안들려요</span>
                       </li>
                       <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-square-fill text-primary fs-5"
-                        ></i>
+                        <svg class="icon icon-check-square-fill text-primary body1"><use href="#check-square-fill"></use></svg>
                         <span
                           >선생님이 지각을 해요. (선생님이 수업시간을 지키지
                           않아요.)</span
@@ -703,13 +715,11 @@
               <ul class="pagination pagination-custom gap-2">
                 <li class="page-item disabled">
                   <a class="page-link" href="#" aria-label="First"
-                    ><i class="bi bi-chevron-double-left"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                 </li>
                 <li class="page-item disabled">
                   <a class="page-link" href="#" aria-label="Previous"
-                    ><i class="bi bi-chevron-left"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                 </li>
                 <li class="page-item active">
                   <a class="page-link" href="#">1</a>
@@ -718,13 +728,11 @@
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
                   <a class="page-link" href="#" aria-label="Next"
-                    ><i class="bi bi-chevron-right"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                 </li>
                 <li class="page-item">
                   <a class="page-link" href="#" aria-label="Last"
-                    ><i class="bi bi-chevron-double-right"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                 </li>
               </ul>
             </nav>
@@ -812,7 +820,7 @@
               <div id="row1" class="collapse">
                 <div class="bg-black text-white p-4 rounded-bottom-4">
                   <p class="mb-0 small opacity-75">
-                    <i class="bi bi-info-circle me-2"></i>상세 수업 노트 및
+                    <svg class="icon me-2"><use href="#info-circle"></use></svg>상세 수업 노트 및
                     피드백 내용이 이곳에 표시됩니다.
                   </p>
                 </div>
@@ -960,13 +968,11 @@
               <ul class="pagination pagination-custom gap-2 m-0">
                 <li class="page-item disabled">
                   <a class="page-link" href="#"
-                    ><i class="bi bi-chevron-double-left"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                 </li>
                 <li class="page-item disabled">
                   <a class="page-link" href="#"
-                    ><i class="bi bi-chevron-left"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                 </li>
                 <li class="page-item active">
                   <a class="page-link" href="#">1</a>
@@ -975,13 +981,11 @@
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
                   <a class="page-link" href="#"
-                    ><i class="bi bi-chevron-right"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                 </li>
                 <li class="page-item">
                   <a class="page-link" href="#"
-                    ><i class="bi bi-chevron-double-right"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                 </li>
               </ul>
             </nav>
@@ -999,16 +1003,16 @@
             >
               <div class="teacher-profile-avatar"></div>
               <div class="teacher-profile-content">
-                <div class="d-flex align-items-center mb-1">
+                <div class="d-flex align-items-center mb-1-5">
                   <span class="teacher-profile-name">Teachername</span>
                 </div>
-                <div class="teacher-profile-meta mb-1">
+                <div class="teacher-profile-meta mb-1-5">
                   <span>필리핀/1개월 과정</span>
-                  <span class="divider">•</span>
+                  <span class="dot"></span>
                   <span>주 2회</span>
-                  <span class="divider">•</span>
+                  <span class="dot"></span>
                   <span>월/수</span>
-                  <span class="divider">•</span>
+                  <span class="dot"></span>
                   <span>25분</span>
                 </div>
                 <div class="teacher-profile-book">
@@ -1060,8 +1064,13 @@
                 <div class="teacher-profile-content">
                   <div class="teacher-profile-name mb-2">Teachername</div>
                   <div class="teacher-profile-meta mb-1">
-                    <span>필리핀/1개월 과정</span> • <span>주 2회</span> •
-                    <span>월/수</span> • <span>25분</span>
+                    <span>필리핀/1개월 과정</span>
+                    <span class="dot"></span>
+                    <span>주 2회</span>
+                    <span class="dot"></span>
+                    <span>월/수</span>
+                    <span class="dot"></span>
+                    <span>25분</span>
                   </div>
                   <div class="teacher-profile-book text-truncate">
                     교재 : Unspoken Rules of Traveling in Italy
@@ -1120,10 +1129,16 @@
 
           <!-- 1. 기본형 (3컬럼) -->
           <div class="mb-5">
-            <p class="text-muted small mb-2">1. Basic (3 columns) — c_native11 특강권 목록 참고</p>
-            <div class="table-list-container radius-xl elevator-large p-4 p-lg-5">
+            <p class="text-muted small mb-2">
+              1. Basic (3 columns) — c_native11 특강권 목록 참고
+            </p>
+            <div
+              class="table-list-container radius-xl elevator-large p-4 p-lg-5"
+            >
               <!-- 헤더 (PC만) -->
-              <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
+              <div
+                class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+              >
                 <div class="col-lg-2 text-center">날짜</div>
                 <div class="col-lg-7 text-center">정보</div>
                 <div class="col-lg-3 text-center">관리</div>
@@ -1132,30 +1147,52 @@
               <div class="table-list-body d-flex flex-column gap-1-5">
                 <!-- Row 1 (기본) -->
                 <div class="list-summary row g-2 align-items-center">
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">날짜</span>
                     <span class="body2 text-neutral">25.00.00</span>
                   </div>
-                  <div class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">정보</span>
                     <span class="body2 text-neutral">샘플 데이터 텍스트</span>
                   </div>
-                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-2">
-                    <button class="button button-sm button-fill button-primary">확인</button>
+                  <div
+                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-2"
+                  >
+                    <button class="button button-sm button-fill button-primary">
+                      확인
+                    </button>
                   </div>
                 </div>
                 <!-- Row 2 (하이라이트) -->
-                <div class="list-summary list-cell-highlight row g-2 align-items-center">
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                <div
+                  class="list-summary list-cell-highlight row g-2 align-items-center"
+                >
+                  <div
+                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">날짜</span>
                     <span class="body2 text-neutral">25.00.00</span>
                   </div>
-                  <div class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">정보</span>
-                    <span class="body2 text-neutral">하이라이트 행 (list-cell-highlight)</span>
+                    <span class="body2 text-neutral"
+                      >하이라이트 행 (list-cell-highlight)</span
+                    >
                   </div>
-                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-2">
-                    <button class="button button-sm button-border button-default">보기</button>
+                  <div
+                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-2"
+                  >
+                    <button
+                      class="button button-sm button-border button-default"
+                    >
+                      보기
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1164,9 +1201,15 @@
 
           <!-- 2. 4컬럼 + 뱃지/상태 -->
           <div class="mb-5">
-            <p class="text-muted small mb-2">2. 4 columns + badges — c_native11 사용내역 참고</p>
-            <div class="table-list-container radius-xl elevator-large p-4 p-lg-5">
-              <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
+            <p class="text-muted small mb-2">
+              2. 4 columns + badges — c_native11 사용내역 참고
+            </p>
+            <div
+              class="table-list-container radius-xl elevator-large p-4 p-lg-5"
+            >
+              <div
+                class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+              >
                 <div class="col-lg-2 text-center">사용일</div>
                 <div class="col-lg-5 text-center">수업정보</div>
                 <div class="col-lg-2 text-center">상태</div>
@@ -1174,13 +1217,19 @@
               </div>
               <div class="table-list-body d-flex flex-column gap-1-5">
                 <div class="list-summary row g-2 align-items-center">
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">사용일</span>
                     <span class="body2 text-neutral">25.00.00</span>
                   </div>
-                  <div class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">수업정보</span>
-                    <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                    <div
+                      class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral"
+                    >
                       <span>필리핀/1개월 과정</span>
                       <span class="eval-dot"></span>
                       <span>주 2회</span>
@@ -1188,22 +1237,38 @@
                       <span>월/수</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">상태</span>
-                    <span class="badge badge-sm badge-fill badge-primary">예약</span>
+                    <span class="badge badge-sm badge-fill badge-primary"
+                      >예약</span
+                    >
                   </div>
-                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center">
-                    <button class="button button-sm button-fill button-neutral">취소</button>
+                  <div
+                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center"
+                  >
+                    <button class="button button-sm button-fill button-neutral">
+                      취소
+                    </button>
                   </div>
                 </div>
-                <div class="list-summary list-cell-highlight row g-2 align-items-center">
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                <div
+                  class="list-summary list-cell-highlight row g-2 align-items-center"
+                >
+                  <div
+                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">사용일</span>
                     <span class="body2 text-neutral">25.00.00</span>
                   </div>
-                  <div class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">수업정보</span>
-                    <div class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral">
+                    <div
+                      class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral"
+                    >
                       <span>필리핀/1개월 과정</span>
                       <span class="eval-dot"></span>
                       <span>주 2회</span>
@@ -1211,12 +1276,20 @@
                       <span>월/수</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">상태</span>
-                    <span class="badge badge-sm badge-soft badge-gray">완료</span>
+                    <span class="badge badge-sm badge-soft badge-gray"
+                      >완료</span
+                    >
                   </div>
-                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center">
-                    <span class="badge badge-sm badge-soft badge-dark">취소불가</span>
+                  <div
+                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center"
+                  >
+                    <span class="badge badge-sm badge-soft badge-dark"
+                      >취소불가</span
+                    >
                   </div>
                 </div>
               </div>
@@ -1225,9 +1298,15 @@
 
           <!-- 3. 이미지 + teacher-profile 포함 (5컬럼 이상) -->
           <div class="mb-5">
-            <p class="text-muted small mb-2">3. With image + teacher-profile — c_native9 원서요청목록 참고</p>
-            <div class="table-list-container radius-xl elevator-large p-4 p-lg-5">
-              <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
+            <p class="text-muted small mb-2">
+              3. With image + teacher-profile — c_native9 원서요청목록 참고
+            </p>
+            <div
+              class="table-list-container radius-xl elevator-large p-4 p-lg-5"
+            >
+              <div
+                class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+              >
                 <div class="col-lg-5 text-center">원서 정보</div>
                 <div class="col-lg-2 text-center">강사</div>
                 <div class="col-lg-2 text-center">수업요청일자</div>
@@ -1236,32 +1315,59 @@
               </div>
               <div class="table-list-body d-flex flex-column gap-1-5">
                 <div class="list-summary row g-2 align-items-center">
-                  <div class="col-12 col-lg-5 d-flex flex-column flex-lg-row align-items-lg-center align-items-start gap-2">
-                    <img class="book-req-cover" src="../images/dummy1.png" alt="Book Cover" />
+                  <div
+                    class="col-12 col-lg-5 d-flex flex-column flex-lg-row align-items-lg-center align-items-start gap-2"
+                  >
+                    <img
+                      class="book-req-cover"
+                      src="../images/dummy1.png"
+                      alt="Book Cover"
+                    />
                     <div class="d-flex flex-column gap-1">
-                      <span class="badge badge-sm badge-fill badge-yellow">원서수업</span>
-                      <span class="body2 fw-medium text-neutral">A Great Expedition</span>
+                      <span class="badge badge-sm badge-fill badge-yellow"
+                        >원서수업</span
+                      >
+                      <span class="body2 fw-medium text-neutral"
+                        >A Great Expedition</span
+                      >
                     </div>
-                    <span class="badge badge-sm badge-soft ms-0 ms-lg-auto badge-gray">선생님 요청 확인 전 입니다.</span>
+                    <span
+                      class="badge badge-sm badge-soft ms-0 ms-lg-auto badge-gray"
+                      >선생님 요청 확인 전 입니다.</span
+                    >
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1">
-                    <div class="teacher-profile teacher-profile-horizontal teacher-profile-sm">
+                  <div
+                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1"
+                  >
+                    <div
+                      class="teacher-profile teacher-profile-horizontal teacher-profile-sm"
+                    >
                       <div class="teacher-profile-avatar"></div>
-                      <div class="teacher-profile-content d-flex align-items-center gap-2">
+                      <div
+                        class="teacher-profile-content d-flex align-items-center gap-2"
+                      >
                         <span class="teacher-profile-name">Teachername</span>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">수업요청일자</span>
                     <span class="body2 text-neutral">25.10.10 (월) 14:40</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
+                  <div
+                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                  >
                     <span class="d-lg-none mark">신청일</span>
                     <span class="body2 text-neutral">25.12.03 (월) 14:40</span>
                   </div>
-                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center mt-2 mt-lg-0">
-                    <button class="button button-sm button-fill button-neutral">삭제</button>
+                  <div
+                    class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center mt-2 mt-lg-0"
+                  >
+                    <button class="button button-sm button-fill button-neutral">
+                      삭제
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1270,19 +1376,25 @@
 
           <!-- 4. 페이지네이션 -->
           <div class="mb-5">
-            <p class="text-muted small mb-2">4. Pagination (테이블 하단에 배치)</p>
+            <p class="text-muted small mb-2">
+              4. Pagination (테이블 하단에 배치)
+            </p>
             <div class="d-flex justify-content-end mt-5">
-              <div class="d-none d-lg-flex align-items-center gap-3 text-light-gray small me-auto">
+              <div
+                class="d-none d-lg-flex align-items-center gap-3 text-light-gray small me-auto"
+              >
                 Showing <strong class="text-black">1</strong> Page of
                 <strong class="text-black">2</strong> entries
               </div>
               <nav aria-label="Page navigation">
                 <ul class="pagination pagination-custom gap-2 m-0">
                   <li class="page-item disabled">
-                    <a class="page-link" href="#"><i class="bi bi-chevron-double-left"></i></a>
+                    <a class="page-link" href="#"
+                      ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                   </li>
                   <li class="page-item disabled">
-                    <a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a>
+                    <a class="page-link" href="#"
+                      ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                   </li>
                   <li class="page-item active">
                     <a class="page-link" href="#">1</a>
@@ -1294,20 +1406,22 @@
                     <a class="page-link" href="#">3</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+                    <a class="page-link" href="#"
+                      ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#"><i class="bi bi-chevron-double-right"></i></a>
+                    <a class="page-link" href="#"
+                      ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
-
         </div>
       </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/icons.js"></script>
   </body>
 </html>

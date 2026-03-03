@@ -9,13 +9,6 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -35,11 +28,12 @@
   </head>
 
   <body>
+
     <div class="d-flex container mypage">
       <aside class="lnb d-none gap-5 d-lg-flex flex-column">
         <div class="profile-section p-4 text-center">
           <div class="profile-img mx-auto mb-2">
-            <img src="avatar_main.png" alt="Profile" class="w-100" />
+            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
           </div>
           <h5 class="heading3 text-black">홍길동</h5>
           <p class="body1 line-height-140 text-light-gray mb-4">
@@ -48,7 +42,7 @@
           <button
             class="button button-sm button-fill button-secondary rounded-pill"
           >
-            프로필 설정 <i class="bi bi-pencil-fill ms-1"></i>
+            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
           </button>
 
           <div
@@ -56,27 +50,27 @@
             style="grid-template-columns: repeat(3, 1fr); gap: 8px"
           >
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
             <div class="gallery-item">
-              <img src="" alt="" />
+              <img src="../images/avatar_main.png" alt="" />
               <span class="gallery-badge">Stella</span>
             </div>
           </div>
@@ -92,7 +86,7 @@
             >
               <span class="nav-icon nav-icon-cyan">📚</span>
               <span>나의 수업 관리</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
               <ul class="nav-menu">
@@ -161,7 +155,7 @@
             >
               <span class="nav-icon nav-icon-violet">👤</span>
               <span>나의 정보</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
               <ul class="nav-menu">
@@ -191,7 +185,7 @@
             >
               <span class="nav-icon nav-icon-blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
               <ul class="nav-menu">
@@ -214,7 +208,7 @@
             >
               <span class="nav-icon nav-icon-orange">🎓</span>
               <span>학습지원서비스</span>
-              <i class="bi bi-chevron-down"></i>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
               <ul class="nav-menu">
@@ -260,7 +254,7 @@
               </div>
               <button class="button button-sm button-border button-primary">
                 최근 3개월 활동 보기
-                <i class="bi bi-arrow-right"></i>
+                <svg class="icon"><use href="#arrow-right"></use></svg>
               </button>
             </div>
 
@@ -363,10 +357,7 @@
               />
               <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start flex-fill">
                 <div class="d-flex align-items-center gap-1">
-                  <i
-                    class="bi bi-calendar2-event"
-                    style="color: var(--color-cyan-700)"
-                  ></i>
+                  <svg class="icon" style="color: var(--color-cyan-700)"><use href="#calendar2-event"></use></svg>
                   <span class="body2 fw-bold text-black">25.00.00</span>
                 </div>
                 <div class="d-flex flex-wrap align-items-center gap-2">
@@ -383,7 +374,7 @@
                   data-toggle="modal"
                   data-target="#vocaListModal"
                 >
-                  List <i class="bi bi-list-ul ms-1"></i>
+                  List <svg class="icon ms-1"><use href="#list-ul"></use></svg>
                 </button>
               </div>
               <div class="voca-assign-stats d-flex align-items-stretch gap-3">
@@ -422,10 +413,7 @@
               />
               <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start flex-fill">
                 <div class="d-flex align-items-center gap-1">
-                  <i
-                    class="bi bi-calendar2-event"
-                    style="color: var(--color-cyan-700)"
-                  ></i>
+                  <svg class="icon" style="color: var(--color-cyan-700)"><use href="#calendar2-event"></use></svg>
                   <span class="body2 fw-bold text-black">25.00.00</span>
                 </div>
                 <div class="d-flex flex-wrap align-items-center gap-2">
@@ -442,7 +430,7 @@
                   data-toggle="modal"
                   data-target="#vocaListModal"
                 >
-                  List <i class="bi bi-list-ul ms-1"></i>
+                  List <svg class="icon ms-1"><use href="#list-ul"></use></svg>
                 </button>
               </div>
               <div class="voca-assign-stats d-flex align-items-stretch gap-3">
@@ -481,10 +469,7 @@
               />
               <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start flex-fill">
                 <div class="d-flex align-items-center gap-1">
-                  <i
-                    class="bi bi-calendar2-event"
-                    style="color: var(--color-cyan-700)"
-                  ></i>
+                  <svg class="icon" style="color: var(--color-cyan-700)"><use href="#calendar2-event"></use></svg>
                   <span class="body2 fw-bold text-black">25.00.00</span>
                 </div>
                 <div class="d-flex flex-wrap align-items-center gap-2">
@@ -501,7 +486,7 @@
                   data-toggle="modal"
                   data-target="#vocaListModal"
                 >
-                  List <i class="bi bi-list-ul ms-1"></i>
+                  List <svg class="icon ms-1"><use href="#list-ul"></use></svg>
                 </button>
               </div>
               <div class="voca-assign-stats d-flex align-items-stretch gap-3">
@@ -543,13 +528,11 @@
               <ul class="pagination pagination-custom gap-2 m-0">
                 <li class="page-item disabled">
                   <a class="page-link" href="#"
-                    ><i class="bi bi-chevron-double-left"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                 </li>
                 <li class="page-item disabled">
                   <a class="page-link" href="#"
-                    ><i class="bi bi-chevron-left"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                 </li>
                 <li class="page-item active">
                   <a class="page-link" href="#">1</a>
@@ -558,13 +541,11 @@
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
                   <a class="page-link" href="#"
-                    ><i class="bi bi-chevron-right"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                 </li>
                 <li class="page-item">
                   <a class="page-link" href="#"
-                    ><i class="bi bi-chevron-double-right"></i
-                  ></a>
+                    ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                 </li>
               </ul>
             </nav>
@@ -606,7 +587,7 @@
               <div class="voca-word-thumb">
                 <img src="../images/dummy1.png" alt="word image" />
                 <div class="voca-word-hover-dim">
-                  <i class="bi bi-search"></i>
+                  <svg class="icon"><use href="#search"></use></svg>
                 </div>
                 <span class="badge badge-sm badge-fill badge-blue voca-word-thumb-badge">단어카드</span>
               </div>
@@ -616,13 +597,13 @@
                   <span class="badge badge-sm badge-soft badge-blue">verb 1</span>
                   <span class="body1 fw-bold text-black">Binge</span>
                   <button class="voca-sound-btn">
-                    <i class="bi bi-volume-up-fill"></i>
+                    <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                   <span class="body2 text-gray">He Binges on drawing.</span>
                   <button class="voca-sound-btn">
-                    <i class="bi bi-volume-up-fill"></i>
+                    <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
                 <span class="body3 text-light-gray">to do a certain thing too much</span>
@@ -640,7 +621,7 @@
               <div class="voca-word-thumb">
                 <img src="../images/dummy1.png" alt="word image" />
                 <div class="voca-word-hover-dim">
-                  <i class="bi bi-search"></i>
+                  <svg class="icon"><use href="#search"></use></svg>
                 </div>
                 <span class="badge badge-sm badge-fill badge-blue voca-word-thumb-badge">단어카드</span>
               </div>
@@ -649,13 +630,13 @@
                   <span class="badge badge-sm badge-soft badge-blue">verb 1</span>
                   <span class="body1 fw-bold text-black">Binge</span>
                   <button class="voca-sound-btn">
-                    <i class="bi bi-volume-up-fill"></i>
+                    <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                   <span class="body2 text-gray">He Binges on drawing.</span>
                   <button class="voca-sound-btn">
-                    <i class="bi bi-volume-up-fill"></i>
+                    <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
                 <span class="body3 text-light-gray">to do a certain thing too much</span>
@@ -672,7 +653,7 @@
               <div class="voca-word-thumb">
                 <img src="../images/dummy1.png" alt="word image" />
                 <div class="voca-word-hover-dim">
-                  <i class="bi bi-search"></i>
+                  <svg class="icon"><use href="#search"></use></svg>
                 </div>
                 <span class="badge badge-sm badge-fill badge-peacock voca-word-thumb-badge">단어카드</span>
               </div>
@@ -681,13 +662,13 @@
                   <span class="badge badge-sm badge-soft badge-peacock">noun</span>
                   <span class="body1 fw-bold text-black">Binge</span>
                   <button class="voca-sound-btn">
-                    <i class="bi bi-volume-up-fill"></i>
+                    <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                   <span class="body2 text-gray">He Binges on drawing.</span>
                   <button class="voca-sound-btn">
-                    <i class="bi bi-volume-up-fill"></i>
+                    <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
                 <span class="body3 text-light-gray">to do a certain thing too much</span>
@@ -706,5 +687,6 @@
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/icons.js"></script>
   </body>
 </html>
