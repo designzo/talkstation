@@ -29,197 +29,187 @@
 
   <body>
 
-    <div class="d-flex container mypage">
-      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
-        <div class="profile-section p-4 text-center">
-          <div class="profile-img mx-auto mb-2">
-            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
+    <div class="container mypage">
+      <aside class="lnb">
+        <div class="lnb__profile">
+          <div class="lnb__profile-avatar">
+            <img src="../images/avatar_main.png" alt="Profile" />
           </div>
-          <h5 class="heading3 text-black">홍길동</h5>
-          <p class="body1 line-height-140 text-light-gray mb-4">
-            Hong gil dong
-          </p>
+          <h5 class="lnb__profile-name">홍길동</h5>
+          <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button-sm button-fill button-secondary rounded-pill"
+            class="button button--sm button--fill button--secondary rounded-pill"
           >
-            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
+            프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
 
-          <div
-            class="gallery-grid mt-6 d-grid"
-            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
-          >
-            <div class="gallery-item">
+          <div class="lnb__gallery">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
           </div>
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
               <span>나의 수업 관리</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                  <a href="#" class="lnb__nav-item"
+                    >원어민 강사 강의실 입장</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >아이딕 홈스쿨 강의실 입장</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li><a href="#" class="lnb__nav-item">보카킹 학습방</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                  <a href="#" class="lnb__nav-item">Story Writing 과제방</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">VOCA 과제방</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">특강권 사용&amp;관리</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">VOCA 과제방</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">강사/시간 변경</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">특강권 사용&amp;관리</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >원서&amp;영상수업 요청목록</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">월평가서 &amp; 출결정보</a>
+                  <a href="#" class="lnb__nav-item">월평가서 &amp; 출결정보</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >온라인 테스트 및 체험수업 결과</a
                   >
                 </li>
-                <li>
-                  <a href="#" class="nav-menu-item active">신규선생님 평가</a>
-                </li>
-                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+                <li><a href="#" class="lnb__nav-item lnb__nav-item--active">신규선생님 평가</a></li>
+                <li><a href="#" class="lnb__nav-item">알림콜 설정</a></li>
               </ul>
-            </div>
           </div>
         </nav>
 
         <!-- Action Buttons -->
-        <div class="lnb-actions d-flex flex-column gap-0-5">
-          <a class="button button-lg button-border button-primary button-block"
+        <div class="lnb__actions">
+          <a class="button button--lg button--border button--primary button--block"
             >수업불편 및 요청상담</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >선생님, 부탁 드려요</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >찐친 초대현황</a
           >
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="nav-icon nav-icon-violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
               <span>나의 정보</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                  <a href="#" class="lnb__nav-item">수강료 결제 및 취소 내역</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교재결제내역 / 장바구니</a>
+                  <a href="#" class="lnb__nav-item">교재결제내역 / 장바구니</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                  <a href="#" class="lnb__nav-item">교육비 납입증명서 출력</a>
                 </li>
-                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
-                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+                <li><a href="#" class="lnb__nav-item">비밀번호 변경</a></li>
+                <li><a href="#" class="lnb__nav-item">회원정보수정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="nav-icon nav-icon-blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">아이딕 북</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 보카</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 비디오</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 사전</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
               <span>학습지원서비스</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
-                <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">화상영어 가이드</a></li>
+                <li><a href="#" class="lnb__nav-item">원격지원서비스</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >수업연기 및 보강정책(환불)</a
                   >
                 </li>
@@ -229,7 +219,7 @@
         </nav>
       </aside>
 
-      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+      <main class="mypage__content">
         <div class="content-container">
           <h2 class="page-title">신규선생님 평가</h2>
 
@@ -237,28 +227,28 @@
              안내 배너
              ============================ -->
           <div
-            class="info-banner radius-2xl elevator-large d-flex flex-column flex-lg-row align-items-center gap-4 p-4 p-lg-5"
+            class="info-banner"
           >
             <img
-              class="info-banner-img"
+              class="info-banner__img"
               src="../images/bg-clipboard.png"
               alt="평가 안내 아이콘"
             />
             <div
-              class="d-flex flex-column align-items-center align-items-lg-start gap-2"
+              class="info-banner__content"
             >
-              <p class="body2 text-gray text-center text-lg-start">
+              <p class="info-banner__desc">
                 톡스 신규 선생님들은 티칭경력 2년이상의 선생님들을 채용하여 교육
                 및 자체 평가 후 회원님들의 실제 평가로 정규 강사로 채용됩니다.
               </p>
-              <p class="body2 text-gray text-center text-lg-start">
+              <p class="info-banner__desc">
                 신규 선생님 평가단에 신청되신 회원님께서는 아래의 평가를 꼭
                 진행해주시기를 부탁드립니다.<br />(평가가 진행되지 않은 경우
                 수업이 자동으로 종료 될 수 있습니다)
               </p>
               <div>
                 <button
-                  class="button button-sm button-border button-default"
+                  class="button button--sm button--border button--default"
                   type="button"
                 >
                   자세히 보기
@@ -270,20 +260,18 @@
           <!-- ============================
              탭 네비게이션
              ============================ -->
-          <div class="d-flex justify-content-center">
-            <ul class="nav nav-pill">
-              <li class="nav-item active">
-                <a class="nav-link" data-toggle="tab" href="#tabInProgress"
+          <ul class="tab-nav">
+              <li class="tab-nav__item active">
+                <a class="tab-nav__link" data-toggle="tab" href="#tabInProgress"
                   >진행중인 수업</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tabCompleted"
+              <li class="tab-nav__item">
+                <a class="tab-nav__link" data-toggle="tab" href="#tabCompleted"
                   >완료된 수업</a
                 >
               </li>
             </ul>
-          </div>
 
           <!-- ============================
              선생님 카드 리스트
@@ -292,7 +280,7 @@
             <div class="tab-pane active" id="tabInProgress">
               <div class="d-flex flex-column gap-4">
                 <!-- Teacher Card 1 (expanded) -->
-                <div class="ntutor-card radius-xl elevator-large p-4 p-lg-5">
+                <div class="ntutor-card card-panel">
                   <!-- 카드 헤더: 선생님 정보 + 버튼 -->
                   <div
                     class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-between gap-3"
@@ -302,7 +290,7 @@
                       class="d-flex flex-column flex-lg-row align-items-center gap-3"
                     >
                       <div
-                        class="teacher-profile-avatar teacher-profile-avatar-lg"
+                        class="teacher-profile__avatar teacher-profile__avatar--lg"
                       ></div>
                       <div
                         class="d-flex flex-column gap-1 text-center text-lg-start"
@@ -329,7 +317,7 @@
                     <!-- 액션 버튼 -->
                     <div class="d-flex gap-2 flex-shrink-0">
                       <button
-                        class="button button-md button-border button-default"
+                        class="button button--md button--border button--default"
                         type="button"
                       >
                         소개영상보기
@@ -342,7 +330,7 @@
                     <div class="d-flex flex-column gap-3">
                       <!-- 필터 셀렉트 -->
                       <div
-                        class="field-wrap has-icon-right dropdown"
+                        class="field-wrap field-wrap--icon-right dropdown"
                         tabindex="0"
                         style="width: fit-content"
                       >
@@ -353,7 +341,7 @@
                           readonly
                         />
                         <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
-                        <ul class="dropdown-list">
+                        <ul class="dropdown__list">
                           <li data-value="all">All</li>
                           <li data-value="waiting">수업대기</li>
                           <li data-value="attend">출석</li>
@@ -365,7 +353,7 @@
                       <div class="ntutor-session-grid">
                         <!-- Session 1: 수업대기 + 평가대기 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-peacock"
+                          <span class="badge badge--sm badge--fill badge--peacock"
                             >수업대기</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -378,7 +366,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <span
-                              class="badge badge-md badge-soft badge-light w-100"
+                              class="badge badge--md badge--soft badge--light w-100"
                               >평가대기</span
                             >
                           </div>
@@ -386,7 +374,7 @@
 
                         <!-- Session 2: 수업대기 + 평가대기 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-peacock"
+                          <span class="badge badge--sm badge--fill badge--peacock"
                             >수업대기</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -399,7 +387,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <span
-                              class="badge badge-md badge-soft badge-light w-100"
+                              class="badge badge--md badge--soft badge--light w-100"
                               >평가대기</span
                             >
                           </div>
@@ -407,7 +395,7 @@
 
                         <!-- Session 3: 출석 + 평가완료 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -420,7 +408,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-default w-100"
+                              class="button button--sm button--border button--default w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -432,7 +420,7 @@
 
                         <!-- Session 4: 출석 + 평가하기 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -445,7 +433,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-primary w-100"
+                              class="button button--sm button--border button--primary w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalModal"
@@ -457,7 +445,7 @@
 
                         <!-- Session 5: 결석 + 평가불가 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-orange"
+                          <span class="badge badge--sm badge--fill badge--orange"
                             >결석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -470,7 +458,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <span
-                              class="badge badge-md badge-soft badge-dark w-100"
+                              class="badge badge--md badge--soft badge--dark w-100"
                               >평가불가</span
                             >
                           </div>
@@ -478,7 +466,7 @@
 
                         <!-- Session 6: 출석 + 평가하기 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -491,7 +479,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-primary w-100"
+                              class="button button--sm button--border button--primary w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalModal"
@@ -510,7 +498,7 @@
             <div class="tab-pane" id="tabCompleted">
               <div class="d-flex flex-column gap-4">
                 <!-- Teacher Card 3 (완료된 수업) -->
-                <div class="ntutor-card radius-xl elevator-large p-4 p-lg-5">
+                <div class="ntutor-card card-panel">
                   <!-- 카드 헤더: 선생님 정보 + 버튼 -->
                   <div
                     class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-between gap-3"
@@ -520,7 +508,7 @@
                       class="d-flex flex-column flex-lg-row align-items-center gap-3"
                     >
                       <div
-                        class="teacher-profile-avatar teacher-profile-avatar-lg"
+                        class="teacher-profile__avatar teacher-profile__avatar--lg"
                       ></div>
                       <div
                         class="d-flex flex-column gap-1 text-center text-lg-start"
@@ -547,13 +535,13 @@
                     <!-- 액션 버튼 -->
                     <div class="d-flex button-group flex-shrink-0">
                       <button
-                        class="button button-md button-border button-default"
+                        class="button button--md button--border button--default"
                         type="button"
                       >
                         소개영상
                       </button>
                       <button
-                        class="button button-md button-border button-default"
+                        class="button button--md button--border button--default"
                         type="button"
                         data-toggle="collapse"
                         data-target="#ntutorSessions3"
@@ -569,7 +557,7 @@
                     <div class="d-flex flex-column gap-3">
                       <!-- 필터 셀렉트 -->
                       <div
-                        class="field-wrap has-icon-right dropdown"
+                        class="field-wrap field-wrap--icon-right dropdown"
                         tabindex="0"
                         style="width: fit-content"
                       >
@@ -580,7 +568,7 @@
                           readonly
                         />
                         <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
-                        <ul class="dropdown-list">
+                        <ul class="dropdown__list">
                           <li data-value="all">All</li>
                           <li data-value="waiting">수업대기</li>
                           <li data-value="attend">출석</li>
@@ -592,7 +580,7 @@
                       <div class="ntutor-session-grid">
                         <!-- Session 1: 출석 + 평가완료 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -605,7 +593,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-default w-100"
+                              class="button button--sm button--border button--default w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -617,7 +605,7 @@
 
                         <!-- Session 2: 출석 + 평가완료 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -630,7 +618,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-default w-100"
+                              class="button button--sm button--border button--default w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -642,7 +630,7 @@
 
                         <!-- Session 3: 결석 + 평가불가 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-orange"
+                          <span class="badge badge--sm badge--fill badge--orange"
                             >결석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -655,7 +643,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <span
-                              class="badge badge-md badge-soft badge-dark w-100"
+                              class="badge badge--md badge--soft badge--dark w-100"
                               >평가불가</span
                             >
                           </div>
@@ -663,7 +651,7 @@
 
                         <!-- Session 4: 출석 + 평가완료 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -676,7 +664,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-default w-100"
+                              class="button button--sm button--border button--default w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -688,7 +676,7 @@
 
                         <!-- Session 5: 출석 + 평가완료 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -701,7 +689,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-default w-100"
+                              class="button button--sm button--border button--default w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -713,7 +701,7 @@
 
                         <!-- Session 6: 출석 + 평가완료 -->
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -726,7 +714,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-default w-100"
+                              class="button button--sm button--border button--default w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -741,7 +729,7 @@
                 </div>
 
                 <!-- Teacher Card 4 (완료된 수업 - collapsed) -->
-                <div class="ntutor-card radius-xl elevator-large p-4 p-lg-5">
+                <div class="ntutor-card card-panel">
                   <div
                     class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-between gap-3"
                   >
@@ -749,7 +737,7 @@
                       class="d-flex flex-column flex-lg-row align-items-center gap-3"
                     >
                       <div
-                        class="teacher-profile-avatar teacher-profile-avatar-lg"
+                        class="teacher-profile__avatar teacher-profile__avatar--lg"
                       ></div>
                       <div
                         class="d-flex flex-column gap-1 text-center text-lg-start"
@@ -775,13 +763,13 @@
 
                     <div class="d-flex button-group flex-shrink-0">
                       <button
-                        class="button button-md button-border button-default"
+                        class="button button--md button--border button--default"
                         type="button"
                       >
                         소개영상
                       </button>
                       <button
-                        class="button button-md button-border button-default collapsed"
+                        class="button button--md button--border button--default collapsed"
                         type="button"
                         data-toggle="collapse"
                         data-target="#ntutorSessions4"
@@ -796,7 +784,7 @@
                   <div class="collapse" id="ntutorSessions4">
                     <div class="d-flex flex-column gap-3">
                       <div
-                        class="field-wrap has-icon-right dropdown"
+                        class="field-wrap field-wrap--icon-right dropdown"
                         tabindex="0"
                         style="width: fit-content"
                       >
@@ -807,7 +795,7 @@
                           readonly
                         />
                         <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
-                        <ul class="dropdown-list">
+                        <ul class="dropdown__list">
                           <li data-value="all">All</li>
                           <li data-value="waiting">수업대기</li>
                           <li data-value="attend">출석</li>
@@ -816,7 +804,7 @@
                       </div>
                       <div class="ntutor-session-grid">
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -829,7 +817,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-default w-100"
+                              class="button button--sm button--border button--default w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -839,7 +827,7 @@
                           </div>
                         </div>
                         <div class="ntutor-session-card radius-lg bg-gray p-3">
-                          <span class="badge badge-sm badge-fill badge-blue"
+                          <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
                           <div class="d-flex align-items-center gap-2">
@@ -852,7 +840,7 @@
                             class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
                           >
                             <button
-                              class="button button-sm button-border button-default w-100"
+                              class="button button--sm button--border button--default w-100"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -881,11 +869,11 @@
       aria-labelledby="evalModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ntutor-eval-modal">
-        <div class="modal-content radius-2xl elevator-large p-4 p-lg-5">
+      <div class="modal-dialog modal-dialog-scrollable ntutor-eval-modal">
+        <div class="modal-content">
           <!-- 모달 헤더 -->
-          <div class="modal-header border-bottom p-0 pb-4">
-            <h5 class="modal-title heading2 text-black" id="evalModalLabel">
+          <div class="modal-header">
+            <h5 class="modal-title" id="evalModalLabel">
               강사평가
             </h5>
             <button
@@ -897,7 +885,7 @@
           </div>
 
           <!-- 모달 바디 -->
-          <div class="modal-body p-0 pt-4 d-flex flex-column gap-5">
+          <div class="modal-body">
             <!-- 안내 배너 -->
             <div class="eval-modal-banner">
               <p class="body1 weight-medium line-height-140 text-gray">
@@ -916,7 +904,7 @@
               <span
                 class="dot"
               ></span>
-              <span class="badge badge-sm badge-soft badge-blue">평가하기</span>
+              <span class="badge badge--sm badge--soft badge--blue">평가하기</span>
             </div>
 
             <!-- Q1: 만족도 -->
@@ -925,7 +913,7 @@
                 체험 수업 강사와의 수업이 만족스러운가요?
               </legend>
               <div class="eval-radio-group">
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="satisfaction"
@@ -934,7 +922,7 @@
                   />
                   <span class="label-text">매우 좋음</span>
                 </label>
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="satisfaction"
@@ -943,7 +931,7 @@
                   />
                   <span class="label-text">좋음</span>
                 </label>
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="satisfaction"
@@ -952,7 +940,7 @@
                   />
                   <span class="label-text">보통</span>
                 </label>
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="satisfaction"
@@ -961,7 +949,7 @@
                   />
                   <span class="label-text">안 좋음</span>
                 </label>
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="satisfaction"
@@ -992,14 +980,14 @@
               <div class="button-group">
                 <button
                   type="button"
-                  class="button button-md button-fill button-neutral"
+                  class="button button--md button--fill button--neutral"
                   data-dismiss="modal"
                 >
                   취소
                 </button>
                 <button
                   type="button"
-                  class="button button-md button-fill button-primary"
+                  class="button button--md button--fill button--primary"
                 >
                   작성완료
                 </button>
@@ -1021,13 +1009,13 @@
       aria-hidden="true"
     >
       <div
-        class="modal-dialog modal-dialog-centered modal-dialog-scrollable ntutor-eval-modal"
+        class="modal-dialog modal-dialog-scrollable ntutor-eval-modal"
       >
-        <div class="modal-content radius-2xl elevator-large p-4 p-lg-5">
+        <div class="modal-content">
           <!-- 모달 헤더 -->
-          <div class="modal-header border-bottom p-0 pb-4">
+          <div class="modal-header">
             <h5
-              class="modal-title heading2 text-black"
+              class="modal-title"
               id="evalViewModalLabel"
             >
               강사평가 확인
@@ -1041,14 +1029,14 @@
           </div>
 
           <!-- 모달 바디 -->
-          <div class="modal-body p-0 pt-4 d-flex flex-column gap-5">
+          <div class="modal-body">
             <!-- 수업 정보 -->
             <div class="d-flex align-items-center gap-2">
               <span class="body2 text-gray" id="evalViewSessionDate"
                 >25.09.02 17:00</span
               >
               <span class="dot"></span>
-              <span class="badge badge-sm badge-soft badge-green"
+              <span class="badge badge--sm badge--soft badge--green"
                 >평가완료</span
               >
             </div>
@@ -1059,7 +1047,7 @@
                 체험 수업 강사와의 수업이 만족스러운가요?
               </legend>
               <div class="eval-radio-group">
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="view_satisfaction"
@@ -1068,7 +1056,7 @@
                   />
                   <span class="label-text">매우 좋음</span>
                 </label>
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="view_satisfaction"
@@ -1078,7 +1066,7 @@
                   />
                   <span class="label-text">좋음</span>
                 </label>
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="view_satisfaction"
@@ -1087,7 +1075,7 @@
                   />
                   <span class="label-text">보통</span>
                 </label>
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="view_satisfaction"
@@ -1096,7 +1084,7 @@
                   />
                   <span class="label-text">안 좋음</span>
                 </label>
-                <label class="custom-input-wrap left-align">
+                <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
                     name="view_satisfaction"
@@ -1127,7 +1115,7 @@
             <div class="eval-modal-footer">
               <button
                 type="button"
-                class="button button-md button-fill button-dark"
+                class="button button--md button--fill button--dark"
                 data-dismiss="modal"
               >
                 닫기

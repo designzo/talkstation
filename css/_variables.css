@@ -975,37 +975,37 @@
 }
 
 .text-black {
-  color: var(--color-text-black);
+  color: var(--color-black);
 }
 .text-white {
-  color: var(--color-text-white);
+  color: var(--color-white);
 }
 .text-gray {
-  color: var(--color-text-gray);
+  color: var(--color-gray);
 }
 .text-light-gray {
-  color: var(--color-text-light-gray);
+  color: var(--color-light-gray);
 }
 .text-neutral {
-  color: var(--color-text-neutral);
+  color: var(--color-neutral);
 }
 .text-primary {
-  color: var(--color-colorchip-primary);
+  color: var(--color-primary);
 }
 .text-red {
-  color: var(--color-colorchip-red);
+  color: var(--color-red);
 }
 .bg-white {
-  background-color: var(--color-bg-white);
+  background-color: var(--color-white);
 }
 .bg-gray {
-  background-color: var(--color-bg-gray-light);
+  background-color: var(--color-gray-light);
 }
 .bg-secondary {
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-secondary);
 }
 .bg-primary {
-  background-color: var(--color-bg-priamry-light) !important;
+  background-color: var(--color-primary-light) !important;
 }
 
 .radius-sm {
@@ -3345,16 +3345,16 @@
 
 /* ========== Border ========== */
 .mypage .border-top {
-  border-top: 1px solid var(--color-border-super-light) !important;
+  border-top: 1px solid var(--color-gray-light) !important;
 }
 .mypage .border-bottom {
-  border-bottom: 1px solid var(--color-border-super-light) !important;
+  border-bottom: 1px solid var(--color-gray-light) !important;
 }
 .mypage .border-top-dark {
-  border-top: 1px solid var(--color-border-light) !important;
+  border-top: 1px solid var(--color-gray-light-2) !important;
 }
 .mypage .border-bottom-dark {
-  border-bottom: 1px solid var(--color-border-light) !important;
+  border-bottom: 1px solid var(--color-gray-light-2) !important;
 }
 .mypage .border-0 {
   border: 0 !important;

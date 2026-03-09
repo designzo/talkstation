@@ -29,193 +29,188 @@
 
   <body>
 
-    <div class="d-flex container mypage">
-      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
-        <div class="profile-section p-4 text-center">
-          <div class="profile-img mx-auto mb-2">
-            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
+    <div class="container mypage">
+      <aside class="lnb">
+        <div class="lnb__profile">
+          <div class="lnb__profile-avatar">
+            <img src="../images/avatar_main.png" alt="Profile" />
           </div>
-          <h5 class="heading3 text-black">홍길동</h5>
-          <p class="body1 line-height-140 text-light-gray mb-4">
-            Hong gil dong
-          </p>
+          <h5 class="lnb__profile-name">홍길동</h5>
+          <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button-sm button-fill button-secondary rounded-pill"
+            class="button button--sm button--fill button--secondary rounded-pill"
           >
-            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
+            프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
 
-          <div
-            class="gallery-grid mt-6 d-grid"
-            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
-          >
-            <div class="gallery-item">
+          <div class="lnb__gallery">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
           </div>
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
               <span>나의 수업 관리</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                  <a href="#" class="lnb__nav-item"
+                    >원어민 강사 강의실 입장</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >아이딕 홈스쿨 강의실 입장</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li><a href="#" class="lnb__nav-item">보카킹 학습방</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                  <a href="#" class="lnb__nav-item">Story Writing 과제방</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">VOCA 과제방</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">특강권 사용&amp;관리</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">VOCA 과제방</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
-                </li>
-                <li><a href="#" class="nav-menu-item">강사/시간 변경</a></li>
-                <li>
-                  <a href="#" class="nav-menu-item">특강권 사용&amp;관리</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >원서&amp;영상수업 요청목록</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">월평가서 &amp; 출결정보</a>
+                  <a href="#" class="lnb__nav-item">월평가서 &amp; 출결정보</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item active"
+                  <a href="#" class="lnb__nav-item lnb__nav-item--active"
                     >온라인 테스트 및 체험수업 결과</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">신규선생님 평가</a></li>
-                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+                <li><a href="#" class="lnb__nav-item">신규선생님 평가</a></li>
+                <li><a href="#" class="lnb__nav-item">알림콜 설정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
         <!-- Action Buttons -->
-        <div class="lnb-actions d-flex flex-column gap-0-5">
-          <a class="button button-lg button-border button-primary button-block"
+        <div class="lnb__actions">
+          <a class="button button--lg button--border button--primary button--block"
             >수업불편 및 요청상담</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >선생님, 부탁 드려요</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >찐친 초대현황</a
           >
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="nav-icon nav-icon-violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
               <span>나의 정보</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                  <a href="#" class="lnb__nav-item">수강료 결제 및 취소 내역</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교재결제내역 / 장바구니</a>
+                  <a href="#" class="lnb__nav-item">교재결제내역 / 장바구니</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                  <a href="#" class="lnb__nav-item">교육비 납입증명서 출력</a>
                 </li>
-                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
-                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+                <li><a href="#" class="lnb__nav-item">비밀번호 변경</a></li>
+                <li><a href="#" class="lnb__nav-item">회원정보수정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="nav-icon nav-icon-blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">아이딕 북</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 보카</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 비디오</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 사전</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
               <span>학습지원서비스</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
-                <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">화상영어 가이드</a></li>
+                <li><a href="#" class="lnb__nav-item">원격지원서비스</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >수업연기 및 보강정책(환불)</a
                   >
                 </li>
@@ -225,7 +220,7 @@
         </nav>
       </aside>
 
-      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+      <main class="mypage__content">
         <div class="content-container">
           <h2 class="page-title">온라인 테스트 및 체험수업 결과</h2>
 
@@ -248,7 +243,7 @@
 
             <!-- Card 1 (펼침 상태) -->
             <div
-              class="radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+              class="card-panel d-flex flex-column gap-3"
             >
               <!-- 카드 헤더: 날짜 + 버튼 -->
               <div class="d-flex align-items-center justify-content-between">
@@ -257,7 +252,7 @@
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
-                  <button class="button button-sm button-fill button-neutral">
+                  <button class="button button--sm button--fill button--neutral">
                     삭제
                   </button>
                   <button
@@ -338,7 +333,7 @@
                         >출결사항</span
                       >
                       <span
-                        class="badge badge-sm badge-fill badge-primary rounded-pill"
+                        class="badge badge--sm badge--fill badge--primary rounded-pill"
                         >출석</span
                       >
                     </div>
@@ -523,21 +518,21 @@
                     <span class="heading5 text-black d-block mb-3"
                       >평가 결과</span
                     >
-                    <div class="table-list-container">
+                    <div class="table-list">
                       <!-- 테이블 헤더 (PC) -->
                       <div
-                        class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+                        class="table-list__header"
                       >
-                        <div class="col-lg-3 text-center">Task Area</div>
-                        <div class="col-lg-2 text-center">Grade</div>
-                        <div class="col text-center">Description</div>
+                        <div class="table-list__cell">Task Area</div>
+                        <div class="table-list__cell">Grade</div>
+                        <div class="table-list__cell">Description</div>
                       </div>
                       <!-- 테이블 바디 -->
-                      <div class="table-list-body d-flex flex-column gap-1-5">
+                      <div class="table-list__body">
                         <!-- Row 1 -->
-                        <div class="list-summary row g-2 align-items-center">
+                        <div class="table-list__row">
                           <div
-                            class="col-6 col-lg-3 d-flex flex-column gap-1"
+                            class="table-list__cell table-list__cell--half table-list__cell--vertical"
                           >
                             <span class="body2 text-gray"
                               >Fluency &amp; Speaking</span
@@ -547,23 +542,23 @@
                             >
                           </div>
                           <div
-                            class="col-6 col-lg-2 d-flex align-items-center"
+                            class="table-list__cell table-list__cell--half"
                           >
                             <span class="test-eval-grade test-eval-grade-a ms-auto m-lg-auto"
                               >A</span
                             >
                           </div>
-                          <div class="col-12 col-lg-7">
-                            <p class="body2 text-neutral">
+                          <div class="table-list__cell">
+                            <p>
                               The student actively participated in class and
                               received positive feedback from the teacher.
                             </p>
                           </div>
                         </div>
                         <!-- Row 2 -->
-                        <div class="list-summary list-cell-highlight row g-2 align-items-center">
+                        <div class="table-list__row table-list__row--highlight">
                           <div
-                            class="col-6 col-lg-3 d-flex flex-column gap-1"
+                            class="table-list__cell table-list__cell--half table-list__cell--vertical"
                           >
                             <span class="body2 text-gray"
                               >Fluency &amp; Speaking</span
@@ -573,23 +568,23 @@
                             >
                           </div>
                           <div
-                            class="col-6 col-lg-2 d-flex align-items-center"
+                            class="table-list__cell table-list__cell--half"
                           >
-                            <span class="test-eval-grade test-eval-grade-b  ms-auto m-lg-auto"
+                            <span class="test-eval-grade test-eval-grade-b ms-auto m-lg-auto"
                               >B</span
                             >
                           </div>
-                          <div class="col-12 col-lg-7">
-                            <p class="body2 text-neutral">
+                          <div class="table-list__cell">
+                            <p>
                               The student actively participated in class and
                               received positive feedback from the teacher.
                             </p>
                           </div>
                         </div>
                         <!-- Row 3 -->
-                        <div class="list-summary row g-2 align-items-center">
+                        <div class="table-list__row">
                           <div
-                            class="col-6 col-lg-3 d-flex flex-column gap-1"
+                            class="table-list__cell table-list__cell--half table-list__cell--vertical"
                           >
                             <span class="body2 text-gray"
                               >Fluency &amp; Speaking</span
@@ -599,14 +594,14 @@
                             >
                           </div>
                           <div
-                            class="col-6 col-lg-2 d-flex align-items-center"
+                            class="table-list__cell table-list__cell--half"
                           >
                             <span class="test-eval-grade test-eval-grade-c ms-auto m-lg-auto"
                               >C</span
                             >
                           </div>
-                          <div class="col-12 col-lg-7">
-                            <p class="body2 text-neutral">
+                          <div class="table-list__cell">
+                            <p>
                               The student actively participated in class and
                               received positive feedback from the teacher.
                             </p>
@@ -637,7 +632,7 @@
 
             <!-- Card 2 (접힘 상태) -->
             <div
-              class="radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+              class="card-panel d-flex flex-column gap-3"
             >
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-1">
@@ -645,7 +640,7 @@
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
-                  <button class="button button-sm button-fill button-neutral">
+                  <button class="button button--sm button--fill button--neutral">
                     삭제
                   </button>
                   <button
@@ -708,7 +703,7 @@
 
             <!-- Test Card 1 -->
             <div
-              class="radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+              class="card-panel d-flex flex-column gap-3"
             >
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-1">
@@ -716,7 +711,7 @@
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
-                  <button class="button button-sm button-fill button-neutral">
+                  <button class="button button--sm button--fill button--neutral">
                     삭제
                   </button>
                   <button
@@ -836,59 +831,59 @@
                     >
                     <!-- 테이블 헤더 (PC) -->
                     <div
-                      class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+                      class="table-list__header"
                     >
-                      <div class="col-lg-2 text-center">CEFR</div>
-                      <div class="col-lg-2 text-center">AR (Lexile)</div>
-                      <div class="col-lg-2 text-center">GL (톡스레벨)</div>
-                      <div class="col-lg-3 text-center">스피킹</div>
-                      <div class="col-lg-3 text-center">리딩</div>
+                      <div class="table-list__cell">CEFR</div>
+                      <div class="table-list__cell">AR (Lexile)</div>
+                      <div class="table-list__cell">GL (톡스레벨)</div>
+                      <div class="table-list__cell">스피킹</div>
+                      <div class="table-list__cell">리딩</div>
                     </div>
                     <!-- 테이블 바디 -->
                     <div
-                      class="table-list-body d-flex flex-column gap-1-5"
+                      class="table-list__body"
                     >
                       <div
-                        class="list-summary row g-2 align-items-center"
+                        class="table-list__row"
                       >
                         <div
-                          class="col-12 col-lg-2 d-flex align-items-center gap-1-5 justify-content-lg-center"
+                          class="table-list__cell"
                         >
                           <span
                             class="d-lg-none body3 fw-bold"
                             style="color: var(--color-cyan-700)"
                             >CEFR</span
                           >
-                          <span class="body2 fw-bold text-neutral"
+                          <span class="fw-bold"
                             >High A2</span
                           >
                         </div>
                         <div
-                          class="col-12 col-lg-2 d-flex align-items-center gap-1-5 justify-content-lg-center mt-2 mt-lg-0"
+                          class="table-list__cell mt-2 mt-lg-0"
                         >
                           <span
                             class="d-lg-none body3 fw-bold"
                             style="color: var(--color-cyan-700)"
                             >AR (Lexile)</span
                           >
-                          <span class="body2 fw-bold text-neutral"
+                          <span class="fw-bold"
                             >AR 2-3</span
                           >
                         </div>
                         <div
-                          class="col-12 col-lg-2 d-flex align-items-center gap-1-5 justify-content-lg-center mt-2 mt-lg-0"
+                          class="table-list__cell mt-2 mt-lg-0"
                         >
                           <span
                             class="d-lg-none body3 fw-bold"
                             style="color: var(--color-cyan-700)"
                             >GL (톡스레벨)</span
                           >
-                          <span class="body2 fw-bold text-neutral"
+                          <span class="fw-bold"
                             >GL 5-6</span
                           >
                         </div>
                         <div
-                          class="col-12 col-lg-3 d-flex flex-column align-items-start gap-1 mt-2 mt-lg-0"
+                          class="table-list__cell table-list__cell--vertical mt-2 mt-lg-0"
                         >
                           <span
                             class="d-lg-none body3 fw-bold"
@@ -902,7 +897,7 @@
                           </p>
                         </div>
                         <div
-                          class="col-12 col-lg-3 d-flex flex-column align-items-start gap-1 mt-2 mt-lg-0"
+                          class="table-list__cell table-list__cell--vertical mt-2 mt-lg-0"
                         >
                           <span
                             class="d-lg-none body3 fw-bold"
@@ -1027,7 +1022,7 @@
 
             <!-- Test Card 2 -->
             <div
-              class="radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+              class="card-panel d-flex flex-column gap-3"
             >
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-1">
@@ -1035,7 +1030,7 @@
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
-                  <button class="button button-sm button-fill button-neutral">
+                  <button class="button button--sm button--fill button--neutral">
                     삭제
                   </button>
                   <button
@@ -1081,7 +1076,7 @@
 
             <!-- Test Card 3 -->
             <div
-              class="radius-xl elevator-large p-4 p-lg-5 d-flex flex-column gap-3"
+              class="card-panel d-flex flex-column gap-3"
             >
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-1">
@@ -1089,7 +1084,7 @@
                   <span class="body2 fw-bold text-black">25.00.00 00:00</span>
                 </div>
                 <div class="d-flex align-items-center button-group">
-                  <button class="button button-sm button-fill button-neutral">
+                  <button class="button button--sm button--fill button--neutral">
                     삭제
                   </button>
                   <button

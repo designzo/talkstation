@@ -1,47 +1,43 @@
 /* Design Tokens - CSS Custom Properties */
 
 :root {
-
-  /* Colors */
- /* colors */
-  --color-bg-white: var(--color-gray-0);
-  --color-bg-priamry-light: var(--color-cyan-50);
-  --color-bg-blue-light: var(--color-blue-50);
-  --color-bg-gray-light: var(--color-gray-100);
-  --color-bg-red-light: var(--color-red-50);
-  --color-bg-secondary: #f5fafd;
-  --color-text-black: var(--color-gray-800);
-  --color-text-white: var(--color-gray-0);
-  --color-text-gray: var(--color-gray-600);
-  --color-text-light-gray: var(--color-gray-500);
-  --color-text-disabled: var(--color-gray-300);
-  --color-text-success: var(--color-green-600);
-  --color-text-validation: var(--color-yellow-700);
-  --color-text-error: var(--color-red-400);
-  --color-text-neutral: var(--color-gray-700);
-  --color-border-normal: var(--color-gray-300);
-  --color-border-light: var(--color-gray-200);
-  --color-border-super-light: var(--color-gray-100);
-  --color-colorchip-red: var(--color-red-400);
-  --color-colorchip-primary: var(--color-cyan-500);
-  --color-colorchip-green: var(--color-green-600);
-  --color-colorchip-blue: var(--color-blue-500);
-  --color-colorchip-yellow: var(--color-yellow-700);
-  --color-colorchip-orange: var(--color-orange-400);
-  --color-colorchip-violet: var(--color-violet-400);
-  --color-colorchip-peacock: var(--color-peacock-500);
-  --color-colorchip-purple: var(--color-purple-500);
+  /* colors */
+  --color-white: var(--color-gray-0);
+  --color-black: var(--color-gray-800);
+  --color-dark: var(--color-gray-900);
+  --color-neutral: var(--color-gray-700);
+  --color-gray: var(--color-gray-600);
+  --color-light-gray: var(--color-gray-500);
+  --color-blue-light: var(--color-blue-50);
+  --color-gray-light: var(--color-gray-100);
+  --color-gray-light-2: var(--color-gray-200);
+  --color-gray-light-3: var(--color-gray-300);
+  --color-red-light: var(--color-red-50);
+  --color-secondary: #f5fafd;
+  --color-focus: var(--color-cyan-600);
+  --color-primary: var(--color-cyan-500);
+  --color-primary-light: var(--color-cyan-50);
+  --color-red: var(--color-red-400);
+  --color-green: var(--color-green-600);
+  --color-blue: var(--color-blue-500);
+  --color-yellow: var(--color-yellow-700);
+  --color-orange: var(--color-orange-400);
+  --color-violet: var(--color-violet-400);
+  --color-peacock: var(--color-peacock-500);
+  --color-purple: var(--color-purple-500);
 
   /* typography */
   --font-family: "pretendard", -apple-system, blink-mac-system-font, "segoe ui", sans-serif;
   --font-size-xs: 11px;
-  --font-size-sm: 13px;
+  --font-size-sm: 12px;
   --font-size-base: 14px;
   --font-size-md: 16px;
   --font-size-lg: 18px;
   --font-size-xl: 20px;
   --font-size-2xl: 24px;
-  --font-size-3xl: 32px;
+  --font-size-3xl: 28px;
+  --font-size-4xl: 32px;
+  --font-size-5xl: 36px;
 
   /* spacing */
   --spacing-0: 0px;
@@ -227,25 +223,6 @@
   --color-purple-900: #2d186d;
 
   /* Typography */
-  /* FontSize */
-  --head-dk_h1-fontSize: 36px;
-  --head-mo_h1-fontSize: 28px;
-  --head-dk_h2-fontSize: 24px;
-  --head-mo_h2-fontSize: 20px;
-  --head-dk_h3-fontSize: 20px;
-  --head-mo_h3-fontSize: 18px;
-  --head-dk_h4-fontSize: 18px;
-  --head-mo_h4-fontSize: 18px;
-  --head-dk_h5-fontSize: 16px;
-  --head-mo_h5-fontSize: 16px;
-  --body-body1-fontSize: 16px;
-  --body-body2-fontSize: 14px;
-  --body-body3-fontSize: 12px;
-  --body-body4-fontSize: 11px;
-  --fields-placeholder-fontSize: 14px;
-  --fields-title-fontSize: 14px;
-  --fields-description-fontSize: 12px;
-
   /* FontWeight */
   --fontweight-regular: 400;
   --fontweight-medium: 500;
@@ -268,4 +245,3 @@
   --effect-elevator-short: 0px 4px 12px 0px #0000001a;
   --effect-elevator-large: 0px 4px 20px 0px #0000000a;
 }
-

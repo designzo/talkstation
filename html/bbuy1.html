@@ -29,195 +29,187 @@
 
   <body>
 
-    <div class="d-flex container mypage">
-      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
-        <div class="profile-section p-4 text-center">
-          <div class="profile-img mx-auto mb-2">
-            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
+    <div class="container mypage">
+      <aside class="lnb">
+        <div class="lnb__profile">
+          <div class="lnb__profile-avatar">
+            <img src="../images/avatar_main.png" alt="Profile" />
           </div>
-          <h5 class="heading3 text-black">홍길동</h5>
-          <p class="body1 line-height-140 text-light-gray mb-4">
-            Hong gil dong
-          </p>
+          <h5 class="lnb__profile-name">홍길동</h5>
+          <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button-sm button-fill button-secondary rounded-pill"
+            class="button button--sm button--fill button--secondary rounded-pill"
           >
-            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
+            프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
 
-          <div
-            class="gallery-grid mt-6 d-grid"
-            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
-          >
-            <div class="gallery-item">
+          <div class="lnb__gallery">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
           </div>
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
               <span>나의 수업 관리</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                  <a href="#" class="lnb__nav-item"
+                    >원어민 강사 강의실 입장</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >아이딕 홈스쿨 강의실 입장</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li><a href="#" class="lnb__nav-item">보카킹 학습방</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                  <a href="#" class="lnb__nav-item">Story Writing 과제방</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">VOCA 과제방</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">특강권 사용&amp;관리</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">VOCA 과제방</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
-                </li>
-                <li><a href="#" class="nav-menu-item">강사/시간 변경</a></li>
-                <li>
-                  <a href="#" class="nav-menu-item">특강권 사용&amp;관리</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >원서&amp;영상수업 요청목록</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">월평가서 &amp; 출결정보</a>
+                  <a href="#" class="lnb__nav-item">월평가서 &amp; 출결정보</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >온라인 테스트 및 체험수업 결과</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">신규선생님 평가</a></li>
-                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+                <li><a href="#" class="lnb__nav-item">신규선생님 평가</a></li>
+                <li><a href="#" class="lnb__nav-item">알림콜 설정</a></li>
               </ul>
-            </div>
           </div>
         </nav>
 
         <!-- Action Buttons -->
-        <div class="lnb-actions d-flex flex-column gap-0-5">
-          <a class="button button-lg button-border button-primary button-block"
+        <div class="lnb__actions">
+          <a class="button button--lg button--border button--primary button--block"
             >수업불편 및 요청상담</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >선생님, 부탁 드려요</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >찐친 초대현황</a
           >
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="nav-icon nav-icon-violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
               <span>나의 정보</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                  <a href="#" class="lnb__nav-item">수강료 결제 및 취소 내역</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item active"
-                    >교재결제내역 / 장바구니</a
-                  >
+                  <a href="#" class="lnb__nav-item lnb__nav-item--active">교재결제내역 / 장바구니</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                  <a href="#" class="lnb__nav-item">교육비 납입증명서 출력</a>
                 </li>
-                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
-                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+                <li><a href="#" class="lnb__nav-item">비밀번호 변경</a></li>
+                <li><a href="#" class="lnb__nav-item">회원정보수정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="nav-icon nav-icon-blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">아이딕 북</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 보카</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 비디오</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 사전</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
               <span>학습지원서비스</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
-                <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">화상영어 가이드</a></li>
+                <li><a href="#" class="lnb__nav-item">원격지원서비스</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >수업연기 및 보강정책(환불)</a
                   >
                 </li>
@@ -227,27 +219,25 @@
         </nav>
       </aside>
 
-      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+      <main class="mypage__content">
         <div class="content-container">
           <h2 class="page-title">교재 결제 내역 &amp; 장바구니</h2>
 
           <!-- ============================
              탭 네비게이션
              ============================ -->
-          <div class="d-flex justify-content-center">
-            <ul class="nav nav-pill">
-              <li class="nav-item active">
-                <a class="nav-link" data-toggle="tab" href="#tabCart"
+          <ul class="tab-nav">
+              <li class="tab-nav__item active">
+                <a class="tab-nav__link" data-toggle="tab" href="#tabCart"
                   >장바구니</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tabHistory"
+              <li class="tab-nav__item">
+                <a class="tab-nav__link" data-toggle="tab" href="#tabHistory"
                   >결제내역</a
                 >
               </li>
             </ul>
-          </div>
 
           <div class="tab-content">
             <!-- ============================
@@ -290,7 +280,7 @@
                         </div>
                         <div class="qty-control order-lg-first">
                           <button
-                            class="button button-sm button-transparent button-default button-icon-only"
+                            class="button button--sm button--transparent button--default button--icon-only"
                             type="button"
                           >
                             <span class="button__icon"
@@ -303,7 +293,7 @@
                             readonly
                           />
                           <button
-                            class="button button-sm button-transparent button-default button-icon-only"
+                            class="button button--sm button--transparent button--default button--icon-only"
                             type="button"
                           >
                             <span class="button__icon"
@@ -315,12 +305,12 @@
                   </div>
                   <div class="cart-actions">
                     <button
-                      class="button button-md button-fill button-neutral"
+                      class="button button--md button--fill button--neutral"
                     >
                       삭제하기
                     </button>
                     <button
-                      class="button button-md button-fill button-primary order-lg-first"
+                      class="button button--md button--fill button--primary order-lg-first"
                     >
                       주문하기
                     </button>
@@ -362,7 +352,7 @@
                         </div>
                         <div class="qty-control order-lg-first">
                           <button
-                            class="button button-sm button-transparent button-default button-icon-only"
+                            class="button button--sm button--transparent button--default button--icon-only"
                             type="button"
                           >
                             <span class="button__icon"
@@ -375,7 +365,7 @@
                             readonly
                           />
                           <button
-                            class="button button-sm button-transparent button-default button-icon-only"
+                            class="button button--sm button--transparent button--default button--icon-only"
                             type="button"
                           >
                             <span class="button__icon"
@@ -387,12 +377,12 @@
                   </div>
                   <div class="cart-actions">
                     <button
-                      class="button button-md button-fill button-neutral"
+                      class="button button--md button--fill button--neutral"
                     >
                       삭제하기
                     </button>
                     <button
-                      class="button button-md button-fill button-primary order-lg-first"
+                      class="button button--md button--fill button--primary order-lg-first"
                     >
                       주문하기
                     </button>
@@ -434,7 +424,7 @@
                         </div>
                         <div class="qty-control order-lg-first">
                           <button
-                            class="button button-sm button-transparent button-default button-icon-only"
+                            class="button button--sm button--transparent button--default button--icon-only"
                             type="button"
                           >
                             <span class="button__icon"
@@ -447,7 +437,7 @@
                             readonly
                           />
                           <button
-                            class="button button-sm button-transparent button-default button-icon-only"
+                            class="button button--sm button--transparent button--default button--icon-only"
                             type="button"
                           >
                             <span class="button__icon"
@@ -459,12 +449,12 @@
                   </div>
                   <div class="cart-actions">
                     <button
-                      class="button button-md button-fill button-neutral"
+                      class="button button--md button--fill button--neutral"
                     >
                       삭제하기
                     </button>
                     <button
-                      class="button button-md button-fill button-primary order-lg-first"
+                      class="button button--md button--fill button--primary order-lg-first"
                     >
                       주문하기
                     </button>
@@ -480,7 +470,7 @@
                     <span class="heading3 text-black">16,300원</span>
                   </div>
                   <button
-                    class="button button-md button-fill button-primary"
+                    class="button button--md button--fill button--primary"
                   >
                     전체 주문하기
                   </button>
@@ -495,11 +485,11 @@
               <div class="d-flex flex-column gap-3">
                 <!-- 월 네비게이션 -->
                 <div class="monthly-header-nav justify-content-start">
-                  <button class="monthly-nav-btn" type="button">
+                  <button class="monthly-header-nav__btn" type="button">
                     <svg class="icon"><use href="#chevron-left"></use></svg>
                   </button>
-                  <span class="heading5">2025년 01월</span>
-                  <button class="monthly-nav-btn" type="button">
+                  <span class="monthly-header-nav__title">2025년 01월</span>
+                  <button class="monthly-header-nav__btn" type="button">
                     <svg class="icon"><use href="#chevron-right"></use></svg>
                   </button>
                 </div>
@@ -511,7 +501,7 @@
                   >
                     <div class="history-thumb">
                       <span
-                        class="badge badge-sm badge-soft badge-primary"
+                        class="badge badge--sm badge--soft badge--primary"
                         >결제일 25-11-21</span
                       >
                       <img
@@ -534,16 +524,16 @@
                           >5,700원</span
                         >
                         <div class="d-flex flex-column gap-1">
-                          <div class="info-row">
-                            <span class="info-label">이름/주소</span>
-                            <span class="info-value"
+                          <div class="info-list__row">
+                            <span class="info-list__label">이름/주소</span>
+                            <span class="info-list__value"
                               >홍길동 / (59731) 전남 여수시 교동북3길 11
                               21323</span
                             >
                           </div>
-                          <div class="info-row">
-                            <span class="info-label">연락처</span>
-                            <span class="info-value"
+                          <div class="info-list__row">
+                            <span class="info-list__label">연락처</span>
+                            <span class="info-list__value"
                               >010-9111-1730</span
                             >
                           </div>
@@ -553,7 +543,7 @@
                   </div>
                   <div class="history-actions">
                     <button
-                      class="button button-md button-border button-default"
+                      class="button button--md button--border button--default"
                       type="button"
                       data-toggle="modal"
                       data-target="#orderDetailModal"
@@ -570,7 +560,7 @@
                   >
                     <div class="history-thumb">
                       <span
-                        class="badge badge-sm badge-soft badge-primary"
+                        class="badge badge--sm badge--soft badge--primary"
                         >결제일 25-11-21</span
                       >
                       <img
@@ -593,16 +583,16 @@
                           >5,700원</span
                         >
                         <div class="d-flex flex-column gap-1">
-                          <div class="info-row">
-                            <span class="info-label">이름/주소</span>
-                            <span class="info-value"
+                          <div class="info-list__row">
+                            <span class="info-list__label">이름/주소</span>
+                            <span class="info-list__value"
                               >홍길동 / (59731) 전남 여수시 교동북3길 11
                               21323</span
                             >
                           </div>
-                          <div class="info-row">
-                            <span class="info-label">연락처</span>
-                            <span class="info-value"
+                          <div class="info-list__row">
+                            <span class="info-list__label">연락처</span>
+                            <span class="info-list__value"
                               >010-9111-1730</span
                             >
                           </div>
@@ -612,7 +602,7 @@
                   </div>
                   <div class="history-actions">
                     <button
-                      class="button button-md button-border button-default"
+                      class="button button--md button--border button--default"
                       type="button"
                       data-toggle="modal"
                       data-target="#orderDetailModal"
@@ -629,7 +619,7 @@
                   >
                     <div class="history-thumb">
                       <span
-                        class="badge badge-sm badge-soft badge-primary"
+                        class="badge badge--sm badge--soft badge--primary"
                         >결제일 25-11-21</span
                       >
                       <img
@@ -652,16 +642,16 @@
                           >5,700원</span
                         >
                         <div class="d-flex flex-column gap-1">
-                          <div class="info-row">
-                            <span class="info-label">이름/주소</span>
-                            <span class="info-value"
+                          <div class="info-list__row">
+                            <span class="info-list__label">이름/주소</span>
+                            <span class="info-list__value"
                               >홍길동 / (59731) 전남 여수시 교동북3길 11
                               21323</span
                             >
                           </div>
-                          <div class="info-row">
-                            <span class="info-label">연락처</span>
-                            <span class="info-value"
+                          <div class="info-list__row">
+                            <span class="info-list__label">연락처</span>
+                            <span class="info-list__value"
                               >010-9111-1730</span
                             >
                           </div>
@@ -671,7 +661,7 @@
                   </div>
                   <div class="history-actions">
                     <button
-                      class="button button-md button-border button-default"
+                      class="button button--md button--border button--default"
                       type="button"
                       data-toggle="modal"
                       data-target="#orderDetailModal"
@@ -698,13 +688,13 @@
       aria-hidden="true"
     >
       <div
-        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        class="modal-dialog modal-dialog-scrollable modal-lg"
       >
-        <div class="modal-content radius-2xl elevator-large p-4 p-lg-5">
+        <div class="modal-content">
           <!-- 모달 헤더 -->
-          <div class="modal-header border-bottom p-0 pb-4">
+          <div class="modal-header">
             <h5
-              class="modal-title heading2 text-black"
+              class="modal-title"
               id="orderDetailModalLabel"
             >
               상세주문내역
@@ -718,22 +708,22 @@
           </div>
 
           <!-- 모달 바디 -->
-          <div class="modal-body p-0 pt-4 d-flex flex-column gap-5">
+          <div class="modal-body">
             <!-- 상품 목록 -->
-            <div class="table-list-container">
+            <div class="table-list table-list--order-detail">
               <!-- PC 헤더 -->
               <div
-                class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+                class="table-list__header"
               >
-                <div class="col text-center">상품 정보</div>
-                <div class="col-lg-3 text-center">상품금액</div>
+                <div class="table-list__cell">상품 정보</div>
+                <div class="table-list__cell">상품금액</div>
               </div>
 
               <!-- 상품 바디 -->
-              <div class="table-list-body d-flex flex-column gap-1-5">
+              <div class="table-list__body">
                 <!-- 상품 1 -->
-                <div class="list-summary row g-2 align-items-center">
-                  <div class="col d-flex align-items-center gap-2">
+                <div class="table-list__row">
+                  <div class="table-list__cell">
                     <img
                       src="../images/book_sample.png"
                       alt="Book"
@@ -751,9 +741,9 @@
                     </div>
                   </div>
                   <div
-                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">상품금액</span>
+                    <span class="table-list__mobile-label">상품금액</span>
                     <span class="body1 weight-bold text-black"
                       >28,500</span
                     >
@@ -761,8 +751,8 @@
                 </div>
 
                 <!-- 상품 2 -->
-                <div class="list-summary list-cell-highlight row g-2 align-items-center">
-                  <div class="col d-flex align-items-center gap-2">
+                <div class="table-list__row table-list__row--highlight">
+                  <div class="table-list__cell">
                     <img
                       src="../images/book_sample.png"
                       alt="Book"
@@ -780,9 +770,9 @@
                     </div>
                   </div>
                   <div
-                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">상품금액</span>
+                    <span class="table-list__mobile-label">상품금액</span>
                     <span class="body1 weight-bold text-black"
                       >28,500</span
                     >
@@ -804,40 +794,34 @@
             <!-- 주문정보 -->
             <div class="d-flex flex-column gap-3">
               <h3 class="heading4 text-black">주문정보</h3>
-              <div class="d-flex flex-column gap-1-5">
-                <div class="d-flex gap-1-5">
-                  <div class="att-info-label">주문일시</div>
-                  <div class="att-info-value flex-fill">
-                    2025.00.00 00:00
-                  </div>
+              <div class="info-field info-field--order">
+                <div class="info-field__cell">
+                  <div class="info-field__label">주문일시</div>
+                  <div class="info-field__value">2025.00.00 00:00</div>
                 </div>
-                <div class="d-flex gap-1-5">
-                  <div class="att-info-label">주문상태</div>
-                  <div class="att-info-value flex-fill">입금완료</div>
+                <div class="info-field__cell">
+                  <div class="info-field__label">주문상태</div>
+                  <div class="info-field__value">입금완료</div>
                 </div>
-                <div class="d-flex gap-1-5">
-                  <div class="att-info-label">배송상태</div>
-                  <div class="att-info-value flex-fill">배송중</div>
+                <div class="info-field__cell">
+                  <div class="info-field__label">배송상태</div>
+                  <div class="info-field__value">배송중</div>
                 </div>
-                <div class="d-flex gap-1-5">
-                  <div class="att-info-label">주소</div>
-                  <div class="att-info-value flex-fill">
-                    (59731) 전남 여수시 교동북3길 11 21323
-                  </div>
+                <div class="info-field__cell">
+                  <div class="info-field__label">주소</div>
+                  <div class="info-field__value">(59731) 전남 여수시 교동북3길 11 21323</div>
                 </div>
-                <div class="d-flex gap-1-5">
-                  <div class="att-info-label">받는사람</div>
-                  <div class="att-info-value flex-fill">백웅</div>
+                <div class="info-field__cell">
+                  <div class="info-field__label">받는사람</div>
+                  <div class="info-field__value">백웅</div>
                 </div>
-                <div class="d-flex gap-1-5">
-                  <div class="att-info-label">연락처</div>
-                  <div class="att-info-value flex-fill">
-                    010-9111-1730
-                  </div>
+                <div class="info-field__cell">
+                  <div class="info-field__label">연락처</div>
+                  <div class="info-field__value">010-9111-1730</div>
                 </div>
-                <div class="d-flex gap-1-5">
-                  <div class="att-info-label">요청사항</div>
-                  <div class="att-info-value flex-fill">-</div>
+                <div class="info-field__cell">
+                  <div class="info-field__label">요청사항</div>
+                  <div class="info-field__value">-</div>
                 </div>
               </div>
             </div>

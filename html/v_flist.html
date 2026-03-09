@@ -29,197 +29,188 @@
 
   <body>
 
-    <div class="d-flex container mypage">
-      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
-        <div class="profile-section p-4 text-center">
-          <div class="profile-img mx-auto mb-2">
-            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
+    <div class="container mypage">
+      <aside class="lnb">
+        <div class="lnb__profile">
+          <div class="lnb__profile-avatar">
+            <img src="../images/avatar_main.png" alt="Profile" />
           </div>
-          <h5 class="heading3 text-black">홍길동</h5>
-          <p class="body1 line-height-140 text-light-gray mb-4">
-            Hong gil dong
-          </p>
+          <h5 class="lnb__profile-name">홍길동</h5>
+          <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button-sm button-fill button-secondary rounded-pill"
+            class="button button--sm button--fill button--secondary button--pill"
           >
-            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
+            프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
 
-          <div
-            class="gallery-grid mt-6 d-grid"
-            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
-          >
-            <div class="gallery-item">
+          <div class="lnb__gallery">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
           </div>
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
               <span>나의 수업 관리</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                  <a href="#" class="lnb__nav-item"
+                    >원어민 강사 강의실 입장</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >아이딕 홈스쿨 강의실 입장</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li><a href="#" class="lnb__nav-item">보카킹 학습방</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                  <a href="#" class="lnb__nav-item">Story Writing 과제방</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item lnb__nav-item--active">VOCA 과제방</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">특강권 사용&amp;관리</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item active">VOCA 과제방</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
-                </li>
-                <li><a href="#" class="nav-menu-item">강사/시간 변경</a></li>
-                <li>
-                  <a href="#" class="nav-menu-item">특강권 사용&amp;관리</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >원서&amp;영상수업 요청목록</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">월평가서 &amp; 출결정보</a>
+                  <a href="#" class="lnb__nav-item">월평가서 &amp; 출결정보</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >온라인 테스트 및 체험수업 결과</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">신규선생님 평가</a></li>
-                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+                <li><a href="#" class="lnb__nav-item">신규선생님 평가</a></li>
+                <li><a href="#" class="lnb__nav-item">알림콜 설정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
         <!-- Action Buttons -->
-        <div class="lnb-actions d-flex flex-column gap-0-5">
-          <a class="button button-lg button-border button-primary button-block"
+        <div class="lnb__actions">
+          <a class="button button--lg button--border button--primary button--block"
             >수업불편 및 요청상담</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >선생님, 부탁 드려요</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >찐친 초대현황</a
           >
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="nav-icon nav-icon-violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
               <span>나의 정보</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                  <a href="#" class="lnb__nav-item">수강료 결제 및 취소 내역</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교재결제내역 / 장바구니</a>
+                  <a href="#" class="lnb__nav-item">교재결제내역 / 장바구니</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                  <a href="#" class="lnb__nav-item">교육비 납입증명서 출력</a>
                 </li>
-                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
-                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+                <li><a href="#" class="lnb__nav-item">비밀번호 변경</a></li>
+                <li><a href="#" class="lnb__nav-item">회원정보수정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="nav-icon nav-icon-blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">아이딕 북</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 보카</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 비디오</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 사전</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
               <span>학습지원서비스</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">화상영어 가이드</a></li>
+                <li><a href="#" class="lnb__nav-item">원격지원서비스</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item">화상영어 가이드</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">원격지원서비스</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >수업연기 및 보강정책(환불)</a
                   >
                 </li>
@@ -229,7 +220,7 @@
         </nav>
       </aside>
 
-      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+      <main class="mypage__content">
         <div class="content-container">
           <h2 class="page-title">VOCA 과제방</h2>
 
@@ -237,12 +228,12 @@
              월간 학습 현황 카드
              ============================ -->
           <div
-            class="voca-summary radius-xl elevator-large p-5 d-flex flex-column gap-5"
+            class="voca-summary"
           >
             <!-- 헤더: 타이틀 + 버튼 -->
-            <div class="d-flex align-items-start align-items-lg-center flex-column flex-lg-row justify-content-between gap-3">
-              <div class="d-flex align-items-center gap-3">
-                <div class="voca-icon-box voca-icon-box-lg">
+            <div class="voca-summary__header">
+              <div class="voca-summary__title">
+                <div class="voca-icon voca-icon--lg">
                   <img
                     src="../images/fluent-calendar.svg"
                     alt="calendar"
@@ -250,73 +241,66 @@
                     height="32"
                   />
                 </div>
-                <span class="heading2">25년 00월 학습 현황</span>
+                <span class="voca-summary__title-text">25년 00월 학습 현황</span>
               </div>
-              <button class="button button-sm button-border button-primary">
+              <button class="button button--sm button--border button--primary">
                 최근 3개월 활동 보기
                 <svg class="icon"><use href="#arrow-right"></use></svg>
               </button>
             </div>
 
             <!-- 본문: 완료율 + 통계 -->
-            <div class="d-flex flex-column gap-4">
+            <div class="voca-summary__body">
               <!-- 완료율 프로그레스 바 -->
-              <div class="d-flex align-items-center gap-2">
-                <span class="body1 fw-medium text-neutral">완료율</span>
-                <span
-                  class="heading4 fw-bold"
-                  style="color: var(--color-cyan-700)"
-                  >40%</span
-                >
-                <div
-                  class="progress-bar-track progress-bar-track-primary flex-fill ms-1"
-                >
-                  <div
-                    class="progress-bar-fill progress-bar-fill-primary"
-                    style="width: 40%"
-                  ></div>
+              <div class="stat-progress">
+                <div class="stat-progress__header">
+                  <span class="stat-progress__label">완료율</span>
+                  <span class="stat-progress__value">40%</span>
+                </div>
+                <div class="stat-progress__bar progress-bar-track progress-bar-track-primary">
+                  <div class="progress-bar-fill progress-bar-fill-primary" style="width: 40%"></div>
                 </div>
               </div>
 
-              <!-- 포인트 / 과제단어 / 완료단어 -->
-              <div class="voca-stats">
-                <div class="voca-point-card">
-                  <div class="d-flex align-items-end gap-0 gap-lg-2">
-                    <span class="voca-point-value heading1">119</span>
-                    <span class="voca-point-label">Point</span>
+              <!-- 포인트 / 과제단어 / 완료단어 + Study / Word Quiz / Sentence -->
+              <div class="voca-stats-group">
+                <div class="voca-stats">
+                  <div class="voca-stats__point">
+                    <div class="voca-stats__point-inner">
+                      <span class="voca-stats__point-value">119</span>
+                      <span class="voca-stats__point-label">Point</span>
+                    </div>
+                  </div>
+                  <div class="voca-stats__counter">
+                    <span class="voca-stats__counter-label">과제단어</span>
+                    <span class="voca-stats__counter-value">63</span>
+                  </div>
+                  <div class="voca-stats__counter">
+                    <span class="voca-stats__counter-label">완료단어</span>
+                    <span class="voca-stats__counter-value">38</span>
                   </div>
                 </div>
-                <div class="voca-word-stat">
-                  <span class="voca-word-stat-label">과제단어</span>
-                  <span class="voca-word-stat-value">63</span>
-                </div>
-                <div class="voca-word-stat">
-                  <span class="voca-word-stat-label">완료단어</span>
-                  <span class="voca-word-stat-value">38</span>
-                </div>
-              </div>
-
-              <!-- Study / Word Quiz / Sentence -->
-              <div class="voca-stats">
-                <div class="voca-stat">
-                  <span class="voca-stat-label">Study</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+                <div class="voca-stats">
+                  <div class="voca-stat">
+                    <span class="voca-stat__label">Study</span>
+                    <div class="voca-stat__score">
+                      <span class="voca-stat__value">0</span>
+                      <span class="voca-stat__total">/3</span>
+                    </div>
                   </div>
-                </div>
-                <div class="voca-stat">
-                  <span class="voca-stat-label">Word Quiz</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+                  <div class="voca-stat">
+                    <span class="voca-stat__label">Word Quiz</span>
+                    <div class="voca-stat__score">
+                      <span class="voca-stat__value">0</span>
+                      <span class="voca-stat__total">/3</span>
+                    </div>
                   </div>
-                </div>
-                <div class="voca-stat">
-                  <span class="voca-stat-label">Sentence</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+                  <div class="voca-stat">
+                    <span class="voca-stat__label">Sentence</span>
+                    <div class="voca-stat__score">
+                      <span class="voca-stat__value">0</span>
+                      <span class="voca-stat__total">/3</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -326,77 +310,76 @@
           <!-- ============================
              탭 필터
              ============================ -->
-          <div class="d-flex justify-content-center">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >전체</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">진행</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">완료</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="tab-nav">
+            <li class="tab-nav__item active">
+              <a class="tab-nav__link" data-toggle="tab" href="#tabAll">전체</a>
+            </li>
+            <li class="tab-nav__item">
+              <a class="tab-nav__link" data-toggle="tab" href="#tabProgress">진행</a>
+            </li>
+            <li class="tab-nav__item">
+              <a class="tab-nav__link" data-toggle="tab" href="#tabDone">완료</a>
+            </li>
+          </ul>
 
-          <!-- ============================
-             과제 카드 리스트
-             ============================ -->
-          <div class="d-flex flex-column gap-3">
-            <!-- Card 1 -->
+          <div class="tab-content">
+            <!-- ============================
+               탭1: 전체
+               ============================ -->
+            <div class="tab-pane active" id="tabAll">
+              <!-- 과제 카드 리스트 -->
+              <div class="voca-assign-list">
+                <!-- Card 1 -->
             <div
-              class="voca-assign-card radius-xl elevator-large d-flex align-items-center gap-3"
+              class="voca-assign"
             >
               <img
-                class="voca-assign-cover"
+                class="voca-assign__cover"
                 src="../images/dummy1.png"
                 alt="교재 표지"
               />
-              <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start flex-fill">
-                <div class="d-flex align-items-center gap-1">
-                  <svg class="icon" style="color: var(--color-cyan-700)"><use href="#calendar2-event"></use></svg>
-                  <span class="body2 fw-bold text-black">25.00.00</span>
+              <div class="voca-assign__content">
+                <div class="voca-assign__date">
+                  <svg class="icon voca-assign__date-icon"><use href="#calendar2-event"></use></svg>
+                  <span class="voca-assign__date-text">25.00.00</span>
                 </div>
-                <div class="d-flex flex-wrap align-items-center gap-2">
-                  <span class="badge badge-md badge-fill badge-blue">Fill</span>
-                  <span class="badge badge-md badge-fill badge-blue"
+                <div class="badge-group">
+                  <span class="badge badge--md badge--fill badge--blue">Fill</span>
+                  <span class="badge badge--md badge--fill badge--blue"
                     >Language</span
                   >
-                  <span class="badge badge-md badge-fill badge-peacock"
+                  <span class="badge badge--md badge--fill badge--peacock"
                     >Cheerful</span
                   >
                 </div>
                 <button
-                  class="button button-sm button-border button-default"
+                  class="button button--sm button--border button--default"
                   data-toggle="modal"
                   data-target="#vocaListModal"
                 >
-                  List <svg class="icon ms-1"><use href="#list-ul"></use></svg>
+                  List <svg class="icon"><use href="#list-ul"></use></svg>
                 </button>
               </div>
-              <div class="voca-assign-stats d-flex align-items-stretch gap-3">
-                <div class="voca-stat voca-stat-compact">
-                  <span class="voca-stat-label">Study</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+              <div class="voca-stats">
+                <div class="voca-stat voca-stat--compact">
+                  <span class="voca-stat__label">Study</span>
+                  <div class="voca-stat__score">
+                    <span class="voca-stat__value">0</span>
+                    <span class="voca-stat__total">/3</span>
                   </div>
                 </div>
-                <div class="voca-stat voca-stat-compact">
-                  <span class="voca-stat-label">Word Quiz</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+                <div class="voca-stat voca-stat--compact">
+                  <span class="voca-stat__label">Word Quiz</span>
+                  <div class="voca-stat__score">
+                    <span class="voca-stat__value">0</span>
+                    <span class="voca-stat__total">/3</span>
                   </div>
                 </div>
-                <div class="voca-stat voca-stat-compact">
-                  <span class="voca-stat-label">Sentence</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+                <div class="voca-stat voca-stat--compact">
+                  <span class="voca-stat__label">Sentence</span>
+                  <div class="voca-stat__score">
+                    <span class="voca-stat__value">0</span>
+                    <span class="voca-stat__total">/3</span>
                   </div>
                 </div>
               </div>
@@ -404,55 +387,55 @@
 
             <!-- Card 2 -->
             <div
-              class="voca-assign-card radius-xl elevator-large d-flex align-items-center gap-3"
+              class="voca-assign"
             >
               <img
-                class="voca-assign-cover"
+                class="voca-assign__cover"
                 src="../images/dummy1.png"
                 alt="교재 표지"
               />
-              <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start flex-fill">
-                <div class="d-flex align-items-center gap-1">
-                  <svg class="icon" style="color: var(--color-cyan-700)"><use href="#calendar2-event"></use></svg>
-                  <span class="body2 fw-bold text-black">25.00.00</span>
+              <div class="voca-assign__content">
+                <div class="voca-assign__date">
+                  <svg class="icon voca-assign__date-icon"><use href="#calendar2-event"></use></svg>
+                  <span class="voca-assign__date-text">25.00.00</span>
                 </div>
-                <div class="d-flex flex-wrap align-items-center gap-2">
-                  <span class="badge badge-md badge-fill badge-blue">Fill</span>
-                  <span class="badge badge-md badge-fill badge-blue"
+                <div class="badge-group">
+                  <span class="badge badge--md badge--fill badge--blue">Fill</span>
+                  <span class="badge badge--md badge--fill badge--blue"
                     >Language</span
                   >
-                  <span class="badge badge-md badge-fill badge-peacock"
+                  <span class="badge badge--md badge--fill badge--peacock"
                     >Cheerful</span
                   >
                 </div>
                 <button
-                  class="button button-sm button-border button-default"
+                  class="button button--sm button--border button--default"
                   data-toggle="modal"
                   data-target="#vocaListModal"
                 >
-                  List <svg class="icon ms-1"><use href="#list-ul"></use></svg>
+                  List <svg class="icon"><use href="#list-ul"></use></svg>
                 </button>
               </div>
-              <div class="voca-assign-stats d-flex align-items-stretch gap-3">
-                <div class="voca-stat voca-stat-compact">
-                  <span class="voca-stat-label">Study</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+              <div class="voca-stats">
+                <div class="voca-stat voca-stat--compact">
+                  <span class="voca-stat__label">Study</span>
+                  <div class="voca-stat__score">
+                    <span class="voca-stat__value">0</span>
+                    <span class="voca-stat__total">/3</span>
                   </div>
                 </div>
-                <div class="voca-stat voca-stat-compact">
-                  <span class="voca-stat-label">Word Quiz</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+                <div class="voca-stat voca-stat--compact">
+                  <span class="voca-stat__label">Word Quiz</span>
+                  <div class="voca-stat__score">
+                    <span class="voca-stat__value">0</span>
+                    <span class="voca-stat__total">/3</span>
                   </div>
                 </div>
-                <div class="voca-stat voca-stat-compact">
-                  <span class="voca-stat-label">Sentence</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+                <div class="voca-stat voca-stat--compact">
+                  <span class="voca-stat__label">Sentence</span>
+                  <div class="voca-stat__score">
+                    <span class="voca-stat__value">0</span>
+                    <span class="voca-stat__total">/3</span>
                   </div>
                 </div>
               </div>
@@ -460,95 +443,105 @@
 
             <!-- Card 3 -->
             <div
-              class="voca-assign-card radius-xl elevator-large d-flex align-items-center gap-3"
+              class="voca-assign"
             >
               <img
-                class="voca-assign-cover"
+                class="voca-assign__cover"
                 src="../images/dummy1.png"
                 alt="교재 표지"
               />
-              <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start flex-fill">
-                <div class="d-flex align-items-center gap-1">
-                  <svg class="icon" style="color: var(--color-cyan-700)"><use href="#calendar2-event"></use></svg>
-                  <span class="body2 fw-bold text-black">25.00.00</span>
+              <div class="voca-assign__content">
+                <div class="voca-assign__date">
+                  <svg class="icon voca-assign__date-icon"><use href="#calendar2-event"></use></svg>
+                  <span class="voca-assign__date-text">25.00.00</span>
                 </div>
-                <div class="d-flex flex-wrap align-items-center gap-2">
-                  <span class="badge badge-md badge-fill badge-blue">Fill</span>
-                  <span class="badge badge-md badge-fill badge-blue"
+                <div class="badge-group">
+                  <span class="badge badge--md badge--fill badge--blue">Fill</span>
+                  <span class="badge badge--md badge--fill badge--blue"
                     >Language</span
                   >
-                  <span class="badge badge-md badge-fill badge-peacock"
+                  <span class="badge badge--md badge--fill badge--peacock"
                     >Cheerful</span
                   >
                 </div>
                 <button
-                  class="button button-sm button-border button-default"
+                  class="button button--sm button--border button--default"
                   data-toggle="modal"
                   data-target="#vocaListModal"
                 >
-                  List <svg class="icon ms-1"><use href="#list-ul"></use></svg>
+                  List <svg class="icon"><use href="#list-ul"></use></svg>
                 </button>
               </div>
-              <div class="voca-assign-stats d-flex align-items-stretch gap-3">
-                <div class="voca-stat voca-stat-compact">
-                  <span class="voca-stat-label">Study</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+              <div class="voca-stats">
+                <div class="voca-stat voca-stat--compact">
+                  <span class="voca-stat__label">Study</span>
+                  <div class="voca-stat__score">
+                    <span class="voca-stat__value">0</span>
+                    <span class="voca-stat__total">/3</span>
                   </div>
                 </div>
-                <div class="voca-stat voca-stat-compact">
-                  <span class="voca-stat-label">Word Quiz</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+                <div class="voca-stat voca-stat--compact">
+                  <span class="voca-stat__label">Word Quiz</span>
+                  <div class="voca-stat__score">
+                    <span class="voca-stat__value">0</span>
+                    <span class="voca-stat__total">/3</span>
                   </div>
                 </div>
-                <div class="voca-stat voca-stat-compact">
-                  <span class="voca-stat-label">Sentence</span>
-                  <div class="d-flex align-items-end">
-                    <span class="voca-stat-value">0</span>
-                    <span class="voca-stat-total">/3</span>
+                <div class="voca-stat voca-stat--compact">
+                  <span class="voca-stat__label">Sentence</span>
+                  <div class="voca-stat__score">
+                    <span class="voca-stat__value">0</span>
+                    <span class="voca-stat__total">/3</span>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+              </div>
 
-          <!-- ============================
-             페이지네이션
-             ============================ -->
-          <div class="d-flex justify-content-end">
-            <div
-              class="d-none d-lg-flex align-items-center gap-3 text-light-gray small me-auto d-none d-md-block"
-            >
-              Showing <strong class="text-black">1</strong> Page of <strong class="text-black">2</strong> entries
+              <!-- 페이지네이션 -->
+              <div class="pagination-nav">
+                <div class="pagination-nav__info">
+                  Showing <strong class="pagination-nav__info-value">1</strong> Page of <strong class="pagination-nav__info-value">2</strong> entries
+                </div>
+                <ul class="pagination-nav__list">
+                  <li class="pagination-nav__item pagination-nav__item--disabled">
+                    <a class="pagination-nav__link" href="#"
+                      ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
+                  </li>
+                  <li class="pagination-nav__item pagination-nav__item--disabled">
+                    <a class="pagination-nav__link" href="#"
+                      ><svg class="icon"><use href="#chevron-left"></use></svg></a>
+                  </li>
+                  <li class="pagination-nav__item pagination-nav__item--active">
+                    <a class="pagination-nav__link" href="#">1</a>
+                  </li>
+                  <li class="pagination-nav__item"><a class="pagination-nav__link" href="#">2</a></li>
+                  <li class="pagination-nav__item"><a class="pagination-nav__link" href="#">3</a></li>
+                  <li class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="#"
+                      ><svg class="icon"><use href="#chevron-right"></use></svg></a>
+                  </li>
+                  <li class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="#"
+                      ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <nav aria-label="Page navigation">
-              <ul class="pagination pagination-custom gap-2 m-0">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#"
-                    ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
-                </li>
-                <li class="page-item disabled">
-                  <a class="page-link" href="#"
-                    ><svg class="icon"><use href="#chevron-left"></use></svg></a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#"
-                    ><svg class="icon"><use href="#chevron-right"></use></svg></a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#"
-                    ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
-                </li>
-              </ul>
-            </nav>
+
+            <!-- ============================
+               탭2: 진행
+               ============================ -->
+            <div class="tab-pane" id="tabProgress">
+              <p class="voca-empty">진행중인 과제가 없습니다.</p>
+            </div>
+
+            <!-- ============================
+               탭3: 완료
+               ============================ -->
+            <div class="tab-pane" id="tabDone">
+              <p class="voca-empty">완료된 과제가 없습니다.</p>
+            </div>
           </div>
         </div>
       </main>
@@ -564,11 +557,11 @@
       aria-labelledby="vocaListModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg voca-modal">
-        <div class="modal-content radius-2xl elevator-large p-5">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg voca-modal">
+        <div class="modal-content">
           <!-- 모달 헤더 -->
-          <div class="modal-header border-bottom p-0 pb-4">
-            <h5 class="modal-title heading2 text-black" id="vocaListModalLabel">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vocaListModalLabel">
               25.00.00 VOCA List
             </h5>
             <button
@@ -580,104 +573,103 @@
           </div>
 
           <!-- 모달 바디 -->
-          <div class="modal-body p-0 pt-5 d-flex flex-column gap-3">
+          <div class="modal-body">
+            <div class="voca-word-list">
             <!-- Word Card 1 (blue) -->
-            <div class="voca-word-card radius-xl elevator-large d-flex align-items-center gap-3 p-5">
-              <!-- 이미지 + 뱃지 -->
-              <div class="voca-word-thumb">
+            <div class="voca-word">
+              <div class="voca-word__thumb">
                 <img src="../images/dummy1.png" alt="word image" />
-                <div class="voca-word-hover-dim">
+                <div class="voca-word__hover-dim">
                   <svg class="icon"><use href="#search"></use></svg>
                 </div>
-                <span class="badge badge-sm badge-fill badge-blue voca-word-thumb-badge">단어카드</span>
+                <span class="badge badge--sm badge--fill badge--blue voca-word__thumb-badge">단어카드</span>
               </div>
-              <!-- 단어 정보 -->
-              <div class="d-flex flex-column gap-1-5 flex-fill">
-                <div class="d-flex align-items-center gap-2">
-                  <span class="badge badge-sm badge-soft badge-blue">verb 1</span>
-                  <span class="body1 fw-bold text-black">Binge</span>
-                  <button class="voca-sound-btn">
+              <div class="voca-word__info">
+                <div class="voca-word__term">
+                  <span class="badge badge--sm badge--soft badge--blue">verb 1</span>
+                  <span class="voca-word__label">Binge</span>
+                  <button class="voca-word__sound-btn">
                     <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="body2 text-gray">He Binges on drawing.</span>
-                  <button class="voca-sound-btn">
+                <div class="voca-word__sentence">
+                  <span class="voca-word__sentence-text">He Binges on drawing.</span>
+                  <button class="voca-word__sound-btn">
                     <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
-                <span class="body3 text-light-gray">to do a certain thing too much</span>
+                <span class="voca-word__meaning">to do a certain thing too much</span>
               </div>
-              <!-- 썸네일 3개 -->
-              <div class="d-flex align-items-center gap-2">
-                <img class="voca-word-mini active-blue" src="../images/dummy1.png" alt="" />
-                <img class="voca-word-mini" src="../images/dummy1.png" alt="" />
-                <img class="voca-word-mini" src="../images/dummy1.png" alt="" />
+              <div class="voca-word__thumbs">
+                <img class="voca-word__mini voca-word__mini--active-verb" src="../images/dummy1.png" alt="" />
+                <img class="voca-word__mini" src="../images/dummy1.png" alt="" />
+                <img class="voca-word__mini" src="../images/dummy1.png" alt="" />
               </div>
             </div>
 
             <!-- Word Card 2 (blue) -->
-            <div class="voca-word-card radius-xl elevator-large d-flex align-items-center gap-3 p-5">
-              <div class="voca-word-thumb">
+            <div class="voca-word">
+              <div class="voca-word__thumb">
                 <img src="../images/dummy1.png" alt="word image" />
-                <div class="voca-word-hover-dim">
+                <div class="voca-word__hover-dim">
                   <svg class="icon"><use href="#search"></use></svg>
                 </div>
-                <span class="badge badge-sm badge-fill badge-blue voca-word-thumb-badge">단어카드</span>
+                <span class="badge badge--sm badge--fill badge--blue voca-word__thumb-badge">단어카드</span>
               </div>
-              <div class="d-flex flex-column gap-1-5 flex-fill">
-                <div class="d-flex align-items-center gap-2">
-                  <span class="badge badge-sm badge-soft badge-blue">verb 1</span>
-                  <span class="body1 fw-bold text-black">Binge</span>
-                  <button class="voca-sound-btn">
+              <div class="voca-word__info">
+                <div class="voca-word__term">
+                  <span class="badge badge--sm badge--soft badge--blue">verb 1</span>
+                  <span class="voca-word__label">Binge</span>
+                  <button class="voca-word__sound-btn">
                     <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="body2 text-gray">He Binges on drawing.</span>
-                  <button class="voca-sound-btn">
+                <div class="voca-word__sentence">
+                  <span class="voca-word__sentence-text">He Binges on drawing.</span>
+                  <button class="voca-word__sound-btn">
                     <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
-                <span class="body3 text-light-gray">to do a certain thing too much</span>
+                <span class="voca-word__meaning">to do a certain thing too much</span>
               </div>
-              <div class="d-flex align-items-center gap-2">
-                <img class="voca-word-mini active-blue" src="../images/dummy1.png" alt="" />
-                <img class="voca-word-mini" src="../images/dummy1.png" alt="" />
-                <img class="voca-word-mini" src="../images/dummy1.png" alt="" />
+              <div class="voca-word__thumbs">
+                <img class="voca-word__mini voca-word__mini--active-verb" src="../images/dummy1.png" alt="" />
+                <img class="voca-word__mini" src="../images/dummy1.png" alt="" />
+                <img class="voca-word__mini" src="../images/dummy1.png" alt="" />
               </div>
             </div>
 
             <!-- Word Card 3 (peacock) -->
-            <div class="voca-word-card radius-xl elevator-large d-flex align-items-center gap-3 p-5">
-              <div class="voca-word-thumb">
+            <div class="voca-word">
+              <div class="voca-word__thumb">
                 <img src="../images/dummy1.png" alt="word image" />
-                <div class="voca-word-hover-dim">
+                <div class="voca-word__hover-dim">
                   <svg class="icon"><use href="#search"></use></svg>
                 </div>
-                <span class="badge badge-sm badge-fill badge-peacock voca-word-thumb-badge">단어카드</span>
+                <span class="badge badge--sm badge--fill badge--peacock voca-word__thumb-badge">단어카드</span>
               </div>
-              <div class="d-flex flex-column gap-1-5 flex-fill">
-                <div class="d-flex align-items-center gap-2">
-                  <span class="badge badge-sm badge-soft badge-peacock">noun</span>
-                  <span class="body1 fw-bold text-black">Binge</span>
-                  <button class="voca-sound-btn">
+              <div class="voca-word__info">
+                <div class="voca-word__term">
+                  <span class="badge badge--sm badge--soft badge--peacock">noun</span>
+                  <span class="voca-word__label">Binge</span>
+                  <button class="voca-word__sound-btn">
                     <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="body2 text-gray">He Binges on drawing.</span>
-                  <button class="voca-sound-btn">
+                <div class="voca-word__sentence">
+                  <span class="voca-word__sentence-text">He Binges on drawing.</span>
+                  <button class="voca-word__sound-btn">
                     <svg class="icon"><use href="#volume-up-fill"></use></svg>
                   </button>
                 </div>
-                <span class="body3 text-light-gray">to do a certain thing too much</span>
+                <span class="voca-word__meaning">to do a certain thing too much</span>
               </div>
-              <div class="d-flex align-items-center gap-2">
-                <img class="voca-word-mini active-peacock" src="../images/dummy1.png" alt="" />
-                <img class="voca-word-mini" src="../images/dummy1.png" alt="" />
-                <img class="voca-word-mini" src="../images/dummy1.png" alt="" />
+              <div class="voca-word__thumbs">
+                <img class="voca-word__mini voca-word__mini--active-noun" src="../images/dummy1.png" alt="" />
+                <img class="voca-word__mini" src="../images/dummy1.png" alt="" />
+                <img class="voca-word__mini" src="../images/dummy1.png" alt="" />
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -687,6 +679,13 @@
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="../js/icons.js"></script>
+    <script>
+      // tab-nav active 클래스 토글
+      $('.tab-nav__link[data-toggle="tab"]').on('show.bs.tab', function () {
+        $(this).closest('.tab-nav').find('.tab-nav__item.active').removeClass('active');
+        $(this).closest('.tab-nav__item').addClass('active');
+      });
+    </script>
+    <script src="../js/icons.js"></script>
   </body>
 </html>

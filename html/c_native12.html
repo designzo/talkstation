@@ -29,195 +29,188 @@
 
   <body>
 
-    <div class="d-flex container mypage">
-      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
-        <div class="profile-section p-4 text-center">
-          <div class="profile-img mx-auto mb-2">
-            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
+    <div class="container mypage">
+      <aside class="lnb">
+        <div class="lnb__profile">
+          <div class="lnb__profile-avatar">
+            <img src="../images/avatar_main.png" alt="Profile" />
           </div>
-          <h5 class="heading3 text-black">홍길동</h5>
-          <p class="body1 line-height-140 text-light-gray mb-4">
-            Hong gil dong
-          </p>
+          <h5 class="lnb__profile-name">홍길동</h5>
+          <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button-sm button-fill button-secondary rounded-pill"
+            class="button button--sm button--fill button--secondary rounded-pill"
           >
-            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
+            프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
 
-          <div
-            class="gallery-grid mt-6 d-grid"
-            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
-          >
-            <div class="gallery-item">
+          <div class="lnb__gallery">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
           </div>
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
               <span>나의 수업 관리</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                  <a href="#" class="lnb__nav-item"
+                    >원어민 강사 강의실 입장</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >아이딕 홈스쿨 강의실 입장</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li><a href="#" class="lnb__nav-item">보카킹 학습방</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                  <a href="#" class="lnb__nav-item">Story Writing 과제방</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">VOCA 과제방</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item lnb__nav-item--active">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">특강권 사용&amp;관리</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">VOCA 과제방</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item active">강사/시간 변경</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">특강권 사용&amp;관리</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >원서&amp;영상수업 요청목록</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">월평가서 &amp; 출결정보</a>
+                  <a href="#" class="lnb__nav-item">월평가서 &amp; 출결정보</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >온라인 테스트 및 체험수업 결과</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">신규선생님 평가</a></li>
-                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+                <li><a href="#" class="lnb__nav-item">신규선생님 평가</a></li>
+                <li><a href="#" class="lnb__nav-item">알림콜 설정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
         <!-- Action Buttons -->
-        <div class="lnb-actions d-flex flex-column gap-0-5">
-          <a class="button button-lg button-border button-primary button-block"
+        <div class="lnb__actions">
+          <a class="button button--lg button--border button--primary button--block"
             >수업불편 및 요청상담</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >선생님, 부탁 드려요</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >찐친 초대현황</a
           >
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="nav-icon nav-icon-violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
               <span>나의 정보</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                  <a href="#" class="lnb__nav-item">수강료 결제 및 취소 내역</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교재결제내역 / 장바구니</a>
+                  <a href="#" class="lnb__nav-item">교재결제내역 / 장바구니</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                  <a href="#" class="lnb__nav-item">교육비 납입증명서 출력</a>
                 </li>
-                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
-                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+                <li><a href="#" class="lnb__nav-item">비밀번호 변경</a></li>
+                <li><a href="#" class="lnb__nav-item">회원정보수정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="nav-icon nav-icon-blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">아이딕 북</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 보카</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 비디오</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 사전</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
               <span>학습지원서비스</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
-                <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">화상영어 가이드</a></li>
+                <li><a href="#" class="lnb__nav-item">원격지원서비스</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >수업연기 및 보강정책(환불)</a
                   >
                 </li>
@@ -227,7 +220,7 @@
         </nav>
       </aside>
 
-      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+      <main class="mypage__content">
         <div class="content-container">
           <h2 class="page-title">강사 시간 변경</h2>
 
@@ -238,29 +231,29 @@
             <!-- Course Info -->
             <div class="col-12 col-lg-6">
               <div
-                class="info-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5 course-info-card"
+                class="section-card course-info"
               >
-                <div class="info-card-header mb-5">
-                  <h3 class="info-card-title heading4 text-black">
+                <div class="section-card__header">
+                  <h3 class="section-card__title">
                     나의 수강 정보
                   </h3>
                 </div>
-                <div class="course-info-scroll d-flex flex-column gap-5">
-                  <div class="d-flex flex-column gap-2-5">
+                <div class="course-info__scroll">
+                  <div class="course-info__cards">
                     <div
-                      class="info-card-body radius-xl bg-gray d-flex flex-column gap-2-5 p-4"
+                      class="course-info__card"
                     >
                       <!-- Teacher Info -->
                       <div
-                        class="d-flex align-items-center gap-3 pb-2-5 border-bottom border-light-subtle course-teacher-wrap"
+                        class="course-info__teacher"
                       >
                         <div
-                          class="teacher-profile teacher-profile-horizontal teacher-profile-md"
+                          class="teacher-profile teacher-profile--horizontal teacher-profile--md"
                         >
-                          <div class="teacher-profile-avatar"></div>
+                          <div class="teacher-profile__avatar"></div>
                           <div>
-                            <div class="teacher-profile-name">Teachername</div>
-                            <div class="teacher-profile-time">
+                            <div class="teacher-profile__name">Teachername</div>
+                            <div class="teacher-profile__time">
                               원어민(필리핀) A Time
                             </div>
                           </div>
@@ -269,30 +262,30 @@
 
                       <!-- Course Details -->
                       <div class="info-list">
-                        <div class="info-row">
-                          <span class="info-label">수강일자</span>
-                          <span class="info-value">25.00.00 ~ 25.00.00</span>
+                        <div class="info-list__row">
+                          <span class="info-list__label">수강일자</span>
+                          <span class="info-list__value">25.00.00 ~ 25.00.00</span>
                         </div>
-                        <div class="info-row">
-                          <span class="info-label">수업일정</span>
-                          <span class="info-value">화,목 10:00</span>
+                        <div class="info-list__row">
+                          <span class="info-list__label">수업일정</span>
+                          <span class="info-list__value">화,목 10:00</span>
                         </div>
                       </div>
 
                       <!-- Action Buttons -->
-                      <div class="d-flex flex-wrap button-group course-actions">
+                      <div class="button-group course-info__actions">
                         <button
-                          class="button button-sm button-fill button-default"
+                          class="button button--sm button--fill button--default"
                         >
                           강사 시간표
                         </button>
                         <button
-                          class="button button-sm button-fill button-default"
+                          class="button button--sm button--fill button--default"
                         >
                           소개영상
                         </button>
                         <button
-                          class="button button-sm button-soft button-primary"
+                          class="button button--sm button--soft button--primary"
                         >
                           선생님 부탁드려요
                         </button>
@@ -301,26 +294,26 @@
                       <!-- 강사 시간 변경하기 -->
                       <div class="d-flex">
                         <button
-                          class="button button-md button-fill button-primary button-block"
+                          class="button button--md button--fill button--primary button--block"
                         >
                           강사 시간 변경하기
                         </button>
                       </div>
                     </div>
                     <div
-                      class="info-card-body radius-xl bg-gray d-flex flex-column gap-2-5 p-4"
+                      class="course-info__card"
                     >
                       <!-- Teacher Info -->
                       <div
-                        class="d-flex align-items-center gap-3 pb-2-5 border-bottom border-light-subtle course-teacher-wrap"
+                        class="course-info__teacher"
                       >
                         <div
-                          class="teacher-profile teacher-profile-horizontal teacher-profile-md"
+                          class="teacher-profile teacher-profile--horizontal teacher-profile--md"
                         >
-                          <div class="teacher-profile-avatar"></div>
+                          <div class="teacher-profile__avatar"></div>
                           <div>
-                            <div class="teacher-profile-name">Teachername</div>
-                            <div class="teacher-profile-time">
+                            <div class="teacher-profile__name">Teachername</div>
+                            <div class="teacher-profile__time">
                               원어민(필리핀) A Time
                             </div>
                           </div>
@@ -329,30 +322,30 @@
 
                       <!-- Course Details -->
                       <div class="info-list">
-                        <div class="info-row">
-                          <span class="info-label">수강일자</span>
-                          <span class="info-value">25.00.00 ~ 25.00.00</span>
+                        <div class="info-list__row">
+                          <span class="info-list__label">수강일자</span>
+                          <span class="info-list__value">25.00.00 ~ 25.00.00</span>
                         </div>
-                        <div class="info-row">
-                          <span class="info-label">수업일정</span>
-                          <span class="info-value">화,목 10:00</span>
+                        <div class="info-list__row">
+                          <span class="info-list__label">수업일정</span>
+                          <span class="info-list__value">화,목 10:00</span>
                         </div>
                       </div>
 
                       <!-- Action Buttons -->
-                      <div class="d-flex flex-wrap button-group course-actions">
+                      <div class="button-group course-info__actions">
                         <button
-                          class="button button-sm button-fill button-default"
+                          class="button button--sm button--fill button--default"
                         >
                           강사 시간표
                         </button>
                         <button
-                          class="button button-sm button-fill button-default"
+                          class="button button--sm button--fill button--default"
                         >
                           소개영상
                         </button>
                         <button
-                          class="button button-sm button-soft button-primary"
+                          class="button button--sm button--soft button--primary"
                         >
                           선생님 부탁드려요
                         </button>
@@ -361,7 +354,7 @@
                       <!-- 강사 시간 변경하기 -->
                       <div class="d-flex">
                         <button
-                          class="button button-md button-fill button-primary button-block"
+                          class="button button--md button--fill button--primary button--block"
                         >
                           강사 시간 변경하기
                         </button>
@@ -370,22 +363,22 @@
                   </div>
 
                   <!-- Event Section -->
-                  <div class="info-card-body">
-                    <h4 class="heading5 mb-4">이벤트 바로가기</h4>
+                  <div class="section-card__body">
+                    <h4 class="section-card__subtitle">이벤트 바로가기</h4>
                     <div class="event-list">
-                      <div class="event-banner">
+                      <div class="event-list__banner">
                         <img
                           src="../images/dummy2.png"
                           alt="이벤트 배너 1"
                         />
                       </div>
-                      <div class="event-banner">
+                      <div class="event-list__banner">
                         <img
                           src="../images/dummy2.png"
                           alt="이벤트 배너 2"
                         />
                       </div>
-                      <div class="event-banner">
+                      <div class="event-list__banner">
                         <img
                           src="../images/dummy2.png"
                           alt="이벤트 배너 3"
@@ -400,19 +393,19 @@
             <!-- Calendar -->
             <div class="col-12 col-lg-6">
               <div
-                class="info-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5"
+                class="section-card"
               >
-                <h3 class="info-card-title heading4 text-black mb-5">
+                <h3 class="section-card__title">
                   수업 캘린더
                 </h3>
-                <div class="info-card-body flex-fill d-flex flex-column gap-5">
+                <div class="section-card__body">
                   <!-- Calendar Nav -->
                   <div class="monthly-header-nav">
-                    <button class="monthly-nav-btn" type="button">
+                    <button class="monthly-header-nav__btn" type="button">
                       <svg class="icon"><use href="#chevron-left"></use></svg>
                     </button>
-                    <span class="heading5">2025년 01월</span>
-                    <button class="monthly-nav-btn" type="button">
+                    <span class="monthly-header-nav__title">2025년 01월</span>
+                    <button class="monthly-header-nav__btn" type="button">
                       <svg class="icon"><use href="#chevron-right"></use></svg>
                     </button>
                   </div>
@@ -420,109 +413,109 @@
                   <!-- Calendar Grid -->
                   <div class="calendar-grid">
                     <!-- Day Headers -->
-                    <span class="cal-day-header">일</span>
-                    <span class="cal-day-header">월</span>
-                    <span class="cal-day-header">화</span>
-                    <span class="cal-day-header">수</span>
-                    <span class="cal-day-header">목</span>
-                    <span class="cal-day-header">금</span>
-                    <span class="cal-day-header">토</span>
+                    <span class="calendar-grid__day">일</span>
+                    <span class="calendar-grid__day">월</span>
+                    <span class="calendar-grid__day">화</span>
+                    <span class="calendar-grid__day">수</span>
+                    <span class="calendar-grid__day">목</span>
+                    <span class="calendar-grid__day">금</span>
+                    <span class="calendar-grid__day">토</span>
 
                     <!-- Week 1 -->
-                    <span class="cal-date cal-date--other">29</span>
-                    <span class="cal-date cal-date--other">30</span>
-                    <span class="cal-date cal-date--other">31</span>
-                    <span class="cal-date">1</span>
-                    <span class="cal-date">2</span>
-                    <span class="cal-date">3</span>
-                    <span class="cal-date cal-date--today"
-                      >4<span class="cal-dot cal-dot-green"></span
+                    <span class="calendar-grid__date calendar-grid__date--other">29</span>
+                    <span class="calendar-grid__date calendar-grid__date--other">30</span>
+                    <span class="calendar-grid__date calendar-grid__date--other">31</span>
+                    <span class="calendar-grid__date">1</span>
+                    <span class="calendar-grid__date">2</span>
+                    <span class="calendar-grid__date">3</span>
+                    <span class="calendar-grid__date calendar-grid__date--today"
+                      >4<span class="calendar-grid__dot calendar-grid__dot--green"></span
                     ></span>
 
                     <!-- Week 2 -->
-                    <span class="cal-date">5</span>
-                    <span class="cal-date">6</span>
-                    <span class="cal-date"
-                      >7<span class="cal-dot cal-dot-blue"></span
+                    <span class="calendar-grid__date">5</span>
+                    <span class="calendar-grid__date">6</span>
+                    <span class="calendar-grid__date"
+                      >7<span class="calendar-grid__dot calendar-grid__dot--blue"></span
                     ></span>
-                    <span class="cal-date"
-                      >8<span class="cal-dot cal-dot-orange"></span
+                    <span class="calendar-grid__date"
+                      >8<span class="calendar-grid__dot calendar-grid__dot--orange"></span
                     ></span>
-                    <span class="cal-date"
-                      >9<span class="cal-dot cal-dot-green"></span
+                    <span class="calendar-grid__date"
+                      >9<span class="calendar-grid__dot calendar-grid__dot--green"></span
                     ></span>
-                    <span class="cal-date">10</span>
-                    <span class="cal-date">11</span>
+                    <span class="calendar-grid__date">10</span>
+                    <span class="calendar-grid__date">11</span>
 
                     <!-- Week 3 -->
-                    <span class="cal-date">12</span>
-                    <span class="cal-date">13</span>
-                    <span class="cal-date"
-                      >14<span class="cal-dot cal-dot-blue"></span
+                    <span class="calendar-grid__date">12</span>
+                    <span class="calendar-grid__date">13</span>
+                    <span class="calendar-grid__date"
+                      >14<span class="calendar-grid__dot calendar-grid__dot--blue"></span
                     ></span>
-                    <span class="cal-date"
-                      >15<span class="cal-dot cal-dot-orange"></span
+                    <span class="calendar-grid__date"
+                      >15<span class="calendar-grid__dot calendar-grid__dot--orange"></span
                     ></span>
-                    <span class="cal-date"
-                      >16<span class="cal-dot cal-dot-green"></span
+                    <span class="calendar-grid__date"
+                      >16<span class="calendar-grid__dot calendar-grid__dot--green"></span
                     ></span>
-                    <span class="cal-date">17</span>
-                    <span class="cal-date">18</span>
+                    <span class="calendar-grid__date">17</span>
+                    <span class="calendar-grid__date">18</span>
 
                     <!-- Week 4 -->
-                    <span class="cal-date">19</span>
-                    <span class="cal-date">20</span>
-                    <span class="cal-date"
-                      >21<span class="cal-dot cal-dot-blue"></span
+                    <span class="calendar-grid__date">19</span>
+                    <span class="calendar-grid__date">20</span>
+                    <span class="calendar-grid__date"
+                      >21<span class="calendar-grid__dot calendar-grid__dot--blue"></span
                     ></span>
-                    <span class="cal-date"
-                      >22<span class="cal-dot cal-dot-orange"></span
+                    <span class="calendar-grid__date"
+                      >22<span class="calendar-grid__dot calendar-grid__dot--orange"></span
                     ></span>
-                    <span class="cal-date"
-                      >23<span class="cal-dot cal-dot-green"></span
+                    <span class="calendar-grid__date"
+                      >23<span class="calendar-grid__dot calendar-grid__dot--green"></span
                     ></span>
-                    <span class="cal-date">24</span>
-                    <span class="cal-date">25</span>
+                    <span class="calendar-grid__date">24</span>
+                    <span class="calendar-grid__date">25</span>
 
                     <!-- Week 5 -->
-                    <span class="cal-date">26</span>
-                    <span class="cal-date">27</span>
-                    <span class="cal-date"
-                      >28<span class="cal-dot cal-dot-blue"></span
+                    <span class="calendar-grid__date">26</span>
+                    <span class="calendar-grid__date">27</span>
+                    <span class="calendar-grid__date"
+                      >28<span class="calendar-grid__dot calendar-grid__dot--blue"></span
                     ></span>
-                    <span class="cal-date"
-                      >29<span class="cal-dot cal-dot-orange"></span
+                    <span class="calendar-grid__date"
+                      >29<span class="calendar-grid__dot calendar-grid__dot--orange"></span
                     ></span>
-                    <span class="cal-date"
-                      >30<span class="cal-dot cal-dot-violet"></span
+                    <span class="calendar-grid__date"
+                      >30<span class="calendar-grid__dot calendar-grid__dot--violet"></span
                     ></span>
-                    <span class="cal-date">31</span>
-                    <span class="cal-date cal-date--other">1</span>
+                    <span class="calendar-grid__date">31</span>
+                    <span class="calendar-grid__date calendar-grid__date--other">1</span>
                   </div>
 
                   <!-- Calendar Legend -->
-                  <div class="calendar-legend mt-auto">
-                    <div class="calendar-legend-item">
+                  <div class="calendar-legend">
+                    <div class="calendar-legend__item">
                       <span
-                        class="calendar-legend-dot calendar-legend-dot-lesson"
+                        class="calendar-legend__dot calendar-legend__dot--lesson"
                       ></span>
                       <span>수업: <b>1회</b></span>
                     </div>
-                    <div class="calendar-legend-item">
+                    <div class="calendar-legend__item">
                       <span
-                        class="calendar-legend-dot calendar-legend-dot-attend"
+                        class="calendar-legend__dot calendar-legend__dot--attend"
                       ></span>
                       <span>출석: <b>1회</b></span>
                     </div>
-                    <div class="calendar-legend-item">
+                    <div class="calendar-legend__item">
                       <span
-                        class="calendar-legend-dot calendar-legend-dot-absent"
+                        class="calendar-legend__dot calendar-legend__dot--absent"
                       ></span>
                       <span>결석: <b>1회</b></span>
                     </div>
-                    <div class="calendar-legend-item">
+                    <div class="calendar-legend__item">
                       <span
-                        class="calendar-legend-dot calendar-legend-dot-makeup"
+                        class="calendar-legend__dot calendar-legend__dot--makeup"
                       ></span>
                       <span>보강: <b>1회</b></span>
                     </div>
@@ -539,29 +532,29 @@
             <!-- Course Info -->
             <div class="col-12 col-lg-6">
               <div
-                class="info-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5"
+                class="section-card"
               >
-                <div class="info-card-header mb-5">
-                  <h3 class="info-card-title heading4 text-black">
+                <div class="section-card__header">
+                  <h3 class="section-card__title">
                     나의 수강 정보
                   </h3>
                 </div>
-                <div class="course-info d-flex flex-column gap-5">
-                  <div class="d-flex flex-column gap-2-5">
+                <div class="course-info">
+                  <div class="course-info__cards">
                     <div
-                      class="info-card-body radius-xl bg-gray d-flex flex-column gap-2-5 p-4"
+                      class="course-info__card"
                     >
                       <!-- Teacher Info -->
                       <div
-                        class="d-flex align-items-center gap-3 pb-2-5 border-bottom border-light-subtle course-teacher-wrap"
+                        class="course-info__teacher"
                       >
                         <div
-                          class="teacher-profile teacher-profile-horizontal teacher-profile-md"
+                          class="teacher-profile teacher-profile--horizontal teacher-profile--md"
                         >
-                          <div class="teacher-profile-avatar"></div>
+                          <div class="teacher-profile__avatar"></div>
                           <div>
-                            <div class="teacher-profile-name">Teachername</div>
-                            <div class="teacher-profile-time">
+                            <div class="teacher-profile__name">Teachername</div>
+                            <div class="teacher-profile__time">
                               원어민(필리핀) A Time
                             </div>
                           </div>
@@ -570,30 +563,30 @@
 
                       <!-- Course Details -->
                       <div class="info-list">
-                        <div class="info-row">
-                          <span class="info-label">수강일자</span>
-                          <span class="info-value">25.00.00 ~ 25.00.00</span>
+                        <div class="info-list__row">
+                          <span class="info-list__label">수강일자</span>
+                          <span class="info-list__value">25.00.00 ~ 25.00.00</span>
                         </div>
-                        <div class="info-row">
-                          <span class="info-label">수업일정</span>
-                          <span class="info-value">화,목 10:00</span>
+                        <div class="info-list__row">
+                          <span class="info-list__label">수업일정</span>
+                          <span class="info-list__value">화,목 10:00</span>
                         </div>
                       </div>
 
                       <!-- Action Buttons -->
-                      <div class="d-flex flex-wrap button-group course-actions">
+                      <div class="button-group course-info__actions">
                         <button
-                          class="button button-sm button-fill button-default"
+                          class="button button--sm button--fill button--default"
                         >
                           강사 시간표
                         </button>
                         <button
-                          class="button button-sm button-fill button-default"
+                          class="button button--sm button--fill button--default"
                         >
                           소개영상
                         </button>
                         <button
-                          class="button button-sm button-soft button-primary"
+                          class="button button--sm button--soft button--primary"
                         >
                           선생님 부탁드려요
                         </button>
@@ -602,26 +595,26 @@
                       <!-- 강사 시간 변경하기 -->
                       <div class="d-flex">
                         <button
-                          class="button button-md button-fill button-primary button-block"
+                          class="button button--md button--fill button--primary button--block"
                         >
                           강사 시간 변경하기
                         </button>
                       </div>
                     </div>
                     <div
-                      class="info-card-body radius-xl bg-gray d-flex flex-column gap-2-5 p-4"
+                      class="course-info__card"
                     >
                       <!-- Teacher Info -->
                       <div
-                        class="d-flex align-items-center gap-3 pb-2-5 border-bottom border-light-subtle course-teacher-wrap"
+                        class="course-info__teacher"
                       >
                         <div
-                          class="teacher-profile teacher-profile-horizontal teacher-profile-md"
+                          class="teacher-profile teacher-profile--horizontal teacher-profile--md"
                         >
-                          <div class="teacher-profile-avatar"></div>
+                          <div class="teacher-profile__avatar"></div>
                           <div>
-                            <div class="teacher-profile-name">Teachername</div>
-                            <div class="teacher-profile-time">
+                            <div class="teacher-profile__name">Teachername</div>
+                            <div class="teacher-profile__time">
                               원어민(필리핀) A Time
                             </div>
                           </div>
@@ -630,30 +623,30 @@
 
                       <!-- Course Details -->
                       <div class="info-list">
-                        <div class="info-row">
-                          <span class="info-label">수강일자</span>
-                          <span class="info-value">25.00.00 ~ 25.00.00</span>
+                        <div class="info-list__row">
+                          <span class="info-list__label">수강일자</span>
+                          <span class="info-list__value">25.00.00 ~ 25.00.00</span>
                         </div>
-                        <div class="info-row">
-                          <span class="info-label">수업일정</span>
-                          <span class="info-value">화,목 10:00</span>
+                        <div class="info-list__row">
+                          <span class="info-list__label">수업일정</span>
+                          <span class="info-list__value">화,목 10:00</span>
                         </div>
                       </div>
 
                       <!-- Action Buttons -->
-                      <div class="d-flex flex-wrap button-group course-actions">
+                      <div class="button-group course-info__actions">
                         <button
-                          class="button button-sm button-fill button-default"
+                          class="button button--sm button--fill button--default"
                         >
                           강사 시간표
                         </button>
                         <button
-                          class="button button-sm button-fill button-default"
+                          class="button button--sm button--fill button--default"
                         >
                           소개영상
                         </button>
                         <button
-                          class="button button-sm button-soft button-primary"
+                          class="button button--sm button--soft button--primary"
                         >
                           선생님 부탁드려요
                         </button>
@@ -662,7 +655,7 @@
                       <!-- 강사 시간 변경하기 -->
                       <div class="d-flex">
                         <button
-                          class="button button-md button-fill button-primary button-block"
+                          class="button button--md button--fill button--primary button--block"
                         >
                           강사 시간 변경하기
                         </button>
@@ -676,19 +669,19 @@
             <!-- Calendar -->
             <div class="col-12 col-lg-6">
               <div
-                class="info-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5"
+                class="section-card"
               >
-                <h3 class="info-card-title heading4 text-black mb-5">
+                <h3 class="section-card__title">
                   수업 캘린더
                 </h3>
-                <div class="info-card-body flex-fill d-flex flex-column gap-5">
+                <div class="section-card__body">
                   <!-- Calendar Nav -->
                   <div class="monthly-header-nav">
-                    <button class="monthly-nav-btn" type="button">
+                    <button class="monthly-header-nav__btn" type="button">
                       <svg class="icon"><use href="#chevron-left"></use></svg>
                     </button>
-                    <span class="heading5">2025년 01월</span>
-                    <button class="monthly-nav-btn" type="button">
+                    <span class="monthly-header-nav__title">2025년 01월</span>
+                    <button class="monthly-header-nav__btn" type="button">
                       <svg class="icon"><use href="#chevron-right"></use></svg>
                     </button>
                   </div>
@@ -696,109 +689,109 @@
                   <!-- Calendar Grid -->
                   <div class="calendar-grid">
                     <!-- Day Headers -->
-                    <span class="cal-day-header">일</span>
-                    <span class="cal-day-header">월</span>
-                    <span class="cal-day-header">화</span>
-                    <span class="cal-day-header">수</span>
-                    <span class="cal-day-header">목</span>
-                    <span class="cal-day-header">금</span>
-                    <span class="cal-day-header">토</span>
+                    <span class="calendar-grid__day">일</span>
+                    <span class="calendar-grid__day">월</span>
+                    <span class="calendar-grid__day">화</span>
+                    <span class="calendar-grid__day">수</span>
+                    <span class="calendar-grid__day">목</span>
+                    <span class="calendar-grid__day">금</span>
+                    <span class="calendar-grid__day">토</span>
 
                     <!-- Week 1 -->
-                    <span class="cal-date cal-date--other">29</span>
-                    <span class="cal-date cal-date--other">30</span>
-                    <span class="cal-date cal-date--other">31</span>
-                    <span class="cal-date">1</span>
-                    <span class="cal-date">2</span>
-                    <span class="cal-date">3</span>
-                    <span class="cal-date cal-date--today"
-                      >4<span class="cal-dot cal-dot-green"></span
+                    <span class="calendar-grid__date calendar-grid__date--other">29</span>
+                    <span class="calendar-grid__date calendar-grid__date--other">30</span>
+                    <span class="calendar-grid__date calendar-grid__date--other">31</span>
+                    <span class="calendar-grid__date">1</span>
+                    <span class="calendar-grid__date">2</span>
+                    <span class="calendar-grid__date">3</span>
+                    <span class="calendar-grid__date calendar-grid__date--today"
+                      >4<span class="calendar-grid__dot calendar-grid__dot--green"></span
                     ></span>
 
                     <!-- Week 2 -->
-                    <span class="cal-date">5</span>
-                    <span class="cal-date">6</span>
-                    <span class="cal-date"
-                      >7<span class="cal-dot cal-dot-blue"></span
+                    <span class="calendar-grid__date">5</span>
+                    <span class="calendar-grid__date">6</span>
+                    <span class="calendar-grid__date"
+                      >7<span class="calendar-grid__dot calendar-grid__dot--blue"></span
                     ></span>
-                    <span class="cal-date"
-                      >8<span class="cal-dot cal-dot-orange"></span
+                    <span class="calendar-grid__date"
+                      >8<span class="calendar-grid__dot calendar-grid__dot--orange"></span
                     ></span>
-                    <span class="cal-date"
-                      >9<span class="cal-dot cal-dot-green"></span
+                    <span class="calendar-grid__date"
+                      >9<span class="calendar-grid__dot calendar-grid__dot--green"></span
                     ></span>
-                    <span class="cal-date">10</span>
-                    <span class="cal-date">11</span>
+                    <span class="calendar-grid__date">10</span>
+                    <span class="calendar-grid__date">11</span>
 
                     <!-- Week 3 -->
-                    <span class="cal-date">12</span>
-                    <span class="cal-date">13</span>
-                    <span class="cal-date"
-                      >14<span class="cal-dot cal-dot-blue"></span
+                    <span class="calendar-grid__date">12</span>
+                    <span class="calendar-grid__date">13</span>
+                    <span class="calendar-grid__date"
+                      >14<span class="calendar-grid__dot calendar-grid__dot--blue"></span
                     ></span>
-                    <span class="cal-date"
-                      >15<span class="cal-dot cal-dot-orange"></span
+                    <span class="calendar-grid__date"
+                      >15<span class="calendar-grid__dot calendar-grid__dot--orange"></span
                     ></span>
-                    <span class="cal-date"
-                      >16<span class="cal-dot cal-dot-green"></span
+                    <span class="calendar-grid__date"
+                      >16<span class="calendar-grid__dot calendar-grid__dot--green"></span
                     ></span>
-                    <span class="cal-date">17</span>
-                    <span class="cal-date">18</span>
+                    <span class="calendar-grid__date">17</span>
+                    <span class="calendar-grid__date">18</span>
 
                     <!-- Week 4 -->
-                    <span class="cal-date">19</span>
-                    <span class="cal-date">20</span>
-                    <span class="cal-date"
-                      >21<span class="cal-dot cal-dot-blue"></span
+                    <span class="calendar-grid__date">19</span>
+                    <span class="calendar-grid__date">20</span>
+                    <span class="calendar-grid__date"
+                      >21<span class="calendar-grid__dot calendar-grid__dot--blue"></span
                     ></span>
-                    <span class="cal-date"
-                      >22<span class="cal-dot cal-dot-orange"></span
+                    <span class="calendar-grid__date"
+                      >22<span class="calendar-grid__dot calendar-grid__dot--orange"></span
                     ></span>
-                    <span class="cal-date"
-                      >23<span class="cal-dot cal-dot-green"></span
+                    <span class="calendar-grid__date"
+                      >23<span class="calendar-grid__dot calendar-grid__dot--green"></span
                     ></span>
-                    <span class="cal-date">24</span>
-                    <span class="cal-date">25</span>
+                    <span class="calendar-grid__date">24</span>
+                    <span class="calendar-grid__date">25</span>
 
                     <!-- Week 5 -->
-                    <span class="cal-date">26</span>
-                    <span class="cal-date">27</span>
-                    <span class="cal-date"
-                      >28<span class="cal-dot cal-dot-blue"></span
+                    <span class="calendar-grid__date">26</span>
+                    <span class="calendar-grid__date">27</span>
+                    <span class="calendar-grid__date"
+                      >28<span class="calendar-grid__dot calendar-grid__dot--blue"></span
                     ></span>
-                    <span class="cal-date"
-                      >29<span class="cal-dot cal-dot-orange"></span
+                    <span class="calendar-grid__date"
+                      >29<span class="calendar-grid__dot calendar-grid__dot--orange"></span
                     ></span>
-                    <span class="cal-date"
-                      >30<span class="cal-dot cal-dot-violet"></span
+                    <span class="calendar-grid__date"
+                      >30<span class="calendar-grid__dot calendar-grid__dot--violet"></span
                     ></span>
-                    <span class="cal-date">31</span>
-                    <span class="cal-date cal-date--other">1</span>
+                    <span class="calendar-grid__date">31</span>
+                    <span class="calendar-grid__date calendar-grid__date--other">1</span>
                   </div>
 
                   <!-- Calendar Legend -->
-                  <div class="calendar-legend mt-auto">
-                    <div class="calendar-legend-item">
+                  <div class="calendar-legend">
+                    <div class="calendar-legend__item">
                       <span
-                        class="calendar-legend-dot calendar-legend-dot-lesson"
+                        class="calendar-legend__dot calendar-legend__dot--lesson"
                       ></span>
                       <span>수업: <b>1회</b></span>
                     </div>
-                    <div class="calendar-legend-item">
+                    <div class="calendar-legend__item">
                       <span
-                        class="calendar-legend-dot calendar-legend-dot-attend"
+                        class="calendar-legend__dot calendar-legend__dot--attend"
                       ></span>
                       <span>출석: <b>1회</b></span>
                     </div>
-                    <div class="calendar-legend-item">
+                    <div class="calendar-legend__item">
                       <span
-                        class="calendar-legend-dot calendar-legend-dot-absent"
+                        class="calendar-legend__dot calendar-legend__dot--absent"
                       ></span>
                       <span>결석: <b>1회</b></span>
                     </div>
-                    <div class="calendar-legend-item">
+                    <div class="calendar-legend__item">
                       <span
-                        class="calendar-legend-dot calendar-legend-dot-makeup"
+                        class="calendar-legend__dot calendar-legend__dot--makeup"
                       ></span>
                       <span>보강: <b>1회</b></span>
                     </div>
@@ -810,20 +803,20 @@
             <!-- Event -->
             <div class="col-12 col-lg-6">
               <div
-                class="info-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5"
+                class="section-card"
               >
-                <div class="course-info d-flex flex-column gap-5">
+                <div class="course-info">
                   <!-- Event Section -->
-                  <div class="info-card-body">
-                    <h4 class="heading5 mb-4">이벤트 바로가기</h4>
+                  <div class="section-card__body">
+                    <h4 class="section-card__subtitle">이벤트 바로가기</h4>
                     <div class="event-list">
-                      <div class="event-banner">
+                      <div class="event-list__banner">
                         <img src="../images/dummy2.png" alt="이벤트 배너 1" />
                       </div>
-                      <div class="event-banner">
+                      <div class="event-list__banner">
                         <img src="../images/dummy2.png" alt="이벤트 배너 2" />
                       </div>
-                      <div class="event-banner">
+                      <div class="event-list__banner">
                         <img src="../images/dummy2.png" alt="이벤트 배너 3" />
                       </div>
                     </div>
@@ -837,529 +830,529 @@
              나의 강사/시간 변경 내역
              ============================ -->
           <div class="d-flex flex-column gap-4">
-            <h3 class="heading4 text-black">나의 강사/시간 변경 내역</h3>
+            <h3>나의 강사/시간 변경 내역</h3>
 
             <div
-              class="table-list-container radius-xl elevator-large p-4 p-lg-5"
+              class="table-list table-list--schedule-change card-panel"
             >
               <!-- 테이블 헤더 (데스크탑만) -->
               <div
-                class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+                class="table-list__header"
               >
-                <div class="col-lg-2 text-center">강사</div>
-                <div class="col-lg-3 text-center">기간</div>
-                <div class="col-lg-3 text-center">요일</div>
-                <div class="col-lg-2 text-center">시간</div>
-                <div class="col-lg-2 text-center">변경 시작일</div>
+                <div class="table-list__cell table-list__cell--block">강사</div>
+                <div class="table-list__cell table-list__cell--block">기간</div>
+                <div class="table-list__cell table-list__cell--block">요일</div>
+                <div class="table-list__cell table-list__cell--block">시간</div>
+                <div class="table-list__cell table-list__cell--block">변경 시작일</div>
               </div>
 
               <!-- 테이블 바디 -->
-              <div class="table-list-body d-flex flex-column gap-1-5">
+              <div class="table-list__body">
                 <!-- Row 1 -->
-                <div class="list-summary row g-2 align-items-center">
+                <div class="table-list__row">
                   <!-- 강사 -->
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">강사</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">Kesiah</span>
+                      <span>Kesiah</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">Amelliatest</span>
+                      <span>Amelliatest</span>
                     </div>
                   </div>
                   <!-- 기간 -->
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">기간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                     </div>
                   </div>
                   <!-- 요일 -->
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">요일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                     </div>
                   </div>
                   <!-- 시간 -->
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">시간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                     </div>
                   </div>
                   <!-- 변경 시작일 -->
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">변경 시작일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center"
                     >
-                      <span class="body2 text-neutral">2025.08.01</span>
+                      <span>2025.08.01</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Row 2 -->
                 <div
-                  class="list-summary list-cell-highlight row g-2 align-items-center"
+                  class="table-list__row table-list__row--highlight"
                 >
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">강사</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">Kesiah</span>
+                      <span>Kesiah</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">Amelliatest</span>
+                      <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">기간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">요일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">시간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">변경 시작일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center"
                     >
-                      <span class="body2 text-neutral">2025.08.01</span>
+                      <span>2025.08.01</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Row 3 -->
-                <div class="list-summary row g-2 align-items-center">
-                  <div class="col-12 col-lg-2">
+                <div class="table-list__row">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">강사</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">Kesiah</span>
+                      <span>Kesiah</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">Amelliatest</span>
+                      <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">기간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">요일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">시간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">변경 시작일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center"
                     >
-                      <span class="body2 text-neutral">2025.08.01</span>
+                      <span>2025.08.01</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Row 4 -->
                 <div
-                  class="list-summary list-cell-highlight row g-2 align-items-center"
+                  class="table-list__row table-list__row--highlight"
                 >
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">강사</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">Kesiah</span>
+                      <span>Kesiah</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">Amelliatest</span>
+                      <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">기간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">요일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">시간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">변경 시작일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center"
                     >
-                      <span class="body2 text-neutral">2025.08.01</span>
+                      <span>2025.08.01</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Row 5 -->
-                <div class="list-summary row g-2 align-items-center">
-                  <div class="col-12 col-lg-2">
+                <div class="table-list__row">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">강사</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">Kesiah</span>
+                      <span>Kesiah</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">Amelliatest</span>
+                      <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">기간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">요일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">시간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">변경 시작일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center"
                     >
-                      <span class="body2 text-neutral">2025.08.01</span>
+                      <span>2025.08.01</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Row 6 -->
                 <div
-                  class="list-summary list-cell-highlight row g-2 align-items-center"
+                  class="table-list__row table-list__row--highlight"
                 >
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">강사</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">Kesiah</span>
+                      <span>Kesiah</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">Amelliatest</span>
+                      <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">기간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">요일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">시간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">변경 시작일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center"
                     >
-                      <span class="body2 text-neutral">2025.08.01</span>
+                      <span>2025.08.01</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Row 7 -->
-                <div class="list-summary row g-2 align-items-center">
-                  <div class="col-12 col-lg-2">
+                <div class="table-list__row">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">강사</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">Kesiah</span>
+                      <span>Kesiah</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">Amelliatest</span>
+                      <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">기간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">요일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">시간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">변경 시작일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center"
                     >
-                      <span class="body2 text-neutral">2025.08.01</span>
+                      <span>2025.08.01</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Row 8 -->
                 <div
-                  class="list-summary list-cell-highlight row g-2 align-items-center"
+                  class="table-list__row table-list__row--highlight"
                 >
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">강사</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">Kesiah</span>
+                      <span>Kesiah</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">Amelliatest</span>
+                      <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">기간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">25.00.00</span>
+                      <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">요일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">월/화/수/목/금</span>
+                      <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">시간</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
                     >
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                       <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
-                      <span class="body2 text-neutral">18:00~18:24</span>
+                      <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-2">
+                  <div class="table-list__cell table-list__cell--block">
                     <div class="d-flex d-lg-none mb-1">
                       <span class="body3 text-muted">변경 시작일</span>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-lg-center"
                     >
-                      <span class="body2 text-neutral">2025.08.01</span>
+                      <span>2025.08.01</span>
                     </div>
                   </div>
                 </div>
@@ -1368,42 +1361,40 @@
               <!-- ============================
                  페이지네이션
                  ============================ -->
-              <div class="d-flex justify-content-end mt-5">
+              <div class="pagination-nav">
                 <div
-                  class="d-none d-lg-flex align-items-center gap-3 text-light-gray small me-auto"
+                  class="pagination-nav__info"
                 >
-                  Showing <strong class="text-black">1</strong> Page of
-                  <strong class="text-black">2</strong> entries
+                  Showing <strong class="pagination-nav__info-value">1</strong> Page of
+                  <strong class="pagination-nav__info-value">2</strong> entries
                 </div>
-                <nav aria-label="Page navigation">
-                  <ul class="pagination pagination-custom gap-2 m-0">
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#"
+                                  <ul class="pagination-nav__list">
+                    <li class="pagination-nav__item pagination-nav__item--disabled">
+                      <a class="pagination-nav__link" href="#"
                         ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                     </li>
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#"
+                    <li class="pagination-nav__item pagination-nav__item--disabled">
+                      <a class="pagination-nav__link" href="#"
                         ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                     </li>
-                    <li class="page-item active">
-                      <a class="page-link" href="#">1</a>
+                    <li class="pagination-nav__item pagination-nav__item--active">
+                      <a class="pagination-nav__link" href="#">1</a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
+                    <li class="pagination-nav__item">
+                      <a class="pagination-nav__link" href="#">2</a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
+                    <li class="pagination-nav__item">
+                      <a class="pagination-nav__link" href="#">3</a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#"
+                    <li class="pagination-nav__item">
+                      <a class="pagination-nav__link" href="#"
                         ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#"
+                    <li class="pagination-nav__item">
+                      <a class="pagination-nav__link" href="#"
                         ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                     </li>
                   </ul>
-                </nav>
               </div>
             </div>
           </div>

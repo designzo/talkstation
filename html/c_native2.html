@@ -29,195 +29,188 @@
 
   <body>
 
-    <div class="d-flex container mypage">
-      <aside class="lnb d-none gap-5 d-lg-flex flex-column">
-        <div class="profile-section p-4 text-center">
-          <div class="profile-img mx-auto mb-2">
-            <img src="../images/avatar_main.png" alt="Profile" class="w-100" />
+    <div class="container mypage">
+      <aside class="lnb">
+        <div class="lnb__profile">
+          <div class="lnb__profile-avatar">
+            <img src="../images/avatar_main.png" alt="Profile" />
           </div>
-          <h5 class="heading3 text-black">홍길동</h5>
-          <p class="body1 line-height-140 text-light-gray mb-4">
-            Hong gil dong
-          </p>
+          <h5 class="lnb__profile-name">홍길동</h5>
+          <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button-sm button-fill button-secondary rounded-pill"
+            class="button button--sm button--fill button--secondary rounded-pill"
           >
-            프로필 설정 <svg class="icon body2 ms-1"><use href="#pencil-fill"></use></svg>
+            프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
 
-          <div
-            class="gallery-grid mt-6 d-grid"
-            style="grid-template-columns: repeat(3, 1fr); gap: 8px"
-          >
-            <div class="gallery-item">
+          <div class="lnb__gallery">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
-            <div class="gallery-item">
+            <div class="lnb__gallery-item">
               <img src="../images/avatar_main.png" alt="" />
-              <span class="gallery-badge">Stella</span>
+              <span class="lnb__gallery-badge">Stella</span>
             </div>
           </div>
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="nav-icon nav-icon-cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
               <span>나의 수업 관리</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navLesson">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">원어민 강사 강의실 입장</a>
+                  <a href="#" class="lnb__nav-item"
+                    >원어민 강사 강의실 입장</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >아이딕 홈스쿨 강의실 입장</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">보카킹 학습방</a></li>
+                <li><a href="#" class="lnb__nav-item">보카킹 학습방</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item">Story Writing 과제방</a>
+                  <a href="#" class="lnb__nav-item">Story Writing 과제방</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">VOCA 과제방</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">수업연기 및 보강 관리</a>
+                </li>
+                <li><a href="#" class="lnb__nav-item">강사/시간 변경</a></li>
+                <li>
+                  <a href="#" class="lnb__nav-item">특강권 사용&amp;관리</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">VOCA 과제방</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item">수업연기 및 보강 관리</a>
-                </li>
-                <li><a href="#" class="nav-menu-item">강사/시간 변경</a></li>
-                <li>
-                  <a href="#" class="nav-menu-item">특강권 사용&amp;관리</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >원서&amp;영상수업 요청목록</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item active"
-                    >월평가서 &amp; 출결정보</a
-                  >
+                  <a href="#" class="lnb__nav-item lnb__nav-item--active">월평가서 &amp; 출결정보</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >온라인 테스트 및 체험수업 결과</a
                   >
                 </li>
-                <li><a href="#" class="nav-menu-item">신규선생님 평가</a></li>
-                <li><a href="#" class="nav-menu-item">알림콜 설정</a></li>
+                <li><a href="#" class="lnb__nav-item">신규선생님 평가</a></li>
+                <li><a href="#" class="lnb__nav-item">알림콜 설정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
         <!-- Action Buttons -->
-        <div class="lnb-actions d-flex flex-column gap-0-5">
-          <a class="button button-lg button-border button-primary button-block"
+        <div class="lnb__actions">
+          <a class="button button--lg button--border button--primary button--block"
             >수업불편 및 요청상담</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >선생님, 부탁 드려요</a
           >
-          <a class="button button-lg button-border button-primary button-block"
+          <a class="button button--lg button--border button--primary button--block"
             >찐친 초대현황</a
           >
         </div>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="nav-icon nav-icon-violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
               <span>나의 정보</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navInfo">
-              <ul class="nav-menu">
+              <ul class="lnb__nav-list">
                 <li>
-                  <a href="#" class="nav-menu-item">수강료 결제 및 취소 내역</a>
+                  <a href="#" class="lnb__nav-item">수강료 결제 및 취소 내역</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교재결제내역 / 장바구니</a>
+                  <a href="#" class="lnb__nav-item">교재결제내역 / 장바구니</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-menu-item">교육비 납입증명서 출력</a>
+                  <a href="#" class="lnb__nav-item">교육비 납입증명서 출력</a>
                 </li>
-                <li><a href="#" class="nav-menu-item">비밀번호 변경</a></li>
-                <li><a href="#" class="nav-menu-item">회원정보수정</a></li>
+                <li><a href="#" class="lnb__nav-item">비밀번호 변경</a></li>
+                <li><a href="#" class="lnb__nav-item">회원정보수정</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="nav-icon nav-icon-blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
               <span>아이딕 잉글리시</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navIdic">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">아이딕 북</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 보카</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 비디오</a></li>
-                <li><a href="#" class="nav-menu-item">아이딕 사전</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">아이딕 북</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 보카</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 비디오</a></li>
+                <li><a href="#" class="lnb__nav-item">아이딕 사전</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <nav class="menu-nav flex-column">
-          <div class="nav-section">
+        <nav class="lnb__nav">
+          <div class="lnb__nav-section">
             <button
-              class="nav-section-header"
+              class="lnb__nav-header"
               type="button"
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="nav-icon nav-icon-orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
               <span>학습지원서비스</span>
-              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+              <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
             <div class="collapse in" id="navSupport">
-              <ul class="nav-menu">
-                <li><a href="#" class="nav-menu-item">화상영어 가이드</a></li>
-                <li><a href="#" class="nav-menu-item">원격지원서비스</a></li>
+              <ul class="lnb__nav-list">
+                <li><a href="#" class="lnb__nav-item">화상영어 가이드</a></li>
+                <li><a href="#" class="lnb__nav-item">원격지원서비스</a></li>
                 <li>
-                  <a href="#" class="nav-menu-item"
+                  <a href="#" class="lnb__nav-item"
                     >수업연기 및 보강정책(환불)</a
                   >
                 </li>
@@ -227,7 +220,7 @@
         </nav>
       </aside>
 
-      <main class="col d-flex flex-column gap-lg-6 gap-5 ps-lg-8">
+      <main class="mypage__content">
         <div class="content-container">
           <h2 class="page-title">월평가서&amp;과거수업정보</h2>
 
@@ -235,17 +228,15 @@
              강사 프로필 카드
              ============================ -->
           <div class="d-flex flex-column gap-2">
-            <div
-              class="eval-teacher-card gap-3 radius-xl d-flex align-items-center justify-content-between"
-            >
+            <div class="teacher-card">
               <!-- 왼쪽: 강사 프로필 -->
-              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg">
-                <div class="teacher-profile-avatar"></div>
-                <div class="teacher-profile-content">
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg">
+                <div class="teacher-profile__avatar"></div>
+                <div class="teacher-profile__content">
                   <div class="d-flex align-items-center mb-1-5">
-                    <span class="teacher-profile-name">Teachername</span>
+                    <span class="teacher-profile__name">Teachername</span>
                   </div>
-                  <div class="teacher-profile-meta">
+                  <div class="teacher-profile__meta">
                     <span>필리핀/1개월 과정</span>
                     <span class="dot"></span>
                     <span>주 2회</span>
@@ -257,17 +248,15 @@
                 </div>
               </div>
               <!-- 오른쪽: 수업 정보 -->
-              <div
-                class="d-flex flex-column align-items-center align-items-lg-end gap-1"
-              >
-                <p class="body2 text-white">
+              <div class="teacher-card__info">
+                <p class="teacher-card__info-text">
                   25.04.15~25.09.30 화,목 15:00
                 </p>
-                <p class="body2 text-white">
+                <p class="teacher-card__info-text">
                   교재 : Unspoken Rules of Traveling in Italy
                 </p>
                 <span
-                  class="badge badge-sm badge-fill"
+                  class="badge badge--sm badge--fill"
                   style="
                     background-color: #e2f2fa;
                     color: #006f9e;
@@ -276,16 +265,16 @@
                 >
               </div>
               <!-- 네비게이션 화살표 (카드 위 absolute) -->
-              <nav class="eval-teacher-nav" aria-label="강사 네비게이션">
+              <nav class="teacher-card__nav" aria-label="강사 네비게이션">
                 <button
-                  class="eval-nav-btn"
+                  class="teacher-card__nav-btn"
                   type="button"
                   aria-label="이전 강사"
                 >
                   <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
                 <button
-                  class="eval-nav-btn"
+                  class="teacher-card__nav-btn"
                   type="button"
                   aria-label="다음 강사"
                 >
@@ -294,60 +283,62 @@
               </nav>
             </div>
             <button
-              class="button button-sm button-transparent button-primary align-self-end ms-2"
+              class="button button--sm button--transparent button--primary align-self-end ms-2"
               data-toggle="modal"
               data-target="#classInfoModal"
             >
               한번에 모아보기 20
-              <svg class="icon ms-1"><use href="#arrows-fullscreen"></use></svg>
+              <svg class="icon"><use href="#arrows-fullscreen"></use></svg>
             </button>
           </div>
 
           <!-- ============================
              일일학습 피드백 + 수업 캘린더
              ============================ -->
-          <div class="row row-gap-5 gx-10">
+          <div class="section-grid section-grid--half">
             <!-- 일일학습 피드백 -->
-            <div class="col-12 col-lg-6">
-              <div class="info-card radius-xl elevator-large">
-                <div class="info-card-header main-header">
-                  <h3 class="heading4 text-black">일일학습 피드백</h3>
+            <div>
+              <div class="section-card section-card--flush">
+                <div class="section-card__header section-card__header--highlight">
+                  <h3>일일학습 피드백</h3>
                 </div>
-                <div class="info-card-body p-4 d-flex flex-column gap-4 p-lg-5">
-                  <!-- 강사 정보 -->
-                  <div
-                    class="teacher-profile teacher-profile-horizontal teacher-profile-md"
-                  >
-                    <div class="teacher-profile-avatar"></div>
-                    <div class="teacher-profile-content">
-                      <div class="teacher-profile-name mb-1">Teachername</div>
-                      <div class="teacher-profile-time">⏰ 10:00</div>
+                <div class="section-card__body section-card__body--padded">
+                  <div class="feedback-list__header">
+                    <!-- 강사 정보 -->
+                    <div
+                      class="teacher-profile teacher-profile--horizontal teacher-profile--md"
+                    >
+                      <div class="teacher-profile__avatar"></div>
+                      <div class="teacher-profile__content">
+                        <div class="teacher-profile__name">Teachername</div>
+                        <div class="teacher-profile__time">⏰ 10:00</div>
+                      </div>
                     </div>
+                    <span
+                      class="badge badge--md w-100 align-items-center badge--soft badge--primary"
+                    >
+                      📖 GL6 - Why Are Potato Chip Bags Half Empty
+                    </span>
                   </div>
-                  <span
-                    class="badge badge-md w-100 align-items-center badge-soft badge-primary"
-                  >
-                    📖 GL6 - Why Are Potato Chip Bags Half Empty
-                  </span>
 
                   <!-- 피드백 메시지 -->
                   <div class="feedback-list">
-                    <div class="feedback-item">
+                    <div class="feedback-list__item">
                       Keep growing like a plant — stay rooted in learning,
                       reach high with your goals! I'm proud of how you're
                       improving every day. 🌱
                     </div>
-                    <div class="feedback-item">
+                    <div class="feedback-list__item">
                       Keep growing like a plant — stay rooted in learning,
                       reach high with your goals! I'm proud of how you're
                       improving every day. 🌱
                     </div>
-                    <div class="feedback-item">
+                    <div class="feedback-list__item">
                       Keep growing like a plant — stay rooted in learning,
                       reach high with your goals! I'm proud of how you're
                       improving every day. 🌱
                     </div>
-                    <div class="feedback-item">
+                    <div class="feedback-list__item">
                       Keep growing like a plant — stay rooted in learning,
                       reach high with your goals! I'm proud of how you're
                       improving every day. 🌱
@@ -358,95 +349,95 @@
             </div>
 
             <!-- 수업 캘린더 -->
-            <div class="col-12 col-lg-6">
-            <div
-              class="eval-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5 gap-4 h-100"
-            >
-              <span class="heading4 text-black">수업 캘린더</span>
+            <div>
+            <div class="section-card">
+              <h3 class="section-card__title">수업 캘린더</h3>
+              <div class="section-card__body">
               <!-- 월 네비게이션 -->
               <div class="monthly-header-nav">
-                <button class="monthly-nav-btn" type="button" aria-label="이전 달">
+                <button class="monthly-header-nav__btn" type="button" aria-label="이전 달">
                   <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
-                <span class="heading5">2025년 01월</span>
-                <button class="monthly-nav-btn" type="button" aria-label="다음 달">
+                <span class="monthly-header-nav__title">2025년 01월</span>
+                <button class="monthly-header-nav__btn" type="button" aria-label="다음 달">
                   <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
               <!-- 캘린더 그리드 -->
               <div class="calendar-grid">
                 <!-- Day Headers -->
-                <span class="cal-day-header">일</span>
-                <span class="cal-day-header">월</span>
-                <span class="cal-day-header">화</span>
-                <span class="cal-day-header">수</span>
-                <span class="cal-day-header">목</span>
-                <span class="cal-day-header">금</span>
-                <span class="cal-day-header">토</span>
+                <span class="calendar-grid__day">일</span>
+                <span class="calendar-grid__day">월</span>
+                <span class="calendar-grid__day">화</span>
+                <span class="calendar-grid__day">수</span>
+                <span class="calendar-grid__day">목</span>
+                <span class="calendar-grid__day">금</span>
+                <span class="calendar-grid__day">토</span>
 
                 <!-- Week 1 -->
-                <span class="cal-date cal-date--other">29</span>
-                <span class="cal-date cal-date--other">30</span>
-                <span class="cal-date cal-date--other">31</span>
-                <span class="cal-date">1</span>
-                <span class="cal-date">2</span>
-                <span class="cal-date">3</span>
-                <span class="cal-date cal-date--today">4<span class="cal-dot cal-dot-green"></span></span>
+                <span class="calendar-grid__date calendar-grid__date--other">29</span>
+                <span class="calendar-grid__date calendar-grid__date--other">30</span>
+                <span class="calendar-grid__date calendar-grid__date--other">31</span>
+                <span class="calendar-grid__date">1</span>
+                <span class="calendar-grid__date">2</span>
+                <span class="calendar-grid__date">3</span>
+                <span class="calendar-grid__date calendar-grid__date--today">4<span class="calendar-grid__dot calendar-grid__dot--green"></span></span>
 
                 <!-- Week 2 -->
-                <span class="cal-date">5</span>
-                <span class="cal-date">6</span>
-                <span class="cal-date">7<span class="cal-dot cal-dot-blue"></span></span>
-                <span class="cal-date">8<span class="cal-dot cal-dot-orange"></span></span>
-                <span class="cal-date">9<span class="cal-dot cal-dot-green"></span></span>
-                <span class="cal-date">10</span>
-                <span class="cal-date">11</span>
+                <span class="calendar-grid__date">5</span>
+                <span class="calendar-grid__date">6</span>
+                <span class="calendar-grid__date">7<span class="calendar-grid__dot calendar-grid__dot--blue"></span></span>
+                <span class="calendar-grid__date">8<span class="calendar-grid__dot calendar-grid__dot--orange"></span></span>
+                <span class="calendar-grid__date">9<span class="calendar-grid__dot calendar-grid__dot--green"></span></span>
+                <span class="calendar-grid__date">10</span>
+                <span class="calendar-grid__date">11</span>
 
                 <!-- Week 3 -->
-                <span class="cal-date">12</span>
-                <span class="cal-date">13</span>
-                <span class="cal-date">14<span class="cal-dot cal-dot-blue"></span></span>
-                <span class="cal-date">15<span class="cal-dot cal-dot-green"></span></span>
-                <span class="cal-date">16<span class="cal-dot cal-dot-green"></span></span>
-                <span class="cal-date">17</span>
-                <span class="cal-date">18</span>
+                <span class="calendar-grid__date">12</span>
+                <span class="calendar-grid__date">13</span>
+                <span class="calendar-grid__date">14<span class="calendar-grid__dot calendar-grid__dot--blue"></span></span>
+                <span class="calendar-grid__date">15<span class="calendar-grid__dot calendar-grid__dot--green"></span></span>
+                <span class="calendar-grid__date">16<span class="calendar-grid__dot calendar-grid__dot--green"></span></span>
+                <span class="calendar-grid__date">17</span>
+                <span class="calendar-grid__date">18</span>
 
                 <!-- Week 4 -->
-                <span class="cal-date">19</span>
-                <span class="cal-date">20</span>
-                <span class="cal-date">21<span class="cal-dot cal-dot-blue"></span></span>
-                <span class="cal-date">22<span class="cal-dot cal-dot-green"></span></span>
-                <span class="cal-date">23<span class="cal-dot cal-dot-green"></span></span>
-                <span class="cal-date">24</span>
-                <span class="cal-date">25</span>
+                <span class="calendar-grid__date">19</span>
+                <span class="calendar-grid__date">20</span>
+                <span class="calendar-grid__date">21<span class="calendar-grid__dot calendar-grid__dot--blue"></span></span>
+                <span class="calendar-grid__date">22<span class="calendar-grid__dot calendar-grid__dot--green"></span></span>
+                <span class="calendar-grid__date">23<span class="calendar-grid__dot calendar-grid__dot--green"></span></span>
+                <span class="calendar-grid__date">24</span>
+                <span class="calendar-grid__date">25</span>
 
                 <!-- Week 5 -->
-                <span class="cal-date">26</span>
-                <span class="cal-date">27</span>
-                <span class="cal-date">28<span class="cal-dot cal-dot-violet"></span></span>
-                <span class="cal-date">29<span class="cal-dot cal-dot-violet"></span></span>
-                <span class="cal-date">30<span class="cal-dot cal-dot-violet"></span></span>
-                <span class="cal-date">31</span>
-                <span class="cal-date cal-date--other">1</span>
+                <span class="calendar-grid__date">26</span>
+                <span class="calendar-grid__date">27</span>
+                <span class="calendar-grid__date">28<span class="calendar-grid__dot calendar-grid__dot--violet"></span></span>
+                <span class="calendar-grid__date">29<span class="calendar-grid__dot calendar-grid__dot--violet"></span></span>
+                <span class="calendar-grid__date">30<span class="calendar-grid__dot calendar-grid__dot--violet"></span></span>
+                <span class="calendar-grid__date">31</span>
+                <span class="calendar-grid__date calendar-grid__date--other">1</span>
               </div>
               <!-- Calendar Legend -->
-              <div class="calendar-legend mt-auto">
-                <div class="calendar-legend-item">
-                  <span class="calendar-legend-dot calendar-legend-dot-lesson"></span>
+              <div class="calendar-legend">
+                <div class="calendar-legend__item">
+                  <span class="calendar-legend__dot calendar-legend__dot--lesson"></span>
                   <span>수업: <b>1회</b></span>
                 </div>
-                <div class="calendar-legend-item">
-                  <span class="calendar-legend-dot calendar-legend-dot-attend"></span>
+                <div class="calendar-legend__item">
+                  <span class="calendar-legend__dot calendar-legend__dot--attend"></span>
                   <span>출석: <b>1회</b></span>
                 </div>
-                <div class="calendar-legend-item">
-                  <span class="calendar-legend-dot calendar-legend-dot-absent"></span>
+                <div class="calendar-legend__item">
+                  <span class="calendar-legend__dot calendar-legend__dot--absent"></span>
                   <span>결석: <b>1회</b></span>
                 </div>
-                <div class="calendar-legend-item">
-                  <span class="calendar-legend-dot calendar-legend-dot-makeup"></span>
+                <div class="calendar-legend__item">
+                  <span class="calendar-legend__dot calendar-legend__dot--makeup"></span>
                   <span>보강: <b>1회</b></span>
                 </div>
+              </div>
               </div>
             </div>
             </div>
@@ -455,286 +446,232 @@
           <!-- ============================
              DFB VOCA 학습 현황 + 출결 현황
              ============================ -->
-          <div class="d-flex flex-column flex-lg-row gap-4">
+          <div class="section-grid section-grid--half">
             <!-- DFB VOCA 학습 현황 -->
-            <div
-              class="eval-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5 gap-4 flex-fill"
-            >
-              <div
-                class="d-flex align-items-center justify-content-between"
-              >
-                <span class="heading4 text-black">DFB VOCA 학습 현황</span>
-                <button class="button button-sm button-border button-primary">
-                  과제방 입장 <svg class="icon ms-1"><use href="#arrow-right"></use></svg>
+            <div>
+            <div class="section-card">
+              <div class="section-card__header">
+                <h3 class="section-card__title">DFB VOCA 학습 현황</h3>
+                <button class="button button--sm button--border button--primary">
+                  과제방 입장 <svg class="icon"><use href="#arrow-right"></use></svg>
                 </button>
               </div>
+              <div class="section-card__body">
               <!-- 월 네비게이션 -->
               <div class="monthly-header-nav">
-                <button class="monthly-nav-btn" type="button" aria-label="이전 달">
+                <button class="monthly-header-nav__btn" type="button" aria-label="이전 달">
                   <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
-                <span class="heading5">2025년 01월</span>
-                <button class="monthly-nav-btn" type="button" aria-label="다음 달">
+                <span class="monthly-header-nav__title">2025년 01월</span>
+                <button class="monthly-header-nav__btn" type="button" aria-label="다음 달">
                   <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
-              <!-- 포인트 + 완료율 -->
-              <div class="d-flex align-items-center gap-4">
-                <div class="d-flex align-items-end gap-2">
-                  <span class="heading1" style="color: var(--color-cyan-500)"
-                    >119</span
-                  >
-                  <span class="body1 fw-bold text-neutral">Point</span>
+              <!-- 완료율 프로그레스 바 -->
+              <div class="stat-progress stat-progress--sm">
+                <div class="stat-progress__header">
+                  <span class="stat-progress__label">완료율</span>
+                  <span class="stat-progress__value">40%</span>
                 </div>
-                <div class="flex-fill d-flex flex-column gap-1">
-                  <div class="d-flex align-items-center gap-2">
-                    <span class="body2 fw-medium text-neutral">완료율</span>
-                    <span
-                      class="body2 fw-bold"
-                      style="color: var(--color-cyan-700)"
-                      >40%</span
-                    >
+                <div class="stat-progress__bar progress-bar-track progress-bar-track-primary progress-bar-track-sm">
+                  <div class="progress-bar-fill progress-bar-fill-primary" style="width: 40%"></div>
+                </div>
+              </div>
+              <!-- 포인트 / 과제단어 + Study / Word Quiz / Sentence -->
+              <div class="voca-stats-group voca-stats-group--sm">
+                <div class="voca-stats">
+                  <div class="voca-stats__point">
+                    <div class="voca-stats__point-inner">
+                      <span class="voca-stats__point-value">119</span>
+                      <span class="voca-stats__point-label">Point</span>
+                    </div>
                   </div>
-                  <div
-                    class="progress-bar-track progress-bar-track-primary progress-bar-track-sm"
-                  >
-                    <div
-                      class="progress-bar-fill progress-bar-fill-primary"
-                      style="width: 40%"
-                    ></div>
+                  <div class="voca-stats__counter">
+                    <span class="voca-stats__counter-label">과제단어</span>
+                    <span class="voca-stats__counter-value">63</span>
+                  </div>
+                </div>
+                <div class="voca-stats">
+                  <div class="voca-stat">
+                    <span class="voca-stat__label">Study</span>
+                    <div class="voca-stat__score">
+                      <span class="voca-stat__value">0</span>
+                      <span class="voca-stat__total">/3</span>
+                    </div>
+                  </div>
+                  <div class="voca-stat">
+                    <span class="voca-stat__label">Word Quiz</span>
+                    <div class="voca-stat__score">
+                      <span class="voca-stat__value">0</span>
+                      <span class="voca-stat__total">/3</span>
+                    </div>
+                  </div>
+                  <div class="voca-stat">
+                    <span class="voca-stat__label">Sentence</span>
+                    <div class="voca-stat__score">
+                      <span class="voca-stat__value">0</span>
+                      <span class="voca-stat__total">/3</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- 과제단어 / 완료단어 -->
-              <div class="d-flex gap-2">
-                <div
-                  class="eval-stat-box flex-fill"
-                  style="background: var(--color-bg-secondary)"
-                >
-                  <span class="body3 text-neutral">과제단어</span>
-                  <span
-                    class="heading3 fw-bold"
-                    style="color: var(--color-cyan-500)"
-                    >63</span
-                  >
-                </div>
-                <div
-                  class="eval-stat-box flex-fill"
-                  style="background: var(--color-cyan-50)"
-                >
-                  <span class="body3" style="color: var(--color-cyan-700)"
-                    >완료단어</span
-                  >
-                  <span class="heading3 fw-bold text-black">38</span>
-                </div>
               </div>
-              <!-- Study / Word Quiz / Sentence -->
-              <div class="d-flex gap-2">
-                <div class="eval-task-box flex-fill">
-                  <span class="body4 text-light-gray">Study</span>
-                  <div class="d-flex align-items-end">
-                    <span
-                      class="heading4 fw-bold"
-                      style="color: var(--color-cyan-500)"
-                      >0</span
-                    >
-                    <span class="body3 text-light-gray">/3</span>
-                  </div>
-                </div>
-                <div class="eval-task-box flex-fill">
-                  <span class="body4 text-light-gray">Word Quiz</span>
-                  <div class="d-flex align-items-end">
-                    <span
-                      class="heading4 fw-bold"
-                      style="color: var(--color-cyan-500)"
-                      >0</span
-                    >
-                    <span class="body3 text-light-gray">/3</span>
-                  </div>
-                </div>
-                <div class="eval-task-box flex-fill">
-                  <span class="body4 text-light-gray">Sentence</span>
-                  <div class="d-flex align-items-end">
-                    <span
-                      class="heading4 fw-bold"
-                      style="color: var(--color-cyan-500)"
-                      >0</span
-                    >
-                    <span class="body3 text-light-gray">/3</span>
-                  </div>
-                </div>
-              </div>
+            </div>
             </div>
 
             <!-- 출결 현황 -->
-            <div
-              class="eval-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5 gap-4 flex-fill"
-            >
-              <div
-                class="d-flex align-items-center justify-content-between"
-              >
-                <span class="heading4 text-black">출결 현황</span>
-                <button class="button button-sm button-border button-default" data-toggle="modal" data-target="#attendanceModal">
-                  자세히 보기 <svg class="icon ms-1"><use href="#chevron-right"></use></svg>
+            <div>
+            <div class="section-card">
+              <div class="section-card__header">
+                <h3 class="section-card__title">출결 현황</h3>
+                <button class="button button--sm button--border button--default" data-toggle="modal" data-target="#attendanceModal">
+                  자세히 보기 <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
+              <div class="section-card__body">
               <!-- 월 네비게이션 -->
               <div class="monthly-header-nav">
-                <button class="monthly-nav-btn" type="button" aria-label="이전 달">
+                <button class="monthly-header-nav__btn" type="button" aria-label="이전 달">
                   <svg class="icon"><use href="#chevron-left"></use></svg>
                 </button>
-                <span class="heading5">2025년 01월</span>
-                <button class="monthly-nav-btn" type="button" aria-label="다음 달">
+                <span class="monthly-header-nav__title">2025년 01월</span>
+                <button class="monthly-header-nav__btn" type="button" aria-label="다음 달">
                   <svg class="icon"><use href="#chevron-right"></use></svg>
                 </button>
               </div>
               <!-- 출석률 프로그레스 -->
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex align-items-center gap-2">
-                  <span class="body2 fw-medium text-neutral">출석률</span>
-                  <span
-                    class="body2 fw-bold"
-                    style="color: var(--color-cyan-700)"
-                    >40%</span
-                  >
+              <div class="stat-progress stat-progress--sm">
+                <div class="stat-progress__header">
+                  <span class="stat-progress__label">출석률</span>
+                  <span class="stat-progress__value">40%</span>
                 </div>
-                <div
-                  class="progress-bar-track progress-bar-track-primary progress-bar-track-sm"
-                >
-                  <div
-                    class="progress-bar-fill progress-bar-fill-primary"
-                    style="width: 40%"
-                  ></div>
+                <div class="stat-progress__bar progress-bar-track progress-bar-track-primary">
+                  <div class="progress-bar-fill progress-bar-fill-primary" style="width: 40%"></div>
                 </div>
               </div>
               <!-- 출결 상세 -->
-              <div class="d-grid eval-attendance-grid gap-2">
-                <div class="eval-stat-box" style="background: var(--color-bg-secondary)">
-                  <span class="body3 text-neutral">출석</span>
-                  <span class="heading4 fw-bold" style="color: #4a7ed9">10 / 13</span>
+              <div class="att-stats">
+                <div class="att-stat">
+                  <span class="att-stat__label">출석</span>
+                  <span class="att-stat__value att-stat__value--blue">10 / 13</span>
                 </div>
-                <div class="eval-stat-box" style="background: var(--color-bg-secondary)">
-                  <span class="body3 text-neutral">결석</span>
-                  <span class="heading4 fw-bold" style="color: #ff7d26">2 / 13</span>
+                <div class="att-stat">
+                  <span class="att-stat__label">결석</span>
+                  <span class="att-stat__value att-stat__value--orange">2 / 13</span>
                 </div>
-                <div class="eval-stat-box" style="background: var(--color-bg-secondary)">
-                  <span class="body3 text-neutral">연기</span>
-                  <span class="heading4 fw-bold" style="color: #b2b2b2">0</span>
+                <div class="att-stat">
+                  <span class="att-stat__label">연기</span>
+                  <span class="att-stat__value att-stat__value--gray">0</span>
                 </div>
-                <div class="eval-stat-box" style="background: var(--color-bg-secondary)">
-                  <span class="body3 text-neutral">보강</span>
-                  <span class="heading4 fw-bold" style="color: #c273fc">5</span>
+                <div class="att-stat">
+                  <span class="att-stat__label">보강</span>
+                  <span class="att-stat__value att-stat__value--violet">5</span>
                 </div>
               </div>
+              </div>
+            </div>
             </div>
           </div>
 
           <!-- ============================
              학습 성장 과정 (Apple Tree)
              ============================ -->
-          <div
-            class="eval-card radius-2xl elevator-large d-flex flex-column p-4 p-lg-5 gap-4"
-          >
+          <div class="section-card">
             <!-- 월 네비게이션 -->
-            <div class="monthly-header-nav">
-              <button class="monthly-nav-btn" type="button" aria-label="이전 달">
+            <div class="monthly-header-nav monthly-header-nav--center">
+              <button class="monthly-header-nav__btn" type="button" aria-label="이전 달">
                 <svg class="icon"><use href="#chevron-left"></use></svg>
               </button>
-              <span class="heading5">2025년 01월</span>
-              <button class="monthly-nav-btn" type="button" aria-label="다음 달">
+              <span class="monthly-header-nav__title">2025년 01월</span>
+              <button class="monthly-header-nav__btn" type="button" aria-label="다음 달">
                 <svg class="icon"><use href="#chevron-right"></use></svg>
               </button>
             </div>
             <!-- 강사 + 학생 정보 -->
-            <div
-              class="d-flex align-items-center flex-wrap gap-2 gap-lg-4 justify-content-center"
-            >
-              <div class="d-flex align-items-center gap-2">
-                <div class="eval-avatar-sm"></div>
-                <span class="body2 fw-bold text-black">Teachername</span>
+            <div class="class-profile">
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--sm">
+                <div class="teacher-profile__avatar"></div>
+                <div class="teacher-profile__content">
+                  <span class="teacher-profile__name">Teachername</span>
+                </div>
               </div>
-              <div
-                class="vr d-none d-lg-block"
-                style="height: 20px; border-color: var(--color-gray-200)"
-              ></div>
-              <div class="d-flex align-items-center gap-2">
-                <span class="body2 fw-bold text-black">이서연님</span>
-                <span class="heading5" style="color: var(--color-colorchip-orange)"
-                  >GL1(Violet) - STEP2</span
-                >
+              <div class="class-profile__divider"></div>
+              <div class="class-profile__student">
+                <span class="class-profile__student-name">이서연님</span>
+                <span class="class-profile__level">GL1(Violet) - STEP2</span>
               </div>
             </div>
             <!-- 성장 스테이지 -->
-            <div class="eval-growth-list">
-              <div class="eval-growth-item eval-growth-active">
-                <div class="eval-growth-thumb">
+            <div class="growth-stage">
+              <div class="growth-stage__item growth-stage__item--active">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="1단계" />
                 </div>
-                <span class="body4 fw-bold text-black">1단계</span>
-                <span class="body4 text-gray">Apple tree</span>
+                <span class="growth-stage__step">1단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
-              <div class="eval-growth-item">
-                <div class="eval-growth-thumb">
+              <div class="growth-stage__item">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="2단계" />
                 </div>
-                <span class="body4 fw-bold text-light-gray">2단계</span>
-                <span class="body4 text-light-gray">Apple tree</span>
+                <span class="growth-stage__step">2단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
-              <div class="eval-growth-item">
-                <div class="eval-growth-thumb">
+              <div class="growth-stage__item">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="3단계" />
                 </div>
-                <span class="body4 fw-bold text-light-gray">3단계</span>
-                <span class="body4 text-light-gray">Apple tree</span>
+                <span class="growth-stage__step">3단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
-              <div class="eval-growth-item">
-                <div class="eval-growth-thumb">
+              <div class="growth-stage__item">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="4단계" />
                 </div>
-                <span class="body4 fw-bold text-light-gray">4단계</span>
-                <span class="body4 text-light-gray">Apple tree</span>
+                <span class="growth-stage__step">4단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
-              <div class="eval-growth-item">
-                <div class="eval-growth-thumb">
+              <div class="growth-stage__item">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="5단계" />
                 </div>
-                <span class="body4 fw-bold text-light-gray">5단계</span>
-                <span class="body4 text-light-gray">Apple tree</span>
+                <span class="growth-stage__step">5단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
-              <div class="eval-growth-item">
-                <div class="eval-growth-thumb">
+              <div class="growth-stage__item">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="6단계" />
                 </div>
-                <span class="body4 fw-bold text-light-gray">6단계</span>
-                <span class="body4 text-light-gray">Apple tree</span>
+                <span class="growth-stage__step">6단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
-              <div class="eval-growth-item">
-                <div class="eval-growth-thumb">
+              <div class="growth-stage__item">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="7단계" />
                 </div>
-                <span class="body4 fw-bold text-light-gray">7단계</span>
-                <span class="body4 text-light-gray">Apple tree</span>
+                <span class="growth-stage__step">7단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
-              <div class="eval-growth-item">
-                <div class="eval-growth-thumb">
+              <div class="growth-stage__item">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="8단계" />
                 </div>
-                <span class="body4 fw-bold text-light-gray">8단계</span>
-                <span class="body4 text-light-gray">Apple tree</span>
+                <span class="growth-stage__step">8단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
-              <div class="eval-growth-item">
-                <div class="eval-growth-thumb">
+              <div class="growth-stage__item">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="9단계" />
                 </div>
-                <span class="body4 fw-bold text-light-gray">9단계</span>
-                <span class="body4 text-light-gray">Apple tree</span>
+                <span class="growth-stage__step">9단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
-              <div class="eval-growth-item">
-                <div class="eval-growth-thumb">
+              <div class="growth-stage__item">
+                <div class="growth-stage__thumb">
                   <img src="../images/dummy1.png" alt="10단계" />
                 </div>
-                <span class="body4 fw-bold text-light-gray">10단계</span>
-                <span class="body4 text-light-gray">Apple tree</span>
+                <span class="growth-stage__step">10단계</span>
+                <span class="growth-stage__name">Apple tree</span>
               </div>
             </div>
           </div>
@@ -742,58 +679,58 @@
           <!-- ============================
              Talk's Report
              ============================ -->
-          <div
-            class="table-list-container eval-report radius-xl elevator-large p-4 p-lg-5"
-          >
-            <span class="heading4 text-black mb-4 d-block">Talk's Report</span>
-            <div class="table-list-scroll">
+          <div class="section-card">
+            <h3 class="section-card__title">Talk's Report</h3>
+            <div class="table-list table-list--eval-report">
+            <div class="table-list__scroll">
               <!-- 테이블 헤더 -->
-              <div class="table-list-header d-flex row g-2 align-items-center">
-                <div class="col-3 text-center">Task Area</div>
-                <div class="col text-center">Description</div>
+              <div class="table-list__header table-list__header--visible">
+                <div class="table-list__cell table-list__cell--start">Task Area</div>
+                <div class="table-list__cell table-list__cell--start">Description</div>
               </div>
               <!-- 테이블 바디 -->
-              <div class="table-list-body d-flex flex-column gap-1-5">
-              <div class="list-summary row g-2 align-items-center">
-                <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
-                  <span class="body2 text-neutral">Pronunciation</span>
+              <div class="table-list__body">
+              <div class="table-list__row">
+                <div class="table-list__cell table-list__cell--highlight table-list__cell--start">
+                  <span>Pronunciation</span>
                 </div>
-                <div class="col d-flex align-items-center gap-1">
-                  <span class="body2 text-neutral">Only minor errors</span>
-                </div>
-              </div>
-              <div class="list-summary row g-2 align-items-center">
-                <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
-                  <span class="body2 text-neutral">Pronunciation</span>
-                </div>
-                <div class="col d-flex align-items-center gap-1">
-                  <span class="body2 text-neutral">Only minor errors</span>
+                <div class="table-list__cell table-list__cell--start">
+                  <span>Only minor errors</span>
                 </div>
               </div>
-              <div class="list-summary row g-2 align-items-center">
-                <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
-                  <span class="body2 text-neutral">Pronunciation</span>
+              <div class="table-list__row">
+                <div class="table-list__cell table-list__cell--highlight table-list__cell--start">
+                  <span>Pronunciation</span>
                 </div>
-                <div class="col d-flex align-items-center gap-1">
-                  <span class="body2 text-neutral">Only minor errors</span>
-                </div>
-              </div>
-              <div class="list-summary row g-2 align-items-center">
-                <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
-                  <span class="body2 text-neutral">Pronunciation</span>
-                </div>
-                <div class="col d-flex align-items-center gap-1">
-                  <span class="body2 text-neutral">Only minor errors</span>
+                <div class="table-list__cell table-list__cell--start">
+                  <span>Only minor errors</span>
                 </div>
               </div>
-              <div class="list-summary row g-2 align-items-center">
-                <div class="col-3 d-flex align-items-center gap-1 list-cell-highlight">
-                  <span class="body2 text-neutral">Pronunciation</span>
+              <div class="table-list__row">
+                <div class="table-list__cell table-list__cell--highlight table-list__cell--start">
+                  <span>Pronunciation</span>
                 </div>
-                <div class="col d-flex align-items-center gap-1">
-                  <span class="body2 text-neutral">Only minor errors</span>
+                <div class="table-list__cell table-list__cell--start">
+                  <span>Only minor errors</span>
                 </div>
               </div>
+              <div class="table-list__row">
+                <div class="table-list__cell table-list__cell--highlight table-list__cell--start">
+                  <span>Pronunciation</span>
+                </div>
+                <div class="table-list__cell table-list__cell--start">
+                  <span>Only minor errors</span>
+                </div>
+              </div>
+              <div class="table-list__row">
+                <div class="table-list__cell table-list__cell--highlight table-list__cell--start">
+                  <span>Pronunciation</span>
+                </div>
+                <div class="table-list__cell table-list__cell--start">
+                  <span>Only minor errors</span>
+                </div>
+              </div>
+            </div>
             </div>
             </div>
           </div>
@@ -801,19 +738,17 @@
           <!-- ============================
              Teacher's Comment
              ============================ -->
-          <div
-            class="eval-card radius-xl elevator-large d-flex flex-column p-4 p-lg-5 gap-4"
-          >
-            <span class="heading4 text-black">Teacher's Comment</span>
-            <div class="eval-feedback-msg">
-              <p class="body2 text-neutral">
+          <div class="section-card">
+            <h3 class="section-card__title">Teacher's Comment</h3>
+            <div class="teacher-comment">
+              <p class="teacher-comment__text">
                 Hi Sooyeon! 👋<br />I'm so happy to see how much you're
                 improving in English. You're speaking more clearly each time,
                 and that's wonderful!<br />Keep practicing your sentences and
                 sharing your ideas—you're doing amazing! 🌟
               </p>
             </div>
-            <button class="eval-translate-btn">
+            <button class="button button--md button--fill button--tertiary button--block">
               한글 번역 보러가기
               <svg class="icon"><use href="#translate"></use></svg>
             </button>
@@ -832,11 +767,11 @@
       aria-labelledby="attendanceModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg attendance-modal">
-        <div class="modal-content radius-2xl elevator-large p-4 p-lg-5">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg attendance-modal">
+        <div class="modal-content">
           <!-- 모달 헤더 -->
-          <div class="modal-header border-bottom p-0 pb-4">
-            <h5 class="modal-title heading2 text-black" id="attendanceModalLabel">
+          <div class="modal-header">
+            <h5 class="modal-title" id="attendanceModalLabel">
               출석현황 자세히 보기
             </h5>
             <button
@@ -848,322 +783,294 @@
           </div>
 
           <!-- 모달 바디 -->
-          <div class="modal-body p-0 pt-4 d-flex flex-column gap-5">
+          <div class="modal-body">
             <!-- 출석확인증 타이틀 + 프린트 버튼 -->
-            <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-2">
-              <div class="d-flex flex-column gap-1">
-                <span class="heading3 text-black">TALKSTATION 출석확인증</span>
-                <span class="body2 text-light-gray">2025년 11월 03일 ~ 2025년 12월 03일</span>
-              </div>
-              <button class="button button-md button-fill button-primary">
-                출결정보 프린트 <svg class="icon ms-1"><use href="#printer-fill"></use></svg>
+            <div class="att-certificate">
+              <span class="att-certificate__title">TALKSTATION 출석확인증</span>
+              <button class="button button--md button--fill button--primary">
+                출결정보 프린트 <svg class="icon"><use href="#printer-fill"></use></svg>
               </button>
             </div>
 
             <!-- 수강 정보 테이블 -->
-            <div class="d-flex flex-column gap-1-5">
-              <!-- PC: 2열 / Mobile: 1열 -->
-              <div class="row gap-1-5 gap-lg-0">
-                <div class="col-12 col-lg-6">
-                  <div class="d-flex gap-1-5">
-                    <div class="att-info-label">수강신청번호</div>
-                    <div class="att-info-value flex-fill">1760000000000</div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="d-flex gap-1-5">
-                    <div class="att-info-label">출석기간</div>
-                    <div class="att-info-value flex-fill">2025.00.00 ~ 2025.00.00</div>
+            <div class="info-field info-field--2col">
+              <div class="info-field__cell">
+                <div class="info-field__label">수강신청번호</div>
+                <div class="info-field__value">1760000000000</div>
+              </div>
+              <div class="info-field__cell">
+                <div class="info-field__label">출석기간</div>
+                <div class="info-field__value">2025.00.00 ~ 2025.00.00</div>
+              </div>
+              <div class="info-field__cell">
+                <div class="info-field__label">수강자 이름</div>
+                <div class="info-field__value">이서연 (user@email.com)</div>
+              </div>
+              <div class="info-field__cell">
+                <div class="info-field__label">담당강사</div>
+                <div class="info-field__value">
+                  <div class="teacher-profile teacher-profile--horizontal teacher-profile--sm">
+                    <div class="teacher-profile__avatar"></div>
+                    <span class="teacher-profile__name">Teachername</span>
                   </div>
                 </div>
               </div>
-              <div class="row gap-1-5 gap-lg-0">
-                <div class="col-12 col-lg-6">
-                  <div class="d-flex gap-1-5">
-                    <div class="att-info-label">수강자 이름</div>
-                    <div class="att-info-value flex-fill">이서연 (user@email.com)</div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="d-flex gap-1-5">
-                    <div class="att-info-label">담당강사</div>
-                    <div class="att-info-value flex-fill">
-                      <div class="d-flex align-items-center gap-2">
-                        <div class="att-teacher-avatar"></div>
-                        <span class="fw-bold text-black">Teachername</span>
-                      </div>
-                    </div>
-                  </div>
+              <div class="info-field__cell">
+                <div class="info-field__label">수강프로그램</div>
+                <div class="info-field__value">
+                  <span class="badge badge--md badge--fill badge--orange">필리핀 화상</span>
                 </div>
               </div>
-              <div class="row gap-1-5 gap-lg-0">
-                <div class="col-12 col-lg-6">
-                  <div class="d-flex gap-1-5">
-                    <div class="att-info-label">수강프로그램</div>
-                    <div class="att-info-value flex-fill">
-                      <span class="badge badge-sm badge-fill badge-orange">필리핀 화상</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="d-flex gap-1-5">
-                    <div class="att-info-label">수강개월수</div>
-                    <div class="att-info-value flex-fill">총 1개월 과정</div>
-                  </div>
-                </div>
+              <div class="info-field__cell">
+                <div class="info-field__label">수강개월수</div>
+                <div class="info-field__value">총 1개월 과정</div>
               </div>
-              <div class="row gap-1-5 gap-lg-0">
-                <div class="col-12 col-lg-6">
-                  <div class="d-flex gap-1-5">
-                    <div class="att-info-label">주당수강횟수</div>
-                    <div class="att-info-value flex-fill">주 3회(월,수,금)</div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="d-flex gap-1-5">
-                    <div class="att-info-label">수업시간</div>
-                    <div class="att-info-value flex-fill">21:00 ~ 21:24 (25분간)</div>
-                  </div>
-                </div>
+              <div class="info-field__cell">
+                <div class="info-field__label">주당수강횟수</div>
+                <div class="info-field__value">주 3회(월,수,금)</div>
+              </div>
+              <div class="info-field__cell">
+                <div class="info-field__label">수업시간</div>
+                <div class="info-field__value">21:00 ~ 21:24 (25분간)</div>
               </div>
             </div>
 
             <!-- 출결 요약 -->
-            <div class="radius-xl elevator-large p-4 d-flex flex-column gap-4">
-              <div class="d-flex align-items-center justify-content-between">
-                <span class="heading4 text-black">출결 요약</span>
-                <div class="d-flex align-items-end gap-2">
-                  <span class="body2 fw-medium text-light-gray">출석률</span>
-                  <span class="heading3 fw-bold" style="color: var(--color-cyan-700)">56.3%</span>
+            <div class="section-card">
+              <div class="section-card__header">
+                <h3 class="section-card__title">출결 요약</h3>
+                <div class="att-rate">
+                  <span class="att-rate__label">출석률</span>
+                  <span class="att-rate__value">56.3%</span>
                 </div>
               </div>
               <!-- 프로그레스바 -->
-              <div class="att-progress-bar">
-                <div class="att-progress-seg" style="width: 17.5%; background-color: #4ecdc4">
-                  <span>17.5%</span>
+              <div class="att-progress">
+                <div class="att-progress__seg att-progress__seg--waiting" style="width: 17.5%">
+                  <span class="att-progress__label">17.5%</span>
                 </div>
-                <div class="att-progress-seg" style="width: 56%; background-color: #4a7ed9">
-                  <span>56%</span>
+                <div class="att-progress__seg att-progress__seg--attend" style="width: 56%">
+                  <span class="att-progress__label">56%</span>
                 </div>
-                <div class="att-progress-seg" style="width: 12%; background-color: #ff7d26">
-                  <span>12%</span>
+                <div class="att-progress__seg att-progress__seg--absent" style="width: 12%">
+                  <span class="att-progress__label">12%</span>
                 </div>
-                <div class="att-progress-seg" style="width: 12%; background-color: #c273fc">
-                  <span>12%</span>
+                <div class="att-progress__seg att-progress__seg--makeup" style="width: 12%">
+                  <span class="att-progress__label">12%</span>
                 </div>
               </div>
               <!-- 범례 -->
-              <div class="d-flex flex-wrap align-items-center gap-4 pt-3 border-top">
-                <div class="d-flex align-items-center gap-1-5">
-                  <span class="att-legend-dot" style="background-color: #4ecdc4"></span>
-                  <span class="body4 text-neutral">수강대기</span>
+              <div class="att-legend">
+                <div class="att-legend__item">
+                  <span class="att-legend__dot att-legend__dot--waiting"></span>
+                  <span>수강대기</span>
                 </div>
-                <div class="d-flex align-items-center gap-1-5">
-                  <span class="att-legend-dot" style="background-color: #4a7ed9"></span>
-                  <span class="body4 text-neutral">출석</span>
+                <div class="att-legend__item">
+                  <span class="att-legend__dot att-legend__dot--attend"></span>
+                  <span>출석</span>
                 </div>
-                <div class="d-flex align-items-center gap-1-5">
-                  <span class="att-legend-dot" style="background-color: #ff7d26"></span>
-                  <span class="body4 text-neutral">결석</span>
+                <div class="att-legend__item">
+                  <span class="att-legend__dot att-legend__dot--absent"></span>
+                  <span>결석</span>
                 </div>
-                <div class="d-flex align-items-center gap-1-5">
-                  <span class="att-legend-dot" style="background-color: #c273fc"></span>
-                  <span class="body4 text-neutral">보강연기</span>
+                <div class="att-legend__item">
+                  <span class="att-legend__dot att-legend__dot--makeup"></span>
+                  <span>보강연기</span>
                 </div>
               </div>
               <!-- 통계 카드 (4x2 그리드) -->
-              <div class="d-grid att-stat-grid gap-2">
-                <div class="att-stat-box">
-                  <span class="heading3 fw-bold text-black">16</span>
-                  <span class="body4 text-gray">전체수업</span>
+              <div class="att-stats att-stats--detail">
+                <div class="att-stats__item">
+                  <span class="att-stats__value att-stats__value--total">16</span>
+                  <span class="att-stats__label">전체수업</span>
                 </div>
-                <div class="att-stat-box">
-                  <span class="heading3 fw-bold" style="color: #4ecdc4">3</span>
-                  <span class="body4 text-gray">수업대기</span>
+                <div class="att-stats__item">
+                  <span class="att-stats__value att-stats__value--waiting">3</span>
+                  <span class="att-stats__label">수업대기</span>
                 </div>
-                <div class="att-stat-box">
-                  <span class="heading3 fw-bold" style="color: #4a7ed9">9</span>
-                  <span class="body4 text-gray">출석</span>
+                <div class="att-stats__item">
+                  <span class="att-stats__value att-stats__value--attend">9</span>
+                  <span class="att-stats__label">출석</span>
                 </div>
-                <div class="att-stat-box">
-                  <span class="heading3 fw-bold" style="color: #ff7d26">0</span>
-                  <span class="body4 text-gray">결석</span>
+                <div class="att-stats__item">
+                  <span class="att-stats__value att-stats__value--absent">0</span>
+                  <span class="att-stats__label">결석</span>
                 </div>
-                <div class="att-stat-box">
-                  <span class="heading3 fw-bold" style="color: #b2b2b2">2</span>
-                  <span class="body4 text-gray">연기</span>
+                <div class="att-stats__item">
+                  <span class="att-stats__value att-stats__value--postpone">2</span>
+                  <span class="att-stats__label">연기</span>
                 </div>
-                <div class="att-stat-box">
-                  <span class="heading3 fw-bold" style="color: #b2b2b2">0</span>
-                  <span class="body4 text-gray">장기연기</span>
+                <div class="att-stats__item">
+                  <span class="att-stats__value att-stats__value--postpone">0</span>
+                  <span class="att-stats__label">장기연기</span>
                 </div>
-                <div class="att-stat-box">
-                  <span class="heading3 fw-bold" style="color: #c273fc">2</span>
-                  <span class="body4 text-gray">보강연기</span>
+                <div class="att-stats__item">
+                  <span class="att-stats__value att-stats__value--makeup">2</span>
+                  <span class="att-stats__label">보강연기</span>
                 </div>
-                <div class="att-stat-box">
-                  <span class="heading3 fw-bold" style="color: #ff5c5c">0</span>
-                  <span class="body4 text-gray">휴강</span>
+                <div class="att-stats__item">
+                  <span class="att-stats__value att-stats__value--cancel">0</span>
+                  <span class="att-stats__label">휴강</span>
                 </div>
               </div>
             </div>
 
             <!-- 일일출결정보 -->
             <div class="d-flex flex-column gap-4">
-              <span class="heading4 text-black">일일출결정보</span>
+              <span>일일출결정보</span>
 
-              <div class="table-list-container">
+              <div class="table-list table-list--attendance">
                 <!-- 테이블 헤더 (PC만 표시) -->
-                <div class="table-list-header d-none d-lg-flex row g-2 align-items-center">
-                  <div class="col-lg-1 text-center">순위</div>
-                  <div class="col-lg-2 text-center">날짜</div>
-                  <div class="col-lg-1 text-center">요일</div>
-                  <div class="col-lg-3 text-center">수업시간(분)</div>
-                  <div class="col-lg-2 text-center">담당강사</div>
-                  <div class="col-lg-1 text-center">수강방식</div>
-                  <div class="col-lg-2 text-center">출석여부</div>
+                <div class="table-list__header">
+                  <div class="table-list__cell">순위</div>
+                  <div class="table-list__cell">날짜</div>
+                  <div class="table-list__cell">요일</div>
+                  <div class="table-list__cell">수업시간(분)</div>
+                  <div class="table-list__cell">담당강사</div>
+                  <div class="table-list__cell">수강방식</div>
+                  <div class="table-list__cell">출석여부</div>
                 </div>
 
                 <!-- 테이블 바디 -->
-                <div class="table-list-body d-flex flex-column gap-1-5">
-                <div class="list-summary row g-2 align-items-center">
-                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
-                    <span class="body2 text-neutral">16</span>
+                <div class="table-list__body">
+                <div class="table-list__row">
+                  <div class="table-list__cell table-list__cell--pc-only">
+                    <span>16</span>
                   </div>
-                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">날짜</span>
-                    <span class="body2 text-neutral">2025-12-03</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">날짜</span>
+                    <span>2025-12-03</span>
                   </div>
-                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">요일</span>
-                    <span class="body2 text-neutral">수</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">요일</span>
+                    <span>수</span>
                   </div>
-                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수업시간(분)</span>
-                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수업시간(분)</span>
+                    <span>21:00~21:24 (25분)</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">담당강사</span>
-                    <span class="body2 text-neutral">Katril</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">담당강사</span>
+                    <span>Katril</span>
                   </div>
-                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수강방식</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수강방식</span>
                     <span class="body3 text-light-gray">필리핀 화상</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
-                    <span class="badge badge-sm badge-soft badge-green">수업대기</span>
+                  <div class="table-list__cell">
+                    <span class="badge badge--sm badge--soft badge--green">수업대기</span>
                   </div>
                 </div>
-                <div class="list-summary row g-2 align-items-center">
-                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
-                    <span class="body2 text-neutral">15</span>
+                <div class="table-list__row">
+                  <div class="table-list__cell table-list__cell--pc-only">
+                    <span>15</span>
                   </div>
-                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">날짜</span>
-                    <span class="body2 text-neutral">2025-12-01</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">날짜</span>
+                    <span>2025-12-01</span>
                   </div>
-                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">요일</span>
-                    <span class="body2 text-neutral">월</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">요일</span>
+                    <span>월</span>
                   </div>
-                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수업시간(분)</span>
-                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수업시간(분)</span>
+                    <span>21:00~21:24 (25분)</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">담당강사</span>
-                    <span class="body2 text-neutral">Katril</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">담당강사</span>
+                    <span>Katril</span>
                   </div>
-                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수강방식</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수강방식</span>
                     <span class="body3 text-light-gray">필리핀 화상</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
-                    <span class="badge badge-sm badge-soft badge-green">수업대기</span>
+                  <div class="table-list__cell">
+                    <span class="badge badge--sm badge--soft badge--green">수업대기</span>
                   </div>
                 </div>
-                <div class="list-summary row g-2 align-items-center">
-                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
-                    <span class="body2 text-neutral">13</span>
+                <div class="table-list__row">
+                  <div class="table-list__cell table-list__cell--pc-only">
+                    <span>13</span>
                   </div>
-                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">날짜</span>
-                    <span class="body2 text-neutral">2025-11-26</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">날짜</span>
+                    <span>2025-11-26</span>
                   </div>
-                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">요일</span>
-                    <span class="body2 text-neutral">수</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">요일</span>
+                    <span>수</span>
                   </div>
-                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수업시간(분)</span>
-                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수업시간(분)</span>
+                    <span>21:00~21:24 (25분)</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">담당강사</span>
-                    <span class="body2 text-neutral">Katril</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">담당강사</span>
+                    <span>Katril</span>
                   </div>
-                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수강방식</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수강방식</span>
                     <span class="body3 text-light-gray">필리핀 화상</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
-                    <span class="badge badge-sm badge-soft badge-blue">출석</span>
+                  <div class="table-list__cell">
+                    <span class="badge badge--sm badge--soft badge--blue">출석</span>
                   </div>
                 </div>
-                <div class="list-summary row g-2 align-items-center">
-                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
-                    <span class="body2 text-neutral">7</span>
+                <div class="table-list__row">
+                  <div class="table-list__cell table-list__cell--pc-only">
+                    <span>7</span>
                   </div>
-                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">날짜</span>
-                    <span class="body2 text-neutral">2025-11-12</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">날짜</span>
+                    <span>2025-11-12</span>
                   </div>
-                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">요일</span>
-                    <span class="body2 text-neutral">수</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">요일</span>
+                    <span>수</span>
                   </div>
-                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수업시간(분)</span>
-                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수업시간(분)</span>
+                    <span>21:00~21:24 (25분)</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">담당강사</span>
-                    <span class="body2 text-neutral">Katril</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">담당강사</span>
+                    <span>Katril</span>
                   </div>
-                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수강방식</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수강방식</span>
                     <span class="body3 text-light-gray">필리핀 화상</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
-                    <span class="badge badge-sm badge-soft badge-violet">보강신청확정</span>
+                  <div class="table-list__cell">
+                    <span class="badge badge--sm badge--soft badge--violet">보강신청확정</span>
                   </div>
                 </div>
-                <div class="list-summary row g-2 align-items-center">
-                  <div class="d-none d-lg-flex col-lg-1 align-items-center justify-content-lg-center gap-1-5">
-                    <span class="body2 text-neutral">2</span>
+                <div class="table-list__row">
+                  <div class="table-list__cell table-list__cell--pc-only">
+                    <span>2</span>
                   </div>
-                  <div class="col-6 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">날짜</span>
-                    <span class="body2 text-neutral">2025-11-05</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">날짜</span>
+                    <span>2025-11-05</span>
                   </div>
-                  <div class="col-6 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">요일</span>
-                    <span class="body2 text-neutral">수</span>
+                  <div class="table-list__cell table-list__cell--half">
+                    <span class="table-list__mobile-label">요일</span>
+                    <span>수</span>
                   </div>
-                  <div class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수업시간(분)</span>
-                    <span class="body2 text-neutral">21:00~21:24 (25분)</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수업시간(분)</span>
+                    <span>21:00~21:24 (25분)</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">담당강사</span>
-                    <span class="body2 text-neutral">Katril</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">담당강사</span>
+                    <span>Katril</span>
                   </div>
-                  <div class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center gap-1-5">
-                    <span class="d-lg-none mark">수강방식</span>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">수강방식</span>
                     <span class="body3 text-light-gray">필리핀 화상</span>
                   </div>
-                  <div class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5 order-first order-lg-last">
-                    <span class="badge badge-sm badge-soft badge-orange">연기신청</span>
+                  <div class="table-list__cell">
+                    <span class="badge badge--sm badge--soft badge--orange">연기신청</span>
                   </div>
                 </div>
               </div>
@@ -1184,11 +1091,11 @@
       aria-labelledby="classInfoModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm-md class-info-modal">
-        <div class="modal-content radius-2xl elevator-large p-4 p-lg-5">
+      <div class="modal-dialog modal-dialog-scrollable modal-sm-md class-info-modal">
+        <div class="modal-content">
           <!-- 모달 헤더 -->
-          <div class="modal-header border-bottom p-0 pb-4">
-            <h5 class="modal-title heading2 text-black" id="classInfoModalLabel">
+          <div class="modal-header">
+            <h5 class="modal-title" id="classInfoModalLabel">
               나의 수업정보
             </h5>
             <button
@@ -1200,15 +1107,15 @@
           </div>
 
           <!-- 모달 바디 -->
-          <div class="modal-body p-0 pt-4 d-flex flex-column gap-3">
+          <div class="modal-body gap-3">
 
             <!-- 수업 카드 1 (현재 수업 - 하이라이트) -->
-            <div class="class-info-card class-info-card-active radius-xl p-4 p-lg-5">
-              <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg w-100">
-                <div class="teacher-profile-avatar"></div>
-                <div class="teacher-profile-content d-flex flex-column gap-1">
-                  <span class="teacher-profile-name">Teachername</span>
+            <div class="class-section-card class-section-card-active radius-xl p-4 p-lg-5">
+              <span class="badge badge--sm badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg w-100">
+                <div class="teacher-profile__avatar"></div>
+                <div class="teacher-profile__content d-flex flex-column gap-1">
+                  <span class="teacher-profile__name">Teachername</span>
                   <div class="d-flex align-items-center gap-2 flex-wrap">
                     <span class="body2 text-light-gray">필리핀/1개월 과정</span>
                     <span class="eval-dot"></span>
@@ -1224,12 +1131,12 @@
             </div>
 
             <!-- 수업 카드 2 -->
-            <div class="class-info-card radius-xl elevator-large p-4 p-lg-5">
-              <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg w-100">
-                <div class="teacher-profile-avatar"></div>
-                <div class="teacher-profile-content d-flex flex-column gap-1">
-                  <span class="teacher-profile-name">Teachername</span>
+            <div class="class-section-card card-panel">
+              <span class="badge badge--sm badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg w-100">
+                <div class="teacher-profile__avatar"></div>
+                <div class="teacher-profile__content d-flex flex-column gap-1">
+                  <span class="teacher-profile__name">Teachername</span>
                   <div class="d-flex align-items-center gap-2 flex-wrap">
                     <span class="body2 text-light-gray">필리핀/1개월 과정</span>
                     <span class="eval-dot"></span>
@@ -1245,12 +1152,12 @@
             </div>
 
             <!-- 수업 카드 3 -->
-            <div class="class-info-card radius-xl elevator-large p-4 p-lg-5">
-              <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg w-100">
-                <div class="teacher-profile-avatar"></div>
-                <div class="teacher-profile-content d-flex flex-column gap-1">
-                  <span class="teacher-profile-name">Teachername</span>
+            <div class="class-section-card card-panel">
+              <span class="badge badge--sm badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg w-100">
+                <div class="teacher-profile__avatar"></div>
+                <div class="teacher-profile__content d-flex flex-column gap-1">
+                  <span class="teacher-profile__name">Teachername</span>
                   <div class="d-flex align-items-center gap-2 flex-wrap">
                     <span class="body2 text-light-gray">필리핀/1개월 과정</span>
                     <span class="eval-dot"></span>
@@ -1266,12 +1173,12 @@
             </div>
 
             <!-- 수업 카드 4 -->
-            <div class="class-info-card radius-xl elevator-large p-4 p-lg-5">
-              <span class="badge badge-sm badge-soft badge-primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="teacher-profile teacher-profile-horizontal teacher-profile-lg w-100">
-                <div class="teacher-profile-avatar"></div>
-                <div class="teacher-profile-content d-flex flex-column gap-1">
-                  <span class="teacher-profile-name">Teachername</span>
+            <div class="class-section-card card-panel">
+              <span class="badge badge--sm badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg w-100">
+                <div class="teacher-profile__avatar"></div>
+                <div class="teacher-profile__content d-flex flex-column gap-1">
+                  <span class="teacher-profile__name">Teachername</span>
                   <div class="d-flex align-items-center gap-2 flex-wrap">
                     <span class="body2 text-light-gray">필리핀/1개월 과정</span>
                     <span class="eval-dot"></span>

@@ -46,13 +46,13 @@
       <div class="row align-items-center mb-4">
         <div class="col-2 fw-bold">Input + Icon</div>
         <div class="col-5">
-          <div class="field-wrap has-icon-right">
+          <div class="field-wrap field-wrap--icon-right">
             <input type="text" class="input" placeholder="Text" />
             <svg class="icon"><use href="#calendar"></use></svg>
           </div>
         </div>
         <div class="col-5">
-          <div class="field-wrap has-icon-right">
+          <div class="field-wrap field-wrap--icon-right">
             <input type="text" class="input" placeholder="Text" disabled />
             <svg class="icon disabled"><use href="#calendar"></use></svg>
           </div>
@@ -62,13 +62,13 @@
       <div class="row align-items-center mb-4">
         <div class="col-2 fw-bold">Search</div>
         <div class="col-5">
-          <div class="field-wrap has-icon-left">
+          <div class="field-wrap field-wrap--icon-left">
             <svg class="icon"><use href="#search"></use></svg>
             <input type="text" class="input" placeholder="Text" />
           </div>
         </div>
         <div class="col-5">
-          <div class="field-wrap has-icon-left">
+          <div class="field-wrap field-wrap--icon-left">
             <svg class="icon disabled"><use href="#search"></use></svg>
             <input type="text" class="input" placeholder="Text" disabled />
           </div>
@@ -78,7 +78,7 @@
       <div class="row align-items-center mb-4">
         <div class="col-2 fw-bold">Dropdown</div>
         <div class="col-5">
-          <div class="field-wrap has-icon-right dropdown" tabindex="0">
+          <div class="field-wrap field-wrap--icon-right dropdown" tabindex="0">
             <input
               type="text"
               class="input"
@@ -87,7 +87,7 @@
             />
             <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
 
-            <ul class="dropdown-list">
+            <ul class="dropdown__list">
               <li data-value="option1">Option 1</li>
               <li data-value="option2">Option 2</li>
               <li data-value="option3">Option 3</li>
@@ -96,7 +96,7 @@
           </div>
         </div>
         <div class="col-5">
-          <div class="field-wrap has-icon-right dropdown disabled">
+          <div class="field-wrap field-wrap--icon-right dropdown dropdown--disabled">
             <input type="text" class="input" placeholder="선택 불가" disabled />
             <svg class="icon icon-chevron-down ms-auto disabled"><use href="#chevron-down"></use></svg>
           </div>
@@ -109,14 +109,14 @@
           <div class="textarea-wrap">
             <span class="label-inline text-muted">Text</span>
             <textarea class="textarea"></textarea>
-            <span class="char-count">0/100</span>
+            <span class="textarea-wrap__count">0/100</span>
           </div>
         </div>
         <div class="col-5">
           <div class="textarea-wrap">
             <span class="label-inline text-muted">Text</span>
             <textarea class="textarea" disabled></textarea>
-            <span class="char-count">0/100</span>
+            <span class="textarea-wrap__count">0/100</span>
           </div>
         </div>
       </div>
@@ -127,14 +127,14 @@
           <div class="textarea-wrap">
             <span class="label-inline">Text</span>
             <textarea class="textarea" placeholder="Text"></textarea>
-            <span class="char-count">0/100</span>
+            <span class="textarea-wrap__count">0/100</span>
           </div>
         </div>
         <div class="col-5">
           <div class="textarea-wrap">
             <span class="label-inline text-muted">Text</span>
             <textarea class="textarea" placeholder="Text" disabled></textarea>
-            <span class="char-count">0/100</span>
+            <span class="textarea-wrap__count">0/100</span>
           </div>
         </div>
       </div>
@@ -153,39 +153,39 @@
 
         <div class="demo-row">
           <span class="demo-label">Small</span>
-          <button class="button button-sm button-fill button-primary">
+          <button class="button button--sm button--fill button--primary">
             보강신청
           </button>
-          <button class="button button-sm button-border button-primary">
+          <button class="button button--sm button--border button--primary">
             보강신청
           </button>
-          <button class="button button-sm button-soft button-primary">
+          <button class="button button--sm button--soft button--primary">
             보강신청
           </button>
         </div>
 
         <div class="demo-row">
           <span class="demo-label">Default</span>
-          <button class="button button-md button-fill button-primary">
+          <button class="button button--md button--fill button--primary">
             보강신청
           </button>
-          <button class="button button-md button-border button-primary">
+          <button class="button button--md button--border button--primary">
             보강신청
           </button>
-          <button class="button button-md button-soft button-primary">
+          <button class="button button--md button--soft button--primary">
             보강신청
           </button>
         </div>
 
         <div class="demo-row">
           <span class="demo-label">Large</span>
-          <button class="button button-lg button-fill button-primary">
+          <button class="button button--lg button--fill button--primary">
             보강신청
           </button>
-          <button class="button button-lg button-border button-primary">
+          <button class="button button--lg button--border button--primary">
             보강신청
           </button>
-          <button class="button button-lg button-soft button-primary">
+          <button class="button button--lg button--soft button--primary">
             보강신청
           </button>
         </div>
@@ -200,96 +200,96 @@
 
         <div class="demo-row">
           <span class="demo-label">Fill</span>
-          <button class="button button-md button-fill button-primary">
+          <button class="button button--md button--fill button--primary">
             Primary
           </button>
-          <button class="button button-md button-fill button-cyan">Cyan</button>
-          <button class="button button-md button-fill button-secondary">
+          <button class="button button--md button--fill button--cyan">Cyan</button>
+          <button class="button button--md button--fill button--secondary">
             Secondary
           </button>
-          <button class="button button-md button-fill button-negative">
+          <button class="button button--md button--fill button--negative">
             Negative
           </button>
-          <button class="button button-md button-fill button-tertiary">
+          <button class="button button--md button--fill button--tertiary">
             Tertiary
           </button>
-          <button class="button button-md button-fill button-neutral">
+          <button class="button button--md button--fill button--neutral">
             Neutral
           </button>
-          <button class="button button-md button-fill button-default">
+          <button class="button button--md button--fill button--default">
             Default
           </button>
         </div>
 
         <div class="demo-row">
           <span class="demo-label">Border</span>
-          <button class="button button-md button-border button-primary">
+          <button class="button button--md button--border button--primary">
             Primary
           </button>
-          <button class="button button-md button-border button-cyan">
+          <button class="button button--md button--border button--cyan">
             Cyan
           </button>
-          <button class="button button-md button-border button-secondary">
+          <button class="button button--md button--border button--secondary">
             Secondary
           </button>
-          <button class="button button-md button-border button-negative">
+          <button class="button button--md button--border button--negative">
             Negative
           </button>
-          <button class="button button-md button-border button-tertiary">
+          <button class="button button--md button--border button--tertiary">
             Tertiary
           </button>
-          <button class="button button-md button-border button-neutral">
+          <button class="button button--md button--border button--neutral">
             Neutral
           </button>
-          <button class="button button-md button-border button-default">
+          <button class="button button--md button--border button--default">
             Default
           </button>
         </div>
 
         <div class="demo-row">
           <span class="demo-label">Soft</span>
-          <button class="button button-md button-soft button-primary">
+          <button class="button button--md button--soft button--primary">
             Primary
           </button>
-          <button class="button button-md button-soft button-cyan">Cyan</button>
-          <button class="button button-md button-soft button-secondary">
+          <button class="button button--md button--soft button--cyan">Cyan</button>
+          <button class="button button--md button--soft button--secondary">
             Secondary
           </button>
-          <button class="button button-md button-soft button-negative">
+          <button class="button button--md button--soft button--negative">
             Negative
           </button>
-          <button class="button button-md button-soft button-tertiary">
+          <button class="button button--md button--soft button--tertiary">
             Tertiary
           </button>
-          <button class="button button-md button-soft button-neutral">
+          <button class="button button--md button--soft button--neutral">
             Neutral
           </button>
-          <button class="button button-md button-soft button-default">
+          <button class="button button--md button--soft button--default">
             Default
           </button>
         </div>
 
         <div class="demo-row">
           <span class="demo-label">Transparent</span>
-          <button class="button button-md button-transparent button-primary">
+          <button class="button button--md button--transparent button--primary">
             Primary
           </button>
-          <button class="button button-md button-transparent button-cyan">
+          <button class="button button--md button--transparent button--cyan">
             Cyan
           </button>
-          <button class="button button-md button-transparent button-secondary">
+          <button class="button button--md button--transparent button--secondary">
             Secondary
           </button>
-          <button class="button button-md button-transparent button-negative">
+          <button class="button button--md button--transparent button--negative">
             Negative
           </button>
-          <button class="button button-md button-transparent button-tertiary">
+          <button class="button button--md button--transparent button--tertiary">
             Tertiary
           </button>
-          <button class="button button-md button-transparent button-neutral">
+          <button class="button button--md button--transparent button--neutral">
             Neutral
           </button>
-          <button class="button button-md button-transparent button-default">
+          <button class="button button--md button--transparent button--default">
             Default
           </button>
         </div>
@@ -302,19 +302,19 @@
 
         <div class="demo-row">
           <span class="demo-label">Icon + Text</span>
-          <button class="button button-md button-fill button-primary">
+          <button class="button button--md button--fill button--primary">
             <span class="button__icon"><svg class="icon"><use href="#plus-lg"></use></svg></span>
             보강신청
           </button>
-          <button class="button button-md button-border button-cyan">
+          <button class="button button--md button--border button--cyan">
             <span class="button__icon"><svg class="icon"><use href="#calendar3"></use></svg></span>
             일정확인
           </button>
-          <button class="button button-md button-soft button-secondary">
+          <button class="button button--md button--soft button--secondary">
             <span class="button__icon"><svg class="icon"><use href="#download"></use></svg></span>
             다운로드
           </button>
-          <button class="button button-md button-fill button-tertiary">
+          <button class="button button--md button--fill button--tertiary">
             <span class="button__icon"><svg class="icon"><use href="#check-lg"></use></svg></span>
             완료
           </button>
@@ -323,27 +323,27 @@
         <div class="demo-row">
           <span class="demo-label">Icon Only</span>
           <button
-            class="button button-sm button-fill button-primary button-icon-only"
+            class="button button--sm button--fill button--primary button--icon-only"
           >
             <span class="button__icon"><svg class="icon"><use href="#plus-lg"></use></svg></span>
           </button>
           <button
-            class="button button-md button-border button-cyan button-icon-only"
+            class="button button--md button--border button--cyan button--icon-only"
           >
             <span class="button__icon"><svg class="icon"><use href="#calendar3"></use></svg></span>
           </button>
           <button
-            class="button button-lg button-soft button-secondary button-icon-only"
+            class="button button--lg button--soft button--secondary button--icon-only"
           >
             <span class="button__icon"><svg class="icon"><use href="#download"></use></svg></span>
           </button>
           <button
-            class="button button-md button-fill button-tertiary button-icon-only"
+            class="button button--md button--fill button--tertiary button--icon-only"
           >
             <span class="button__icon"><svg class="icon"><use href="#check-lg"></use></svg></span>
           </button>
           <button
-            class="button button-md button-transparent button-neutral button-icon-only"
+            class="button button--md button--transparent button--neutral button--icon-only"
           >
             <span class="button__icon"><svg class="icon"><use href="#three-dots"></use></svg></span>
           </button>
@@ -357,21 +357,21 @@
 
         <div class="demo-row">
           <span class="demo-label">Normal</span>
-          <button class="button button-md button-fill button-primary">
+          <button class="button button--md button--fill button--primary">
             Normal
           </button>
-          <button class="button button-md button-border button-primary">
+          <button class="button button--md button--border button--primary">
             Normal
           </button>
         </div>
 
         <div class="demo-row">
           <span class="demo-label">Disabled</span>
-          <button class="button button-md button-fill button-primary" disabled>
+          <button class="button button--md button--fill button--primary" disabled>
             Disabled
           </button>
           <button
-            class="button button-md button-border button-primary"
+            class="button button--md button--border button--primary"
             disabled
           >
             Disabled
@@ -387,21 +387,21 @@
         <div class="demo-grid">
           <div class="demo-card">
             <div class="demo-card__label">아이디어 확인</div>
-            <button class="button button-sm button-border button-cyan">
+            <button class="button button--sm button--border button--cyan">
               Check
             </button>
           </div>
 
           <div class="demo-card">
             <div class="demo-card__label">첨삭 확인</div>
-            <button class="button button-sm button-fill button-primary">
+            <button class="button button--sm button--fill button--primary">
               Open
             </button>
           </div>
 
           <div class="demo-card">
             <div class="demo-card__label">보강 신청</div>
-            <button class="button button-md button-fill button-secondary">
+            <button class="button button--md button--fill button--secondary">
               <span class="button__icon"><svg class="icon"><use href="#plus-lg"></use></svg></span>
               보강신청
             </button>
@@ -409,21 +409,21 @@
 
           <div class="demo-card">
             <div class="demo-card__label">수업 취소</div>
-            <button class="button button-md button-border button-negative">
+            <button class="button button--md button--border button--negative">
               수업취소
             </button>
           </div>
 
           <div class="demo-card">
             <div class="demo-card__label">완료</div>
-            <button class="button button-sm button-soft button-tertiary">
+            <button class="button button--sm button--soft button--tertiary">
               Done
             </button>
           </div>
 
           <div class="demo-card">
             <div class="demo-card__label">더보기</div>
-            <button class="button button-sm button-transparent button-neutral">
+            <button class="button button--sm button--transparent button--neutral">
               <span class="button__icon"><svg class="icon"><use href="#three-dots"></use></svg></span>
             </button>
           </div>
@@ -431,22 +431,22 @@
       </section>
 
       <section>
-        <label class="custom-input-wrap left-align">
+        <label class="custom-input-wrap custom-input-wrap--left">
           <input type="checkbox" class="custom-checkbox" />
           <span class="label-text">체크박스 라벨</span>
         </label>
 
-        <label class="custom-input-wrap right-align">
+        <label class="custom-input-wrap custom-input-wrap--right">
           <span class="label-text">체크박스 라벨</span>
           <input type="checkbox" class="custom-checkbox" />
         </label>
 
-        <label class="custom-input-wrap left-align">
+        <label class="custom-input-wrap custom-input-wrap--left">
           <input type="radio" name="radio-group" class="custom-radio" />
           <span class="label-text">라디오 라벨</span>
         </label>
 
-        <label class="custom-input-wrap right-align">
+        <label class="custom-input-wrap custom-input-wrap--right">
           <span class="label-text">라디오 라벨</span>
           <input type="radio" name="radio-group" class="custom-radio" />
         </label>
@@ -462,7 +462,7 @@
             <span class="tag">&lt;!-- Primary Fill Button --&gt;</span><br />
             <span class="tag">&lt;button</span>
             <span class="attr">class</span>=<span class="value"
-              >"button button-md button-fill button-primary"</span
+              >"button button--md button--fill button--primary"</span
             ><span class="tag">&gt;</span>보강신청<span class="tag"
               >&lt;/button&gt;</span
             ><br /><br />
@@ -470,7 +470,7 @@
             <span class="tag">&lt;!-- Cyan Border Button --&gt;</span><br />
             <span class="tag">&lt;button</span>
             <span class="attr">class</span>=<span class="value"
-              >"button button-sm button-border button-cyan"</span
+              >"button button--sm button--border button--cyan"</span
             ><span class="tag">&gt;</span>Check<span class="tag"
               >&lt;/button&gt;</span
             ><br /><br />
@@ -478,7 +478,7 @@
             <span class="tag">&lt;!-- With Icon --&gt;</span><br />
             <span class="tag">&lt;button</span>
             <span class="attr">class</span>=<span class="value"
-              >"button button-md button-fill button-primary"</span
+              >"button button--md button--fill button--primary"</span
             ><span class="tag">&gt;</span><br />
             &nbsp;&nbsp;<span class="tag">&lt;span</span>
             <span class="attr">class</span>=<span class="value"
@@ -493,8 +493,8 @@
             <span class="tag">&lt;!-- Icon Only --&gt;</span><br />
             <span class="tag">&lt;button</span>
             <span class="attr">class</span>=<span class="value"
-              >"button button-md button-fill button-primary
-              button-icon-only"</span
+              >"button button--md button--fill button--primary
+              button--icon-only"</span
             ><span class="tag">&gt;</span><br />
             &nbsp;&nbsp;<span class="tag">&lt;span</span>
             <span class="attr">class</span>=<span class="value"
@@ -510,18 +510,18 @@
 
       <section class="section mt-40">
         <h2 class="section__title">Tab</h2>
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        <ul class="tab-nav">
+          <li class="tab-nav__item active">
+            <a class="tab-nav__link" aria-current="page" href="#">Active</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="tab-nav__item">
+            <a class="tab-nav__link" href="#">Link</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="tab-nav__item">
+            <a class="tab-nav__link" href="#">Link</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <li class="tab-nav__item">
+            <a class="tab-nav__link tab-nav__link--disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
       </section>
@@ -529,33 +529,33 @@
       <section class="section mt-40">
         <h2 class="section__title">badge</h2>
         <div class="badge-group">
-          <span class="badge badge-sm badge-soft badge-light">dkd</span>
-          <span class="badge badge-sm badge-soft badge-blue">dkd</span>
+          <span class="badge badge--sm badge--soft badge--light">dkd</span>
+          <span class="badge badge--sm badge--soft badge--blue">dkd</span>
         </div>
       </section>
 
       <section class="section mt-40">
-        <div class="table-list-container">
-          <div class="table-list-header d-none d-md-flex">
-            <div class="col-1 text-center">번호</div>
-            <div class="col-8 ps-4">불편 및 세부 요청사항</div>
-            <div class="col-2 text-center">등록일</div>
-            <div class="col-1 text-center">처리상황</div>
+        <div class="table-list">
+          <div class="table-list__header d-md-flex">
+            <div class="table-list__cell col-1">번호</div>
+            <div class="table-list__cell col-8 ps-4">불편 및 세부 요청사항</div>
+            <div class="table-list__cell col-2">등록일</div>
+            <div class="table-list__cell col-1">처리상황</div>
           </div>
 
-          <div class="table-list-body d-flex flex-column gap-3">
-            <div class="table-list-item">
+          <div class="table-list__body">
+            <div class="table-list__item">
               <div
-                class="list-summary row align-items-center g-2 p-3"
+                class="table-list__row p-3"
                 data-toggle="collapse"
                 data-target="#collapseRow1"
                 aria-expanded="true"
               >
-                <div class="col-12 col-md-1 text-center fw-bold text-dark">
+                <div class="table-list__cell col-md-1 fw-bold text-dark">
                   1
                 </div>
                 <div
-                  class="col-12 col-md-8 ps-md-4 text-start fw-medium text-dark"
+                  class="table-list__cell col-md-8 ps-md-4 text-start fw-medium text-dark"
                 >
                   <span
                     class="d-md-none badge badge--sm badge--soft badge--blue me-2"
@@ -564,12 +564,12 @@
                   Q. 불편접수 제목 영역 입니다.
                 </div>
                 <div
-                  class="col-6 col-md-2 text-center text-muted small mt-2 mt-md-0"
+                  class="table-list__cell table-list__cell--half col-md-2 text-muted small mt-2 mt-md-0"
                 >
                   25.00.00
                 </div>
                 <div
-                  class="col-6 col-md-1 text-center mt-2 mt-md-0 d-none d-md-block"
+                  class="table-list__cell table-list__cell--half col-md-1 mt-2 mt-md-0 d-none d-md-block"
                 >
                   <span
                     class="badge badge--sm badge--soft badge--blue rounded-pill"
@@ -627,18 +627,18 @@
               </div>
             </div>
 
-            <div class="table-list-item">
+            <div class="table-list__item">
               <div
-                class="list-summary row align-items-center g-2 p-3 collapsed"
+                class="table-list__row p-3 collapsed"
                 data-toggle="collapse"
                 data-target="#collapseRow2"
                 aria-expanded="false"
               >
-                <div class="col-12 col-md-1 text-center fw-bold text-dark">
+                <div class="table-list__cell col-md-1 fw-bold text-dark">
                   2
                 </div>
                 <div
-                  class="col-12 col-md-8 ps-md-4 text-start fw-medium text-dark"
+                  class="table-list__cell col-md-8 ps-md-4 text-start fw-medium text-dark"
                 >
                   <span
                     class="d-md-none badge badge--sm badge--soft badge--green me-2"
@@ -647,12 +647,12 @@
                   Q. 불편접수 제목 영역 입니다.
                 </div>
                 <div
-                  class="col-6 col-md-2 text-center text-muted small mt-2 mt-md-0"
+                  class="table-list__cell table-list__cell--half col-md-2 text-muted small mt-2 mt-md-0"
                 >
                   25.00.00
                 </div>
                 <div
-                  class="col-6 col-md-1 text-center mt-2 mt-md-0 d-none d-md-block"
+                  class="table-list__cell table-list__cell--half col-md-1 mt-2 mt-md-0 d-none d-md-block"
                 >
                   <span
                     class="badge badge--sm badge--soft badge--green rounded-pill"
@@ -670,17 +670,17 @@
               </div>
             </div>
 
-            <div class="table-list-item">
+            <div class="table-list__item">
               <div
-                class="list-summary row align-items-center g-2 p-3 collapsed"
+                class="table-list__row p-3 collapsed"
                 data-toggle="collapse"
                 data-target="#collapseRow3"
               >
-                <div class="col-12 col-md-1 text-center fw-bold text-dark">
+                <div class="table-list__cell col-md-1 fw-bold text-dark">
                   3
                 </div>
                 <div
-                  class="col-12 col-md-8 ps-md-4 text-start fw-medium text-dark"
+                  class="table-list__cell col-md-8 ps-md-4 text-start fw-medium text-dark"
                 >
                   <span
                     class="d-md-none badge badge--sm badge--soft badge--green me-2"
@@ -689,12 +689,12 @@
                   Q. 수업 연기 신청 관련 문의입니다.
                 </div>
                 <div
-                  class="col-6 col-md-2 text-center text-muted small mt-2 mt-md-0"
+                  class="table-list__cell table-list__cell--half col-md-2 text-muted small mt-2 mt-md-0"
                 >
                   25.00.00
                 </div>
                 <div
-                  class="col-6 col-md-1 text-center mt-2 mt-md-0 d-none d-md-block"
+                  class="table-list__cell table-list__cell--half col-md-1 mt-2 mt-md-0 d-none d-md-block"
                 >
                   <span
                     class="badge badge--sm badge--soft badge--green rounded-pill"
@@ -710,37 +710,35 @@
             </div>
           </div>
 
-          <div class="d-flex justify-content-center mt-5">
-            <nav aria-label="Page navigation">
-              <ul class="pagination pagination-custom gap-2">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" aria-label="First"
+          <div class="pagination-nav">
+                          <ul class="pagination-nav__list">
+                <li class="pagination-nav__item pagination-nav__item--disabled">
+                  <a class="pagination-nav__link" href="#" aria-label="First"
                     ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                 </li>
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" aria-label="Previous"
+                <li class="pagination-nav__item pagination-nav__item--disabled">
+                  <a class="pagination-nav__link" href="#" aria-label="Previous"
                     ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                 </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">1</a>
+                <li class="pagination-nav__item pagination-nav__item--active">
+                  <a class="pagination-nav__link" href="#">1</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next"
+                <li class="pagination-nav__item"><a class="pagination-nav__link" href="#">2</a></li>
+                <li class="pagination-nav__item"><a class="pagination-nav__link" href="#">3</a></li>
+                <li class="pagination-nav__item">
+                  <a class="pagination-nav__link" href="#" aria-label="Next"
                     ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Last"
+                <li class="pagination-nav__item">
+                  <a class="pagination-nav__link" href="#" aria-label="Last"
                     ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                 </li>
               </ul>
-            </nav>
           </div>
         </div>
 
-        <div class="table-list-container">
-          <div class="table-list-header d-none d-custom-desktop">
+        <div class="table-list">
+          <div class="table-list__header d-custom-desktop">
             <div class="row w-100 m-0 text-center fw-bold">
               <div class="col-1">순위</div>
               <div class="col-2">날짜</div>
@@ -753,9 +751,9 @@
           </div>
 
           <div class="d-flex flex-column gap-3">
-            <div class="table-list-item">
+            <div class="table-list__item">
               <div
-                class="list-summary p-4 p-lg-3 cursor-pointer"
+                class="table-list__row p-4 p-lg-3 cursor-pointer"
                 data-toggle="collapse"
                 data-target="#row1"
                 aria-expanded="false"
@@ -827,9 +825,9 @@
               </div>
             </div>
 
-            <div class="table-list-item">
+            <div class="table-list__item">
               <div
-                class="list-summary p-4 p-lg-3 cursor-pointer"
+                class="table-list__row p-4 p-lg-3 cursor-pointer"
                 data-toggle="collapse"
                 data-target="#row2"
               >
@@ -892,9 +890,9 @@
               </div>
             </div>
 
-            <div class="table-list-item">
+            <div class="table-list__item">
               <div
-                class="list-summary p-4 p-lg-3 cursor-pointer"
+                class="table-list__row p-4 p-lg-3 cursor-pointer"
                 data-toggle="collapse"
                 data-target="#row3"
               >
@@ -958,37 +956,35 @@
             </div>
           </div>
 
-          <div class="d-flex justify-content-end mt-5">
+          <div class="pagination-nav">
             <div
-              class="d-none d-lg-flex align-items-center gap-3 text-muted small me-auto d-none d-md-block"
+              class="pagination-nav__info"
             >
               Showing <strong>1</strong> Page of <strong>2</strong> entries
             </div>
-            <nav aria-label="Page navigation">
-              <ul class="pagination pagination-custom gap-2 m-0">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#"
+                          <ul class="pagination-nav__list">
+                <li class="pagination-nav__item pagination-nav__item--disabled">
+                  <a class="pagination-nav__link" href="#"
                     ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                 </li>
-                <li class="page-item disabled">
-                  <a class="page-link" href="#"
+                <li class="pagination-nav__item pagination-nav__item--disabled">
+                  <a class="pagination-nav__link" href="#"
                     ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                 </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">1</a>
+                <li class="pagination-nav__item pagination-nav__item--active">
+                  <a class="pagination-nav__link" href="#">1</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#"
+                <li class="pagination-nav__item"><a class="pagination-nav__link" href="#">2</a></li>
+                <li class="pagination-nav__item"><a class="pagination-nav__link" href="#">3</a></li>
+                <li class="pagination-nav__item">
+                  <a class="pagination-nav__link" href="#"
                     ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#"
+                <li class="pagination-nav__item">
+                  <a class="pagination-nav__link" href="#"
                     ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                 </li>
               </ul>
-            </nav>
           </div>
         </div>
       </section>
@@ -999,14 +995,14 @@
           <div class="mb-4">
             <p class="text-muted small mb-2">1. Large Horizontal (331x75)</p>
             <div
-              class="teacher-profile teacher-profile-horizontal teacher-profile-lg"
+              class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
             >
-              <div class="teacher-profile-avatar"></div>
-              <div class="teacher-profile-content">
+              <div class="teacher-profile__avatar"></div>
+              <div class="teacher-profile__content">
                 <div class="d-flex align-items-center mb-1-5">
-                  <span class="teacher-profile-name">Teachername</span>
+                  <span class="teacher-profile__name">Teachername</span>
                 </div>
-                <div class="teacher-profile-meta mb-1-5">
+                <div class="teacher-profile__meta mb-1-5">
                   <span>필리핀/1개월 과정</span>
                   <span class="dot"></span>
                   <span>주 2회</span>
@@ -1015,7 +1011,7 @@
                   <span class="dot"></span>
                   <span>25분</span>
                 </div>
-                <div class="teacher-profile-book">
+                <div class="teacher-profile__book">
                   교재 : Unspoken Rules of Traveling in Italy
                 </div>
               </div>
@@ -1025,12 +1021,12 @@
           <div class="mb-4">
             <p class="text-muted small mb-2">2. Medium Horizontal</p>
             <div
-              class="teacher-profile teacher-profile-horizontal teacher-profile-md"
+              class="teacher-profile teacher-profile--horizontal teacher-profile--md"
             >
-              <div class="teacher-profile-avatar"></div>
-              <div class="teacher-profile-content">
-                <div class="teacher-profile-name mb-1">Teachername</div>
-                <div class="teacher-profile-time">⏰ 10:00</div>
+              <div class="teacher-profile__avatar"></div>
+              <div class="teacher-profile__content">
+                <div class="teacher-profile__name">Teachername</div>
+                <div class="teacher-profile__time">⏰ 10:00</div>
               </div>
             </div>
           </div>
@@ -1038,14 +1034,14 @@
           <div class="mb-4">
             <p class="text-muted small mb-2">3. Small Horizontal</p>
             <div
-              class="teacher-profile teacher-profile-horizontal teacher-profile-sm"
+              class="teacher-profile teacher-profile--horizontal teacher-profile--sm"
             >
-              <div class="teacher-profile-avatar"></div>
+              <div class="teacher-profile__avatar"></div>
               <div
-                class="teacher-profile-content d-flex align-items-center gap-2"
+                class="teacher-profile__content d-flex align-items-center gap-2"
               >
-                <span class="teacher-profile-name">Teachername</span>
-                <span class="teacher-profile-time">⏰ 10:00</span>
+                <span class="teacher-profile__name">Teachername</span>
+                <span class="teacher-profile__time">⏰ 10:00</span>
               </div>
             </div>
           </div>
@@ -1058,12 +1054,12 @@
             <div class="col-12 col-md-4">
               <p class="text-muted small mb-2">4. Large Vertical (251x155)</p>
               <div
-                class="teacher-profile teacher-profile-vertical teacher-profile-lg"
+                class="teacher-profile teacher-profile--vertical teacher-profile--lg"
               >
-                <div class="teacher-profile-avatar mb-3"></div>
-                <div class="teacher-profile-content">
-                  <div class="teacher-profile-name mb-2">Teachername</div>
-                  <div class="teacher-profile-meta mb-1">
+                <div class="teacher-profile__avatar mb-3"></div>
+                <div class="teacher-profile__content">
+                  <div class="teacher-profile__name mb-2">Teachername</div>
+                  <div class="teacher-profile__meta mb-1">
                     <span>필리핀/1개월 과정</span>
                     <span class="dot"></span>
                     <span>주 2회</span>
@@ -1072,7 +1068,7 @@
                     <span class="dot"></span>
                     <span>25분</span>
                   </div>
-                  <div class="teacher-profile-book text-truncate">
+                  <div class="teacher-profile__book text-truncate">
                     교재 : Unspoken Rules of Traveling in Italy
                   </div>
                 </div>
@@ -1082,12 +1078,12 @@
             <div class="col-6 col-md-3">
               <p class="text-muted small mb-2">5. Medium Vertical</p>
               <div
-                class="teacher-profile teacher-profile-vertical teacher-profile-md"
+                class="teacher-profile teacher-profile--vertical teacher-profile--md"
               >
-                <div class="teacher-profile-avatar mb-2"></div>
-                <div class="teacher-profile-content">
-                  <div class="teacher-profile-name mb-1">Teachername</div>
-                  <div class="teacher-profile-time">⏰ 10:00</div>
+                <div class="teacher-profile__avatar mb-2"></div>
+                <div class="teacher-profile__content">
+                  <div class="teacher-profile__name">Teachername</div>
+                  <div class="teacher-profile__time">⏰ 10:00</div>
                 </div>
               </div>
             </div>
@@ -1095,12 +1091,12 @@
             <div class="col-6 col-md-2">
               <p class="text-muted small mb-2">6. Small Vertical</p>
               <div
-                class="teacher-profile teacher-profile-vertical teacher-profile-sm"
+                class="teacher-profile teacher-profile--vertical teacher-profile--sm"
               >
-                <div class="teacher-profile-avatar mb-1"></div>
-                <div class="teacher-profile-content">
-                  <div class="teacher-profile-name text-xs">Teachername</div>
-                  <div class="teacher-profile-time text-xs">⏰ 10:00</div>
+                <div class="teacher-profile__avatar mb-1"></div>
+                <div class="teacher-profile__content">
+                  <div class="teacher-profile__name text-xs">Teachername</div>
+                  <div class="teacher-profile__time text-xs">⏰ 10:00</div>
                 </div>
               </div>
             </div>
@@ -1114,14 +1110,14 @@
            사용 파일: c_native2, c_native3, c_native9, c_native10, c_native11, c_native12, complaints, story_writing
 
            [구조 규칙]
-           - 컨테이너: table-list-container [커스텀클래스] radius-xl elevator-large p-4 p-lg-5
-           - 헤더: table-list-header d-none d-lg-flex row g-2 align-items-center (PC만 표시)
+           - 컨테이너: table-list [커스텀클래스] card-panel
+           - 헤더: table-list__header (PC만 표시, 항상 표시: table-list__header--visible)
            - 헤더 컬럼: col-lg-X text-center (합계 = 12)
-           - 바디: table-list-body d-flex flex-column gap-1-5 (또는 gap-3 gap-lg-0-5)
-           - 행: list-summary row g-2 align-items-center
-           - 교차 행: list-summary list-cell-highlight row g-2 align-items-center
+           - 바디: table-list__body (gap: mobile 8px / PC 6px)
+           - 행: table-list__row
+           - 교차 행: table-list__row table-list__row--highlight
            - 데이터 셀: col-12 col-lg-X d-flex align-items-center justify-content-lg-center gap-1-5
-           - 모바일 라벨: <span class="d-lg-none mark">라벨</span>
+           - 모바일 라벨: <span class="table-list__mobile-label">라벨</span>
            ============================================== -->
       <section class="section mt-40">
         <div class="container py-5">
@@ -1133,63 +1129,63 @@
               1. Basic (3 columns) — c_native11 특강권 목록 참고
             </p>
             <div
-              class="table-list-container radius-xl elevator-large p-4 p-lg-5"
+              class="table-list card-panel"
             >
               <!-- 헤더 (PC만) -->
               <div
-                class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+                class="table-list__header"
               >
-                <div class="col-lg-2 text-center">날짜</div>
-                <div class="col-lg-7 text-center">정보</div>
-                <div class="col-lg-3 text-center">관리</div>
+                <div class="table-list__cell">날짜</div>
+                <div class="table-list__cell">정보</div>
+                <div class="table-list__cell">관리</div>
               </div>
               <!-- 바디 -->
-              <div class="table-list-body d-flex flex-column gap-1-5">
+              <div class="table-list__body">
                 <!-- Row 1 (기본) -->
-                <div class="list-summary row g-2 align-items-center">
+                <div class="table-list__row">
                   <div
-                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">날짜</span>
-                    <span class="body2 text-neutral">25.00.00</span>
+                    <span class="table-list__mobile-label">날짜</span>
+                    <span>25.00.00</span>
                   </div>
                   <div
-                    class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">정보</span>
-                    <span class="body2 text-neutral">샘플 데이터 텍스트</span>
+                    <span class="table-list__mobile-label">정보</span>
+                    <span>샘플 데이터 텍스트</span>
                   </div>
                   <div
-                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-2"
+                    class="table-list__cell"
                   >
-                    <button class="button button-sm button-fill button-primary">
+                    <button class="button button--sm button--fill button--primary">
                       확인
                     </button>
                   </div>
                 </div>
                 <!-- Row 2 (하이라이트) -->
                 <div
-                  class="list-summary list-cell-highlight row g-2 align-items-center"
+                  class="table-list__row table-list__row--highlight"
                 >
                   <div
-                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">날짜</span>
-                    <span class="body2 text-neutral">25.00.00</span>
+                    <span class="table-list__mobile-label">날짜</span>
+                    <span>25.00.00</span>
                   </div>
                   <div
-                    class="col-12 col-lg-7 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">정보</span>
-                    <span class="body2 text-neutral"
-                      >하이라이트 행 (list-cell-highlight)</span
+                    <span class="table-list__mobile-label">정보</span>
+                    <span
+                      >하이라이트 행 (table-list__row--highlight)</span
                     >
                   </div>
                   <div
-                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center gap-2"
+                    class="table-list__cell"
                   >
                     <button
-                      class="button button-sm button-border button-default"
+                      class="button button--sm button--border button--default"
                     >
                       보기
                     </button>
@@ -1205,28 +1201,28 @@
               2. 4 columns + badges — c_native11 사용내역 참고
             </p>
             <div
-              class="table-list-container radius-xl elevator-large p-4 p-lg-5"
+              class="table-list card-panel"
             >
               <div
-                class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+                class="table-list__header"
               >
-                <div class="col-lg-2 text-center">사용일</div>
-                <div class="col-lg-5 text-center">수업정보</div>
-                <div class="col-lg-2 text-center">상태</div>
-                <div class="col-lg-3 text-center">관리</div>
+                <div class="table-list__cell">사용일</div>
+                <div class="table-list__cell">수업정보</div>
+                <div class="table-list__cell">상태</div>
+                <div class="table-list__cell">관리</div>
               </div>
-              <div class="table-list-body d-flex flex-column gap-1-5">
-                <div class="list-summary row g-2 align-items-center">
+              <div class="table-list__body">
+                <div class="table-list__row">
                   <div
-                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">사용일</span>
-                    <span class="body2 text-neutral">25.00.00</span>
+                    <span class="table-list__mobile-label">사용일</span>
+                    <span>25.00.00</span>
                   </div>
                   <div
-                    class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">수업정보</span>
+                    <span class="table-list__mobile-label">수업정보</span>
                     <div
                       class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral"
                     >
@@ -1238,34 +1234,34 @@
                     </div>
                   </div>
                   <div
-                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">상태</span>
-                    <span class="badge badge-sm badge-fill badge-primary"
+                    <span class="table-list__mobile-label">상태</span>
+                    <span class="badge badge--sm badge--fill badge--primary"
                       >예약</span
                     >
                   </div>
                   <div
-                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center"
+                    class="table-list__cell"
                   >
-                    <button class="button button-sm button-fill button-neutral">
+                    <button class="button button--sm button--fill button--neutral">
                       취소
                     </button>
                   </div>
                 </div>
                 <div
-                  class="list-summary list-cell-highlight row g-2 align-items-center"
+                  class="table-list__row table-list__row--highlight"
                 >
                   <div
-                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">사용일</span>
-                    <span class="body2 text-neutral">25.00.00</span>
+                    <span class="table-list__mobile-label">사용일</span>
+                    <span>25.00.00</span>
                   </div>
                   <div
-                    class="col-12 col-lg-5 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">수업정보</span>
+                    <span class="table-list__mobile-label">수업정보</span>
                     <div
                       class="d-flex flex-wrap align-items-center gap-2 body3 text-neutral"
                     >
@@ -1277,17 +1273,17 @@
                     </div>
                   </div>
                   <div
-                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">상태</span>
-                    <span class="badge badge-sm badge-soft badge-gray"
+                    <span class="table-list__mobile-label">상태</span>
+                    <span class="badge badge--sm badge--soft badge--gray"
                       >완료</span
                     >
                   </div>
                   <div
-                    class="col-12 col-lg-3 d-flex align-items-center justify-content-lg-center"
+                    class="table-list__cell"
                   >
-                    <span class="badge badge-sm badge-soft badge-dark"
+                    <span class="badge badge--sm badge--soft badge--dark"
                       >취소불가</span
                     >
                   </div>
@@ -1302,21 +1298,21 @@
               3. With image + teacher-profile — c_native9 원서요청목록 참고
             </p>
             <div
-              class="table-list-container radius-xl elevator-large p-4 p-lg-5"
+              class="table-list card-panel"
             >
               <div
-                class="table-list-header d-none d-lg-flex row g-2 align-items-center"
+                class="table-list__header"
               >
-                <div class="col-lg-5 text-center">원서 정보</div>
-                <div class="col-lg-2 text-center">강사</div>
-                <div class="col-lg-2 text-center">수업요청일자</div>
-                <div class="col-lg-2 text-center">신청일</div>
-                <div class="col-lg-1 text-center">관리</div>
+                <div class="table-list__cell">원서 정보</div>
+                <div class="table-list__cell">강사</div>
+                <div class="table-list__cell">수업요청일자</div>
+                <div class="table-list__cell">신청일</div>
+                <div class="table-list__cell">관리</div>
               </div>
-              <div class="table-list-body d-flex flex-column gap-1-5">
-                <div class="list-summary row g-2 align-items-center">
+              <div class="table-list__body">
+                <div class="table-list__row">
                   <div
-                    class="col-12 col-lg-5 d-flex flex-column flex-lg-row align-items-lg-center align-items-start gap-2"
+                    class="table-list__cell table-list__cell--stack"
                   >
                     <img
                       class="book-req-cover"
@@ -1324,7 +1320,7 @@
                       alt="Book Cover"
                     />
                     <div class="d-flex flex-column gap-1">
-                      <span class="badge badge-sm badge-fill badge-yellow"
+                      <span class="badge badge--sm badge--fill badge--yellow"
                         >원서수업</span
                       >
                       <span class="body2 fw-medium text-neutral"
@@ -1332,40 +1328,40 @@
                       >
                     </div>
                     <span
-                      class="badge badge-sm badge-soft ms-0 ms-lg-auto badge-gray"
+                      class="badge badge--sm badge--soft ms-0 ms-lg-auto badge--gray"
                       >선생님 요청 확인 전 입니다.</span
                     >
                   </div>
                   <div
-                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1"
+                    class="table-list__cell"
                   >
                     <div
-                      class="teacher-profile teacher-profile-horizontal teacher-profile-sm"
+                      class="teacher-profile teacher-profile--horizontal teacher-profile--sm"
                     >
-                      <div class="teacher-profile-avatar"></div>
+                      <div class="teacher-profile__avatar"></div>
                       <div
-                        class="teacher-profile-content d-flex align-items-center gap-2"
+                        class="teacher-profile__content d-flex align-items-center gap-2"
                       >
-                        <span class="teacher-profile-name">Teachername</span>
+                        <span class="teacher-profile__name">Teachername</span>
                       </div>
                     </div>
                   </div>
                   <div
-                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">수업요청일자</span>
-                    <span class="body2 text-neutral">25.10.10 (월) 14:40</span>
+                    <span class="table-list__mobile-label">수업요청일자</span>
+                    <span>25.10.10 (월) 14:40</span>
                   </div>
                   <div
-                    class="col-12 col-lg-2 d-flex align-items-center justify-content-lg-center gap-1-5"
+                    class="table-list__cell"
                   >
-                    <span class="d-lg-none mark">신청일</span>
-                    <span class="body2 text-neutral">25.12.03 (월) 14:40</span>
+                    <span class="table-list__mobile-label">신청일</span>
+                    <span>25.12.03 (월) 14:40</span>
                   </div>
                   <div
-                    class="col-12 col-lg-1 d-flex align-items-center justify-content-lg-center mt-2 mt-lg-0"
+                    class="table-list__cell mt-2 mt-lg-0"
                   >
-                    <button class="button button-sm button-fill button-neutral">
+                    <button class="button button--sm button--fill button--neutral">
                       삭제
                     </button>
                   </div>
@@ -1379,42 +1375,40 @@
             <p class="text-muted small mb-2">
               4. Pagination (테이블 하단에 배치)
             </p>
-            <div class="d-flex justify-content-end mt-5">
+            <div class="pagination-nav">
               <div
-                class="d-none d-lg-flex align-items-center gap-3 text-light-gray small me-auto"
+                class="pagination-nav__info"
               >
-                Showing <strong class="text-black">1</strong> Page of
-                <strong class="text-black">2</strong> entries
+                Showing <strong class="pagination-nav__info-value">1</strong> Page of
+                <strong class="pagination-nav__info-value">2</strong> entries
               </div>
-              <nav aria-label="Page navigation">
-                <ul class="pagination pagination-custom gap-2 m-0">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#"
+                              <ul class="pagination-nav__list">
+                  <li class="pagination-nav__item pagination-nav__item--disabled">
+                    <a class="pagination-nav__link" href="#"
                       ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>
                   </li>
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#"
+                  <li class="pagination-nav__item pagination-nav__item--disabled">
+                    <a class="pagination-nav__link" href="#"
                       ><svg class="icon"><use href="#chevron-left"></use></svg></a>
                   </li>
-                  <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
+                  <li class="pagination-nav__item pagination-nav__item--active">
+                    <a class="pagination-nav__link" href="#">1</a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                  <li class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="#">2</a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">3</a>
+                  <li class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="#">3</a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#"
+                  <li class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="#"
                       ><svg class="icon"><use href="#chevron-right"></use></svg></a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#"
+                  <li class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="#"
                       ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                   </li>
                 </ul>
-              </nav>
             </div>
           </div>
         </div>
