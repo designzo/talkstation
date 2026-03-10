@@ -11,7 +11,7 @@ $(function () {
       $allBtns.each(function () {
         $(this).removeClass('collapsed');
         $(this).find('.guide-toggle-text').text('닫기');
-        $(this).find('.bi').removeClass('bi-chevron-down').addClass('bi-chevron-up');
+        $(this).find('svg.icon use').attr('href', '#chevron-up');
       });
     });
 
@@ -19,7 +19,7 @@ $(function () {
       $allBtns.each(function () {
         $(this).addClass('collapsed');
         $(this).find('.guide-toggle-text').text('자세히 보기');
-        $(this).find('.bi').removeClass('bi-chevron-up').addClass('bi-chevron-down');
+        $(this).find('svg.icon use').attr('href', '#chevron-down');
       });
     });
   });

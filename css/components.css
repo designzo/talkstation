@@ -289,6 +289,10 @@
   display: inline-flex;
   gap: var(--spacing-2);
 }
+.button-group--center {
+  display: flex;
+  justify-content: center;
+}
 .button-group--vertical {
   flex-direction: column;
 }
@@ -330,7 +334,7 @@
   border: none;
   border-radius: var(--radius-2xl);
   box-shadow: var(--effect-elevator-large);
-  padding: 20px;
+  padding: var(--spacing-5);
 }
 .mypage .modal-header {
   display: flex;
@@ -364,6 +368,15 @@
   .mypage .modal-content {
     padding: 24px;
   }
+}
+
+/* Modal Footer */
+.mypage .modal-footer {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  padding-top: var(--spacing-4);
+  border-top: 1px solid var(--color-gray-light-3);
 }
 
 /* ==============================================
@@ -768,6 +781,7 @@
 .dropdown {
   cursor: pointer;
   outline: none;
+  width:fit-content;
 }
 
 /* 리스트 기본 상태: 숨김 및 부드러운 애니메이션 준비 */
@@ -919,7 +933,6 @@
 }
 
 /* 비활성화 상태 (Disabled) */
-.custom-checkbox:disabled,
 .custom-radio:disabled {
   background-color: var(--color-gray-light);
   border-color: var(--color-gray-light-3);
@@ -1287,9 +1300,23 @@
 /* 5. Pagination Nav (BEM) */
 .pagination-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: var(--spacing-3);
   margin-top: var(--spacing-3);
+}
+.pagination-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .pagination-nav__actions {
+    width: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 992px) {
   .pagination-nav {
@@ -1372,14 +1399,14 @@
   .table-list__row {
     border: 1px solid var(--color-gray-light);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-3-5) var(--spacing-4);
+    padding: var(--spacing-3) var(--spacing-4);
   }
   .table-list__scroll .table-list__row {
     border: 0;
     gap: 0;
   }
   .table-list__scroll .table-list__row > .table-list__cell {
-    padding: var(--spacing-3-5) var(--spacing-4);
+    padding: var(--spacing-3) var(--spacing-4);
   }
 
   .table-list__scroll .table-list__header,
@@ -1451,7 +1478,7 @@
 .teacher-profile__meta {
   font-size: var(--font-size-base);
   color: var(--color-light-gray);
-  line-height: 1.4;
+  line-height: var(--lineheight-sm);
 }
 
 .teacher-profile__meta .dot {
@@ -1461,7 +1488,7 @@
 .teacher-profile__book {
   font-size: var(--font-size-base);
   color: var(--color-gray);
-  line-height: 1.4;
+  line-height: var(--lineheight-sm);
 }
 
 .teacher-profile__time {
@@ -1469,8 +1496,7 @@
   color: var(--color-light-gray);
   display: flex;
   align-items: center;
-  gap: 4px;
-  margin-top: var(--spacing-1);
+  gap: var(--spacing-1);
 }
 
 /* ==============================================
@@ -1485,12 +1511,16 @@
 .teacher-profile--horizontal .teacher-profile__content {
   display: flex;
   flex-direction: column;
+  gap: var(--spacing-1-5);
 }
-/* .teacher-profile--horizontal.teacher-profile--sm .teacher-profile__content {
+.teacher-profile--horizontal.teacher-profile--md .teacher-profile__content {
+  gap: var(--spacing-1);
+}
+.teacher-profile--horizontal.teacher-profile--sm .teacher-profile__content {
   flex-direction: row;
   align-items: center;
-  gap: var(--spacing-2);
-} */
+  gap: var(--spacing-1);
+}
 
 /* Vertical Layout */
 .teacher-profile--vertical {
@@ -1502,10 +1532,10 @@
    Size Variants
    ============================================== */
 
-/* 1. Large (Avatar ~75px) */
+/* 1. Large (Avatar ~64px) */
 .teacher-profile--lg .teacher-profile__avatar {
-  width: 75px;
-  height: 75px;
+  width: 64px;
+  height: 64px;
 }
 .teacher-profile--horizontal.teacher-profile--lg {
   gap: var(--spacing-4);
@@ -1515,10 +1545,10 @@
   line-height: var(--lineheight-xs);
 }
 
-/* 2. Medium (Avatar ~50px) */
+/* 2. Medium (Avatar ~48px) */
 .teacher-profile--md .teacher-profile__avatar {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
 }
 .teacher-profile--horizontal.teacher-profile--md {
   gap: var(--spacing-3);
@@ -1544,9 +1574,29 @@
 /* ==============================================
    Vertical Specific Adjustments
    ============================================== */
+.teacher-profile--vertical.teacher-profile--lg {
+  gap: var(--spacing-3);
+}
 .teacher-profile--vertical.teacher-profile--lg .teacher-profile__avatar {
   width: 80px;
   height: 80px;
+}
+.teacher-profile--vertical.teacher-profile--lg .teacher-profile__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.teacher-profile--vertical.teacher-profile--md {
+  gap: var(--spacing-2);
+}
+
+.teacher-profile--vertical.teacher-profile--sm {
+  gap: var(--spacing-1);
+}
+.teacher-profile--vertical.teacher-profile--sm .teacher-profile__name,
+.teacher-profile--vertical.teacher-profile--sm .teacher-profile__time {
+  font-size: var(--font-size-xs);
 }
 
 /* Text Truncation for Vertical Cards */
@@ -2141,6 +2191,42 @@
   font-size: var(--font-size-sm);
   line-height: var(--lineheight-md);
   letter-spacing: var(--letterSpacing-sm);
+}
+
+/* Bullet List */
+.bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.bullet-list li {
+  padding-left: 11px;
+  position: relative;
+  font-size: var(--font-size-base);
+  color: var(--color-light-gray);
+}
+.bullet-list a {
+  font-weight: var(--fontweight-bold);
+  color: var(--color-primary);
+}
+.bullet-list li + li {
+  margin-top: 8px;
+}
+.bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  background: var(--color-gray-light-3);
+  border-radius: 50%;
+}
+.bullet-list--blue li {
+  color: var(--color-primary);
+}
+.bullet-list--blue li::before {
+  background: var(--color-primary);
 }
 
 /* ==============================================

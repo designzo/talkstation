@@ -244,41 +244,34 @@
                탭1: 장바구니
                ============================ -->
             <div class="tab-pane active" id="tabCart">
-              <div class="d-flex flex-column gap-3">
+              <div class="cart-list">
                 <!-- 장바구니 아이템 1 -->
                 <div class="cart-item">
-                  <div
-                    class="d-flex align-items-start gap-2 flex-1 min-width-0"
-                  >
+                  <div class="cart-item__body">
                     <input type="checkbox" class="custom-checkbox" />
                     <img
                       src="../images/book_sample.png"
                       alt="Book"
                       class="cart-book-img"
                     />
-                    <div
-                      class="d-flex flex-column gap-2 flex-1 min-width-0"
-                    >
-                      <p class="body2-m line-height-140 text-gray">
+                    <div class="cart-item__info">
+                      <p class="cart-item__title">
                         [Captain Underpants] and the Big, Bad Battle of the
                         Bionic Booger Boy, Part 2: The Revenge of the Ri
                       </p>
                       <div class="cart-price-qty">
-                        <div class="d-flex align-items-center gap-1">
-                          <span
-                            class="body2 line-height-140 text-light-gray"
-                            style="text-decoration: line-through"
+                        <div class="cart-item__price-line">
+                          <span class="cart-item__price-original"
                             >7,000원(19% 할인)</span
                           >
-                          <span class="body2 line-height-140 text-gray"
+                          <span class="cart-item__price-arrow"
                             >&rarr;</span
                           >
-                          <span
-                            class="body1 weight-bold line-height-140 text-black"
+                          <span class="cart-item__price-sale"
                             >5,700원</span
                           >
                         </div>
-                        <div class="qty-control order-lg-first">
+                        <div class="qty-control">
                           <button
                             class="button button--sm button--transparent button--default button--icon-only"
                             type="button"
@@ -310,7 +303,7 @@
                       삭제하기
                     </button>
                     <button
-                      class="button button--md button--fill button--primary order-lg-first"
+                      class="button button--md button--fill button--primary"
                     >
                       주문하기
                     </button>
@@ -319,38 +312,31 @@
 
                 <!-- 장바구니 아이템 2 (체크됨) -->
                 <div class="cart-item">
-                  <div
-                    class="d-flex align-items-start gap-2 flex-1 min-width-0"
-                  >
+                  <div class="cart-item__body">
                     <input type="checkbox" class="custom-checkbox" checked />
                     <img
                       src="../images/book_sample.png"
                       alt="Book"
                       class="cart-book-img"
                     />
-                    <div
-                      class="d-flex flex-column gap-2 flex-1 min-width-0"
-                    >
-                      <p class="body2-m line-height-140 text-gray">
+                    <div class="cart-item__info">
+                      <p class="cart-item__title">
                         [Captain Underpants] and the Big, Bad Battle of the
                         Bionic Booger Boy, Part 2: The Revenge of the Ri
                       </p>
                       <div class="cart-price-qty">
-                        <div class="d-flex align-items-center gap-1">
-                          <span
-                            class="body2 line-height-140 text-light-gray"
-                            style="text-decoration: line-through"
+                        <div class="cart-item__price-line">
+                          <span class="cart-item__price-original"
                             >7,000원(19% 할인)</span
                           >
-                          <span class="body2 line-height-140 text-gray"
+                          <span class="cart-item__price-arrow"
                             >&rarr;</span
                           >
-                          <span
-                            class="body1 weight-bold line-height-140 text-black"
+                          <span class="cart-item__price-sale"
                             >5,700원</span
                           >
                         </div>
-                        <div class="qty-control order-lg-first">
+                        <div class="qty-control">
                           <button
                             class="button button--sm button--transparent button--default button--icon-only"
                             type="button"
@@ -382,7 +368,7 @@
                       삭제하기
                     </button>
                     <button
-                      class="button button--md button--fill button--primary order-lg-first"
+                      class="button button--md button--fill button--primary"
                     >
                       주문하기
                     </button>
@@ -391,38 +377,31 @@
 
                 <!-- 장바구니 아이템 3 -->
                 <div class="cart-item">
-                  <div
-                    class="d-flex align-items-start gap-2 flex-1 min-width-0"
-                  >
+                  <div class="cart-item__body">
                     <input type="checkbox" class="custom-checkbox" />
                     <img
                       src="../images/book_sample.png"
                       alt="Book"
                       class="cart-book-img"
                     />
-                    <div
-                      class="d-flex flex-column gap-2 flex-1 min-width-0"
-                    >
-                      <p class="body2-m line-height-140 text-gray">
+                    <div class="cart-item__info">
+                      <p class="cart-item__title">
                         [Captain Underpants] and the Big, Bad Battle of the
                         Bionic Booger Boy, Part 2: The Revenge of the Ri
                       </p>
                       <div class="cart-price-qty">
-                        <div class="d-flex align-items-center gap-1">
-                          <span
-                            class="body2 line-height-140 text-light-gray"
-                            style="text-decoration: line-through"
+                        <div class="cart-item__price-line">
+                          <span class="cart-item__price-original"
                             >7,000원(19% 할인)</span
                           >
-                          <span class="body2 line-height-140 text-gray"
+                          <span class="cart-item__price-arrow"
                             >&rarr;</span
                           >
-                          <span
-                            class="body1 weight-bold line-height-140 text-black"
+                          <span class="cart-item__price-sale"
                             >5,700원</span
                           >
                         </div>
-                        <div class="qty-control order-lg-first">
+                        <div class="qty-control">
                           <button
                             class="button button--sm button--transparent button--default button--icon-only"
                             type="button"
@@ -454,7 +433,7 @@
                       삭제하기
                     </button>
                     <button
-                      class="button button--md button--fill button--primary order-lg-first"
+                      class="button button--md button--fill button--primary"
                     >
                       주문하기
                     </button>
@@ -463,14 +442,14 @@
 
                 <!-- 결제 예상 금액 -->
                 <div class="cart-summary">
-                  <div class="d-flex align-items-center gap-1">
-                    <span class="body1 line-height-140 text-light-gray"
+                  <div class="cart-summary__price">
+                    <span class="cart-summary__label"
                       >결제 예상 금액</span
                     >
-                    <span class="heading3 text-black">16,300원</span>
+                    <span class="cart-summary__total">16,300원</span>
                   </div>
                   <button
-                    class="button button--md button--fill button--primary"
+                    class="button button--lg button--fill button--primary"
                   >
                     전체 주문하기
                   </button>
@@ -482,9 +461,9 @@
                탭2: 결제내역
                ============================ -->
             <div class="tab-pane" id="tabHistory">
-              <div class="d-flex flex-column gap-3">
+              <div class="history-list">
                 <!-- 월 네비게이션 -->
-                <div class="monthly-header-nav justify-content-start">
+                <div class="monthly-header-nav">
                   <button class="monthly-header-nav__btn" type="button">
                     <svg class="icon"><use href="#chevron-left"></use></svg>
                   </button>
@@ -496,9 +475,7 @@
 
                 <!-- 결제내역 아이템 1 -->
                 <div class="history-item">
-                  <div
-                    class="d-flex align-items-start gap-2 flex-1 min-width-0"
-                  >
+                  <div class="history-item__body">
                     <div class="history-thumb">
                       <span
                         class="badge badge--sm badge--soft badge--primary"
@@ -510,20 +487,15 @@
                         class="cart-book-img"
                       />
                     </div>
-                    <div
-                      class="d-flex flex-column gap-2 flex-1 min-width-0"
-                    >
-                      <p class="body2-m line-height-140 text-gray">
+                    <div class="history-item__info">
+                      <p class="history-item__title">
                         [Captain Underpants] and the Big, Bad Battle of
                         the Bionic Booger Boy, Part 2: The Revenge of
                         the Ri
                       </p>
                       <div class="history-detail">
-                        <span
-                          class="body1 weight-bold line-height-140 text-black"
-                          >5,700원</span
-                        >
-                        <div class="d-flex flex-column gap-1">
+                        <span class="history-detail__price">5,700원</span>
+                        <div class="history-detail__info">
                           <div class="info-list__row">
                             <span class="info-list__label">이름/주소</span>
                             <span class="info-list__value"
@@ -555,9 +527,7 @@
 
                 <!-- 결제내역 아이템 2 -->
                 <div class="history-item">
-                  <div
-                    class="d-flex align-items-start gap-2 flex-1 min-width-0"
-                  >
+                  <div class="history-item__body">
                     <div class="history-thumb">
                       <span
                         class="badge badge--sm badge--soft badge--primary"
@@ -569,20 +539,15 @@
                         class="cart-book-img"
                       />
                     </div>
-                    <div
-                      class="d-flex flex-column gap-2 flex-1 min-width-0"
-                    >
-                      <p class="body2-m line-height-140 text-gray">
+                    <div class="history-item__info">
+                      <p class="history-item__title">
                         [Captain Underpants] and the Big, Bad Battle of
                         the Bionic Booger Boy, Part 2: The Revenge of
                         the Ri
                       </p>
                       <div class="history-detail">
-                        <span
-                          class="body1 weight-bold line-height-140 text-black"
-                          >5,700원</span
-                        >
-                        <div class="d-flex flex-column gap-1">
+                        <span class="history-detail__price">5,700원</span>
+                        <div class="history-detail__info">
                           <div class="info-list__row">
                             <span class="info-list__label">이름/주소</span>
                             <span class="info-list__value"
@@ -614,9 +579,7 @@
 
                 <!-- 결제내역 아이템 3 -->
                 <div class="history-item">
-                  <div
-                    class="d-flex align-items-start gap-2 flex-1 min-width-0"
-                  >
+                  <div class="history-item__body">
                     <div class="history-thumb">
                       <span
                         class="badge badge--sm badge--soft badge--primary"
@@ -628,20 +591,15 @@
                         class="cart-book-img"
                       />
                     </div>
-                    <div
-                      class="d-flex flex-column gap-2 flex-1 min-width-0"
-                    >
-                      <p class="body2-m line-height-140 text-gray">
+                    <div class="history-item__info">
+                      <p class="history-item__title">
                         [Captain Underpants] and the Big, Bad Battle of
                         the Bionic Booger Boy, Part 2: The Revenge of
                         the Ri
                       </p>
                       <div class="history-detail">
-                        <span
-                          class="body1 weight-bold line-height-140 text-black"
-                          >5,700원</span
-                        >
-                        <div class="d-flex flex-column gap-1">
+                        <span class="history-detail__price">5,700원</span>
+                        <div class="history-detail__info">
                           <div class="info-list__row">
                             <span class="info-list__label">이름/주소</span>
                             <span class="info-list__value"
@@ -715,7 +673,7 @@
               <div
                 class="table-list__header"
               >
-                <div class="table-list__cell">상품 정보</div>
+                <div class="table-list__cell table-list__cell--start">상품 정보</div>
                 <div class="table-list__cell">상품금액</div>
               </div>
 
@@ -723,77 +681,65 @@
               <div class="table-list__body">
                 <!-- 상품 1 -->
                 <div class="table-list__row">
-                  <div class="table-list__cell">
+                  <div class="table-list__cell table-list__cell--start">
                     <img
                       src="../images/book_sample.png"
                       alt="Book"
                       class="cart-book-img"
                     />
-                    <div class="d-flex flex-column gap-1">
-                      <span class="body2-m text-gray"
+                    <div class="order-detail-product">
+                      <span class="order-detail-product__name"
                         >A Great Expedition</span
                       >
-                      <div class="d-flex align-items-center gap-1">
-                        <span class="body3 text-light-gray">5권</span>
-                        <span class="body3 text-light-gray">&bull;</span>
-                        <span class="body3 text-light-gray">5,700원</span>
+                      <div class="order-detail-product__meta">
+                        <span>5권</span>
+                        <span class="dot"></span>
+                        <span>5,700원</span>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="table-list__cell"
-                  >
+                  <div class="table-list__cell">
                     <span class="table-list__mobile-label">상품금액</span>
-                    <span class="body1 weight-bold text-black"
-                      >28,500</span
-                    >
+                    <span class="order-detail-price">28,500</span>
                   </div>
                 </div>
 
                 <!-- 상품 2 -->
                 <div class="table-list__row table-list__row--highlight">
-                  <div class="table-list__cell">
+                  <div class="table-list__cell table-list__cell--start">
                     <img
                       src="../images/book_sample.png"
                       alt="Book"
                       class="cart-book-img"
                     />
-                    <div class="d-flex flex-column gap-1">
-                      <span class="body2-m text-gray"
+                    <div class="order-detail-product">
+                      <span class="order-detail-product__name"
                         >A Great Expedition</span
                       >
-                      <div class="d-flex align-items-center gap-1">
-                        <span class="body3 text-light-gray">5권</span>
-                        <span class="body3 text-light-gray">&bull;</span>
-                        <span class="body3 text-light-gray">5,700원</span>
+                      <div class="order-detail-product__meta">
+                        <span>5권</span>
+                        <span class="dot"></span>
+                        <span>5,700원</span>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="table-list__cell"
-                  >
+                  <div class="table-list__cell">
                     <span class="table-list__mobile-label">상품금액</span>
-                    <span class="body1 weight-bold text-black"
-                      >28,500</span
-                    >
+                    <span class="order-detail-price">28,500</span>
                   </div>
                 </div>
               </div>
 
               <!-- 총 결제 금액 -->
-              <div class="cart-summary">
-                <div class="d-flex align-items-center gap-1">
-                  <span class="body1 line-height-140 text-light-gray"
-                    >총 결제 금액</span
-                  >
-                  <span class="heading3 text-primary">16,300원</span>
-                </div>
+              <div class="order-detail-total">
+                <span class="order-detail-total__label">총 결제 금액</span>
+                <span class="order-detail-total__price">16,300원</span>
               </div>
             </div>
 
             <!-- 주문정보 -->
-            <div class="d-flex flex-column gap-3">
-              <h3 class="heading4 text-black">주문정보</h3>
+            <div class="content-section">
+              <h3 class="content-section__title">주문정보</h3>
               <div class="info-field info-field--order">
                 <div class="info-field__cell">
                   <div class="info-field__label">주문일시</div>

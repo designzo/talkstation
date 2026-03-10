@@ -223,8 +223,8 @@
       <main class="mypage__content">
         <div class="content-container">
           <!-- 페이지 헤더 -->
-          <div class="d-flex align-items-center justify-content-between">
-            <h2 class="page-title mb-0">화상영어 가이드</h2>
+          <div class="guide-header">
+            <h2 class="page-title">화상영어 가이드</h2>
             <button
               class="button button--sm button--fill button--tertiary"
               type="button"
@@ -234,17 +234,15 @@
           </div>
 
           <!-- 가이드 카드 목록 -->
-          <div class="d-flex flex-column gap-3">
+          <div class="guide-list">
             <!-- ============================
                카드 1: 화상영어 기본표현 (펼침)
                ============================ -->
             <div class="guide-card card-panel">
-              <div
-                class="d-flex flex-column flex-lg-row align-items-start gap-3"
-              >
-                <div class="d-flex flex-column gap-2 flex-1 min-width-0">
-                  <h3 class="heading3 text-black">화상영어 기본표현</h3>
-                  <p class="body2 text-gray line-height-160">
+              <div class="guide-card__header">
+                <div class="guide-card__content">
+                  <h3 class="guide-card__title">화상영어 기본표현</h3>
+                  <p class="guide-card__desc">
                     토크스테이션 전화, 화상영어 수업에 필요한 기본
                     영어표현입니다. 외국어 공부는 처음부터 차근차근 시작하는것이
                     중요합니다.<br />수업에 있어 필요한 기본 영어표현부터 천천히
@@ -252,7 +250,7 @@
                   </p>
                 </div>
                 <button
-                  class="button button--sm button--border button--default w-100 w-lg-auto flex-shrink-0"
+                  class="button button--sm button--border button--default guide-card__toggle"
                   type="button"
                   data-toggle="collapse"
                   data-target="#guideCollapse1"
@@ -263,12 +261,10 @@
               </div>
 
               <div class="collapse in" id="guideCollapse1">
-                <div
-                  class="d-flex flex-column gap-6 border-top pt-5 mt-3"
-                >
+                <div class="guide-card__body">
                   <!-- 섹션 1: 학생 표현 -->
-                  <div class="d-flex flex-column gap-3">
-                    <h4 class="heading4 text-dark">
+                  <div class="guide-section">
+                    <h4 class="guide-section__title">
                       학생이 필요한 화상영어표현
                     </h4>
                     <div class="guide-table">
@@ -296,8 +292,8 @@
                   </div>
 
                   <!-- 섹션 2: 선생님 표현 -->
-                  <div class="d-flex flex-column gap-3">
-                    <h4 class="heading4 text-dark">
+                  <div class="guide-section">
+                    <h4 class="guide-section__title">
                       원어민 선생님이 주로 사용하는 화상영어표현
                     </h4>
                     <div class="guide-table">
@@ -321,7 +317,7 @@
                   </div>
 
                   <!-- 하단 닫기 버튼 -->
-                  <div class="d-flex justify-content-center">
+                  <div class="guide-card__footer">
                     <button
                       class="button button--sm button--border button--default"
                       type="button"
@@ -329,7 +325,7 @@
                       data-target="#guideCollapse1"
                     >
                       <span class="guide-toggle-text">닫기</span>
-                      <svg class="icon icon-chevron-down ms-1"><use href="#chevron-down"></use></svg>
+                      <svg class="icon"><use href="#chevron-up"></use></svg>
                     </button>
                   </div>
                 </div>
@@ -340,18 +336,16 @@
                카드 2: 화상영어 테스트룸 (접힘)
                ============================ -->
             <div class="guide-card card-panel">
-              <div
-                class="d-flex flex-column flex-lg-row align-items-start gap-3"
-              >
-                <div class="d-flex flex-column gap-2 flex-1 min-width-0">
-                  <h3 class="heading3 text-black">화상영어 테스트룸</h3>
-                  <p class="body2 text-gray line-height-160">
+              <div class="guide-card__header">
+                <div class="guide-card__content">
+                  <h3 class="guide-card__title">화상영어 테스트룸</h3>
+                  <p class="guide-card__desc">
                     원활한 수업 진행을 위하여 기기 준비 부탁드립니다.<br />데스크톱:
                     웹캠, 헤드셋 / 노트북, 태블릿 PC, 스마트폰: 카메라, 스피커,
                     마이크 내장되어 있는 기기
                   </p>
                   <ul class="bullet-list">
-                    <li class="body2 text-muted">
+                    <li>
                       노트북 및 태블릿 내장 스피커 및 마이크로 수업이
                       가능하지만 노이즈가 발생할 수 있어 헤드셋 착용을
                       권장합니다.
@@ -359,26 +353,24 @@
                   </ul>
                 </div>
                 <button
-                  class="button button--sm button--border button--default w-100 w-lg-auto flex-shrink-0 collapsed"
+                  class="button button--sm button--border button--default guide-card__toggle collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#guideCollapse2"
                 >
                   <span class="guide-toggle-text">자세히 보기</span>
-                  <svg class="icon icon-chevron-down ms-1"><use href="#chevron-down"></use></svg>
+                  <svg class="icon"><use href="#chevron-down"></use></svg>
                 </button>
               </div>
 
               <div class="collapse" id="guideCollapse2">
-                <div
-                  class="d-flex flex-column gap-6 border-top pt-5 mt-3"
-                >
+                <div class="guide-card__body">
                   <!-- 기기 준비 안내 -->
-                  <div class="d-flex flex-column gap-3">
-                    <p class="heading4 text-black line-height-160">
+                  <div class="guide-section">
+                    <p class="guide-section__title">
                       원활한 수업 진행을 위하여 기기 준비 부탁드립니다.
                     </p>
-                    <div class="p-4 radius-md elevator-large">
+                    <div class="guide-panel">
                       <div class="guide-info-list">
                         <div class="guide-info-row">
                           <div class="guide-info-label">데스크톱</div>
@@ -395,7 +387,7 @@
                       </div>
                     </div>
                     <ul class="bullet-list">
-                      <li class="body2 text-muted">
+                      <li>
                         <strong class="text-primary">노트북 및 태블릿 내장 스피커 및 마이크로 수업이
                         가능하지만 노이즈가 발생할 수 있어 헤드셋</strong> 착용을
                         권장합니다.
@@ -404,9 +396,9 @@
                   </div>
 
                   <!-- 시스템 요구사항 + ZOOM 설치 + ZOOM TEST ROOM -->
-                  <div class="p-4 radius-md elevator-large d-flex flex-column gap-4">
-                    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
-                      <div class="guide-info-list flex-1">
+                  <div class="guide-panel guide-sysreq">
+                    <div class="guide-sysreq__row">
+                      <div class="guide-info-list">
                         <div class="guide-info-row">
                           <div class="guide-info-label">운영체제</div>
                           <div class="guide-info-value">Windows 10</div>
@@ -423,17 +415,15 @@
                         </div>
                       </div>
                       <button
-                        class="button button--md button--fill button--primary flex-shrink-0"
+                        class="button button--md button--fill button--primary"
                         type="button"
                       >
                         ZOOM 설치하기
                         <svg class="icon"><use href="#download"></use></svg>
                       </button>
                     </div>
-                    <div
-                      class="d-flex flex-column align-items-center gap-2 border-top pt-4"
-                    >
-                      <h4 class="heading4 text-dark">ZOOM TEST ROOM</h4>
+                    <div class="guide-testroom guide-testroom--border">
+                      <h4 class="guide-testroom__title">ZOOM TEST ROOM</h4>
                       <div class="guide-room-grid">
                         <button
                           class="button button--md button--border button--default"
@@ -488,13 +478,13 @@
                   </div>
 
                   <!-- 설치 순서 1 -->
-                  <div class="d-flex flex-column gap-3 p-4 radius-md" style="border: 1px solid var(--color-border-super-light)">
-                    <h4 class="heading4 text-dark">
+                  <div class="guide-step">
+                    <h4 class="guide-section__title">
                       1. 상단의 '다운로드' 버튼을 실행해 주세요.
                     </h4>
                     <div>
                       <button
-                        class="button button--lg button--fill button--primary w-100 w-lg-auto"
+                        class="button button--lg button--fill button--primary"
                         type="button"
                       >
                         ZOOM 설치하기
@@ -504,17 +494,17 @@
                   </div>
 
                   <!-- 설치 순서 2 -->
-                  <div class="d-flex flex-column gap-3 p-4 radius-md" style="border: 1px solid var(--color-border-super-light)">
-                    <h4 class="heading4 text-dark">
+                  <div class="guide-step">
+                    <h4 class="guide-section__title">
                       2. 설치 프로그램의 절차에 따라 설치해 주세요.
                     </h4>
                     <img
                       src="../images/guide-zoom-install.png"
                       alt="ZOOM 설치 화면"
-                      class="guide-screenshot radius-md"
+                      class="guide-screenshot"
                     />
                     <ul class="bullet-list">
-                      <li class="body2 text-muted">
+                      <li>
                         설치완료 후 따로 회원가입이나 로그인을 진행해주지
                         않아도 됩니다.
                       </li>
@@ -522,14 +512,14 @@
                   </div>
 
                   <!-- 설치 순서 3 + 오디오 테스트 -->
-                  <div class="d-flex flex-column gap-4 p-4 radius-md" style="border: 1px solid var(--color-border-super-light)">
-                    <h4 class="heading4 text-dark">
+                  <div class="guide-step">
+                    <h4 class="guide-section__title">
                       3. 상담원의 안내에 따라 '테스트룸'에 입장해주세요.
                     </h4>
 
                     <!-- ZOOM TEST ROOM -->
-                    <div class="d-flex flex-column align-items-center gap-2 p-4 radius-md elevator-large">
-                      <h4 class="heading4 text-dark">ZOOM TEST ROOM</h4>
+                    <div class="guide-panel guide-testroom">
+                      <h4 class="guide-testroom__title">ZOOM TEST ROOM</h4>
                       <div class="guide-room-grid">
                         <button
                           class="button button--md button--border button--default"
@@ -583,74 +573,74 @@
                     </div>
 
                     <!-- 오디오 테스트 -->
-                    <div class="d-flex flex-column align-items-center gap-5 border-top pt-5">
-                      <div class="d-flex flex-column gap-3 pb-4">
-                        <h5 class="heading5 text-dark">
+                    <div class="guide-audio-test">
+                      <div class="guide-audio-test__step">
+                        <h5 class="guide-audio-test__title">
                           1. 스피커 및 마이크 테스트를 눌러주세요.
                         </h5>
                         <img
                           src="../images/image 60.png"
                           alt="스피커 테스트 화면"
-                          class="guide-screenshot radius-md"
+                          class="guide-screenshot"
                         />
                       </div>
                       <!-- 스피커 테스트 -->
-                      <div class="d-flex flex-column gap-3 pb-4">
-                        <h5 class="heading5 text-dark">
+                      <div class="guide-audio-test__step">
+                        <h5 class="guide-audio-test__title">
                           2. 스피커를 테스트해주세요.
                         </h5>
                         <img
                           src="../images/image 61-1.png"
                           alt="스피커 테스트 화면"
-                          class="guide-screenshot radius-md"
+                          class="guide-screenshot"
                         />
                         <ul class="bullet-list">
-                          <li class="body2 text-dark">
+                          <li>
                             사용할 장비에서 소리가 들린다면 정상작동입니다.
                           </li>
-                          <li class="body2 text-dark">
+                          <li>
                             만약 소리가 나오지 않으면 다른 장치를
                             선택해주세요.
                           </li>
-                          <li class="body2 text-dark">
+                          <li>
                             소리가 잘 나온다면 예 버튼을 눌러주세요.
                           </li>
                         </ul>
                       </div>
 
                       <!-- 마이크 테스트 -->
-                      <div class="d-flex flex-column gap-3 pb-4">
-                        <h5 class="heading5 text-dark">
+                      <div class="guide-audio-test__step">
+                        <h5 class="guide-audio-test__title">
                           3. 마이크를 테스트해주세요.
                         </h5>
                         <img
                           src="../images/image 61.png"
                           alt="마이크 테스트 화면"
-                          class="guide-screenshot radius-md"
+                          class="guide-screenshot"
                         />
                         <ul class="bullet-list">
-                          <li class="body2 text-dark">
+                          <li>
                             마이크에 말을해서 자신의 소리가 자기 자신에게
                             들린다면 정상작동입니다.
                           </li>
-                          <li class="body2 text-dark">
+                          <li>
                             만약 소리가 나오지 않는다면 다른 장치를
                             선택해주세요.
                           </li>
-                          <li class="body2 text-dark">
+                          <li>
                             소리가 잘 나온다면 예 버튼을 눌러주세요.
                           </li>
                         </ul>
                       </div>
 
-                      <div class="d-flex flex-column gap-3 pb-4">
-                        <h5 class="heading5 text-dark">
+                      <div class="guide-audio-test__step">
+                        <h5 class="guide-audio-test__title">
                           4. 아래 화면과 같이 프로그램 실행 후 카메라가 보인다면 설치 완료!
                         </h5>
                         <img
                           src="../images/image 61-2.png"
                           alt="스피커 테스트 화면"
-                          class="guide-screenshot radius-md"
+                          class="guide-screenshot"
                         />
                       </div>
                     </div>
@@ -660,21 +650,20 @@
                   <img
                     src="../images/guide-zoom-result.png"
                     alt="ZOOM 테스트 결과 화면"
-                    class="guide-screenshot radius-md"
+                    class="guide-screenshot"
                   />
 
                   <!-- 고객센터 안내 -->
-                  <p class="body1 text-gray text-center line-height-160">
+                  <p class="guide-card__notice">
                     혹시 설치가 어려우시거나 안되신다면<br />
                     고객센터(1666-2976)로 문자 및<br />
-                    <span class="weight-bold text-primary"
-                      >카카오톡 플러스 친구</span
-                    >로 연락주세요. 원격지원으로 설치를<br />
+                    <strong>카카오톡 플러스 친구</strong>로 연락주세요.
+                    원격지원으로 설치를<br />
                     도와드리겠습니다!
                   </p>
 
                   <!-- 하단 닫기 버튼 -->
-                  <div class="d-flex justify-content-center">
+                  <div class="guide-card__footer">
                     <button
                       class="button button--sm button--border button--default"
                       type="button"
@@ -693,12 +682,10 @@
                카드 3: ZOOM 오디오 설정 가이드 (접힘)
                ============================ -->
             <div class="guide-card card-panel">
-              <div
-                class="d-flex flex-column flex-lg-row align-items-start gap-3"
-              >
-                <div class="d-flex flex-column gap-2 flex-1 min-width-0">
-                  <h3 class="heading3 text-black">ZOOM 오디오 설정 가이드</h3>
-                  <p class="body2 text-gray line-height-160">
+              <div class="guide-card__header">
+                <div class="guide-card__content">
+                  <h3 class="guide-card__title">ZOOM 오디오 설정 가이드</h3>
+                  <p class="guide-card__desc">
                     보카킹 수업 진행 시 ZOOM 회의에서 소리는 들리는데 아이딕보카
                     학습 진행 시 오디오가 들리지 않는 경우가
                     있습니다.<br />이때 가이드 내용과 같이 보카킹 수업 입장 전
@@ -706,32 +693,30 @@
                   </p>
                 </div>
                 <button
-                  class="button button--sm button--border button--default w-100 w-lg-auto flex-shrink-0 collapsed"
+                  class="button button--sm button--border button--default guide-card__toggle collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#guideCollapse3"
                 >
                   <span class="guide-toggle-text">자세히 보기</span>
-                  <svg class="icon icon-chevron-down ms-1"><use href="#chevron-down"></use></svg>
+                  <svg class="icon"><use href="#chevron-down"></use></svg>
                 </button>
               </div>
 
               <div class="collapse" id="guideCollapse3">
-                <div
-                  class="d-flex flex-column gap-6 border-top pt-5 mt-3"
-                >
+                <div class="guide-card__body">
                   <img
                     src="../images/guide-zoom-audio-1.png"
                     alt="ZOOM 오디오 설정 가이드 1"
-                    class="guide-screenshot radius-md"
+                    class="guide-screenshot"
                   />
                   <img
                     src="../images/guide-zoom-audio-2.png"
                     alt="ZOOM 오디오 설정 가이드 2"
-                    class="guide-screenshot radius-md"
+                    class="guide-screenshot"
                   />
 
-                  <div class="d-flex justify-content-center">
+                  <div class="guide-card__footer">
                     <button
                       class="button button--sm button--border button--default"
                       type="button"
@@ -739,7 +724,7 @@
                       data-target="#guideCollapse3"
                     >
                       <span class="guide-toggle-text">닫기</span>
-                      <svg class="icon icon-chevron-down ms-1"><use href="#chevron-down"></use></svg>
+                      <svg class="icon"><use href="#chevron-up"></use></svg>
                     </button>
                   </div>
                 </div>

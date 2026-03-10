@@ -227,40 +227,37 @@
           <!-- ============================
              필터 영역
              ============================ -->
-          <div
-            class="cancel-filter d-flex flex-column gap-3 p-4 p-lg-5 radius-xl"
-            style="background-color: var(--color-bg-secondary)"
-          >
+          <div class="cancel-filter">
             <!-- 수강종류 -->
-            <div class="d-flex flex-column gap-1-5">
-              <span class="body2 weight-bold text-gray">수강종류</span>
-              <div class="d-flex flex-lg-wrap align-items-center gap-2 cancel-filter-scroll">
+            <div class="cancel-filter__group">
+              <span class="cancel-filter__label">수강종류</span>
+              <div class="cancel-filter__options">
                 <button
-                  class="button button--md button--fill button--primary cancel-filter-btn active"
+                  class="button button--md button--fill button--primary active"
                   type="button"
                 >
                   전체
                 </button>
                 <button
-                  class="button button--md button--soft button--primary cancel-filter-btn"
+                  class="button button--md button--soft button--primary"
                   type="button"
                 >
                   결합 상품
                 </button>
                 <button
-                  class="button button--md button--soft button--primary cancel-filter-btn"
+                  class="button button--md button--soft button--primary"
                   type="button"
                 >
                   원어민 스피킹
                 </button>
                 <button
-                  class="button button--md button--soft button--primary cancel-filter-btn"
+                  class="button button--md button--soft button--primary"
                   type="button"
                 >
                   리딩스쿨
                 </button>
                 <button
-                  class="button button--md button--soft button--primary cancel-filter-btn"
+                  class="button button--md button--soft button--primary"
                   type="button"
                 >
                   아이딕 홈스쿨
@@ -268,35 +265,35 @@
               </div>
             </div>
             <!-- 거래상태 -->
-            <div class="d-flex flex-column gap-1-5">
-              <span class="body2 weight-bold text-gray">거래상태</span>
-              <div class="d-flex flex-lg-wrap align-items-center gap-2 cancel-filter-scroll">
+            <div class="cancel-filter__group">
+              <span class="cancel-filter__label">거래상태</span>
+              <div class="cancel-filter__options">
                 <button
-                  class="button button--md button--fill button--primary cancel-filter-btn active"
+                  class="button button--md button--fill button--primary active"
                   type="button"
                 >
                   전체
                 </button>
                 <button
-                  class="button button--md button--soft button--primary cancel-filter-btn"
+                  class="button button--md button--soft button--primary"
                   type="button"
                 >
                   미입금
                 </button>
                 <button
-                  class="button button--md button--soft button--primary cancel-filter-btn"
+                  class="button button--md button--soft button--primary"
                   type="button"
                 >
                   입금완료
                 </button>
                 <button
-                  class="button button--md button--soft button--primary cancel-filter-btn"
+                  class="button button--md button--soft button--primary"
                   type="button"
                 >
                   무료수업
                 </button>
                 <button
-                  class="button button--md button--soft button--primary cancel-filter-btn"
+                  class="button button--md button--soft button--primary"
                   type="button"
                 >
                   부분취소
@@ -308,8 +305,8 @@
           <!-- ============================
              정렬 컨트롤
              ============================ -->
-          <div class="d-flex align-items-center gap-2">
-            <div class="field-wrap field-wrap--icon-right dropdown cancel-select-wrap" tabindex="0">
+          <div class="cancel-filter__controls">
+            <div class="field-wrap field-wrap--icon-right dropdown" tabindex="0">
               <input type="text" class="input" value="30" readonly />
               <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
               <ul class="dropdown__list">
@@ -318,7 +315,7 @@
                 <li data-value="100">100</li>
               </ul>
             </div>
-            <div class="field-wrap field-wrap--icon-right dropdown cancel-select-wrap" tabindex="0">
+            <div class="field-wrap field-wrap--icon-right dropdown" tabindex="0">
               <input type="text" class="input" value="올림차순" readonly />
               <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
               <ul class="dropdown__list">
@@ -331,37 +328,33 @@
           <!-- ============================
              카드 목록
              ============================ -->
-          <div class="d-flex flex-column gap-4">
+          <div class="cancel-card-list">
             <!-- 카드 1: 미입금 -->
-            <div class="cancel-card elevator-large radius-xl p-4 p-lg-5">
+            <div class="cancel-card">
               <!-- 헤더 -->
-              <div
-                class="cancel-card-header d-flex flex-wrap align-items-center gap-2 pb-3"
-              >
+              <div class="cancel-card__header">
                 <span class="badge-group">
                   <span class="badge badge--md badge--soft badge--gray">미입금</span>
                   <span class="badge badge--md badge--fill badge--blue">원어민 스피킹</span>
                 </span>
-                <span class="body2 text-dark-gray">25.11.25 18:21</span>
+                <span class="cancel-card__date">25.11.25 18:21</span>
               </div>
 
               <!-- 바디 -->
-              <div
-                class="cancel-card-body d-flex flex-column flex-lg-row align-items-lg-center gap-3 py-3"
-              >
+              <div class="cancel-card__body">
                 <!-- 강사 프로필 -->
                 <div
-                  class="teacher-profile teacher-profile--horizontal teacher-profile--lg flex-1 min-width-0"
+                  class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
                 >
                   <div class="teacher-profile__avatar"></div>
                   <div class="teacher-profile__content">
-                    <div class="d-flex flex-wrap align-items-center gap-2 mb-1-5">
+                    <div class="teacher-profile__name-row">
                       <span class="teacher-profile__name">Teachername</span>
                       <span class="badge badge--sm badge--soft badge--primary"
                         >원어민 스피킹 과정(필리핀 강사)</span
                       >
                     </div>
-                    <div class="teacher-profile__meta mb-1-5">
+                    <div class="teacher-profile__meta">
                       <span>필리핀/1개월 과정</span>
                       <span class="dot"></span>
                       <span>주 2회</span>
@@ -372,23 +365,21 @@
                       <span class="dot"></span>
                       <span>25분</span>
                     </div>
-                    <span class="body2 text-dark-gray"
+                    <span class="cancel-card__period"
                       >수강기간(시간): 25.00.00~00.00.00 (16:00)</span
                     >
                   </div>
                 </div>
                 <!-- 결제금액 박스 -->
-                <div class="cancel-price-box cancel-price-box-blue">
-                  <span class="body3-m text-dark-gray">결제금액</span>
-                  <span class="heading2 text-primary">852,000원</span>
-                  <span class="body3 weight-bold text-dark-gray">카드</span>
+                <div class="cancel-price-box cancel-price-box--payment">
+                  <span class="cancel-price-box__label">결제금액</span>
+                  <span class="cancel-price-box__amount">852,000원</span>
+                  <span class="cancel-price-box__method">카드</span>
                 </div>
               </div>
 
               <!-- 푸터 -->
-              <div
-                class="cancel-card-footer d-flex flex-column flex-lg-row justify-content-lg-end gap-2 pt-3"
-              >
+              <div class="cancel-card__footer">
                 <button
                   class="button button--md button--fill button--primary"
                   type="button"
@@ -401,34 +392,30 @@
             </div>
 
             <!-- 카드 2: 입금완료 + 환불 -->
-            <div class="cancel-card elevator-large radius-xl p-4 p-lg-5">
+            <div class="cancel-card">
               <!-- 헤더 -->
-              <div
-                class="cancel-card-header d-flex flex-wrap align-items-center gap-2 pb-3"
-              >
+              <div class="cancel-card__header">
                 <span class="badge-group">
                   <span class="badge badge--md badge--soft badge--green">입금완료</span>
                   <span class="badge badge--md badge--fill badge--blue">원어민 스피킹</span>
                 </span>
-                <span class="body2 text-dark-gray">25.11.25 18:21</span>
+                <span class="cancel-card__date">25.11.25 18:21</span>
               </div>
 
               <!-- 바디 -->
-              <div
-                class="cancel-card-body d-flex flex-column flex-lg-row align-items-lg-center gap-3 py-3"
-              >
+              <div class="cancel-card__body">
                 <div
-                  class="teacher-profile teacher-profile--horizontal teacher-profile--lg flex-1 min-width-0"
+                  class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
                 >
                   <div class="teacher-profile__avatar"></div>
                   <div class="teacher-profile__content">
-                    <div class="d-flex flex-wrap align-items-center gap-2 mb-1-5">
+                    <div class="teacher-profile__name-row">
                       <span class="teacher-profile__name">Teachername</span>
                       <span class="badge badge--sm badge--soft badge--primary"
                         >원어민 스피킹 과정(필리핀 강사)</span
                       >
                     </div>
-                    <div class="teacher-profile__meta mb-1-5">
+                    <div class="teacher-profile__meta">
                       <span>필리핀/1개월 과정</span>
                       <span class="dot"></span>
                       <span>주 2회</span>
@@ -439,25 +426,25 @@
                       <span class="dot"></span>
                       <span>25분</span>
                     </div>
-                    <span class="body2 text-dark-gray"
+                    <span class="cancel-card__period"
                       >수강기간(시간): 25.00.00~00.00.00 (16:00)</span
                     >
                   </div>
                 </div>
                 <!-- 결제금액 -->
-                <div class="cancel-price-box cancel-price-box-blue">
-                  <span class="body3-m text-dark-gray">결제금액</span>
-                  <span class="heading2 text-primary">852,000원</span>
-                  <span class="body3 weight-bold text-dark-gray">카드</span>
+                <div class="cancel-price-box cancel-price-box--payment">
+                  <span class="cancel-price-box__label">결제금액</span>
+                  <span class="cancel-price-box__amount">852,000원</span>
+                  <span class="cancel-price-box__method">카드</span>
                 </div>
                 <!-- 환불금액 -->
-                <div class="cancel-price-box cancel-price-box-red">
-                  <div class="d-flex align-items-end gap-2">
-                    <span class="body3-m text-dark-gray">환불금액</span>
-                    <span class="body4 text-light-gray">2025.06.17</span>
+                <div class="cancel-price-box cancel-price-box--refund">
+                  <div class="cancel-price-box__header">
+                    <span class="cancel-price-box__label">환불금액</span>
+                    <span class="cancel-price-box__date">2025.06.17</span>
                   </div>
-                  <span class="heading3 text-red">147,000원</span>
-                  <span class="body3 weight-bold text-dark-gray">카드</span>
+                  <span class="cancel-price-box__amount cancel-price-box__amount--refund">147,000원</span>
+                  <span class="cancel-price-box__method">카드</span>
                   <button
                     class="button button--sm button--border button--negative"
                     type="button"
@@ -470,23 +457,21 @@
               </div>
 
               <!-- 푸터 -->
-              <div
-                class="cancel-card-footer d-flex flex-nowrap flex-lg-wrap justify-content-lg-end gap-2 pt-3"
-              >
+              <div class="cancel-card__footer">
                 <button
-                  class="button button--md button--border button--default flex-1 flex-lg-none min-width-0"
+                  class="button button--md button--border button--default"
                   type="button"
                 >
                   결제정보
                 </button>
                 <button
-                  class="button button--md button--border button--default flex-1 flex-lg-none min-width-0"
+                  class="button button--md button--border button--default"
                   type="button"
                 >
                   수강증 출력
                 </button>
                 <button
-                  class="button button--md button--border button--default flex-1 flex-lg-none min-width-0"
+                  class="button button--md button--border button--default"
                   type="button"
                   data-toggle="modal"
                   data-target="#cancelDetailModal"
@@ -497,39 +482,33 @@
             </div>
 
             <!-- 카드 3: 입금완료 + 결합상품 (2과정 + 2환불) -->
-            <div class="cancel-card elevator-large radius-xl p-4 p-lg-5">
+            <div class="cancel-card">
               <!-- 헤더 -->
-              <div
-                class="cancel-card-header d-flex flex-wrap align-items-center gap-2 pb-3"
-              >
+              <div class="cancel-card__header">
                 <span class="badge-group">
                   <span class="badge badge--md badge--soft badge--green">입금완료</span>
                   <span class="badge badge--md badge--fill badge--green">결합상품</span>
                 </span>
-                <span class="body2 text-dark-gray">25.11.25 18:21</span>
+                <span class="cancel-card__date">25.11.25 18:21</span>
               </div>
 
               <!-- 바디 -->
-              <div
-                class="cancel-card-body d-flex flex-column flex-lg-row align-items-lg-center gap-3 py-3"
-              >
+              <div class="cancel-card__body">
                 <!-- 결합상품: 2과정 -->
-                <div class="flex-1 min-width-0 d-flex flex-column gap-3">
+                <div class="cancel-card__courses">
                   <!-- 과정 1: 원어민 스피킹 -->
                   <div
                     class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
                   >
                     <div class="teacher-profile__avatar"></div>
                     <div class="teacher-profile__content">
-                      <div
-                        class="d-flex flex-wrap align-items-center gap-2 mb-1-5"
-                      >
+                      <div class="teacher-profile__name-row">
                         <span class="teacher-profile__name">Teachername</span>
                         <span class="badge badge--sm badge--soft badge--primary"
                           >원어민 스피킹 과정</span
                         >
                       </div>
-                      <div class="teacher-profile__meta mb-1-5">
+                      <div class="teacher-profile__meta">
                         <span>1개월 과정</span>
                         <span class="dot"></span>
                         <span>주 2회</span>
@@ -540,7 +519,7 @@
                         <span class="dot"></span>
                         <span>25분</span>
                       </div>
-                      <span class="body2 text-dark-gray"
+                      <span class="cancel-card__period"
                         >수강기간(시간): 25.00.00~00.00.00 (16:00)</span
                       >
                     </div>
@@ -551,14 +530,12 @@
                       class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
                     >
                       <div class="teacher-profile__content">
-                        <div
-                          class="d-flex flex-wrap align-items-center gap-2 mb-1-5"
-                        >
+                        <div class="teacher-profile__name-row">
                           <span class="badge badge--sm badge--soft badge--orange"
                             >보카킹</span
                           >
                         </div>
-                        <div class="teacher-profile__meta mb-1-5">
+                        <div class="teacher-profile__meta">
                           <span>Lv2000 (1501~2000)</span>
                           <span class="dot"></span>
                           <span>주 5회</span>
@@ -569,7 +546,7 @@
                           <span class="dot"></span>
                           <span>20분</span>
                         </div>
-                        <span class="body2 text-dark-gray"
+                        <span class="cancel-card__period"
                           >수강기간(시간): 25.00.00~00.00.00 (16:00)</span
                         >
                       </div>
@@ -578,23 +555,23 @@
                 </div>
 
                 <!-- 결제금액 -->
-                <div class="cancel-price-box cancel-price-box-blue">
-                  <span class="body3-m text-dark-gray">결제금액</span>
-                  <span class="heading2 text-primary">852,000원</span>
-                  <span class="body3 weight-bold text-dark-gray">카드</span>
+                <div class="cancel-price-box cancel-price-box--payment">
+                  <span class="cancel-price-box__label">결제금액</span>
+                  <span class="cancel-price-box__amount">852,000원</span>
+                  <span class="cancel-price-box__method">카드</span>
                 </div>
                 <!-- 환불금액 x2 -->
-                <div class="d-flex flex-column gap-3">
-                  <div class="cancel-price-box cancel-price-box-red">
-                    <div class="d-flex flex-wrap align-items-center gap-2">
+                <div class="cancel-card__refunds">
+                  <div class="cancel-price-box cancel-price-box--refund">
+                    <div class="cancel-price-box__header">
                       <span class="badge badge--sm badge--soft badge--primary d-lg-none"
                         >원어민 스피킹 과정</span
                       >
-                      <span class="body3-m text-dark-gray">환불금액</span>
-                      <span class="body4 text-light-gray">2025.06.17</span>
+                      <span class="cancel-price-box__label">환불금액</span>
+                      <span class="cancel-price-box__date">2025.06.17</span>
                     </div>
-                    <span class="heading3 text-red">147,000원</span>
-                    <span class="body3 weight-bold text-dark-gray">카드</span>
+                    <span class="cancel-price-box__amount cancel-price-box__amount--refund">147,000원</span>
+                    <span class="cancel-price-box__method">카드</span>
                     <button
                       class="button button--sm button--border button--negative"
                       type="button"
@@ -602,16 +579,16 @@
                       취소 상세 정보
                     </button>
                   </div>
-                  <div class="cancel-price-box cancel-price-box-red">
-                    <div class="d-flex flex-wrap align-items-center gap-2">
+                  <div class="cancel-price-box cancel-price-box--refund">
+                    <div class="cancel-price-box__header">
                       <span class="badge badge--sm badge--soft badge--orange d-lg-none"
                         >보카킹</span
                       >
-                      <span class="body3-m text-dark-gray">환불금액</span>
-                      <span class="body4 text-light-gray">2025.06.17</span>
+                      <span class="cancel-price-box__label">환불금액</span>
+                      <span class="cancel-price-box__date">2025.06.17</span>
                     </div>
-                    <span class="heading3 text-red">147,000원</span>
-                    <span class="body3 weight-bold text-dark-gray">카드</span>
+                    <span class="cancel-price-box__amount cancel-price-box__amount--refund">147,000원</span>
+                    <span class="cancel-price-box__method">카드</span>
                     <button
                       class="button button--sm button--border button--negative"
                       type="button"
@@ -623,23 +600,21 @@
               </div>
 
               <!-- 푸터 -->
-              <div
-                class="cancel-card-footer d-flex flex-nowrap flex-lg-wrap justify-content-lg-end gap-2 pt-3"
-              >
+              <div class="cancel-card__footer">
                 <button
-                  class="button button--md button--border button--default flex-1 flex-lg-none min-width-0"
+                  class="button button--md button--border button--default"
                   type="button"
                 >
                   결제정보
                 </button>
                 <button
-                  class="button button--md button--border button--default flex-1 flex-lg-none min-width-0"
+                  class="button button--md button--border button--default"
                   type="button"
                 >
                   수강증 출력
                 </button>
                 <button
-                  class="button button--md button--border button--default flex-1 flex-lg-none min-width-0"
+                  class="button button--md button--border button--default"
                   type="button"
                   data-toggle="modal"
                   data-target="#cancelDetailModal"
@@ -650,34 +625,30 @@
             </div>
 
             <!-- 카드 4: 무료수업 (아바타 있음) -->
-            <div class="cancel-card elevator-large radius-xl p-4 p-lg-5">
+            <div class="cancel-card">
               <!-- 헤더 -->
-              <div
-                class="cancel-card-header d-flex flex-wrap align-items-center gap-2 pb-3"
-              >
+              <div class="cancel-card__header">
                 <span class="badge-group">
                   <span class="badge badge--md badge--soft badge--purple">무료수업</span>
                   <span class="badge badge--md badge--fill badge--orange">리딩스쿨</span>
                 </span>
-                <span class="body2 text-dark-gray">25.11.25 18:21</span>
+                <span class="cancel-card__date">25.11.25 18:21</span>
               </div>
 
               <!-- 바디 -->
-              <div
-                class="cancel-card-body d-flex flex-column flex-lg-row align-items-lg-center gap-3 py-3 cancel-card-body-no-footer"
-              >
+              <div class="cancel-card__body cancel-card__body--no-footer">
                 <div
-                  class="teacher-profile teacher-profile--horizontal teacher-profile--lg flex-1 min-width-0"
+                  class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
                 >
                   <div class="teacher-profile__avatar"></div>
                   <div class="teacher-profile__content">
-                    <div class="d-flex flex-wrap align-items-center gap-2 mb-1-5">
+                    <div class="teacher-profile__name-row">
                       <span class="teacher-profile__name">Teachername</span>
                       <span class="badge badge--sm badge--soft badge--primary"
                         >원어민 스피킹 과정(필리핀 강사)</span
                       >
                     </div>
-                    <div class="teacher-profile__meta mb-1-5">
+                    <div class="teacher-profile__meta">
                       <span>필리핀/1개월 과정</span>
                       <span class="dot"></span>
                       <span>주 2회</span>
@@ -686,73 +657,60 @@
                       <span class="dot"></span>
                       <span>기본 72회</span>
                     </div>
-                    <span class="body2 text-dark-gray"
+                    <span class="cancel-card__period"
                       >수강기간(시간): 25.00.00~00.00.00 (16:00)</span
                     >
                   </div>
                 </div>
-                <div class="cancel-price-box cancel-price-box-blue">
-                  <span class="body3-m text-dark-gray">수업 비용</span>
-                  <span class="heading2 text-primary">852,000원</span>
-                  <span class="body3 weight-bold text-dark-gray"
-                    >+1 수업</span
-                  >
+                <div class="cancel-price-box cancel-price-box--payment">
+                  <span class="cancel-price-box__label">수업 비용</span>
+                  <span class="cancel-price-box__amount">852,000원</span>
+                  <span class="cancel-price-box__method">+1 수업</span>
                 </div>
               </div>
             </div>
 
             <!-- 카드 5: 무료수업 (아바타 없음, 아이딕 홈스쿨) -->
-            <div class="cancel-card elevator-large radius-xl p-4 p-lg-5">
+            <div class="cancel-card">
               <!-- 헤더 -->
-              <div
-                class="cancel-card-header d-flex flex-wrap align-items-center gap-2 pb-3"
-              >
+              <div class="cancel-card__header">
                 <span class="badge-group">
                   <span class="badge badge--md badge--soft badge--purple">무료수업</span>
                   <span class="badge badge--md badge--fill badge--orange">아이딕 홈스쿨</span>
                 </span>
-                <span class="body2 text-dark-gray">25.11.25 18:21</span>
+                <span class="cancel-card__date">25.11.25 18:21</span>
               </div>
 
               <!-- 바디 -->
-              <div
-                class="cancel-card-body d-flex flex-column flex-lg-row align-items-lg-center gap-3 py-3 cancel-card-body-no-footer"
-              >
+              <div class="cancel-card__body cancel-card__body--no-footer">
                 <div
-                  class="teacher-profile teacher-profile--horizontal teacher-profile--lg flex-1 min-width-0"
+                  class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
                 >
                   <div class="teacher-profile__content">
-                    <div
-                      class="d-flex flex-wrap align-items-center gap-2 mb-1-5"
-                    >
+                    <div class="teacher-profile__name-row">
                       <span class="teacher-profile__name">Teachername</span>
                       <span class="badge badge--sm badge--soft badge--primary"
                         >아이딕 홈스쿨 이용권</span
                       >
                     </div>
-                    <div class="teacher-profile__meta mb-1-5">
+                    <div class="teacher-profile__meta">
                       <span>3개월 과정</span>
                     </div>
-                    <span class="body2 text-dark-gray"
+                    <span class="cancel-card__period"
                       >수강기간(시간): 25.00.00~00.00.00 (16:00)</span
                     >
                   </div>
                 </div>
-                <div class="cancel-price-box cancel-price-box-blue">
-                  <span class="body3-m text-dark-gray">수업 비용</span>
-                  <span class="heading2 text-primary">852,000원</span>
-                  <span class="body3 weight-bold text-dark-gray"
-                    >+1 수업</span
-                  >
+                <div class="cancel-price-box cancel-price-box--payment">
+                  <span class="cancel-price-box__label">수업 비용</span>
+                  <span class="cancel-price-box__amount">852,000원</span>
+                  <span class="cancel-price-box__method">+1 수업</span>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- ============================
-             페이지네이션
-             ============================ -->
-          <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+            <!-- 페이지네이션 -->
+            <div class="pagination-nav">
             <div
               class="pagination-nav__info"
             >
@@ -786,6 +744,7 @@
                     ><svg class="icon"><use href="#chevron-double-right"></use></svg></a>
                 </li>
               </ul>
+            </div>
           </div>
         </div>
       </main>
@@ -837,8 +796,8 @@
                     <span>2025-12-03</span>
                   </div>
                   <!-- 상품 -->
-                  <div class="table-list__cell table-list__cell--vertical align-items-lg-center">
-                    <span class="badge badge--sm badge--soft badge--primary" style="align-self: flex-start">원어민 스피킹 과정(필리핀 강사)</span>
+                  <div class="table-list__cell table-list__cell--vertical">
+                    <span class="badge badge--sm badge--soft badge--primary">원어민 스피킹 과정(필리핀 강사)</span>
                     <div class="teacher-profile__meta">
                       <span>필리핀/1개월 과정</span>
                       <span class="dot"></span>
@@ -857,20 +816,20 @@
                   <!-- 취소금액 -->
                   <div class="table-list__cell">
                     <span class="table-list__mobile-label">취소금액</span>
-                    <span class="body1 weight-bold text-red">147,510</span>
+                    <span class="cancel-detail-price">147,510</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- 안내 문구 + 취소영수증 버튼 -->
-            <div class="eval-modal-footer">
-              <div class="d-flex flex-column align-items-center gap-3">
-                <p class="body2 text-gray text-center">
+            <div class="modal-footer">
+              <div class="cancel-detail-footer">
+                <p class="cancel-detail-footer__text">
                   정확한 취소 영수증을 확인 하시려면 아래 취소 영수증 버튼을 클릭 해주세요.
                 </p>
                 <button
-                  class="button button--md button--fill button--dark"
+                  class="button button--md button--border button--default"
                   type="button"
                 >
                   취소영수증

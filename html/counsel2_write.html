@@ -227,12 +227,11 @@
           <!-- ============================
              담당강사 선택
              ============================ -->
-          <div class="d-flex align-items-center gap-2">
-            <span class="heading4 text-black flex-shrink-0">담당강사:</span>
+          <div class="counsel-write-field">
+            <span class="counsel-write-field__label">담당강사:</span>
             <div
               class="field-wrap field-wrap--icon-right dropdown"
               tabindex="0"
-              style="max-width: 300px"
             >
               <input
                 type="text"
@@ -240,7 +239,7 @@
                 placeholder="All"
                 readonly
               />
-              <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
+              <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
               <ul class="dropdown__list">
                 <li data-value="all">All</li>
                 <li data-value="teacher1">Teachername1</li>
@@ -252,21 +251,19 @@
           <!-- ============================
              에디터
              ============================ -->
-          <div class="d-flex flex-column gap-3">
+          <div class="counsel-write-editor">
             <img
               src="../images/editor.png"
               alt="에디터"
-              class="w-100"
+              class="counsel-write-editor__image"
             />
-            <div
-              class="d-flex align-items-center justify-content-between flex-wrap gap-2"
-            >
+            <div class="counsel-write-editor__footer">
               <ul class="bullet-list">
-                <li class="body2 text-light-gray">300자 이상은 전달이 안됩니다.</li>
+                <li>300자 이상은 전달이 안됩니다.</li>
               </ul>
-              <div class="d-flex align-items-center gap-1">
-                <span class="body2 text-light-gray">남은 글자 수:</span>
-                <span class="body2 fw-bold" style="color: #ff5c5c">300</span>
+              <div class="counsel-write-editor__char-count">
+                <span>남은 글자 수:</span>
+                <span class="counsel-write-editor__char-value">300</span>
               </div>
             </div>
           </div>
@@ -274,7 +271,7 @@
           <!-- ============================
              하단 버튼
              ============================ -->
-          <div class="button-group justify-content-center">
+          <div class="button-group button-group--center">
             <a
               href="counsel2.html"
               class="button button--md button--fill button--neutral"

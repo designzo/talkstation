@@ -243,14 +243,14 @@
                 부서에서 확인 후 순차적으로 도움을 드리고 있습니다.<br />아래의
                 '상담 등록' 버튼을 눌러 요청 사항을 작성해주세요.
               </p>
-              <ul class="bullet-list bg-primary">
-                <li class="body2 text-primary">
+              <ul class="bullet-list bullet-list--blue">
+                <li>
                   원어민 화상영어 수업의 연기/보강 요청은 홈페이지나 어플 또는 '
                   나의 강의실 &gt; 연기 및 보강신청 ' 페이지에서만 가능합니다.
                 </li>
               </ul>
               <button
-                class="button button--sm button--border button--default mt-1"
+                class="button button--sm button--border button--default"
               >
                 연기 및 보강신청하러 가기
               </button>
@@ -276,7 +276,7 @@
               <!-- Row 1 (펼침 상태) -->
               <div class="complaint-item">
                 <div
-                  class="table-list__row g-0 g-lg-2"
+                  class="table-list__row"
                   role="button"
                   data-toggle="collapse"
                   data-target="#complaint1"
@@ -287,7 +287,7 @@
                     class="table-list__cell table-list__cell--center"
                   >
                     <span
-                      class="badge badge--sm badge--soft badge--blue rounded-pill"
+                      class="badge badge--sm badge--soft badge--blue badge--pill"
                       >처리완료</span
                     >
                   </div>
@@ -299,7 +299,7 @@
                   </div>
                   <!-- Mobile: 처리상황 -->
                   <!-- 제목 -->
-                  <div class="table-list__cell">
+                  <div class="table-list__cell table-list__cell--start">
                     <span
                       >Q. 불편접수 제목 영역 입니다.</span
                     >
@@ -314,55 +314,49 @@
 
                 <!-- 펼침 영역 -->
                 <div class="collapse in" id="complaint1">
-                  <div
-                    class="complaint-detail d-flex flex-column gap-5 p-4 p-lg-5"
-                  >
+                  <div class="complaint-detail">
                     <!-- 선생님 프로필 -->
-                    <div
-                      class="d-flex flex-column align-items-center gap-3 text-center"
-                    >
-                      <div
-                        class="teacher-profile__avatar"
-                        style="width: 64px; height: 64px"
-                      ></div>
-                      <div class="d-flex flex-column gap-1">
-                        <span class="heading4 text-black">Teachername</span>
-                        <span class="body2 text-light-gray">
-                          필리핀/1개월 과정
-                          <span class="text-gray-300 mx-1">·</span> 주 2회
-                          <span class="text-gray-300 mx-1">·</span> 월/수
-                          <span class="text-gray-300 mx-1">·</span> 25분
-                        </span>
-                        <span class="body2 text-gray"
-                          >교재 : Unspoken Rules of Traveling in Italy</span
-                        >
+                    <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg">
+                      <div class="teacher-profile__avatar"></div>
+                      <div class="teacher-profile__content">
+                        <span class="teacher-profile__name">Teachername</span>
+                        <div class="teacher-profile__meta">
+                          <span>필리핀/1개월 과정</span>
+                          <span class="dot"></span>
+                          <span>주 2회</span>
+                          <span class="dot"></span>
+                          <span>월/수</span>
+                          <span class="dot"></span>
+                          <span>25분</span>
+                        </div>
+                        <div class="teacher-profile__book">
+                          교재 : Unspoken Rules of Traveling in Italy
+                        </div>
                       </div>
                     </div>
 
                     <!-- 불편사항 -->
-                    <div class="toggle-block-section d-flex flex-column gap-3">
-                      <span class="heading5 text-black">불편사항</span>
-                      <div class="d-flex flex-column gap-3">
-                        <label class="custom-input-wrap custom-input-wrap--left">
+                    <div class="complaint-detail__section">
+                      <span class="complaint-detail__section-title">불편사항</span>
+                      <label class="custom-input-wrap custom-input-wrap--left">
                           <input type="checkbox" class="custom-checkbox" checked disabled />
                           <span class="label-text"
                             >수업 진행중 선생님 소리가 잘 안들려요</span
                           >
                         </label>
                         <label class="custom-input-wrap custom-input-wrap--left">
-                          <input type="checkbox" class="custom-checkbox" checked disabled/>
+                          <input type="checkbox" class="custom-checkbox" checked disabled />
                           <span class="label-text"
                             >선생님이 지각을 해요.(선생님이 수업시간을 지키지
                             않아요.)</span
                           >
                         </label>
-                      </div>
                     </div>
 
                     <!-- 기타 요청 사항 -->
-                    <div class="toggle-block-section d-flex flex-column gap-3">
-                      <span class="heading5 text-black">기타 요청 사항</span>
-                      <p class="body2 text-gray">
+                    <div class="complaint-detail__section">
+                      <span class="complaint-detail__section-title">기타 요청 사항</span>
+                      <p class="complaint-detail__section-body">
                         기타요청사항에 작성한 영역 입니다.기타요청사항에 작성한
                         영역 입니다.기타요청사항에 작성한 영역
                         입니다.기타요청사항에 작성한 영역 입니다.기타요청사항에
@@ -374,23 +368,16 @@
                     </div>
 
                     <!-- 토크스테이션 답변 -->
-                    <div class="d-flex flex-column gap-3 pt-4 border-top">
-                      <div class="d-flex align-items-center gap-2">
-                        <span class="body1 fw-medium text-black"
+                    <div class="detail-reply">
+                      <div class="detail-reply__header">
+                        <span class="detail-reply__name"
                           >토크스테이션</span
                         >
-                        <span
-                          class="d-inline-block rounded-circle"
-                          style="
-                            width: 4px;
-                            height: 4px;
-                            background-color: var(--color-gray-300);
-                          "
-                        ></span>
-                        <span class="body2 text-gray">25.08.29 14:00</span>
+                        <span class="dot"></span>
+                        <span class="detail-reply__date">25.08.29 14:00</span>
                       </div>
-                      <div class="toggle-block-reply">
-                        <p class="body2 text-gray">
+                      <div class="reply-box">
+                        <p class="complaint-detail__section-body">
                           토크스테이션 답변 영역 입니다.토크스테이션 답변 영역
                           입니다.토크스테이션 답변 영역 입니다.토크스테이션 답변
                           영역 입니다.토크스테이션 답변 영역 입니다.토크스테이션
@@ -416,7 +403,7 @@
               <!-- Row 2 (접힌 상태) -->
               <div class="complaint-item">
                 <div
-                  class="table-list__row table-list__row--highlight g-0 g-lg-2"
+                  class="table-list__row table-list__row--highlight"
                   role="button"
                   data-toggle="collapse"
                   data-target="#complaint2"
@@ -427,7 +414,7 @@
                     class="table-list__cell table-list__cell--center"
                   >
                     <span
-                      class="badge badge--sm badge--soft badge--green rounded-pill"
+                      class="badge badge--sm badge--soft badge--green badge--pill"
                       >처리중</span
                     >
                   </div>
@@ -438,7 +425,7 @@
                     <span>2</span>
                   </div>
                   <!-- 제목 -->
-                  <div class="table-list__cell">
+                  <div class="table-list__cell table-list__cell--start">
                     <span
                       >Q. 불편접수 제목 영역 입니다.</span
                     >
@@ -453,48 +440,42 @@
 
                 <!-- 펼침 영역 -->
                 <div class="collapse" id="complaint2">
-                  <div
-                    class="complaint-detail d-flex flex-column gap-6 p-4 p-lg-5"
-                  >
+                  <div class="complaint-detail">
                     <!-- 선생님 프로필 -->
-                    <div
-                      class="d-flex flex-column align-items-center gap-3 text-center"
-                    >
-                      <div
-                        class="teacher-profile__avatar"
-                        style="width: 64px; height: 64px"
-                      ></div>
-                      <div class="d-flex flex-column gap-1">
-                        <span class="heading4 text-black">Teachername</span>
-                        <span class="body2 text-light-gray">
-                          필리핀/1개월 과정
-                          <span class="text-gray-300 mx-1">·</span> 주 2회
-                          <span class="text-gray-300 mx-1">·</span> 월/수
-                          <span class="text-gray-300 mx-1">·</span> 25분
-                        </span>
-                        <span class="body2 text-gray"
-                          >교재 : Unspoken Rules of Traveling in Italy</span
-                        >
-                      </div>
-                    </div>
-
-                    <!-- 불편사항 -->
-                    <div class="section-box d-flex flex-column gap-3">
-                      <span class="heading5 text-black">불편사항</span>
-                      <div class="d-flex flex-column gap-3">
-                        <div class="d-flex align-items-center gap-2">
-                          <svg class="icon icon-check-square-fill" style="color: var(--color-cyan-500)"><use href="#check-square-fill"></use></svg>
-                          <span class="body2 text-neutral"
-                            >수업 진행중 선생님 소리가 잘 안들려요</span
-                          >
+                    <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg">
+                      <div class="teacher-profile__avatar"></div>
+                      <div class="teacher-profile__content">
+                        <span class="teacher-profile__name">Teachername</span>
+                        <div class="teacher-profile__meta">
+                          <span>필리핀/1개월 과정</span>
+                          <span class="dot"></span>
+                          <span>주 2회</span>
+                          <span class="dot"></span>
+                          <span>월/수</span>
+                          <span class="dot"></span>
+                          <span>25분</span>
+                        </div>
+                        <div class="teacher-profile__book">
+                          교재 : Unspoken Rules of Traveling in Italy
                         </div>
                       </div>
                     </div>
 
+                    <!-- 불편사항 -->
+                    <div class="complaint-detail__section section-box">
+                      <span class="complaint-detail__section-title">불편사항</span>
+                      <label class="custom-input-wrap custom-input-wrap--left">
+                          <input type="checkbox" class="custom-checkbox" checked disabled />
+                          <span class="label-text"
+                            >수업 진행중 선생님 소리가 잘 안들려요</span
+                          >
+                        </label>
+                    </div>
+
                     <!-- 기타 요청 사항 -->
-                    <div class="section-box d-flex flex-column gap-3">
-                      <span class="heading5 text-black">기타 요청 사항</span>
-                      <p class="body2 text-gray">
+                    <div class="complaint-detail__section section-box">
+                      <span class="complaint-detail__section-title">기타 요청 사항</span>
+                      <p class="complaint-detail__section-body">
                         기타요청사항에 작성한 영역 입니다.
                       </p>
                     </div>
@@ -504,23 +485,19 @@
             </div>
 
             <!-- 상담 등록 + 페이지네이션 -->
-            <div
-              class="d-flex flex-column flex-lg-row align-items-center gap-3 mt-5"
-            >
-              <button
-                class="button button--md button--fill button--primary button--block button--block-lg-auto order-lg-first"
-              >
-                상담 등록
-              </button>
-
-              <div
-                class="pagination-nav__info"
-              >
-                Showing <strong class="pagination-nav__info-value">1</strong> Page of
-                <strong class="pagination-nav__info-value">2</strong> entries
+            <div class="pagination-nav">
+              <div class="pagination-nav__actions">
+                <button
+                  class="button button--md button--fill button--primary button--block button--block-lg-auto"
+                >
+                  상담 등록
+                </button>
+                <div class="pagination-nav__info">
+                  Showing <strong class="pagination-nav__info-value">1</strong> Page of
+                  <strong class="pagination-nav__info-value">2</strong> entries
+                </div>
               </div>
-
-                              <ul class="pagination-nav__list">
+              <ul class="pagination-nav__list">
                   <li class="pagination-nav__item pagination-nav__item--disabled">
                     <a class="pagination-nav__link" href="#"
                       ><svg class="icon"><use href="#chevron-double-left"></use></svg></a>

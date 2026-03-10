@@ -227,13 +227,11 @@
           <!-- ============================
                수업 불편 수강 선택
                ============================ -->
-            <div class="d-flex flex-column gap-4">
-              <span class="heading4 text-black">수업 불편 수강 선택</span>
-              <div
-                class="complaint-write-banner radius-xl d-flex align-items-center gap-4 p-4 p-lg-5"
-              >
+            <div class="complaint-write-section">
+              <h3 class="complaint-write-section__title">수업 불편 수강 선택</h3>
+              <div class="complaint-write-banner">
                 <!-- 체크박스 -->
-                <label class="custom-input-wrap flex-shrink-0 align-self-start">
+                <label class="custom-input-wrap">
                   <input
                     type="checkbox"
                     class="custom-checkbox"
@@ -247,24 +245,18 @@
                 >
                   <div class="teacher-profile__avatar"></div>
                   <div class="teacher-profile__content">
-                    <div class="d-flex align-items-center mb-1-5">
-                      <span class="teacher-profile__name">Teachername</span>
-                    </div>
-                    <span class="body2 text-gray"
+                    <span class="teacher-profile__name">Teachername</span>
+                    <span class="teacher-profile__meta"
                       >원어민(필리핀) A Time</span
                     >
                   </div>
                 </div>
                 <!-- 수강 상세 (PC: 오른쪽 / 모바일: 체크박스 인덴트 아래) -->
                 <div class="complaint-write-course-detail">
-                  <span class="body2 weight-medium text-gray"
-                    >25.04.15~25.09.30 화,목 15:00</span
-                  >
-                  <span class="body2 weight-medium text-gray"
-                    >교재 : Unspoken Rules of Traveling in Italy</span
-                  >
+                  <span>25.04.15~25.09.30 화,목 15:00</span>
+                  <span>교재 : Unspoken Rules of Traveling in Italy</span>
                   <span
-                    class="badge badge--md badge--soft badge--primary rounded-pill"
+                    class="badge badge--md badge--soft badge--primary badge--pill"
                     >레벨 : GL5(Sunflower) - STEP3</span
                   >
                 </div>
@@ -274,11 +266,11 @@
             <!-- ============================
                불편사항
                ============================ -->
-            <div class="d-flex flex-column gap-4">
-              <span class="heading4 text-black">불편사항</span>
+            <div class="complaint-write-section">
+              <h3 class="complaint-write-section__title">불편사항</h3>
 
               <!-- 시스템 불편 -->
-              <div class="complaint-write-card elevator-large radius-xl p-4">
+              <div class="complaint-write-card">
                 <button
                   class="complaint-write-toggle"
                   type="button"
@@ -287,7 +279,7 @@
                   aria-expanded="true"
                   aria-controls="collapseSystem"
                 >
-                  <span class="heading5 text-black">시스템 불편</span>
+                  <span>시스템 불편</span>
                   <svg class="icon"><use href="#chevron-up"></use></svg>
                 </button>
                 <div class="collapse in" id="collapseSystem">
@@ -341,7 +333,7 @@
               </div>
 
               <!-- 선생님 불편 -->
-              <div class="complaint-write-card elevator-large radius-xl p-4">
+              <div class="complaint-write-card">
                 <button
                   class="complaint-write-toggle"
                   type="button"
@@ -350,7 +342,7 @@
                   aria-expanded="true"
                   aria-controls="collapseTeacher"
                 >
-                  <span class="heading5 text-black">선생님 불편</span>
+                  <span>선생님 불편</span>
                   <svg class="icon"><use href="#chevron-up"></use></svg>
                 </button>
                 <div class="collapse in" id="collapseTeacher">
@@ -437,10 +429,10 @@
             <!-- ============================
                기타요청사항
                ============================ -->
-            <div class="d-flex flex-column gap-4">
-              <span class="heading4 text-black">기타요청사항</span>
+            <div class="section-card">
+              <h4 class="section-card__title">기타요청사항</h4>
               <ul class="bullet-list">
-                <li class="body2 text-light-gray">
+                <li>
                   불편 사항 목록에 없거나 기타 요청 및 불편 사항이 있으면 아래에
                   자세하게 써 넣어주세요.
                 </li>
@@ -456,20 +448,18 @@
             <!-- ============================
                하단 버튼
                ============================ -->
-            <div class="d-flex justify-content-center">
-              <div class="button-group">
-                <a
-                  href="complaints.html"
-                  class="button button--md button--fill button--dark"
-                  >목록</a
-                >
-                <button
-                  type="button"
-                  class="button button--md button--fill button--primary"
-                >
-                  상담 등록
-                </button>
-              </div>
+            <div class="button-group button-group--center">
+              <a
+                href="complaints.html"
+                class="button button--md button--fill button--dark"
+                >목록</a
+              >
+              <button
+                type="button"
+                class="button button--md button--fill button--primary"
+              >
+                상담 등록
+              </button>
             </div>
         </div>
       </main>

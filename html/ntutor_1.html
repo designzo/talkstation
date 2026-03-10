@@ -123,6 +123,7 @@
                 <li><a href="#" class="lnb__nav-item lnb__nav-item--active">신규선생님 평가</a></li>
                 <li><a href="#" class="lnb__nav-item">알림콜 설정</a></li>
               </ul>
+            </div>
           </div>
         </nav>
 
@@ -278,44 +279,27 @@
              ============================ -->
           <div class="tab-content">
             <div class="tab-pane active" id="tabInProgress">
-              <div class="d-flex flex-column gap-4">
+              <div class="ntutor-card-list">
                 <!-- Teacher Card 1 (expanded) -->
                 <div class="ntutor-card card-panel">
-                  <!-- 카드 헤더: 선생님 정보 + 버튼 -->
-                  <div
-                    class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-between gap-3"
-                  >
-                    <!-- 선생님 프로필 -->
+                  <div class="ntutor-card__header">
                     <div
-                      class="d-flex flex-column flex-lg-row align-items-center gap-3"
+                      class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
                     >
-                      <div
-                        class="teacher-profile__avatar teacher-profile__avatar--lg"
-                      ></div>
-                      <div
-                        class="d-flex flex-column gap-1 text-center text-lg-start"
-                      >
-                        <h3 class="heading4 text-black">Teachername</h3>
-                        <div
-                          class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2"
-                        >
-                          <span class="body3 text-muted"
-                            >25.09.02 ~ 25.09.30</span
-                          >
-                          <span
-                            class="d-inline-block rounded-circle bg-border-light"
-                            style="width: 4px; height: 4px"
-                          ></span>
-                          <span class="body3 text-muted">월/수</span>
+                      <div class="teacher-profile__avatar"></div>
+                      <div class="teacher-profile__content">
+                        <span class="teacher-profile__name">Teachername</span>
+                        <div class="teacher-profile__meta">
+                          <span>25.09.02 ~ 25.09.30</span>
+                          <span class="dot"></span>
+                          <span>월/수</span>
                         </div>
-                        <p class="body3 text-neutral">
+                        <div class="teacher-profile__book">
                           교재 : Unspoken Rules of Traveling in Italy
-                        </p>
+                        </div>
                       </div>
                     </div>
-
-                    <!-- 액션 버튼 -->
-                    <div class="d-flex gap-2 flex-shrink-0">
+                    <div class="ntutor-card__actions">
                       <button
                         class="button button--md button--border button--default"
                         type="button"
@@ -325,14 +309,12 @@
                     </div>
                   </div>
 
-                  <!-- 세션 리스트 (토글 영역) -->
-                  <div class="border-top-dark mt-4 pt-4">
-                    <div class="d-flex flex-column gap-3">
+                  <!-- 세션 리스트 -->
+                  <div class="ntutor-card__sessions">
                       <!-- 필터 셀렉트 -->
                       <div
                         class="field-wrap field-wrap--icon-right dropdown"
                         tabindex="0"
-                        style="width: fit-content"
                       >
                         <input
                           type="text"
@@ -340,7 +322,7 @@
                           placeholder="All"
                           readonly
                         />
-                        <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
+                        <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                         <ul class="dropdown__list">
                           <li data-value="all">All</li>
                           <li data-value="waiting">수업대기</li>
@@ -352,63 +334,63 @@
                       <!-- 세션 카드 그리드 -->
                       <div class="ntutor-session-grid">
                         <!-- Session 1: 수업대기 + 평가대기 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--peacock"
                             >수업대기</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.09.25 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <span
-                              class="badge badge--md badge--soft badge--light w-100"
+                              class="badge badge--md badge--soft badge--light"
                               >평가대기</span
                             >
                           </div>
                         </div>
 
                         <!-- Session 2: 수업대기 + 평가대기 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--peacock"
                             >수업대기</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.09.25 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <span
-                              class="badge badge--md badge--soft badge--light w-100"
+                              class="badge badge--md badge--soft badge--light"
                               >평가대기</span
                             >
                           </div>
                         </div>
 
                         <!-- Session 3: 출석 + 평가완료 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.09.25 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--default w-100"
+                              class="button button--sm button--border button--default"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -419,21 +401,21 @@
                         </div>
 
                         <!-- Session 4: 출석 + 평가하기 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.09.25 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--primary w-100"
+                              class="button button--sm button--border button--primary"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalModal"
@@ -444,42 +426,42 @@
                         </div>
 
                         <!-- Session 5: 결석 + 평가불가 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--orange"
                             >결석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.09.25 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <span
-                              class="badge badge--md badge--soft badge--dark w-100"
+                              class="badge badge--md badge--soft badge--dark"
                               >평가불가</span
                             >
                           </div>
                         </div>
 
                         <!-- Session 6: 출석 + 평가하기 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.09.25 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--primary w-100"
+                              class="button button--sm button--border button--primary"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalModal"
@@ -493,47 +475,29 @@
                   </div>
                 </div>
               </div>
-            </div>
 
             <div class="tab-pane" id="tabCompleted">
-              <div class="d-flex flex-column gap-4">
+              <div class="ntutor-card-list">
                 <!-- Teacher Card 3 (완료된 수업) -->
                 <div class="ntutor-card card-panel">
-                  <!-- 카드 헤더: 선생님 정보 + 버튼 -->
-                  <div
-                    class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-between gap-3"
-                  >
-                    <!-- 선생님 프로필 -->
+                  <div class="ntutor-card__header">
                     <div
-                      class="d-flex flex-column flex-lg-row align-items-center gap-3"
+                      class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
                     >
-                      <div
-                        class="teacher-profile__avatar teacher-profile__avatar--lg"
-                      ></div>
-                      <div
-                        class="d-flex flex-column gap-1 text-center text-lg-start"
-                      >
-                        <h3 class="heading4 text-black">Teachername</h3>
-                        <div
-                          class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2"
-                        >
-                          <span class="body3 text-muted"
-                            >25.07.01 ~ 25.07.31</span
-                          >
-                          <span
-                            class="d-inline-block rounded-circle bg-border-light"
-                            style="width: 4px; height: 4px"
-                          ></span>
-                          <span class="body3 text-muted">화/목</span>
+                      <div class="teacher-profile__avatar"></div>
+                      <div class="teacher-profile__content">
+                        <span class="teacher-profile__name">Teachername</span>
+                        <div class="teacher-profile__meta">
+                          <span>25.07.01 ~ 25.07.31</span>
+                          <span class="dot"></span>
+                          <span>화/목</span>
                         </div>
-                        <p class="body3 text-neutral">
+                        <div class="teacher-profile__book">
                           교재 : Unspoken Rules of Traveling in Italy
-                        </p>
+                        </div>
                       </div>
                     </div>
-
-                    <!-- 액션 버튼 -->
-                    <div class="d-flex button-group flex-shrink-0">
+                    <div class="ntutor-card__actions">
                       <button
                         class="button button--md button--border button--default"
                         type="button"
@@ -547,19 +511,17 @@
                         data-target="#ntutorSessions3"
                       >
                         평가서 보기
-                        <svg class="icon icon-chevron-down ms-1"><use href="#chevron-down"></use></svg>
+                        <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                       </button>
                     </div>
                   </div>
 
                   <!-- 세션 리스트 (토글 영역) -->
-                  <div class="collapse in" id="ntutorSessions3">
-                    <div class="d-flex flex-column gap-3">
+                  <div class="ntutor-card__sessions collapse in" id="ntutorSessions3">
                       <!-- 필터 셀렉트 -->
                       <div
                         class="field-wrap field-wrap--icon-right dropdown"
                         tabindex="0"
-                        style="width: fit-content"
                       >
                         <input
                           type="text"
@@ -567,7 +529,7 @@
                           placeholder="All"
                           readonly
                         />
-                        <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
+                        <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                         <ul class="dropdown__list">
                           <li data-value="all">All</li>
                           <li data-value="waiting">수업대기</li>
@@ -579,21 +541,21 @@
                       <!-- 세션 카드 그리드 -->
                       <div class="ntutor-session-grid">
                         <!-- Session 1: 출석 + 평가완료 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.07.25 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--default w-100"
+                              class="button button--sm button--border button--default"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -604,21 +566,21 @@
                         </div>
 
                         <!-- Session 2: 출석 + 평가완료 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.07.23 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--default w-100"
+                              class="button button--sm button--border button--default"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -629,42 +591,42 @@
                         </div>
 
                         <!-- Session 3: 결석 + 평가불가 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--orange"
                             >결석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.07.21 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <span
-                              class="badge badge--md badge--soft badge--dark w-100"
+                              class="badge badge--md badge--soft badge--dark"
                               >평가불가</span
                             >
                           </div>
                         </div>
 
                         <!-- Session 4: 출석 + 평가완료 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.07.18 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--default w-100"
+                              class="button button--sm button--border button--default"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -675,21 +637,21 @@
                         </div>
 
                         <!-- Session 5: 출석 + 평가완료 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.07.16 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--default w-100"
+                              class="button button--sm button--border button--default"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -700,21 +662,21 @@
                         </div>
 
                         <!-- Session 6: 출석 + 평가완료 -->
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.07.14 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--default w-100"
+                              class="button button--sm button--border button--default"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -726,42 +688,27 @@
                       </div>
                     </div>
                   </div>
-                </div>
 
                 <!-- Teacher Card 4 (완료된 수업 - collapsed) -->
                 <div class="ntutor-card card-panel">
-                  <div
-                    class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-between gap-3"
-                  >
+                  <div class="ntutor-card__header">
                     <div
-                      class="d-flex flex-column flex-lg-row align-items-center gap-3"
+                      class="teacher-profile teacher-profile--horizontal teacher-profile--lg"
                     >
-                      <div
-                        class="teacher-profile__avatar teacher-profile__avatar--lg"
-                      ></div>
-                      <div
-                        class="d-flex flex-column gap-1 text-center text-lg-start"
-                      >
-                        <h3 class="heading4 text-black">Teachername</h3>
-                        <div
-                          class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2"
-                        >
-                          <span class="body3 text-muted"
-                            >25.06.01 ~ 25.06.30</span
-                          >
-                          <span
-                            class="d-inline-block rounded-circle bg-border-light"
-                            style="width: 4px; height: 4px"
-                          ></span>
-                          <span class="body3 text-muted">월/수</span>
+                      <div class="teacher-profile__avatar"></div>
+                      <div class="teacher-profile__content">
+                        <span class="teacher-profile__name">Teachername</span>
+                        <div class="teacher-profile__meta">
+                          <span>25.06.01 ~ 25.06.30</span>
+                          <span class="dot"></span>
+                          <span>월/수</span>
                         </div>
-                        <p class="body3 text-neutral">
+                        <div class="teacher-profile__book">
                           교재 : Unspoken Rules of Traveling in Italy
-                        </p>
+                        </div>
                       </div>
                     </div>
-
-                    <div class="d-flex button-group flex-shrink-0">
+                    <div class="ntutor-card__actions">
                       <button
                         class="button button--md button--border button--default"
                         type="button"
@@ -775,18 +722,16 @@
                         data-target="#ntutorSessions4"
                       >
                         평가서 보기
-                        <svg class="icon icon-chevron-down ms-1"><use href="#chevron-down"></use></svg>
+                        <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                       </button>
                     </div>
                   </div>
 
                   <!-- 세션 리스트 (토글 영역 - 접힌 상태) -->
-                  <div class="collapse" id="ntutorSessions4">
-                    <div class="d-flex flex-column gap-3">
+                  <div class="ntutor-card__sessions collapse" id="ntutorSessions4">
                       <div
                         class="field-wrap field-wrap--icon-right dropdown"
                         tabindex="0"
-                        style="width: fit-content"
                       >
                         <input
                           type="text"
@@ -794,7 +739,7 @@
                           placeholder="All"
                           readonly
                         />
-                        <svg class="icon icon-chevron-down ms-auto"><use href="#chevron-down"></use></svg>
+                        <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
                         <ul class="dropdown__list">
                           <li data-value="all">All</li>
                           <li data-value="waiting">수업대기</li>
@@ -803,21 +748,21 @@
                         </ul>
                       </div>
                       <div class="ntutor-session-grid">
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.06.25 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--default w-100"
+                              class="button button--sm button--border button--default"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -826,21 +771,21 @@
                             </button>
                           </div>
                         </div>
-                        <div class="ntutor-session-card radius-lg bg-gray p-3">
+                        <div class="ntutor-session-card">
                           <span class="badge badge--sm badge--fill badge--blue"
                             >출석</span
                           >
-                          <div class="d-flex align-items-center gap-2">
-                            <svg class="icon text-muted"><use href="#calendar2-event"></use></svg>
-                            <span class="body2 fw-bold text-black"
+                          <div class="ntutor-session-card__schedule">
+                            <svg class="icon"><use href="#calendar2-event"></use></svg>
+                            <span
                               >25.06.23 17:00</span
                             >
                           </div>
                           <div
-                            class="border-top-dark border-light-subtle pt-3 mt-1 w-100"
+                            class="ntutor-session-card__action"
                           >
                             <button
-                              class="button button--sm button--border button--default w-100"
+                              class="button button--sm button--border button--default"
                               type="button"
                               data-toggle="modal"
                               data-target="#evalViewModal"
@@ -850,12 +795,12 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </main>
     </div>
@@ -887,8 +832,8 @@
           <!-- 모달 바디 -->
           <div class="modal-body">
             <!-- 안내 배너 -->
-            <div class="eval-modal-banner">
-              <p class="body1 weight-medium line-height-140 text-gray">
+            <div class="ntutor-eval-modal__banner">
+              <p>
                 체험 수업 강사 평가를 해주세요!<br />
                 회원님들의 평가를 통해 좋은 성적을 받으신 강사만 정규 수업에
                 투입됩니다.<br />
@@ -897,22 +842,18 @@
             </div>
 
             <!-- 수업 정보 -->
-            <div class="d-flex align-items-center gap-2">
-              <span class="body2 text-gray" id="evalSessionDate"
-                >25.09.02 17:00</span
-              >
-              <span
-                class="dot"
-              ></span>
+            <div class="ntutor-eval-modal__session">
+              <span id="evalSessionDate">25.09.02 17:00</span>
+              <span class="dot"></span>
               <span class="badge badge--sm badge--soft badge--blue">평가하기</span>
             </div>
 
             <!-- Q1: 만족도 -->
             <fieldset>
-              <legend class="heading5 text-neutral">
+              <legend>
                 체험 수업 강사와의 수업이 만족스러운가요?
               </legend>
-              <div class="eval-radio-group">
+              <div class="ntutor-eval-modal__radio-group">
                 <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
@@ -962,8 +903,8 @@
             </fieldset>
 
             <!-- Q2: 기타 의견 -->
-            <div class="d-flex flex-column gap-3">
-              <label class="heading5 text-neutral" for="evalFeedback"
+            <div class="ntutor-eval-modal__feedback">
+              <label for="evalFeedback"
                 >기타 의견이 있으시면 알려주세요.</label
               >
               <textarea
@@ -976,7 +917,7 @@
             </div>
 
             <!-- 푸터 버튼 -->
-            <div class="eval-modal-footer">
+            <div class="modal-footer">
               <div class="button-group">
                 <button
                   type="button"
@@ -1031,10 +972,8 @@
           <!-- 모달 바디 -->
           <div class="modal-body">
             <!-- 수업 정보 -->
-            <div class="d-flex align-items-center gap-2">
-              <span class="body2 text-gray" id="evalViewSessionDate"
-                >25.09.02 17:00</span
-              >
+            <div class="ntutor-eval-modal__session">
+              <span id="evalViewSessionDate">25.09.02 17:00</span>
               <span class="dot"></span>
               <span class="badge badge--sm badge--soft badge--green"
                 >평가완료</span
@@ -1043,10 +982,10 @@
 
             <!-- Q1: 만족도 (disabled) -->
             <fieldset disabled>
-              <legend class="heading5 text-neutral">
+              <legend>
                 체험 수업 강사와의 수업이 만족스러운가요?
               </legend>
-              <div class="eval-radio-group">
+              <div class="ntutor-eval-modal__radio-group">
                 <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"
@@ -1097,12 +1036,10 @@
             </fieldset>
 
             <!-- Q2: 기타 의견 (readonly) -->
-            <div class="d-flex flex-column gap-3">
-              <label class="heading5 text-neutral"
-                >기타 의견이 있으시면 알려주세요.</label
-              >
-              <div class="eval-view-textarea-wrap">
-                <p class="body2 text-gray">
+            <div class="ntutor-eval-modal__feedback">
+              <label>기타 의견이 있으시면 알려주세요.</label>
+              <div class="ntutor-eval-modal__feedback-text">
+                <p>
                   기타 의견 영역 입니다.기타 의견 영역 입니다.기타 의견 영역
                   입니다.기타 의견 영역 입니다.기타 의견 영역 입니다.기타 의견
                   영역 입니다.기타 의견 영역 입니다. 기타 의견 영역 입니다.기타
@@ -1112,7 +1049,7 @@
             </div>
 
             <!-- 푸터 버튼 -->
-            <div class="eval-modal-footer">
+            <div class="modal-footer">
               <button
                 type="button"
                 class="button button--md button--fill button--dark"
