@@ -1644,25 +1644,31 @@ h6,
    원서&영상수업 요청목록 (c_native9)
    ============================================== */
 
-/* 책 표지 이미지 */
-.book-req-cover {
+/* Grid 정의 */
+.table-list--book-req { --table-cols: 5fr 2fr 2fr 2fr 1fr; }
+
+/* 원서 정보: 이미지 + 텍스트 래퍼 */
+.book-req-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+.book-req-info__cover {
   width: 30px;
   height: 45px;
   object-fit: cover;
   flex-shrink: 0;
 }
-
-/* 강사 아바타 */
-.book-req-teacher-avatar {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #7a9cfa;
-  flex-shrink: 0;
+.book-req-info__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
 }
-
-/* Grid 정의 */
-.table-list--book-req { --table-cols: 5fr 2fr 2fr 2fr 1fr; }
+.book-req-info__title {
+  font-weight: var(--fontweight-medium);
+  line-height: var(--lineheight-sm);
+  color: var(--color-neutral);
+}
 
 /* 모바일 반응형 */
 @media (max-width: 991px) {
