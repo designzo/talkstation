@@ -38,7 +38,7 @@
           <h5 class="lnb__profile-name">홍길동</h5>
           <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button--sm button--fill button--secondary rounded-pill"
+            class="button button--sm button--fill button--secondary button--pill"
           >
             프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
@@ -79,7 +79,7 @@
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan"><svg class="icon"><use href="#my-lesson"></use></svg></span>
               <span>나의 수업 관리</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -147,7 +147,7 @@
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet"><svg class="icon"><use href="#my-info"></use></svg></span>
               <span>나의 정보</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -177,7 +177,7 @@
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue"><svg class="icon"><use href="#idc"></use></svg></span>
               <span>아이딕 잉글리시</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -200,7 +200,7 @@
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange"><svg class="icon"><use href="#support"></use></svg></span>
               <span>학습지원서비스</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -240,22 +240,21 @@
                탭1: 신청 및 사용 관리
                ============================ -->
             <div class="tab-pane active" id="tabManage">
-              <div class="d-flex flex-column gap-5 gap-lg-6">
+              <div class="content-stack">
                 <!-- ============================
                    나의 수강 정보 + 캘린더 (PC)
                    ============================ -->
-                <div class="row row-gap-5 d-none d-lg-flex">
+                <div class="section-grid section-grid--half section-grid--pc-only">
                   <!-- Course Info -->
-                  <div class="col-12 col-lg-6">
                     <div
                       class="section-card course-info"
                     >
-                      <div class="section-card__header">
-                        <h3 class="section-card__title">
-                          나의 수강 정보
-                        </h3>
-                      </div>
                       <div class="course-info__scroll">
+                        <div class="section-card__header">
+                          <h3 class="section-card__title">
+                            나의 수강 정보
+                          </h3>
+                        </div>
                         <div class="course-info__cards">
                           <div
                             class="course-info__card"
@@ -290,7 +289,7 @@
                             </div>
 
                             <!-- Action Buttons -->
-                            <div class="button-group course-info__actions">
+                            <div class="course-info__actions">
                               <button
                                 class="button button--sm button--fill button--default"
                               >
@@ -312,8 +311,8 @@
 
                         <!-- Event Section -->
                         <div class="section-card__body">
-                          <h4 class="section-card__subtitle">이벤트 바로가기</h4>
                           <div class="event-list">
+                            <h4 class="event-list__title">이벤트 바로가기</h4>
                             <div class="event-list__banner">
                               <img
                                 src="../images/dummy2.png"
@@ -336,10 +335,8 @@
                         </div>
                       </div>
                     </div>
-                  </div>
 
                   <!-- Calendar -->
-                  <div class="col-12 col-lg-6">
                     <div
                       class="section-card"
                     >
@@ -399,15 +396,15 @@
                           ></span>
                           <span class="calendar-grid__date"
                             >15
-                            <div class="d-flex flex-column gap-1">
+                            <div class="calendar-grid__actions">
                               <button
-                                class="button button--xs button--border button--default flex-1 flex-lg-none min-width-0"
+                                class="button button--xs button--border button--default"
                   type="button"
                 >
                   연기
                 </button>
                 <button
-                                class="button button--xs button--border button--default flex-1 flex-lg-none min-width-0"
+                                class="button button--xs button--border button--default"
                   type="button"
                 >
                   보강
@@ -473,13 +470,12 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
 
                 <!-- ============================
                    나의 수강 정보 + 캘린더 (Mobile)
                    ============================ -->
-                <div class="d-flex flex-column gap-5 d-lg-none">
+                <div class="section-grid section-grid--half section-grid--mobile-only">
                   <!-- Course Info -->
                     <div
                       class="section-card"
@@ -524,7 +520,7 @@
                             </div>
 
                             <!-- Action Buttons -->
-                            <div class="button-group course-info__actions">
+                            <div class="course-info__actions">
                               <button
                                 class="button button--sm button--fill button--default"
                               >
@@ -564,7 +560,7 @@
                           </button>
                         </div>
 
-                        <div class="calendar-grid">
+                        <div class="calendar-grid calendar-grid--extended">
                           <span class="calendar-grid__day">일</span>
                           <span class="calendar-grid__day">월</span>
                           <span class="calendar-grid__day">화</span>
@@ -603,7 +599,22 @@
                             >14<span class="calendar-grid__dot calendar-grid__dot--blue"></span
                           ></span>
                           <span class="calendar-grid__date"
-                            >15<span class="calendar-grid__dot calendar-grid__dot--orange"></span
+                            >15
+                            <div class="calendar-grid__actions">
+                              <button
+                                class="button button--xs button--border button--default"
+                                type="button"
+                              >
+                                연기
+                              </button>
+                              <button
+                                class="button button--xs button--border button--default"
+                                type="button"
+                              >
+                                보강
+                              </button>
+                            </div>
+                            </span
                           ></span>
                           <span class="calendar-grid__date"
                             >16<span class="calendar-grid__dot calendar-grid__dot--green"></span
@@ -643,27 +654,21 @@
                         <div class="calendar-legend">
                           <div class="calendar-legend__item">
                             <span
-                              class="calendar-legend__dot calendar-legend__dot--lesson"
-                            ></span>
-                            <span>수업: <b>1회</b></span>
-                          </div>
-                          <div class="calendar-legend__item">
-                            <span
                               class="calendar-legend__dot calendar-legend__dot--attend"
                             ></span>
-                            <span>출석: <b>1회</b></span>
+                            <span>연기신청: <b>1회</b></span>
                           </div>
                           <div class="calendar-legend__item">
                             <span
                               class="calendar-legend__dot calendar-legend__dot--absent"
                             ></span>
-                            <span>결석: <b>1회</b></span>
+                            <span>보강대기: <b>1회</b></span>
                           </div>
                           <div class="calendar-legend__item">
                             <span
                               class="calendar-legend__dot calendar-legend__dot--makeup"
                             ></span>
-                            <span>보강: <b>1회</b></span>
+                            <span>보강수업: <b>1회</b></span>
                           </div>
                         </div>
                       </div>
@@ -675,8 +680,8 @@
                     >
                       <div class="course-info">
                         <div class="section-card__body">
-                          <h4 class="section-card__subtitle">이벤트 바로가기</h4>
                           <div class="event-list">
+                            <h4 class="event-list__title">이벤트 바로가기</h4>
                             <div class="event-list__banner">
                               <img src="../images/dummy2.png" alt="이벤트 배너 1" />
                             </div>
@@ -698,7 +703,7 @@
                 <div
                   class="table-list table-list--makeup card-panel"
                 >
-                  <h3 class="heading4 text-black mb-4">사용 가능한 보강권 목록</h3>
+                  <h3 class="table-list__heading">사용 가능한 보강권 목록</h3>
 
                     <!-- 테이블 헤더 (데스크탑만) -->
                     <div
@@ -720,27 +725,41 @@
                           <span class="table-list__mobile-label">등록일</span>
                           <span>25.00.00</span>
                         </div>
-                        <!-- 보강타입 -->
-                        <div class="table-list__cell">
-                          <span class="table-list__mobile-label">보강타입</span>
+                        <!-- 모바일: 보강타입 + 구분 -->
+                        <div
+                          class="table-list__cell table-list__cell--mobile-only"
+                        >
+                          <div>
+                            <span class="table-list__mobile-label">보강타입</span>
+                            <span>보강대기 (필리핀)</span>
+                          </div>
+                          <span>25분</span>
+                        </div>
+                        <!-- 보강타입 (PC만) -->
+                        <div
+                          class="table-list__cell table-list__cell--pc-only"
+                        >
                           <span>보강대기 (필리핀)</span>
                         </div>
-                        <!-- 구분 -->
-                        <div class="table-list__cell">
-                          <span class="table-list__mobile-label">구분</span>
+                        <!-- 구분 (PC만) -->
+                        <div
+                          class="table-list__cell table-list__cell--pc-only"
+                        >
                           <span>25분</span>
                         </div>
                         <!-- 메모 -->
                         <div class="table-list__cell">
                           <span class="table-list__mobile-label">메모</span>
                           <span>2025.09.08 17:00</span>
-                          <button class="button button--sm button--border button--default d-inline-flex align-items-center gap-0-5">
+                          <button class="button button--sm button--border button--default button--detail">
                             자세히 보기 <svg class="icon"><use href="#plus"></use></svg>
                           </button>
                         </div>
                         <!-- 관리 -->
                         <div class="table-list__cell">
-                          <button class="button button--sm button--fill button--dark flex-1 flex-lg-none">사용</button>
+                          <div class="button-group">
+                            <button class="button button--sm button--fill button--dark">사용</button>
+                          </div>
                         </div>
                       </div>
 
@@ -750,23 +769,39 @@
                           <span class="table-list__mobile-label">등록일</span>
                           <span>25.00.00</span>
                         </div>
-                        <div class="table-list__cell">
-                          <span class="table-list__mobile-label">보강타입</span>
+                        <!-- 모바일: 보강타입 + 구분 -->
+                        <div
+                          class="table-list__cell table-list__cell--mobile-only"
+                        >
+                          <div>
+                            <span class="table-list__mobile-label">보강타입</span>
+                            <span>보강대기 (필리핀)</span>
+                          </div>
+                          <span>25분</span>
+                        </div>
+                        <!-- 보강타입 (PC만) -->
+                        <div
+                          class="table-list__cell table-list__cell--pc-only"
+                        >
                           <span>보강대기 (필리핀)</span>
                         </div>
-                        <div class="table-list__cell">
-                          <span class="table-list__mobile-label">구분</span>
+                        <!-- 구분 (PC만) -->
+                        <div
+                          class="table-list__cell table-list__cell--pc-only"
+                        >
                           <span>25분</span>
                         </div>
                         <div class="table-list__cell">
                           <span class="table-list__mobile-label">메모</span>
                           <span>2025.09.08 17:00</span>
-                          <button class="button button--sm button--border button--default d-inline-flex align-items-center gap-0-5">
+                          <button class="button button--sm button--border button--default button--detail">
                             자세히 보기 <svg class="icon"><use href="#plus"></use></svg>
                           </button>
                         </div>
                         <div class="table-list__cell">
-                          <button class="button button--sm button--fill button--dark flex-1 flex-lg-none">사용</button>
+                          <div class="button-group">
+                            <button class="button button--sm button--fill button--dark">사용</button>
+                          </div>
                         </div>
                       </div>
 
@@ -776,30 +811,51 @@
                           <span class="table-list__mobile-label">등록일</span>
                           <span>25.00.00</span>
                         </div>
-                        <div class="table-list__cell">
-                          <span class="table-list__mobile-label">보강타입</span>
-                          <span class="badge badge--sm badge--soft badge--blue rounded-pill">토요일수업</span>
-                          <span>보강대기 (필리핀)</span>
+                        <!-- 모바일: 보강타입 + 구분 -->
+                        <div
+                          class="table-list__cell table-list__cell--mobile-only"
+                        >
+                          <div>
+                            <span class="table-list__mobile-label">보강타입</span>
+                            <span class="table-list__cell-type">
+                              <span class="badge badge--sm badge--soft badge--blue badge--pill">토요일수업</span>
+                              <span>보강대기 (필리핀)</span>
+                            </span>
+                          </div>
+                          <span>25분</span>
                         </div>
-                        <div class="table-list__cell">
-                          <span class="table-list__mobile-label">구분</span>
+                        <!-- 보강타입 (PC만) -->
+                        <div
+                          class="table-list__cell table-list__cell--pc-only"
+                        >
+                          <span class="table-list__cell-type">
+                            <span class="badge badge--sm badge--soft badge--blue badge--pill">토요일수업</span>
+                            <span>보강대기 (필리핀)</span>
+                          </span>
+                        </div>
+                        <!-- 구분 (PC만) -->
+                        <div
+                          class="table-list__cell table-list__cell--pc-only"
+                        >
                           <span>25분</span>
                         </div>
                         <div class="table-list__cell">
                           <span class="table-list__mobile-label">메모</span>
                           <span>2025.09.08 17:00</span>
-                          <button class="button button--sm button--border button--default d-inline-flex align-items-center gap-0-5">
+                          <button class="button button--sm button--border button--default button--detail">
                             자세히 보기 <svg class="icon"><use href="#plus"></use></svg>
                           </button>
                         </div>
                         <div class="table-list__cell">
-                          <button class="button button--sm button--fill button--dark flex-1 flex-lg-none">사용</button>
+                          <div class="button-group">
+                            <button class="button button--sm button--fill button--dark">사용</button>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     <!-- 페이지네이션 -->
-                    <div class="d-flex justify-content-end mt-5">
+                    <div class="pagination-nav">
                       <div
                         class="pagination-nav__info"
                       >
@@ -845,7 +901,7 @@
                 <div
                   class="table-list table-list--change-history card-panel"
                 >
-                <h3 class="heading4 text-black mb-4">나의 강사/시간 변경 내역</h3>
+                <h3 class="table-list__heading">나의 강사/시간 변경 내역</h3>
                   <!-- 테이블 헤더 (데스크탑만) -->
                   <div
                     class="table-list__header"
@@ -870,20 +926,20 @@
                       </div>
                       <!-- 모바일 상단: 뱃지 + 처리일 -->
                       <div
-                        class="table-list__cell table-list__cell--mobile-only justify-content-between"
+                        class="table-list__cell table-list__cell--mobile-only"
                       >
                         <div class="badge-group">
                           <span
-                            class="badge badge--sm badge--soft badge--blue rounded-pill"
+                            class="badge badge--sm badge--soft badge--blue badge--pill"
                             >즉시보강</span
                           >
                           <span
-                            class="badge badge--sm badge--soft badge--green rounded-pill"
+                            class="badge badge--sm badge--soft badge--green badge--pill"
                             >낮시간할인</span
                           >
                         </div>
-                        <div class="d-flex align-items-center gap-1">
-                          <span class="mark">처리일</span>
+                        <div class="table-list__cell-date">
+                          <span class="table-list__mobile-label">처리일</span>
                           <span>25.00.00</span>
                         </div>
                       </div>
@@ -892,34 +948,32 @@
                         class="table-list__cell table-list__cell--vertical"
                       >
                         <span class="table-list__mobile-label">기존 수업</span>
-                        <span class="fw-medium"
+                        <span
                           >임의 지급건</span
                         >
-                        <span class="body3 text-light-gray">2025.00.00</span>
+                        <span>2025.00.00</span>
                       </div>
                       <!-- 변경(등록) 수업 -->
                       <div
-                        class="table-list__cell table-list__cell--vertical border-top-dark pt-2 pt-lg-0 border-lg-0"
+                        class="table-list__cell table-list__cell--vertical table-list__cell--bordered"
                       >
                         <span class="table-list__mobile-label">변경(등록) 수업</span>
-                        <span class="fw-medium"
+                        <span
                           >임의 지급건</span
                         >
-                        <span class="body3 text-light-gray"
-                          >2025.00.00 00:00</span
-                        >
+                        <span>2025.00.00 00:00</span>
                       </div>
                       <!-- 구분 (PC만) -->
                       <div
-                        class="table-list__cell table-list__cell--pc-only table-list__cell--center flex-wrap"
+                        class="table-list__cell table-list__cell--pc-only table-list__cell--center"
                       >
                         <span class="badge-group">
                           <span
-                            class="badge badge--sm badge--soft badge--blue rounded-pill"
+                            class="badge badge--sm badge--soft badge--blue badge--pill"
                             >즉시보강</span
                           >
                           <span
-                            class="badge badge--sm badge--soft badge--green rounded-pill"
+                            class="badge badge--sm badge--soft badge--green badge--pill"
                             >낮시간할인</span
                           >
                         </span>
@@ -932,18 +986,20 @@
                       </div>
                       <!-- 관리 -->
                       <div
-                        class="table-list__cell button-group mt-2 mt-lg-0"
+                        class="table-list__cell table-list__cell--actions"
                       >
-                        <button
-                          class="button button--sm button--fill button--dark flex-1 flex-lg-none"
-                        >
-                          메모
-                        </button>
-                        <button
-                          class="button button--sm button--fill button--neutral flex-1 flex-lg-none"
-                        >
-                          취소
-                        </button>
+                        <div class="button-group">
+                          <button
+                            class="button button--sm button--fill button--dark"
+                          >
+                            메모
+                          </button>
+                          <button
+                            class="button button--sm button--fill button--neutral"
+                          >
+                            취소
+                          </button>
+                        </div>
                       </div>
                     </div>
 
@@ -959,16 +1015,16 @@
                       </div>
                       <!-- 모바일 상단: 뱃지 + 처리일 -->
                       <div
-                        class="table-list__cell table-list__cell--mobile-only justify-content-between"
+                        class="table-list__cell table-list__cell--mobile-only"
                       >
                         <div class="badge-group">
                           <span
-                            class="badge badge--sm badge--soft badge--blue rounded-pill"
+                            class="badge badge--sm badge--soft badge--blue badge--pill"
                             >즉시보강</span
                           >
                         </div>
-                        <div class="d-flex align-items-center gap-1">
-                          <span class="mark">처리일</span>
+                        <div class="table-list__cell-date">
+                          <span class="table-list__mobile-label">처리일</span>
                           <span>25.00.00</span>
                         </div>
                       </div>
@@ -977,29 +1033,27 @@
                         class="table-list__cell table-list__cell--vertical"
                       >
                         <span class="table-list__mobile-label">기존 수업</span>
-                        <span class="fw-medium"
+                        <span
                           >임의 지급건</span
                         >
-                        <span class="body3 text-light-gray">2025.00.00</span>
+                        <span>2025.00.00</span>
                       </div>
                       <!-- 변경(등록) 수업 -->
                       <div
-                        class="table-list__cell table-list__cell--vertical border-top-dark pt-2 pt-lg-0 border-lg-0"
+                        class="table-list__cell table-list__cell--vertical table-list__cell--bordered"
                       >
                         <span class="table-list__mobile-label">변경(등록) 수업</span>
-                        <span class="fw-medium"
+                        <span
                           >임의 지급건</span
                         >
-                        <span class="body3 text-light-gray"
-                          >2025.00.00 00:00</span
-                        >
+                        <span>2025.00.00 00:00</span>
                       </div>
                       <!-- 구분 (PC만) -->
                       <div
-                        class="table-list__cell table-list__cell--pc-only table-list__cell--center flex-wrap"
+                        class="table-list__cell table-list__cell--pc-only table-list__cell--center"
                       >
                         <span
-                          class="badge badge--sm badge--soft badge--blue rounded-pill"
+                          class="badge badge--sm badge--soft badge--blue badge--pill"
                           >즉시보강</span
                         >
                       </div>
@@ -1011,18 +1065,20 @@
                       </div>
                       <!-- 관리 -->
                       <div
-                        class="table-list__cell button-group mt-2 mt-lg-0"
+                        class="table-list__cell table-list__cell--actions"
                       >
-                        <button
-                          class="button button--sm button--fill button--dark flex-1 flex-lg-none"
-                        >
-                          메모
-                        </button>
-                        <button
-                          class="button button--sm button--fill button--neutral flex-1 flex-lg-none"
-                        >
-                          취소
-                        </button>
+                        <div class="button-group">
+                          <button
+                            class="button button--sm button--fill button--dark"
+                          >
+                            메모
+                          </button>
+                          <button
+                            class="button button--sm button--fill button--neutral"
+                          >
+                            취소
+                          </button>
+                        </div>
                       </div>
                     </div>
 
@@ -1036,20 +1092,20 @@
                       </div>
                       <!-- 모바일 상단: 뱃지 + 처리일 -->
                       <div
-                        class="table-list__cell table-list__cell--mobile-only justify-content-between"
+                        class="table-list__cell table-list__cell--mobile-only"
                       >
                         <div class="badge-group">
                           <span
-                            class="badge badge--sm badge--soft badge--blue rounded-pill"
+                            class="badge badge--sm badge--soft badge--blue badge--pill"
                             >즉시보강</span
                           >
                           <span
-                            class="badge badge--sm badge--soft badge--green rounded-pill"
+                            class="badge badge--sm badge--soft badge--green badge--pill"
                             >낮시간할인</span
                           >
                         </div>
-                        <div class="d-flex align-items-center gap-1">
-                          <span class="mark">처리일</span>
+                        <div class="table-list__cell-date">
+                          <span class="table-list__mobile-label">처리일</span>
                           <span>25.00.00</span>
                         </div>
                       </div>
@@ -1058,34 +1114,32 @@
                         class="table-list__cell table-list__cell--vertical"
                       >
                         <span class="table-list__mobile-label">기존 수업</span>
-                        <span class="fw-medium"
+                        <span
                           >임의 지급건</span
                         >
-                        <span class="body3 text-light-gray">2025.00.00</span>
+                        <span>2025.00.00</span>
                       </div>
                       <!-- 변경(등록) 수업 -->
                       <div
-                        class="table-list__cell table-list__cell--vertical border-top-dark pt-2 pt-lg-0 border-lg-0"
+                        class="table-list__cell table-list__cell--vertical table-list__cell--bordered"
                       >
                         <span class="table-list__mobile-label">변경(등록) 수업</span>
-                        <span class="fw-medium"
+                        <span
                           >임의 지급건</span
                         >
-                        <span class="body3 text-light-gray"
-                          >2025.00.00 00:00</span
-                        >
+                        <span>2025.00.00 00:00</span>
                       </div>
                       <!-- 구분 (PC만) -->
                       <div
-                        class="table-list__cell table-list__cell--pc-only table-list__cell--center flex-wrap"
+                        class="table-list__cell table-list__cell--pc-only table-list__cell--center"
                       >
                         <span class="badge-group">
                           <span
-                            class="badge badge--sm badge--soft badge--blue rounded-pill"
+                            class="badge badge--sm badge--soft badge--blue badge--pill"
                             >즉시보강</span
                           >
                           <span
-                            class="badge badge--sm badge--soft badge--green rounded-pill"
+                            class="badge badge--sm badge--soft badge--green badge--pill"
                             >낮시간할인</span
                           >
                         </span>
@@ -1098,24 +1152,26 @@
                       </div>
                       <!-- 관리 -->
                       <div
-                        class="table-list__cell button-group mt-2 mt-lg-0"
+                        class="table-list__cell table-list__cell--actions"
                       >
-                        <button
-                          class="button button--sm button--fill button--dark flex-1 flex-lg-none"
-                        >
-                          메모
-                        </button>
-                        <button
-                          class="button button--sm button--fill button--neutral flex-1 flex-lg-none"
-                        >
-                          취소
-                        </button>
+                        <div class="button-group">
+                          <button
+                            class="button button--sm button--fill button--dark"
+                          >
+                            메모
+                          </button>
+                          <button
+                            class="button button--sm button--fill button--neutral"
+                          >
+                            취소
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   <!-- 페이지네이션 -->
-                  <div class="d-flex justify-content-end mt-5">
+                  <div class="pagination-nav">
                     <div
                       class="pagination-nav__info"
                     >
@@ -1161,5 +1217,36 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="../js/icons.js"></script>
+      <script>
+        // course-info 스크롤 영역 max-height를 캘린더 높이에 맞춤
+        function syncCourseInfoScroll() {
+          var scroll = document.querySelector('.section-grid--pc-only .course-info__scroll');
+          if (!scroll) return;
+
+          if (window.innerWidth < 992) {
+            scroll.style.maxHeight = '';
+            return;
+          }
+
+          var courseCard = scroll.closest('.course-info');
+
+          // 스크롤 축소 → 캘린더가 grid row 높이 결정
+          scroll.style.maxHeight = '0';
+
+          // 카드 내부 바운딩 박스 → 스크롤 사용 가능 높이
+          var cardRect = courseCard.getBoundingClientRect();
+          var scrollRect = scroll.getBoundingClientRect();
+          var pb = parseFloat(getComputedStyle(courseCard).paddingBottom);
+
+          scroll.style.maxHeight = Math.max(0, cardRect.bottom - pb - scrollRect.top) + 'px';
+        }
+
+        window.addEventListener('load', syncCourseInfoScroll);
+        var _syncTimer;
+        window.addEventListener('resize', function () {
+          clearTimeout(_syncTimer);
+          _syncTimer = setTimeout(syncCourseInfoScroll, 100);
+        });
+      </script>
   </body>
 </html>

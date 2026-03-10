@@ -38,7 +38,7 @@
           <h5 class="lnb__profile-name">홍길동</h5>
           <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button--sm button--fill button--secondary rounded-pill"
+            class="button button--sm button--fill button--secondary"
           >
             프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
@@ -79,7 +79,7 @@
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan"><svg class="icon"><use href="#my-lesson"></use></svg></span>
               <span>나의 수업 관리</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -148,7 +148,7 @@
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet"><svg class="icon"><use href="#my-info"></use></svg></span>
               <span>나의 정보</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -178,7 +178,7 @@
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue"><svg class="icon"><use href="#idc"></use></svg></span>
               <span>아이딕 잉글리시</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -201,7 +201,7 @@
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange"><svg class="icon"><use href="#support"></use></svg></span>
               <span>학습지원서비스</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -227,31 +227,28 @@
           <!-- ============================
              배너 이미지
              ============================ -->
-          <div class="test-result-banner radius-xl overflow-hidden">
+          <div class="test-result-banner">
             <img
               src="../images/bnn-pc-result.png"
               alt="테스트 결과 배너"
-              class="w-100"
             />
           </div>
 
           <!-- ============================
              무료 체험 수업
              ============================ -->
-          <section class="d-flex flex-column gap-4">
-            <h3 class="heading4 text-black">무료 체험 수업</h3>
+          <section class="content-section">
+            <h3 class="content-section__title">무료 체험 수업</h3>
 
             <!-- Card 1 (펼침 상태) -->
-            <div
-              class="card-panel d-flex flex-column gap-3"
-            >
+            <div class="test-result-card">
               <!-- 카드 헤더: 날짜 + 버튼 -->
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center gap-1">
-                  <svg class="icon" style="color: var(--color-cyan-500)"><use href="#calendar2-event"></use></svg>
-                  <span class="body2 fw-bold text-black">25.00.00 00:00</span>
+              <div class="test-result-card__header">
+                <div class="test-result-card__date">
+                  <svg class="icon"><use href="#calendar2-event"></use></svg>
+                  <span>수업 일자: 25.00.00 00:00</span>
                 </div>
-                <div class="d-flex align-items-center button-group">
+                <div class="test-result-card__actions">
                   <button class="button button--sm button--fill button--neutral">
                     삭제
                   </button>
@@ -271,26 +268,20 @@
               <!-- 정보 그리드 -->
               <div class="test-result-grid">
                 <div class="test-result-info-box">
-                  <span class="body3 fw-medium text-black">테스트 레벨</span>
-                  <span class="body2 fw-bold text-neutral"
-                    >Low-inter / 14세 이상</span
-                  >
+                  <span>테스트 레벨</span>
+                  <span>Low-inter / 14세 이상</span>
                 </div>
                 <div class="test-result-info-box">
-                  <span class="body3 fw-medium text-black">테스트 구분</span>
-                  <span class="body2 fw-bold text-neutral"
-                    >1차 원어민 스피킹</span
-                  >
+                  <span>테스트 구분</span>
+                  <span>1차 원어민 스피킹</span>
                 </div>
                 <div class="test-result-info-box">
-                  <span class="body3 fw-medium text-black">추천교재</span>
-                  <span class="body2 fw-bold text-neutral"
-                    >Everybody up - 3 (개정판)</span
-                  >
+                  <span>추천교재</span>
+                  <span>Everybody up - 3 (개정판)</span>
                 </div>
                 <div class="test-result-info-box">
-                  <span class="body3 fw-medium text-black">담당강사</span>
-                  <span class="body2 fw-bold text-neutral">Monique</span>
+                  <span>담당강사</span>
+                  <span>Monique</span>
                 </div>
               </div>
 
@@ -298,201 +289,133 @@
               <div class="collapse in" id="trialDetail1">
                 <div class="test-result-detail">
                   <!-- 상세보기 타이틀 -->
-                  <div class="d-flex align-items-center gap-2 mb-6">
-                    <span class="heading4 text-black"
-                      >무료 체험 수업 상세보기</span
-                    >
-                    <span class="body3 text-gray">25.08.29 14:00</span>
+                  <div class="test-result-detail__header">
+                    <h4>무료 체험 수업 상세보기</h4>
+                    <span>25.08.29 14:00</span>
                   </div>
 
                   <!-- 상세 정보 -->
-                  <div
-                    class="d-flex flex-column flex-lg-row gap-3 mb-6"
-                  >
+                  <div class="test-result-detail__row">
                     <div class="test-result-detail-box">
-                      <span class="body3 fw-medium text-dark-gray"
-                        >테스트 구분</span
-                      >
-                      <span class="body2 fw-bold text-neutral"
-                        >1차 원어민 스피킹</span
-                      >
+                      <span>테스트 구분</span>
+                      <span>1차 원어민 스피킹</span>
                     </div>
                     <div class="test-result-detail-box">
-                      <span class="body3 fw-medium text-dark-gray"
-                        >담당강사</span
-                      >
-                      <div class="d-flex align-items-center gap-2">
+                      <span>담당강사</span>
+                      <div>
                         <div class="test-result-avatar"></div>
-                        <span class="body2 fw-bold text-neutral"
-                          >Teachername</span
-                        >
+                        <span>Teachername</span>
                       </div>
                     </div>
                     <div class="test-result-detail-box">
-                      <span class="body3 fw-medium text-dark-gray"
-                        >출결사항</span
-                      >
+                      <span>출결사항</span>
                       <span
-                        class="badge badge--sm badge--fill badge--primary rounded-pill"
+                        class="badge badge--md badge--fill badge--blue badge--pill"
                         >출석</span
                       >
+                    </div>
+                    <div class="test-result-detail-box">
+                      <span>테스트 구분</span>
+                      <span>Story Speaking</span>
+                    </div>
+                    <div class="test-result-detail-box">
+                      <span>테스트 구분</span>
+                      <span>25.00.00 00:00</span>
                     </div>
                   </div>
 
                   <!-- 학생 성장 진행도 -->
                   <div
-                    class="test-result-progress radius-2xl p-4 p-lg-5 mb-6"
+                    class="test-result-progress"
                   >
                     <div
-                      class="d-flex align-items-center flex-wrap gap-2 gap-lg-4 mb-4"
+                      class="test-result-progress__header"
                     >
-                      <div class="d-flex align-items-center gap-2">
-                        <span class="body1 fw-medium text-neutral"
-                          >이서연님</span
-                        >
-                        <span
-                          class="heading5"
-                          style="color: var(--color-colorchip-orange)"
-                          >GL1(Violet) - STEP2</span
-                        >
+                      <div class="test-result-progress__user">
+                        <span>이서연님</span>
+                        <span>GL1(Violet) - STEP2</span>
                       </div>
                     </div>
                     <!-- 성장 스테이지 -->
-                    <div class="test-result-stage-list">
-                      <div
-                        class="test-result-stage-item test-result-stage-active"
-                      >
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="1단계"
-                          />
+                    <div class="growth-stage">
+                      <div class="growth-stage__item growth-stage__item--active">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="1단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140" style="color: #ff7d26"
-                          >1단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">1단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
-                      <div class="test-result-stage-item">
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="2단계"
-                          />
+                      <div class="growth-stage__item">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="2단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140 text-light-gray"
-                          >2단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">2단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
-                      <div class="test-result-stage-item">
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="3단계"
-                          />
+                      <div class="growth-stage__item">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="3단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140 text-light-gray"
-                          >3단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">3단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
-                      <div class="test-result-stage-item">
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="4단계"
-                          />
+                      <div class="growth-stage__item">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="4단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140 text-light-gray"
-                          >4단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">4단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
-                      <div class="test-result-stage-item">
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="5단계"
-                          />
+                      <div class="growth-stage__item">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="5단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140 text-light-gray"
-                          >5단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">5단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
-                      <div class="test-result-stage-item">
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="6단계"
-                          />
+                      <div class="growth-stage__item">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="6단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140 text-light-gray"
-                          >6단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">6단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
-                      <div class="test-result-stage-item">
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="7단계"
-                          />
+                      <div class="growth-stage__item">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="7단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140 text-light-gray"
-                          >7단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">7단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
-                      <div class="test-result-stage-item">
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="8단계"
-                          />
+                      <div class="growth-stage__item">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="8단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140 text-light-gray"
-                          >8단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">8단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
-                      <div class="test-result-stage-item">
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="9단계"
-                          />
+                      <div class="growth-stage__item">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="9단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140 text-light-gray"
-                          >9단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">9단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
-                      <div class="test-result-stage-item">
-                        <div class="test-result-stage-thumb">
-                          <img
-                            src="../images/dummy1.png"
-                            alt="10단계"
-                          />
+                      <div class="growth-stage__item">
+                        <div class="growth-stage__thumb">
+                          <img src="../images/dummy1.png" alt="10단계" />
                         </div>
-                        <span class="body2 fw-medium line-height-140 text-light-gray"
-                          >10단계</span
-                        >
-                        <span class="body4 text-light-gray">Apple tree</span>
+                        <span class="growth-stage__step">10단계</span>
+                        <span class="growth-stage__name">Apple tree</span>
                       </div>
                     </div>
                   </div>
 
                   <!-- 설명 박스들 -->
-                  <div
-                    class="d-flex flex-column flex-lg-row gap-3 mb-6"
-                  >
-                    <div class="test-result-desc-box flex-1">
-                      <span class="heading5" style="color: var(--color-cyan-500)"
-                        >GL-4 레벨 설명</span
-                      >
-                      <p class="body2 text-gray line-height-160">
+                  <div class="test-result-detail__row">
+                    <div class="test-result-desc-box">
+                      <h5>GL-4 레벨 설명</h5>
+                      <p>
                         GL-4 학습 코스(Rose)<br />
                         The student actively participated in class and received
                         positive feedback from the teacher. They understand the
@@ -500,11 +423,9 @@
                         sentences.
                       </p>
                     </div>
-                    <div class="test-result-desc-box flex-1">
-                      <span class="heading5" style="color: var(--color-cyan-500)"
-                        >1차 원어민 스피킹 피드백</span
-                      >
-                      <p class="body2 text-gray line-height-160">
+                    <div class="test-result-desc-box">
+                      <h5>1차 원어민 스피킹 피드백</h5>
+                      <p>
                         짧지 않은 수업시간동안 열심히 참여해주어 선생님께서도
                         대단히 칭찬해주셨습니다. 수업 내용과 교재를 잘 이해하고
                         있으며, 간단한 문장으로 자신의 생각을 표현하는 것도 어느
@@ -514,11 +435,11 @@
                   </div>
 
                   <!-- 평가 테이블 -->
-                  <div class="test-eval mb-6">
-                    <span class="heading5 text-black d-block mb-3"
+                  <div class="content-section">
+                    <span class="content-section__title"
                       >평가 결과</span
                     >
-                    <div class="table-list">
+                    <div class="test-result-eval table-list">
                       <!-- 테이블 헤더 (PC) -->
                       <div
                         class="table-list__header"
@@ -531,22 +452,19 @@
                       <div class="table-list__body">
                         <!-- Row 1 -->
                         <div class="table-list__row">
-                          <div
-                            class="table-list__cell table-list__cell--half table-list__cell--vertical"
-                          >
-                            <span class="body2 text-gray"
-                              >Fluency &amp; Speaking</span
-                            >
-                            <span class="body3 fw-medium text-neutral"
-                              >유창성</span
-                            >
+                          <div class="table-list__cell table-list__cell--mobile-only">
+                            <div class="table-list__cell--vertical">
+                              <span>Fluency &amp; Speaking</span>
+                              <span>유창성</span>
+                            </div>
+                            <span class="test-result-eval-grade test-result-eval-grade-a">A</span>
                           </div>
-                          <div
-                            class="table-list__cell table-list__cell--half"
-                          >
-                            <span class="test-eval-grade test-eval-grade-a ms-auto m-lg-auto"
-                              >A</span
-                            >
+                          <div class="table-list__cell table-list__cell--pc-only table-list__cell--vertical">
+                            <span>Fluency &amp; Speaking</span>
+                            <span>유창성</span>
+                          </div>
+                          <div class="table-list__cell table-list__cell--pc-only">
+                            <span class="test-result-eval-grade test-result-eval-grade-a">A</span>
                           </div>
                           <div class="table-list__cell">
                             <p>
@@ -557,22 +475,19 @@
                         </div>
                         <!-- Row 2 -->
                         <div class="table-list__row table-list__row--highlight">
-                          <div
-                            class="table-list__cell table-list__cell--half table-list__cell--vertical"
-                          >
-                            <span class="body2 text-gray"
-                              >Fluency &amp; Speaking</span
-                            >
-                            <span class="body3 fw-medium text-neutral"
-                              >유창성</span
-                            >
+                          <div class="table-list__cell table-list__cell--mobile-only">
+                            <div class="table-list__cell--vertical">
+                              <span>Fluency &amp; Speaking</span>
+                              <span>유창성</span>
+                            </div>
+                            <span class="test-result-eval-grade test-result-eval-grade-b">B</span>
                           </div>
-                          <div
-                            class="table-list__cell table-list__cell--half"
-                          >
-                            <span class="test-eval-grade test-eval-grade-b ms-auto m-lg-auto"
-                              >B</span
-                            >
+                          <div class="table-list__cell table-list__cell--pc-only table-list__cell--vertical">
+                            <span>Fluency &amp; Speaking</span>
+                            <span>유창성</span>
+                          </div>
+                          <div class="table-list__cell table-list__cell--pc-only">
+                            <span class="test-result-eval-grade test-result-eval-grade-b">B</span>
                           </div>
                           <div class="table-list__cell">
                             <p>
@@ -583,22 +498,19 @@
                         </div>
                         <!-- Row 3 -->
                         <div class="table-list__row">
-                          <div
-                            class="table-list__cell table-list__cell--half table-list__cell--vertical"
-                          >
-                            <span class="body2 text-gray"
-                              >Fluency &amp; Speaking</span
-                            >
-                            <span class="body3 fw-medium text-neutral"
-                              >유창성</span
-                            >
+                          <div class="table-list__cell table-list__cell--mobile-only">
+                            <div class="table-list__cell--vertical">
+                              <span>Fluency &amp; Speaking</span>
+                              <span>유창성</span>
+                            </div>
+                            <span class="test-result-eval-grade test-result-eval-grade-c">C</span>
                           </div>
-                          <div
-                            class="table-list__cell table-list__cell--half"
-                          >
-                            <span class="test-eval-grade test-eval-grade-c ms-auto m-lg-auto"
-                              >C</span
-                            >
+                          <div class="table-list__cell table-list__cell--pc-only table-list__cell--vertical">
+                            <span>Fluency &amp; Speaking</span>
+                            <span>유창성</span>
+                          </div>
+                          <div class="table-list__cell table-list__cell--pc-only">
+                            <span class="test-result-eval-grade test-result-eval-grade-c">C</span>
                           </div>
                           <div class="table-list__cell">
                             <p>
@@ -612,16 +524,15 @@
                   </div>
 
                   <!-- 안내 불릿 -->
-                  <ul class="test-result-notes">
-                    <li class="body2 text-light-gray">
+                  <ul class="bullet-list">
+                    <li>
                       레벨테스트 결과는 학생의 컨디션, 면접관의 질문에 따라 변동
                       될 수 있습니다.
                     </li>
-                    <li class="body2 text-light-gray">
+                    <li>
                       레벨결과의 자세한 문의는 고객센터
                       <a
                         href="tel:1666-2976"
-                        class="fw-bold text-primary"
                         >1666-2976</a
                       >으로 연락주세요.
                     </li>
@@ -644,7 +555,7 @@
                     삭제
                   </button>
                   <button
-                    class="test-result-toggle"
+                    class="test-result-toggle collapsed"
                     type="button"
                     data-toggle="collapse"
                     data-target="#trialDetail2"
@@ -683,11 +594,9 @@
 
               <div class="collapse" id="trialDetail2">
                 <div class="test-result-detail">
-                  <div class="d-flex align-items-center gap-2 mb-6">
-                    <span class="heading4 text-black"
-                      >무료 체험 수업 상세보기</span
-                    >
-                    <span class="body2 text-gray">25.08.29 14:00</span>
+                  <div class="test-result-detail__header">
+                    <h4>무료 체험 수업 상세보기</h4>
+                    <span>25.08.29 14:00</span>
                   </div>
                   <p class="body2 text-neutral">상세 내용이 여기에 표시됩니다.</p>
                 </div>
@@ -698,8 +607,8 @@
           <!-- ============================
              온라인 레벨 테스트
              ============================ -->
-          <section class="d-flex flex-column gap-4">
-            <h3 class="heading4 text-black">온라인 레벨 테스트</h3>
+          <section class="content-section">
+            <h3 class="content-section__title">온라인 레벨 테스트</h3>
 
             <!-- Test Card 1 -->
             <div
@@ -715,7 +624,7 @@
                     삭제
                   </button>
                   <button
-                    class="test-result-toggle"
+                    class="test-result-toggle collapsed"
                     type="button"
                     data-toggle="collapse"
                     data-target="#testDetail1"
@@ -751,88 +660,72 @@
               <div class="collapse" id="testDetail1">
                 <div class="test-result-detail">
                   <!-- 상세보기 타이틀 -->
-                  <div class="d-flex align-items-center gap-2 mb-6">
-                    <span class="heading4 text-black"
-                      >온라인 레벨 테스트 상세보기</span
-                    >
-                    <span class="body3 text-gray">25.08.29 14:00</span>
+                  <div class="test-result-detail__header">
+                    <h4>온라인 레벨 테스트 상세보기</h4>
+                    <span>25.08.29 14:00</span>
                   </div>
 
                   <!-- 결과 요약 + 레벨 추천 -->
-                  <div class="row g-3 mb-6">
+                  <div class="test-overview-row">
                     <!-- 결과 요약 -->
-                    <div class="col-12 col-lg-6">
-                      <div class="test-overview-box">
-                        <span class="heading5 text-black"
-                          >전체문항 50 문항</span
-                        >
-                        <div class="d-flex align-items-center justify-content-center gap-5">
-                          <div class="test-score-box test-score-correct">
-                            <span class="score-label">정답</span>
-                            <span class="score-value">49</span>
-                          </div>
-                          <div class="test-score-box test-score-wrong">
-                            <span class="score-label">오답</span>
-                            <span class="score-value">1</span>
-                          </div>
+                    <div class="test-overview-box">
+                      <h5>전체문항 50 문항</h5>
+                      <div class="test-overview-box__scores">
+                        <div class="test-score-box test-score-correct">
+                          <span class="score-label">정답</span>
+                          <span class="score-value">49</span>
                         </div>
-                        <div class="d-flex align-items-center gap-2">
-                          <span class="body2 text-gray">정답율:</span>
-                          <span class="body2 fw-bold text-cyan-dark"
-                            >98%</span
-                          >
-                          <svg class="icon" style="transform: rotate(90deg);
-                            font-size: 8px;
-                              color: var(--color-text-gray);"><use href="#triangle-fill"></use></svg>
-                          <span class="body2 text-gray">추천레벨:</span>
-                          <span class="body2 fw-bold text-purple"
-                            >40%</span
-                          >
+                        <div class="test-score-box test-score-wrong">
+                          <span class="score-label">오답</span>
+                          <span class="score-value">1</span>
+                        </div>
+                      </div>
+                      <div class="test-overview-box__summary">
+                        <div class="test-overview-box__accuracy">
+                          <span>정답율:</span>
+                          <strong>98%</strong>
+                        </div>
+                        <svg class="icon"><use href="#triangle-fill"></use></svg>
+                        <div class="test-overview-box__recommendation">
+                          <span>추천레벨:</span>
+                          <strong>40%</strong>
                         </div>
                       </div>
                     </div>
                     <!-- 레벨 추천 가이드 -->
-                    <div class="col-12 col-lg-6">
-                      <div class="test-overview-box">
-                        <span class="heading5 text-black"
-                          >전체문항 50 문항</span
-                        >
-                        <div class="d-flex flex-column w-100">
-                          <div class="test-level-bar test-level-upper">
-                            정답율 85% 이상 상위레벨
-                          </div>
-                          <div class="test-level-chevron">
-                            <svg class="icon icon-chevron-down" style="font-size: 12px; color: var(--color-gray-400)"><use href="#chevron-down"></use></svg>
-                          </div>
-                          <div class="test-level-bar test-level-current">
-                            정답율 70% ~ 84% 이상 현재레벨
-                          </div>
-                          <div class="test-level-chevron">
-                            <svg class="icon icon-chevron-down" style="font-size: 12px; color: var(--color-gray-400)"><use href="#chevron-down"></use></svg>
-                          </div>
-                          <div class="test-level-bar test-level-lower">
-                            정답율 70% 미만 하위레벨
-                          </div>
+                    <div class="test-level-guide">
+                      <h5>전체문항 50 문항</h5>
+                      <div class="test-level-guide__bars">
+                        <div class="test-level-bar test-level-upper">
+                          정답율 85% 이상 상위레벨
                         </div>
-                        <ul class="test-result-notes">
-                          <li class="body3 text-light-gray">
-                            상위, 혹은 하위레벨을 받았다면 해당 추천 레벨의
-                            온라인 테스트를 다시 진행하세요.
-                          </li>
-                        </ul>
+                        <div class="test-level-chevron">
+                          <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+                        </div>
+                        <div class="test-level-bar test-level-current">
+                          정답율 70% ~ 84% 이상 현재레벨
+                        </div>
+                        <div class="test-level-chevron">
+                          <svg class="icon icon-chevron-down"><use href="#chevron-down"></use></svg>
+                        </div>
+                        <div class="test-level-bar test-level-lower">
+                          정답율 70% 미만 하위레벨
+                        </div>
                       </div>
+                      <ul class="bullet-list">
+                        <li>
+                          상위, 혹은 하위레벨을 받았다면 해당 추천 레벨의
+                          온라인 테스트를 다시 진행하세요.
+                        </li>
+                      </ul>
                     </div>
                   </div>
 
                   <!-- 내 레벨 -->
-                  <div class="test-my-level mb-6">
-                    <span class="heading5 text-black d-block mb-3"
-                      >내 레벨</span
-                    >
+                  <div class="test-result-my-level">
+                    <h5>내 레벨</h5>
                     <!-- 테이블 헤더 (PC) -->
-                    <div
-                      class="table-list__header"
-                    >
+                    <div class="table-list__header">
                       <div class="table-list__cell">CEFR</div>
                       <div class="table-list__cell">AR (Lexile)</div>
                       <div class="table-list__cell">GL (톡스레벨)</div>
@@ -840,71 +733,31 @@
                       <div class="table-list__cell">리딩</div>
                     </div>
                     <!-- 테이블 바디 -->
-                    <div
-                      class="table-list__body"
-                    >
-                      <div
-                        class="table-list__row"
-                      >
-                        <div
-                          class="table-list__cell"
-                        >
-                          <span
-                            class="d-lg-none body3 fw-bold"
-                            style="color: var(--color-cyan-700)"
-                            >CEFR</span
-                          >
-                          <span class="fw-bold"
-                            >High A2</span
-                          >
+                    <div class="table-list__body">
+                      <div class="table-list__row">
+                        <div class="table-list__cell">
+                          <span class="table-list__mobile-label">CEFR</span>
+                          <span>High A2</span>
                         </div>
-                        <div
-                          class="table-list__cell mt-2 mt-lg-0"
-                        >
-                          <span
-                            class="d-lg-none body3 fw-bold"
-                            style="color: var(--color-cyan-700)"
-                            >AR (Lexile)</span
-                          >
-                          <span class="fw-bold"
-                            >AR 2-3</span
-                          >
+                        <div class="table-list__cell">
+                          <span class="table-list__mobile-label">AR (Lexile)</span>
+                          <span>AR 2-3</span>
                         </div>
-                        <div
-                          class="table-list__cell mt-2 mt-lg-0"
-                        >
-                          <span
-                            class="d-lg-none body3 fw-bold"
-                            style="color: var(--color-cyan-700)"
-                            >GL (톡스레벨)</span
-                          >
-                          <span class="fw-bold"
-                            >GL 5-6</span
-                          >
+                        <div class="table-list__cell">
+                          <span class="table-list__mobile-label">GL (톡스레벨)</span>
+                          <span>GL 5-6</span>
                         </div>
-                        <div
-                          class="table-list__cell table-list__cell--vertical mt-2 mt-lg-0"
-                        >
-                          <span
-                            class="d-lg-none body3 fw-bold"
-                            style="color: var(--color-cyan-700)"
-                            >스피킹</span
-                          >
-                          <p class="body3 text-gray line-height-160">
+                        <div class="table-list__cell table-list__cell--vertical">
+                          <span class="table-list__mobile-label">스피킹</span>
+                          <p>
                             - 다양한 구조의 문장을 이해하고 말아 들으며,
                             이를 활용해 말할 수 있는 단계<br />- 자신이 잘
                             알고 있는 분야에 대해 정확하게 표현할 수 있음
                           </p>
                         </div>
-                        <div
-                          class="table-list__cell table-list__cell--vertical mt-2 mt-lg-0"
-                        >
-                          <span
-                            class="d-lg-none body3 fw-bold"
-                            style="color: var(--color-cyan-700)"
-                            >리딩</span
-                          >
-                          <p class="body3 text-gray line-height-160">
+                        <div class="table-list__cell table-list__cell--vertical">
+                          <span class="table-list__mobile-label">리딩</span>
+                          <p>
                             - 다양한 구조의 문장을 이해하고 말아 들으며,
                             이를 활용해 말할 수 있는 단계<br />- 자신이 잘
                             알고 있는 분야에 대해 정확하게 표현할 수 있음
@@ -915,14 +768,11 @@
                   </div>
 
                   <!-- 결과 상세보기 -->
-                  <div class="mb-6">
-                    <div class="row g-3">
-                      <!-- 문항 번호 + 범례 -->
-                      <div class="col-12 col-lg-6">
-                        <span class="heading5 text-black d-block mb-3"
-                          >결과 상세보기</span
-                        >
-                        <div class="test-question-nav mb-3">
+                  <div class="test-question-detail">
+                    <!-- 문항 번호 + 범례 -->
+                    <div class="test-question-detail__nav-panel">
+                      <h5>결과 상세보기</h5>
+                      <div class="test-question-nav">
                           <button class="test-question-btn active">1</button>
                           <button class="test-question-btn">2</button>
                           <button class="test-question-btn">3</button>
@@ -974,43 +824,35 @@
                           <button class="test-question-btn">49</button>
                           <button class="test-question-btn">50</button>
                         </div>
-                        <!-- 범례 -->
-                        <div class="d-flex gap-4">
-                          <div class="d-flex align-items-center gap-1-5">
-                            <span class="test-legend-dot test-legend-correct"></span>
-                            <span class="body3 text-dark-gray">정답</span>
-                          </div>
-                          <div class="d-flex align-items-center gap-1-5">
-                            <span class="test-legend-dot test-legend-wrong"></span>
-                            <span class="body3 text-dark-gray">오답</span>
-                          </div>
+                      <!-- 범례 -->
+                      <div class="test-question-detail__legend">
+                        <div class="test-question-detail__legend-item">
+                          <span class="test-legend-dot test-legend-correct"></span>
+                          <span>정답</span>
+                        </div>
+                        <div class="test-question-detail__legend-item">
+                          <span class="test-legend-dot test-legend-wrong"></span>
+                          <span>오답</span>
                         </div>
                       </div>
-                      <!-- 문제 표시 영역 -->
-                      <div class="col-12 col-lg-6">
-                        <div class="test-question-card">
-                          <span class="heading5 text-black d-block mb-3"
-                            >Reading</span
-                          >
-                          <div class="test-question-image mb-3">
-                            <img
-                              src="../images/dummy1.png"
-                              alt="Reading 문제 이미지"
-                              class="w-100"
-                            />
+                    </div>
+                    <!-- 문제 표시 영역 -->
+                    <div class="test-question-detail__card-panel">
+                      <div class="test-question-card">
+                        <h5>Reading</h5>
+                        <div class="test-question-image">
+                          <img
+                            src="../images/dummy1.png"
+                            alt="Reading 문제 이미지"
+                          />
+                        </div>
+                        <div class="test-question-card__answers">
+                          <div class="test-answer test-answer-correct">
+                            <svg class="icon"><use href="#check-circle"></use></svg>
+                            <span>a. She is teaching her students.</span>
                           </div>
-                          <div class="d-flex flex-column gap-2">
-                            <div class="test-answer test-answer-correct">
-                              <svg class="icon"><use href="#check-circle-fill"></use></svg>
-                              <span class="body3 fw-medium"
-                                >a. She is teaching her students.</span
-                              >
-                            </div>
-                            <div class="test-answer test-answer-wrong">
-                              <span class="body3 fw-medium"
-                                >b. She is baking bread in the oven.</span
-                              >
-                            </div>
+                          <div class="test-answer test-answer-wrong">
+                            <span>b. She is baking bread in the oven.</span>
                           </div>
                         </div>
                       </div>
@@ -1034,7 +876,7 @@
                     삭제
                   </button>
                   <button
-                    class="test-result-toggle"
+                    class="test-result-toggle collapsed"
                     type="button"
                     data-toggle="collapse"
                     data-target="#testDetail2"
@@ -1088,7 +930,7 @@
                     삭제
                   </button>
                   <button
-                    class="test-result-toggle"
+                    class="test-result-toggle collapsed"
                     type="button"
                     data-toggle="collapse"
                     data-target="#testDetail3"

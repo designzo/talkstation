@@ -38,7 +38,7 @@
           <h5 class="lnb__profile-name">홍길동</h5>
           <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button--sm button--fill button--secondary rounded-pill"
+            class="button button--sm button--fill button--secondary"
           >
             프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
@@ -79,7 +79,7 @@
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan"><svg class="icon"><use href="#my-lesson"></use></svg></span>
               <span>나의 수업 관리</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -148,7 +148,7 @@
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet"><svg class="icon"><use href="#my-info"></use></svg></span>
               <span>나의 정보</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -178,7 +178,7 @@
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue"><svg class="icon"><use href="#idc"></use></svg></span>
               <span>아이딕 잉글리시</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -201,7 +201,7 @@
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange"><svg class="icon"><use href="#support"></use></svg></span>
               <span>학습지원서비스</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -227,15 +227,13 @@
           <!-- ============================
              강사 프로필 카드
              ============================ -->
-          <div class="d-flex flex-column gap-2">
+          <div class="teacher-card-wrap">
             <div class="teacher-card">
               <!-- 왼쪽: 강사 프로필 -->
               <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg">
                 <div class="teacher-profile__avatar"></div>
                 <div class="teacher-profile__content">
-                  <div class="d-flex align-items-center mb-1-5">
-                    <span class="teacher-profile__name">Teachername</span>
-                  </div>
+                  <span class="teacher-profile__name">Teachername</span>
                   <div class="teacher-profile__meta">
                     <span>필리핀/1개월 과정</span>
                     <span class="dot"></span>
@@ -255,14 +253,7 @@
                 <p class="teacher-card__info-text">
                   교재 : Unspoken Rules of Traveling in Italy
                 </p>
-                <span
-                  class="badge badge--sm badge--fill"
-                  style="
-                    background-color: #e2f2fa;
-                    color: #006f9e;
-                  "
-                  >레벨 : GL5(Sunflower) - STEP3</span
-                >
+                <span class="badge badge--md badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
               </div>
               <!-- 네비게이션 화살표 (카드 위 absolute) -->
               <nav class="teacher-card__nav" aria-label="강사 네비게이션">
@@ -283,7 +274,7 @@
               </nav>
             </div>
             <button
-              class="button button--sm button--transparent button--primary align-self-end ms-2"
+              class="button button--sm button--transparent button--primary"
               data-toggle="modal"
               data-target="#classInfoModal"
             >
@@ -315,7 +306,7 @@
                       </div>
                     </div>
                     <span
-                      class="badge badge--md w-100 align-items-center badge--soft badge--primary"
+                      class="badge badge--md badge--block badge--soft badge--primary"
                     >
                       📖 GL6 - Why Are Potato Chip Bags Half Empty
                     </span>
@@ -916,8 +907,8 @@
             </div>
 
             <!-- 일일출결정보 -->
-            <div class="d-flex flex-column gap-4">
-              <span>일일출결정보</span>
+            <div class="content-section">
+              <span class="content-section__title">일일출결정보</span>
 
               <div class="table-list table-list--attendance">
                 <!-- 테이블 헤더 (PC만 표시) -->
@@ -955,13 +946,13 @@
                   </div>
                   <div class="table-list__cell">
                     <span class="table-list__mobile-label">수강방식</span>
-                    <span class="body3 text-light-gray">필리핀 화상</span>
+                    <span class="text-sub">필리핀 화상</span>
                   </div>
                   <div class="table-list__cell">
                     <span class="badge badge--sm badge--soft badge--green">수업대기</span>
                   </div>
                 </div>
-                <div class="table-list__row">
+                <div class="table-list__row table-list__row--highlight">
                   <div class="table-list__cell table-list__cell--pc-only">
                     <span>15</span>
                   </div>
@@ -983,7 +974,7 @@
                   </div>
                   <div class="table-list__cell">
                     <span class="table-list__mobile-label">수강방식</span>
-                    <span class="body3 text-light-gray">필리핀 화상</span>
+                    <span class="text-sub">필리핀 화상</span>
                   </div>
                   <div class="table-list__cell">
                     <span class="badge badge--sm badge--soft badge--green">수업대기</span>
@@ -1011,13 +1002,13 @@
                   </div>
                   <div class="table-list__cell">
                     <span class="table-list__mobile-label">수강방식</span>
-                    <span class="body3 text-light-gray">필리핀 화상</span>
+                    <span class="text-sub">필리핀 화상</span>
                   </div>
                   <div class="table-list__cell">
                     <span class="badge badge--sm badge--soft badge--blue">출석</span>
                   </div>
                 </div>
-                <div class="table-list__row">
+                <div class="table-list__row table-list__row--highlight">
                   <div class="table-list__cell table-list__cell--pc-only">
                     <span>7</span>
                   </div>
@@ -1039,7 +1030,7 @@
                   </div>
                   <div class="table-list__cell">
                     <span class="table-list__mobile-label">수강방식</span>
-                    <span class="body3 text-light-gray">필리핀 화상</span>
+                    <span class="text-sub">필리핀 화상</span>
                   </div>
                   <div class="table-list__cell">
                     <span class="badge badge--sm badge--soft badge--violet">보강신청확정</span>
@@ -1067,7 +1058,7 @@
                   </div>
                   <div class="table-list__cell">
                     <span class="table-list__mobile-label">수강방식</span>
-                    <span class="body3 text-light-gray">필리핀 화상</span>
+                    <span class="text-sub">필리핀 화상</span>
                   </div>
                   <div class="table-list__cell">
                     <span class="badge badge--sm badge--soft badge--orange">연기신청</span>
@@ -1107,88 +1098,88 @@
           </div>
 
           <!-- 모달 바디 -->
-          <div class="modal-body gap-3">
+          <div class="modal-body">
 
             <!-- 수업 카드 1 (현재 수업 - 하이라이트) -->
-            <div class="class-section-card class-section-card-active radius-xl p-4 p-lg-5">
-              <span class="badge badge--sm badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg w-100">
+            <div class="class-section-card class-section-card--active">
+              <span class="badge badge--md badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg">
                 <div class="teacher-profile__avatar"></div>
-                <div class="teacher-profile__content d-flex flex-column gap-1">
+                <div class="teacher-profile__content">
                   <span class="teacher-profile__name">Teachername</span>
-                  <div class="d-flex align-items-center gap-2 flex-wrap">
-                    <span class="body2 text-light-gray">필리핀/1개월 과정</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">주 2회</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">월/수</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">25분</span>
+                  <div class="teacher-profile__meta">
+                    <span>필리핀/1개월 과정</span>
+                    <span class="dot"></span>
+                    <span>주 2회</span>
+                    <span class="dot"></span>
+                    <span>월/수</span>
+                    <span class="dot"></span>
+                    <span>25분</span>
                   </div>
-                  <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+                  <span class="teacher-profile__book">교재 : Unspoken Rules of Traveling in Italy</span>
                 </div>
               </div>
             </div>
 
             <!-- 수업 카드 2 -->
-            <div class="class-section-card card-panel">
-              <span class="badge badge--sm badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg w-100">
+            <div class="class-section-card">
+              <span class="badge badge--md badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg">
                 <div class="teacher-profile__avatar"></div>
-                <div class="teacher-profile__content d-flex flex-column gap-1">
+                <div class="teacher-profile__content">
                   <span class="teacher-profile__name">Teachername</span>
-                  <div class="d-flex align-items-center gap-2 flex-wrap">
-                    <span class="body2 text-light-gray">필리핀/1개월 과정</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">주 2회</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">월/수</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">25분</span>
+                  <div class="teacher-profile__meta">
+                    <span>필리핀/1개월 과정</span>
+                    <span class="dot"></span>
+                    <span>주 2회</span>
+                    <span class="dot"></span>
+                    <span>월/수</span>
+                    <span class="dot"></span>
+                    <span>25분</span>
                   </div>
-                  <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+                  <span class="teacher-profile__book">교재 : Unspoken Rules of Traveling in Italy</span>
                 </div>
               </div>
             </div>
 
             <!-- 수업 카드 3 -->
-            <div class="class-section-card card-panel">
-              <span class="badge badge--sm badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg w-100">
+            <div class="class-section-card">
+              <span class="badge badge--md badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg">
                 <div class="teacher-profile__avatar"></div>
-                <div class="teacher-profile__content d-flex flex-column gap-1">
+                <div class="teacher-profile__content">
                   <span class="teacher-profile__name">Teachername</span>
-                  <div class="d-flex align-items-center gap-2 flex-wrap">
-                    <span class="body2 text-light-gray">필리핀/1개월 과정</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">주 2회</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">월/수</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">25분</span>
+                  <div class="teacher-profile__meta">
+                    <span>필리핀/1개월 과정</span>
+                    <span class="dot"></span>
+                    <span>주 2회</span>
+                    <span class="dot"></span>
+                    <span>월/수</span>
+                    <span class="dot"></span>
+                    <span>25분</span>
                   </div>
-                  <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+                  <span class="teacher-profile__book">교재 : Unspoken Rules of Traveling in Italy</span>
                 </div>
               </div>
             </div>
 
             <!-- 수업 카드 4 -->
-            <div class="class-section-card card-panel">
-              <span class="badge badge--sm badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
-              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg w-100">
+            <div class="class-section-card">
+              <span class="badge badge--md badge--soft badge--primary">레벨 : GL5(Sunflower) - STEP3</span>
+              <div class="teacher-profile teacher-profile--horizontal teacher-profile--lg">
                 <div class="teacher-profile__avatar"></div>
-                <div class="teacher-profile__content d-flex flex-column gap-1">
+                <div class="teacher-profile__content">
                   <span class="teacher-profile__name">Teachername</span>
-                  <div class="d-flex align-items-center gap-2 flex-wrap">
-                    <span class="body2 text-light-gray">필리핀/1개월 과정</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">주 2회</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">월/수</span>
-                    <span class="eval-dot"></span>
-                    <span class="body2 text-light-gray">25분</span>
+                  <div class="teacher-profile__meta">
+                    <span>필리핀/1개월 과정</span>
+                    <span class="dot"></span>
+                    <span>주 2회</span>
+                    <span class="dot"></span>
+                    <span>월/수</span>
+                    <span class="dot"></span>
+                    <span>25분</span>
                   </div>
-                  <span class="body2 text-neutral">교재 : Unspoken Rules of Traveling in Italy</span>
+                  <span class="teacher-profile__book">교재 : Unspoken Rules of Traveling in Italy</span>
                 </div>
               </div>
             </div>

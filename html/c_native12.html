@@ -38,7 +38,7 @@
           <h5 class="lnb__profile-name">홍길동</h5>
           <p class="lnb__profile-sub">Hong gil dong</p>
           <button
-            class="button button--sm button--fill button--secondary rounded-pill"
+            class="button button--sm button--fill button--secondary"
           >
             프로필 설정 <svg class="icon"><use href="#pencil-fill"></use></svg>
           </button>
@@ -79,7 +79,7 @@
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan"><svg class="icon"><use href="#my-lesson"></use></svg></span>
               <span>나의 수업 관리</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -148,7 +148,7 @@
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet"><svg class="icon"><use href="#my-info"></use></svg></span>
               <span>나의 정보</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -178,7 +178,7 @@
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue"><svg class="icon"><use href="#idc"></use></svg></span>
               <span>아이딕 잉글리시</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -201,7 +201,7 @@
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange"><svg class="icon"><use href="#support"></use></svg></span>
               <span>학습지원서비스</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -227,18 +227,17 @@
           <!-- ============================
              Course Info + Calendar Row (PC only)
              ============================ -->
-          <div class="row row-gap-5 d-none d-lg-flex">
+          <div class="section-grid section-grid--half section-grid--pc-only">
             <!-- Course Info -->
-            <div class="col-12 col-lg-6">
               <div
                 class="section-card course-info"
               >
-                <div class="section-card__header">
-                  <h3 class="section-card__title">
-                    나의 수강 정보
-                  </h3>
-                </div>
                 <div class="course-info__scroll">
+                  <div class="section-card__header">
+                    <h3 class="section-card__title">
+                      나의 수강 정보
+                    </h3>
+                  </div>
                   <div class="course-info__cards">
                     <div
                       class="course-info__card"
@@ -273,7 +272,7 @@
                       </div>
 
                       <!-- Action Buttons -->
-                      <div class="button-group course-info__actions">
+                      <div class="course-info__actions">
                         <button
                           class="button button--sm button--fill button--default"
                         >
@@ -289,12 +288,8 @@
                         >
                           선생님 부탁드려요
                         </button>
-                      </div>
-
-                      <!-- 강사 시간 변경하기 -->
-                      <div class="d-flex">
                         <button
-                          class="button button--md button--fill button--primary button--block"
+                          class="button button--sm button--fill button--tertiary"
                         >
                           강사 시간 변경하기
                         </button>
@@ -333,7 +328,7 @@
                       </div>
 
                       <!-- Action Buttons -->
-                      <div class="button-group course-info__actions">
+                      <div class="course-info__actions">
                         <button
                           class="button button--sm button--fill button--default"
                         >
@@ -349,12 +344,8 @@
                         >
                           선생님 부탁드려요
                         </button>
-                      </div>
-
-                      <!-- 강사 시간 변경하기 -->
-                      <div class="d-flex">
                         <button
-                          class="button button--md button--fill button--primary button--block"
+                          class="button button--sm button--fill button--tertiary"
                         >
                           강사 시간 변경하기
                         </button>
@@ -364,8 +355,8 @@
 
                   <!-- Event Section -->
                   <div class="section-card__body">
-                    <h4 class="section-card__subtitle">이벤트 바로가기</h4>
                     <div class="event-list">
+                      <h4 class="event-list__title">이벤트 바로가기</h4>
                       <div class="event-list__banner">
                         <img
                           src="../images/dummy2.png"
@@ -388,10 +379,8 @@
                   </div>
                 </div>
               </div>
-            </div>
 
             <!-- Calendar -->
-            <div class="col-12 col-lg-6">
               <div
                 class="section-card"
               >
@@ -522,15 +511,13 @@
                   </div>
                 </div>
               </div>
-            </div>
           </div>
 
           <!-- ============================
              Course Info + Calendar Row (Mobile only)
              ============================ -->
-          <div class="row row-gap-5 d-lg-none">
+          <div class="section-grid section-grid--half section-grid--mobile-only">
             <!-- Course Info -->
-            <div class="col-12 col-lg-6">
               <div
                 class="section-card"
               >
@@ -574,7 +561,7 @@
                       </div>
 
                       <!-- Action Buttons -->
-                      <div class="button-group course-info__actions">
+                      <div class="course-info__actions">
                         <button
                           class="button button--sm button--fill button--default"
                         >
@@ -590,12 +577,8 @@
                         >
                           선생님 부탁드려요
                         </button>
-                      </div>
-
-                      <!-- 강사 시간 변경하기 -->
-                      <div class="d-flex">
                         <button
-                          class="button button--md button--fill button--primary button--block"
+                          class="button button--sm button--fill button--tertiary"
                         >
                           강사 시간 변경하기
                         </button>
@@ -634,7 +617,7 @@
                       </div>
 
                       <!-- Action Buttons -->
-                      <div class="button-group course-info__actions">
+                      <div class="course-info__actions">
                         <button
                           class="button button--sm button--fill button--default"
                         >
@@ -650,12 +633,8 @@
                         >
                           선생님 부탁드려요
                         </button>
-                      </div>
-
-                      <!-- 강사 시간 변경하기 -->
-                      <div class="d-flex">
                         <button
-                          class="button button--md button--fill button--primary button--block"
+                          class="button button--sm button--fill button--tertiary"
                         >
                           강사 시간 변경하기
                         </button>
@@ -664,10 +643,8 @@
                   </div>
                 </div>
               </div>
-            </div>
 
             <!-- Calendar -->
-            <div class="col-12 col-lg-6">
               <div
                 class="section-card"
               >
@@ -798,18 +775,16 @@
                   </div>
                 </div>
               </div>
-            </div>
 
             <!-- Event -->
-            <div class="col-12 col-lg-6">
               <div
                 class="section-card"
               >
                 <div class="course-info">
                   <!-- Event Section -->
                   <div class="section-card__body">
-                    <h4 class="section-card__subtitle">이벤트 바로가기</h4>
                     <div class="event-list">
+                      <h4 class="event-list__title">이벤트 바로가기</h4>
                       <div class="event-list__banner">
                         <img src="../images/dummy2.png" alt="이벤트 배너 1" />
                       </div>
@@ -823,18 +798,15 @@
                   </div>
                 </div>
               </div>
-            </div>
           </div>
 
           <!-- ============================
              나의 강사/시간 변경 내역
              ============================ -->
-          <div class="d-flex flex-column gap-4">
-            <h3>나의 강사/시간 변경 내역</h3>
-
-            <div
+          <div
               class="table-list table-list--schedule-change card-panel"
             >
+              <h3 class="table-list__heading">나의 강사/시간 변경 내역</h3>
               <!-- 테이블 헤더 (데스크탑만) -->
               <div
                 class="table-list__header"
@@ -851,509 +823,325 @@
                 <!-- Row 1 -->
                 <div class="table-list__row">
                   <!-- 강사 -->
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">강사</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">강사</span>
+                    <div class="table-list__cell-type">
                       <span>Kesiah</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>Amelliatest</span>
                     </div>
                   </div>
                   <!-- 기간 -->
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">기간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">기간</span>
+                    <div class="table-list__cell-type">
                       <span>25.00.00</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>25.00.00</span>
                     </div>
                   </div>
                   <!-- 요일 -->
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">요일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">요일</span>
+                    <div class="table-list__cell-type">
                       <span>월/화/수/목/금</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>월/화/수/목/금</span>
                     </div>
                   </div>
                   <!-- 시간 -->
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">시간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">시간</span>
+                    <div class="table-list__cell-type">
                       <span>18:00~18:24</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>18:00~18:24</span>
                     </div>
                   </div>
                   <!-- 변경 시작일 -->
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">변경 시작일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center"
-                    >
-                      <span>2025.08.01</span>
-                    </div>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">변경 시작일</span>
+                    <span>2025.08.01</span>
                   </div>
                 </div>
 
                 <!-- Row 2 -->
-                <div
-                  class="table-list__row table-list__row--highlight"
-                >
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">강사</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                <div class="table-list__row table-list__row--highlight">
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">강사</span>
+                    <div class="table-list__cell-type">
                       <span>Kesiah</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">기간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">기간</span>
+                    <div class="table-list__cell-type">
                       <span>25.00.00</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">요일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">요일</span>
+                    <div class="table-list__cell-type">
                       <span>월/화/수/목/금</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">시간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">시간</span>
+                    <div class="table-list__cell-type">
                       <span>18:00~18:24</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">변경 시작일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center"
-                    >
-                      <span>2025.08.01</span>
-                    </div>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">변경 시작일</span>
+                    <span>2025.08.01</span>
                   </div>
                 </div>
 
                 <!-- Row 3 -->
                 <div class="table-list__row">
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">강사</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">강사</span>
+                    <div class="table-list__cell-type">
                       <span>Kesiah</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">기간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">기간</span>
+                    <div class="table-list__cell-type">
                       <span>25.00.00</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">요일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">요일</span>
+                    <div class="table-list__cell-type">
                       <span>월/화/수/목/금</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">시간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">시간</span>
+                    <div class="table-list__cell-type">
                       <span>18:00~18:24</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">변경 시작일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center"
-                    >
-                      <span>2025.08.01</span>
-                    </div>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">변경 시작일</span>
+                    <span>2025.08.01</span>
                   </div>
                 </div>
 
                 <!-- Row 4 -->
-                <div
-                  class="table-list__row table-list__row--highlight"
-                >
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">강사</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                <div class="table-list__row table-list__row--highlight">
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">강사</span>
+                    <div class="table-list__cell-type">
                       <span>Kesiah</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">기간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">기간</span>
+                    <div class="table-list__cell-type">
                       <span>25.00.00</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">요일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">요일</span>
+                    <div class="table-list__cell-type">
                       <span>월/화/수/목/금</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">시간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">시간</span>
+                    <div class="table-list__cell-type">
                       <span>18:00~18:24</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">변경 시작일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center"
-                    >
-                      <span>2025.08.01</span>
-                    </div>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">변경 시작일</span>
+                    <span>2025.08.01</span>
                   </div>
                 </div>
 
                 <!-- Row 5 -->
                 <div class="table-list__row">
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">강사</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">강사</span>
+                    <div class="table-list__cell-type">
                       <span>Kesiah</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">기간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">기간</span>
+                    <div class="table-list__cell-type">
                       <span>25.00.00</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">요일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">요일</span>
+                    <div class="table-list__cell-type">
                       <span>월/화/수/목/금</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">시간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">시간</span>
+                    <div class="table-list__cell-type">
                       <span>18:00~18:24</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">변경 시작일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center"
-                    >
-                      <span>2025.08.01</span>
-                    </div>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">변경 시작일</span>
+                    <span>2025.08.01</span>
                   </div>
                 </div>
 
                 <!-- Row 6 -->
-                <div
-                  class="table-list__row table-list__row--highlight"
-                >
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">강사</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                <div class="table-list__row table-list__row--highlight">
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">강사</span>
+                    <div class="table-list__cell-type">
                       <span>Kesiah</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">기간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">기간</span>
+                    <div class="table-list__cell-type">
                       <span>25.00.00</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">요일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">요일</span>
+                    <div class="table-list__cell-type">
                       <span>월/화/수/목/금</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">시간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">시간</span>
+                    <div class="table-list__cell-type">
                       <span>18:00~18:24</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">변경 시작일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center"
-                    >
-                      <span>2025.08.01</span>
-                    </div>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">변경 시작일</span>
+                    <span>2025.08.01</span>
                   </div>
                 </div>
 
                 <!-- Row 7 -->
                 <div class="table-list__row">
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">강사</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">강사</span>
+                    <div class="table-list__cell-type">
                       <span>Kesiah</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">기간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">기간</span>
+                    <div class="table-list__cell-type">
                       <span>25.00.00</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">요일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">요일</span>
+                    <div class="table-list__cell-type">
                       <span>월/화/수/목/금</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">시간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">시간</span>
+                    <div class="table-list__cell-type">
                       <span>18:00~18:24</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">변경 시작일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center"
-                    >
-                      <span>2025.08.01</span>
-                    </div>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">변경 시작일</span>
+                    <span>2025.08.01</span>
                   </div>
                 </div>
 
                 <!-- Row 8 -->
-                <div
-                  class="table-list__row table-list__row--highlight"
-                >
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">강사</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                <div class="table-list__row table-list__row--highlight">
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">강사</span>
+                    <div class="table-list__cell-type">
                       <span>Kesiah</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>Amelliatest</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">기간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">기간</span>
+                    <div class="table-list__cell-type">
                       <span>25.00.00</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>25.00.00</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">요일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">요일</span>
+                    <div class="table-list__cell-type">
                       <span>월/화/수/목/금</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>월/화/수/목/금</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">시간</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center gap-1 flex-wrap"
-                    >
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">시간</span>
+                    <div class="table-list__cell-type">
                       <span>18:00~18:24</span>
-                      <svg class="icon text-primary change-arrow"><use href="#caret-right-fill"></use></svg>
+                      <svg class="icon change-arrow"><use href="#caret-right-fill"></use></svg>
                       <span>18:00~18:24</span>
                     </div>
                   </div>
-                  <div class="table-list__cell table-list__cell--block">
-                    <div class="d-flex d-lg-none mb-1">
-                      <span class="body3 text-muted">변경 시작일</span>
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-lg-center"
-                    >
-                      <span>2025.08.01</span>
-                    </div>
+                  <div class="table-list__cell">
+                    <span class="table-list__mobile-label">변경 시작일</span>
+                    <span>2025.08.01</span>
                   </div>
                 </div>
               </div>
@@ -1397,12 +1185,42 @@
                   </ul>
               </div>
             </div>
-          </div>
         </div>
       </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="../js/icons.js"></script>
+      <script>
+        // course-info 스크롤 영역 max-height를 캘린더 높이에 맞춤
+        function syncCourseInfoScroll() {
+          var scroll = document.querySelector('.section-grid--pc-only .course-info__scroll');
+          if (!scroll) return;
+
+          if (window.innerWidth < 992) {
+            scroll.style.maxHeight = '';
+            return;
+          }
+
+          var courseCard = scroll.closest('.course-info');
+
+          // 스크롤 축소 → 캘린더가 grid row 높이 결정
+          scroll.style.maxHeight = '0';
+
+          // 카드 내부 바운딩 박스 → 스크롤 사용 가능 높이
+          var cardRect = courseCard.getBoundingClientRect();
+          var scrollRect = scroll.getBoundingClientRect();
+          var pb = parseFloat(getComputedStyle(courseCard).paddingBottom);
+
+          scroll.style.maxHeight = Math.max(0, cardRect.bottom - pb - scrollRect.top) + 'px';
+        }
+
+        window.addEventListener('load', syncCourseInfoScroll);
+        var _syncTimer;
+        window.addEventListener('resize', function () {
+          clearTimeout(_syncTimer);
+          _syncTimer = setTimeout(syncCourseInfoScroll, 100);
+        });
+      </script>
   </body>
 </html>

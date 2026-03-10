@@ -79,7 +79,7 @@
               data-toggle="collapse"
               data-target="#navLesson"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--cyan">📚</span>
+              <span class="lnb__nav-icon lnb__nav-icon--cyan"><svg class="icon"><use href="#my-lesson"></use></svg></span>
               <span>나의 수업 관리</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -148,7 +148,7 @@
               data-toggle="collapse"
               data-target="#navInfo"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--violet">👤</span>
+              <span class="lnb__nav-icon lnb__nav-icon--violet"><svg class="icon"><use href="#my-info"></use></svg></span>
               <span>나의 정보</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -178,7 +178,7 @@
               data-toggle="collapse"
               data-target="#navIdic"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--blue">📖</span>
+              <span class="lnb__nav-icon lnb__nav-icon--blue"><svg class="icon"><use href="#idc"></use></svg></span>
               <span>아이딕 잉글리시</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -201,7 +201,7 @@
               data-toggle="collapse"
               data-target="#navSupport"
             >
-              <span class="lnb__nav-icon lnb__nav-icon--orange">🎓</span>
+              <span class="lnb__nav-icon lnb__nav-icon--orange"><svg class="icon"><use href="#support"></use></svg></span>
               <span>학습지원서비스</span>
               <svg class="icon lnb__nav-chevron"><use href="#chevron-down"></use></svg>
             </button>
@@ -1374,8 +1374,8 @@
 
                   <!-- Event Section -->
                   <div class="section-card__body">
-                    <h4 class="section-card__subtitle">이벤트 바로가기</h4>
                     <div class="event-list">
+                      <h4 class="event-list__title">이벤트 바로가기</h4>
                       <div class="event-list__banner">
                         <img
                           src="../images/dummy2.png"
@@ -1791,8 +1791,8 @@
                 <div class="course-info">
                   <!-- Event Section -->
                   <div class="section-card__body">
-                    <h4 class="section-card__subtitle">이벤트 바로가기</h4>
                     <div class="event-list">
+                      <h4 class="event-list__title">이벤트 바로가기</h4>
                       <div class="event-list__banner">
                         <img src="../images/dummy2.png" alt="이벤트 배너 1" />
                       </div>
@@ -2001,5 +2001,36 @@
       });
     </script>
       <script src="../js/icons.js"></script>
+      <script>
+        // course-info 스크롤 영역 max-height를 캘린더 높이에 맞춤
+        function syncCourseInfoScroll() {
+          var scroll = document.querySelector('.section-grid--pc-only .course-info__scroll');
+          if (!scroll) return;
+
+          if (window.innerWidth < 992) {
+            scroll.style.maxHeight = '';
+            return;
+          }
+
+          var courseCard = scroll.closest('.course-info');
+
+          // 스크롤 축소 → 캘린더가 grid row 높이 결정
+          scroll.style.maxHeight = '0';
+
+          // 카드 내부 바운딩 박스 → 스크롤 사용 가능 높이
+          var cardRect = courseCard.getBoundingClientRect();
+          var scrollRect = scroll.getBoundingClientRect();
+          var pb = parseFloat(getComputedStyle(courseCard).paddingBottom);
+
+          scroll.style.maxHeight = Math.max(0, cardRect.bottom - pb - scrollRect.top) + 'px';
+        }
+
+        window.addEventListener('load', syncCourseInfoScroll);
+        var _syncTimer;
+        window.addEventListener('resize', function () {
+          clearTimeout(_syncTimer);
+          _syncTimer = setTimeout(syncCourseInfoScroll, 100);
+        });
+      </script>
   </body>
 </html>
