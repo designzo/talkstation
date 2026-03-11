@@ -1967,6 +1967,7 @@ h6,
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-2);
+  height: 100%;
 }
 .att-stat {
   display: flex;

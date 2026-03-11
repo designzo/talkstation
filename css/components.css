@@ -2118,6 +2118,39 @@
   font-size: var(--font-size-base);
 }
 
+/* Voca variant: Point + 완료율 프로그레스 */
+.stat-progress--voca {
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .stat-progress--voca {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 992px) {
+  .stat-progress .voca-stats__point-inner {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .stat-progress .voca-stats__point-value {
+    font-size: 48px;
+    font-weight: 900;
+  }
+}
+.stat-progress__group {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .stat-progress__group {
+    width: 50%;
+  }
+}
+
 /* ==============================================
    Page Banner
    ============================================== */
