@@ -227,15 +227,15 @@
           <!-- ============================
              섹션 1: 주문상품
              ============================ -->
-          <div class="d-flex flex-column gap-4">
-            <h3 class="heading4 text-black">주문상품</h3>
+          <div class="content-section">
+            <h3 class="content-section__title">주문상품</h3>
 
             <div class="table-list table-list--order-summary">
               <!-- PC 헤더 -->
               <div
                 class="table-list__header"
               >
-                <div class="table-list__cell">상품 정보</div>
+                <div class="table-list__cell table-list__cell--start">상품 정보</div>
                 <div class="table-list__cell">상품금액</div>
                 <div class="table-list__cell">배송비</div>
                 <div class="table-list__cell">결제예정금액</div>
@@ -245,20 +245,18 @@
               <div class="table-list__body">
                 <!-- 상품 1 -->
                 <div class="table-list__row">
-                  <div class="table-list__cell">
+                  <div class="table-list__cell table-list__cell--start">
                     <img
                       src="../images/book_sample.png"
                       alt="A Great Expedition 책 표지"
                       class="cart-book-img"
                     />
-                    <div class="d-flex flex-column gap-1">
-                      <span class="body2-m text-gray"
-                        >A Great Expedition</span
-                      >
-                      <div class="d-flex align-items-center gap-1">
-                        <span class="body3 text-light-gray">5권</span>
-                        <span class="body3 text-light-gray">&bull;</span>
-                        <span class="body3 text-light-gray">5,700원</span>
+                    <div class="order-product">
+                      <span class="order-product__name">A Great Expedition</span>
+                      <div class="order-product__meta">
+                        <span>5권</span>
+                        <span class="dot"></span>
+                        <span>5,700원</span>
                       </div>
                     </div>
                     <span
@@ -267,46 +265,34 @@
                     >
                   </div>
                   <!-- 모바일: 상품금액+배송비 가로 / PC: 각 컬럼 -->
-                  <div
-                    class="table-list__cell"
-                  >
+                  <div class="table-list__cell table-list__cell--half">
                     <span class="table-list__mobile-label">상품금액</span>
-                    <span class="body2 text-gray">28,500</span>
+                    <span class="order-cell__value">28,500</span>
                   </div>
-                  <div
-                    class="table-list__cell"
-                  >
+                  <div class="table-list__cell table-list__cell--half">
                     <span class="table-list__mobile-label">배송비</span>
-                    <span class="body2 text-gray">3,000</span>
+                    <span class="order-cell__value">3,000</span>
                   </div>
-                  <div
-                    class="table-list__cell order-summary-row"
-                  >
+                  <div class="table-list__cell order-summary-row">
                     <span class="table-list__mobile-label">결제예정금액</span>
-                    <span class="body2 weight-bold text-primary"
-                      >31,500</span
-                    >
+                    <span class="order-cell__total">31,500</span>
                   </div>
                 </div>
 
                 <!-- 상품 2 -->
-                <div
-                  class="table-list__row table-list__row--highlight"
-                >
-                  <div class="table-list__cell">
+                <div class="table-list__row table-list__row--highlight">
+                  <div class="table-list__cell table-list__cell--start">
                     <img
                       src="../images/book_sample.png"
                       alt="A Great Expedition 책 표지"
                       class="cart-book-img"
                     />
-                    <div class="d-flex flex-column gap-1">
-                      <span class="body2-m text-gray"
-                        >A Great Expedition</span
-                      >
-                      <div class="d-flex align-items-center gap-1">
-                        <span class="body3 text-light-gray">5권</span>
-                        <span class="body3 text-light-gray">&bull;</span>
-                        <span class="body3 text-light-gray">5,700원</span>
+                    <div class="order-product">
+                      <span class="order-product__name">A Great Expedition</span>
+                      <div class="order-product__meta">
+                        <span>5권</span>
+                        <span class="dot"></span>
+                        <span>5,700원</span>
                       </div>
                     </div>
                     <span
@@ -314,25 +300,17 @@
                       >28,500원</span
                     >
                   </div>
-                  <div
-                    class="table-list__cell"
-                  >
+                  <div class="table-list__cell table-list__cell--half">
                     <span class="table-list__mobile-label">상품금액</span>
-                    <span class="body2 text-gray">28,500</span>
+                    <span class="order-cell__value">28,500</span>
                   </div>
-                  <div
-                    class="table-list__cell"
-                  >
+                  <div class="table-list__cell table-list__cell--half">
                     <span class="table-list__mobile-label">배송비</span>
-                    <span class="body2 text-gray">3,000</span>
+                    <span class="order-cell__value">3,000</span>
                   </div>
-                  <div
-                    class="table-list__cell order-summary-row"
-                  >
+                  <div class="table-list__cell order-summary-row">
                     <span class="table-list__mobile-label">결제예정금액</span>
-                    <span class="body2 weight-bold text-primary"
-                      >31,500</span
-                    >
+                    <span class="order-cell__total">31,500</span>
                   </div>
                 </div>
               </div>
@@ -342,11 +320,9 @@
           <!-- ============================
              섹션 2: 배송정보
              ============================ -->
-          <div
-            class="d-flex flex-column gap-4 card-panel"
-          >
-            <div class="d-flex align-items-center gap-4">
-              <h3 class="heading4 text-black">배송정보</h3>
+          <div class="section-card order-form">
+            <div class="section-card__header section-card__header--inline">
+              <h3>배송정보</h3>
               <button
                 class="button button--sm button--border button--primary"
                 type="button"
@@ -356,11 +332,9 @@
             </div>
 
             <!-- 이름 -->
-            <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-2">
-              <div class="order-form-label">
-                <span class="body2-m text-gray">이름</span>
-              </div>
-              <div class="flex-1">
+            <div class="order-form__row">
+              <label class="order-form__label">이름</label>
+              <div class="order-form__field">
                 <div class="field-wrap">
                   <input
                     type="text"
@@ -373,11 +347,9 @@
             </div>
 
             <!-- 연락처 -->
-            <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-2">
-              <div class="order-form-label">
-                <span class="body2-m text-gray">연락처</span>
-              </div>
-              <div class="flex-1">
+            <div class="order-form__row">
+              <label class="order-form__label">연락처</label>
+              <div class="order-form__field">
                 <div class="field-wrap">
                   <input
                     type="text"
@@ -390,13 +362,11 @@
             </div>
 
             <!-- 주소 -->
-            <div class="d-flex flex-column flex-lg-row align-items-start gap-2">
-              <div class="order-form-label mt-lg-2">
-                <span class="body2-m text-gray">주소</span>
-              </div>
-              <div class="flex-1 d-flex flex-column gap-2 w-100">
-                <div class="d-flex gap-2">
-                  <div class="flex-1">
+            <div class="order-form__row order-form__row--top">
+              <label class="order-form__label">주소</label>
+              <div class="order-form__field order-form__field--stacked">
+                <div class="order-form__field-row">
+                  <div class="order-form__field">
                     <div class="field-wrap">
                       <input
                         type="text"
@@ -406,7 +376,7 @@
                       />
                     </div>
                   </div>
-                  <div class="d-none d-lg-block flex-1">
+                  <div class="order-form__field d-none d-lg-block">
                     <div class="field-wrap">
                       <input
                         type="text"
@@ -441,11 +411,9 @@
             </div>
 
             <!-- 요청사항 -->
-            <div class="d-flex flex-column flex-lg-row align-items-start gap-2">
-              <div class="order-form-label mt-lg-2">
-                <span class="body2-m text-gray">요청사항</span>
-              </div>
-              <div class="flex-1 w-100">
+            <div class="order-form__row order-form__row--top">
+              <label class="order-form__label">요청사항</label>
+              <div class="order-form__field">
                 <div class="textarea-wrap">
                   <textarea
                     class="textarea"
@@ -461,11 +429,9 @@
           <!-- ============================
              섹션 3: 결제방법
              ============================ -->
-          <div
-            class="d-flex flex-column gap-4 card-panel"
-          >
-            <div class="d-flex align-items-center gap-4">
-              <h3 class="heading4 text-black">결제방법</h3>
+          <div class="section-card order-payment">
+            <div class="section-card__header section-card__header--inline">
+              <h3>결제방법</h3>
               <button
                 class="button button--sm button--border button--default"
                 type="button"
@@ -476,11 +442,8 @@
               </button>
             </div>
 
-            <div
-              class="d-flex justify-content-center p-5 radius-lg"
-              style="background-color: var(--color-bg-gray-light)"
-            >
-              <div class="d-flex align-items-center gap-3">
+            <div class="order-payment__panel">
+              <div class="order-payment__options">
                 <label class="custom-input-wrap custom-input-wrap--left">
                   <input
                     type="radio"

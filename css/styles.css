@@ -44,8 +44,13 @@ h6,
 .content-container {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-6);
+  gap: var(--spacing-5);
   min-width: 0;
+}
+@media (min-width: 992px) {
+  .content-container {
+    gap: var(--spacing-6);
+  }
 }
 
 /* ==============================================
@@ -433,12 +438,18 @@ h6,
   align-items: center;
   gap: var(--spacing-4);
   padding: var(--spacing-6);
+  margin-top: var(--spacing-5);
   background: var(--color-red-50);
   border: 1px solid #ffdde1;
   text-align: center;
   border-radius: var(--radius-xl);
   box-shadow: var(--effect-elevator-large);
   overflow: hidden;
+}
+@media (min-width: 992px) {
+  .heart-card {
+    margin-top: var(--spacing-6);
+  }
 }
 
 .heart-card__info {
@@ -565,6 +576,13 @@ h6,
   }
 }
 
+/* 카드 그룹 래퍼 (그림자 없이 자식 카드만 나열) */
+.section-card-group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 /* 독립 섹션 카드는 콘텐츠에 맞춤 */
 .content-container > .section-card {
   height: auto;
@@ -580,6 +598,11 @@ h6,
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.section-card__header--inline {
+  justify-content: flex-start;
+  gap: var(--spacing-4);
 }
 
 .section-card__header--highlight {
@@ -2936,7 +2959,7 @@ h6,
 .table-list--complaint { --table-cols: 1fr 7fr 2fr 2fr; }
 .table-list--cancel-detail { --table-cols: 2fr 5fr 3fr 2fr; }
 .table-list--order-detail { --table-cols: 4fr 1fr; }
-.table-list--order-summary { --table-cols: 1fr 2fr 2fr 2fr; }
+.table-list--order-summary { --table-cols: 3fr 1.5fr 1.5fr 1.5fr; }
 
 /* change-history: 셀 스타일 (fw-medium, body3 text-light-gray, border, 버튼 등 흡수) */
 .table-list--change-history .table-list__cell--vertical > span:first-of-type:not(.table-list__mobile-label) {
@@ -3536,7 +3559,7 @@ h6,
   align-self: flex-start;
 }
 .complaint-write-banner > .teacher-profile {
-  align-items: flex-start;
+  flex-direction: row;
   text-align: left;
 }
 .complaint-write-banner .teacher-profile--horizontal.teacher-profile--lg .teacher-profile__content {
@@ -4012,17 +4035,35 @@ h6,
   color: var(--color-primary);
 }
 
-/* 교재 구매 주문 폼 라벨 */
-.order-form-label {
-  flex-shrink: 0;
-  width: auto;
+/* 주문 상품 테이블 내부 */
+.order-product {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
 }
-
-@media (min-width: 992px) {
-  .order-form-label {
-    width: 120px;
-    text-align: center;
-  }
+.order-product__name {
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-neutral);
+}
+.order-product__meta {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-light-gray);
+  line-height: var(--lineheight-sm);
+}
+.order-product__meta .dot {
+  margin: 0 4px;
+}
+.order-cell__value {
+  font-size: var(--font-size-base);
+  color: var(--color-gray);
+}
+.order-cell__total {
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-bold);
+  color: var(--color-primary);
 }
 
 /* 모바일 결제예정금액 행 구분선 */
@@ -4030,12 +4071,76 @@ h6,
   padding-top: var(--spacing-2);
   border-top: 1px solid var(--color-gray-light-2);
 }
-
 @media (min-width: 992px) {
   .order-summary-row {
     padding-top: 0;
     border-top: none;
   }
+}
+
+/* 주문 폼 (배송정보) */
+.order-form {
+  gap: var(--spacing-4);
+}
+.order-form__row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-2);
+}
+.order-form__row--top {
+  align-items: flex-start;
+}
+@media (min-width: 992px) {
+  .order-form__row--top {
+    align-items: flex-start;
+  }
+  .order-form__row--top .order-form__label {
+    margin-top: var(--spacing-2);
+  }
+}
+.order-form__label {
+  width: 70px;
+  flex-shrink: 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--fontweight-medium);
+  color: var(--color-gray);
+}
+@media (min-width: 992px) {
+  .order-form__label {
+    width: 120px;
+    text-align: center;
+  }
+}
+.order-form__field {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+.order-form__field--stacked {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+.order-form__field-row {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+/* 결제방법 */
+.order-payment {
+  gap: var(--spacing-4);
+}
+.order-payment__panel {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-5);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-gray-light);
+}
+.order-payment__options {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
 }
 
 /* ==============================================
