@@ -1496,7 +1496,7 @@
   color: var(--color-light-gray);
   display: flex;
   align-items: center;
-  gap: var(--spacing-1);
+  gap: var(--spacing-0-5);
 }
 
 /* ==============================================
