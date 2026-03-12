@@ -1452,11 +1452,7 @@
 
 /* Common Elements */
 .teacher-profile__avatar {
-  background: linear-gradient(
-    135deg,
-    #a29bfe 0%,
-    #6c5ce7 100%
-  ); /* Placeholder Gradient */
+  background: url("../images/avatar_main.png") center / cover no-repeat;
   border-radius: 50%;
   flex-shrink: 0;
   position: relative;
