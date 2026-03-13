@@ -2252,14 +2252,6 @@ h6,
   gap: var(--spacing-2);
 }
 
-/* 강사 아바타 (소형) */
-.test-result-avatar {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #7a9cfa;
-  flex-shrink: 0;
-}
 
 /* 학생 성장 진행도 래퍼 */
 .test-result-progress {
